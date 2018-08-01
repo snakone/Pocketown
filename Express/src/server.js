@@ -5,7 +5,7 @@ const pokemon = require('./routes/routes');  // Require API Pokemon
 
 const app = express();  // Init Express on APP
 
-// Sever SETTING
+// Server SETTING
 
 app.set('port', process.env.PORT || 3000);  // S.O Port or Port 3000
 
