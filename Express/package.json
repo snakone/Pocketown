@@ -1,0 +1,24 @@
+{
+  "name": "Express",
+  "version": "1.0.0",
+  "description": "API REST Pocketown The Game",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Pocketown The Game",
+    "Pocketown"
+  ],
+  "author": "Sergi Martinez",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongojs": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
