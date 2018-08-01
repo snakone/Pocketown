@@ -1,7 +1,13 @@
-const router = require('express').Router();
+const router = require('express').Router();  // Express Router
 
-router.get('/', (req, res, next) => {
-   res.send('Hello World');
-});
+const pokemon = require('../controllers/pokemon.controller');  // Controller
 
-module.exports = router;
+// When server gets 'URL', Respond with a JSON
+router.post('/', pokemon.addPokemon); // Add Pokemon to MongoDB
+router.get('/', pokemon.getPokemon);  // Get All Pokemon
+router.get('/:id', pokemon.getPokemonbyId);  // Get Pokemon by ID
+router.put('/:id', pokemon.getPokemonbyId);  // Update Pokemon by ID
+router.delete('/:id', pokemon.deletePokemon);  // Delete Pokemon from MongoDB
+
+
+module.exports = router;  // Export router - Export Class on TypeScript
