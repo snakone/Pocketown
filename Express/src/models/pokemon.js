@@ -7,5 +7,5 @@ const PokemonSchema = new Schema ({  // Pokemon Model
   grade: {type: String, required: true},
   ss: {type: Number, required: true}
 });
-
+// Set Pokemon Schema as mongoose Model
 module.exports = mongoose.model('Pokemon', PokemonSchema);
