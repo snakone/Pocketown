@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Material Theme */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Materialize */ 
+@import "node_modules/materialize-css/dist/css/materialize.min.css";
