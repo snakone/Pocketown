@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const URI = 'mongodb+srv://Snakone:zebrahead@cluster0-ov8vp.mongodb.net/Pocketown?retryWrites=true';  // Replace with real URL
+const URI = 'mongodb+srv://Snakone:pocketvilla@cluster0-ov8vp.mongodb.net/Pocketown?retryWrites=true';  // Replace with real URL
 
 mongoose.connect(URI, { useNewUrlParser: true })
   .then(db => console.log('DB is connected'))  // Promise
