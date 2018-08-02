@@ -1,17 +1,17 @@
+# Pocketown
+Pocketown on Angular
+
 <p align="center">
   MongoDB
-  <a href="">
+  <a href="https://www.mongodb.com/">
     <img src="https://badge.fury.io/js/mongoose.svg" alt="MongoDB">
-  </a>
+  </a><br>
   Angular
-  <a href="">
+  <a href="https://www.angular.io/">
     <img src="https://badge.fury.io/js/%40angular%2Fcore.svg" alt="Angular">
-  </a>
+  </a><br>
   Express
-  <a href="">
+  <a href="http://expressjs.com/">
     <img src="https://badge.fury.io/js/express.svg" alt="Express">
   </a>
  </p>
-
-# Pocketown
-Pocketown on Angular
