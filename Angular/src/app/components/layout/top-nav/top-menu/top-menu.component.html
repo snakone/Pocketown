@@ -5,17 +5,17 @@
 <mat-menu #menu="matMenu"  [overlapTrigger]="false">
 
   <button [routerLink]="['home']" routerLinkActive="active" mat-menu-item>
-    <mat-icon>home</mat-icon> <!-- Home -->
+    <mat-icon svgIcon="pikachu"></mat-icon> <!-- Home -->
     <span>Inicio</span>
   </button>
 
   <button [routerLink]="['pokedex']" routerLinkActive="active" mat-menu-item>
-    <mat-icon>list_alt</mat-icon> <!-- About -->
+    <mat-icon svgIcon="bulbasaur"></mat-icon> <!-- About -->
     <span>Pokédex</span>
   </button>
 
   <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Admin">
-    <mat-icon>person</mat-icon> <!-- Menu Trigger Admin -->
+    <mat-icon svgIcon="admin"></mat-icon> <!-- Menu Trigger Admin -->
     <span>Admin</span>
   </button>
 
@@ -23,5 +23,5 @@
 
 <mat-menu #Admin="matMenu"> <!-- Admin Menu -->
   <button [routerLink]="['admin/pokemon']" routerLinkActive="active"
-          mat-menu-item><mat-icon>bookmarks</mat-icon>Pokémon</button>
+          mat-menu-item><mat-icon svgIcon="psyduck"></mat-icon>Pokémon</button>
 </mat-menu>

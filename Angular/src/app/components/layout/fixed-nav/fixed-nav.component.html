@@ -2,19 +2,19 @@
   <div class="col s12 m2 l1 fixed">
 
     <ul class="mainList">
-      <li><a href="#">{{ navTitles[0] }}</a></li> <!-- Libros -->
+      <li class="bold"><a href="#">{{ navTitles[0] }}</a></li> <!-- Database -->
       <li>
         <ul class="nestedList">
-           <li *ngFor="let Gender of Genders"><a>{{Gender}}</a></li>
+           <li *ngFor="let database of databases"><a>{{database}}</a></li>
         </ul>
        </li>
      </ul>
 
      <ul class="mainList">
-       <li><a href="#">{{ navTitles[1] }}</a></li> <!-- Novelas -->
+       <li class="bold"><a href="#">{{ navTitles[1] }}</a></li> <!-- Tools -->
        <li>
-         <ul class="nestedList long">
-            <li *ngFor="let Novel of Novels"><a>{{Novel}}</a></li>
+         <ul class="nestedList">
+            <li *ngFor="let tool of tools"><a>{{tool}}</a></li>
          </ul>
         </li>
       </ul>

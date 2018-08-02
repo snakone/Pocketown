@@ -23,23 +23,31 @@ mat-toolbar {
   padding-left: 50px;
 }
 
+.logo:hover {
+  cursor: pointer;
+  filter: brightness(1.5);
+}
+
 .example-spacer {
   flex: 1 1 auto;
 }
 
-.email-icon{
+.top-icon{
   padding:0 35px 0 14px;
 }
 
+.custom-icon {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
 mat-icon:hover{
-
   cursor:pointer;
-  color:#1976D2;
+filter: brightness(1.5);
 }
 
-button {
-  font-size:.9em;
-}
 
 a {
 color:white;

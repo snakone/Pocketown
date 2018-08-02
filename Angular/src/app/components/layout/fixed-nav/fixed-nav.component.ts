@@ -8,17 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class FixedNavComponent implements OnInit {
 
   navTitles: string[];
-  Genders: string[];
-  Novels: string[];
+  databases: string[];
+  tools: string[];
   Formats: string[];
   Languages: string[];
 
   constructor() {
 
-    this.navTitles = ["Libros","Novelas","Formato","Idioma"];
+    this.navTitles = ["Database","Tools","Formato","Idioma"];
 
-    this.Genders = ["Literatura", "Infantil", "Juvenil","Poesía","Narrativa"];
-    this.Novels = ["Aventuras", "Acción", "Romántica", "Negra", "Sci-Fi"]
+    this.databases = ["Pokémon", "Moves", "Abilities", "Types", "Held items"];
+    this.tools = ["Search", "P.R.C", "Maps", "Compare", "Builder"]
     this.Formats = ["Tapa", "Digital", "Cómic"];
     this.Languages = ["Español", "Catalán", "Inglés"];
   }

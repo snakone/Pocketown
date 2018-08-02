@@ -1,8 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from "@angular/common/http";
 
 // Animations
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//Forms
+import { FormsModule } from '@angular/forms';
 
 // Main
 import { AppComponent } from './app.component';
@@ -31,10 +35,11 @@ import { PokemonComponent } from './components/admin/pokemon/pokemon.component';
   declarations: [
     AppComponent, TopNavComponent, TopMenuComponent, GridComponent,
     FixedNavComponent, FooterNavComponent, FooterMenuComponent,
-    WelcomeComponent, AboutComponent, PokedexComponent, PokemonComponent
+    WelcomeComponent, AboutComponent, PokedexComponent, PokemonComponent,
 ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, MaterialModule, RoutingModule
+    BrowserModule, BrowserAnimationsModule, MaterialModule, RoutingModule,
+    FormsModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
