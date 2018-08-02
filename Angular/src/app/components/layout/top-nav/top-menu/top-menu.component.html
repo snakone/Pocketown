@@ -9,9 +9,9 @@
     <span>Inicio</span>
   </button>
 
-  <button [routerLink]="['about']" routerLinkActive="active" mat-menu-item>
-    <mat-icon>fiber_new</mat-icon> <!-- About -->
-    <span>About</span>
+  <button [routerLink]="['pokedex']" routerLinkActive="active" mat-menu-item>
+    <mat-icon>list_alt</mat-icon> <!-- About -->
+    <span>Pokédex</span>
   </button>
 
   <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Admin">
@@ -22,12 +22,6 @@
 </mat-menu>
 
 <mat-menu #Admin="matMenu"> <!-- Admin Menu -->
-  <button routerLinkActive="active"
-          mat-menu-item><mat-icon>bookmarks</mat-icon>Libros</button>
-
-  <button routerLinkActive="active"
-          mat-menu-item><mat-icon>perm_identity</mat-icon>Autores</button>
-
-  <button routerLinkActive="active"
-          mat-menu-item><mat-icon>comment</mat-icon>Comentarios</button>
+  <button [routerLink]="['admin/pokemon']" routerLinkActive="active"
+          mat-menu-item><mat-icon>bookmarks</mat-icon>Pokémon</button>
 </mat-menu>
