@@ -1,0 +1,172 @@
+/* Toolbar height */
+
+mat-toolbar {
+  max-height: 50px;
+  min-height: 50px;
+  vertical-align: middle;
+  border-top: 2px solid black;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   z-index: 999;
+   color: #FAD702;
+   font-weight: bold;
+}
+
+/* Social Media Buttons */
+
+.fa {
+ padding: 10px;
+ font-size: 10px;
+ width: 30px;
+ text-align: center;
+ text-decoration: none;
+ margin: 5px 2px;
+ border-radius:5px;
+}
+
+.fa:hover {
+   opacity: 0.7;
+}
+
+.fa-facebook {
+ background: #3B5998;
+ color: white;
+}
+
+.fa-twitter {
+ background: #55ACEE;
+ color: white;
+}
+
+.fa-google {
+ background: #dd4b39;
+ color: white;
+}
+
+.fa-linkedin {
+ background: #007bb5;
+ color: white;
+}
+
+.fa-instagram {
+ background: #125688;
+ color: white;
+}
+
+.fa-flickr {
+ background: #f40083;
+ color: white;
+}
+
+.fa-rss {
+ background: #ff6600;
+ color: white;
+}
+
+.fa-skype {
+ background: #00aff0;
+ color: white;
+}
+
+.inline-social-icons {
+ padding-left:5px;
+
+}
+
+.inline-social-icons a{
+margin: 5px;
+}
+
+/* Custom Icons*/
+
+.right {
+  position: absolute;
+    right: 25px;
+}
+
+
+footer.page-footer {
+  margin: 0;
+}
+
+/*Negrita*/
+
+.bold {
+  font-weight: bold;
+}
+
+.right {
+  float:right;
+}
+
+/* Empty space NavBar */
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.nav-Title {
+  transition: padding 3s;
+  padding: 0 25px;
+  color:white;
+}
+
+
+@media only screen and (max-width:600px) {
+
+  .nav-Title {
+      transition: padding 2s;
+      padding-left: 5px;
+    }
+}
+
+/* Short Title on Mobile */
+
+.nav-Title::after {
+    content: "Pocketown The Game - All Rights Reserved - 2017/2018";
+}
+
+@media screen and (max-width: 845px) {
+
+  .nav-Title::after {
+      content: "Pocketown The Game";
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+  .nav-Title::after {
+      content: "";
+    }
+}
+
+/* Hover styles */
+
+mat-icon:hover{
+  cursor:pointer;
+  color:#40ffbe;
+}
+
+button:hover .material-icons{
+  color:#40ffbe;
+}
+
+button {
+  font-size:.9em;
+}
+
+/* Formatting a links */
+
+a {
+color:white;
+margin-top: 8px;
+}
+
+a:last-child{
+  margin-right: 2px;
+}

@@ -1,0 +1,13 @@
+/* Remove Nav Button when Collapse with Social Buttons */
+
+@media screen and (max-width: 277px) {
+.nav-Menu {
+  display: none;
+  }
+}
+
+/*Deleting random circle on Hover, was a default feature */
+
+.cdk-focused {
+  background: transparent;
+}

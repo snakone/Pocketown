@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col s12 m2 l1 fixed">
+
+    <ul class="mainList">
+      <li><a href="#">{{ navTitles[0] }}</a></li> <!-- Libros -->
+      <li>
+        <ul class="nestedList">
+           <li *ngFor="let Gender of Genders"><a>{{Gender}}</a></li>
+        </ul>
+       </li>
+     </ul>
+
+     <ul class="mainList">
+       <li><a href="#">{{ navTitles[1] }}</a></li> <!-- Novelas -->
+       <li>
+         <ul class="nestedList long">
+            <li *ngFor="let Novel of Novels"><a>{{Novel}}</a></li>
+         </ul>
+        </li>
+      </ul>
+
+     <ul class="mainList">
+       <li><a href="#">{{ navTitles[2] }}</a></li> <!-- Formatos -->
+       <li>
+         <ul class="nestedList">
+            <li *ngFor="let Format of Formats"><a>{{Format}}</a></li>
+         </ul>
+        </li>
+      </ul>
+
+      <ul class="mainList">
+        <li><a href="#">{{ navTitles[3] }}</a></li> <!-- Idiomas -->
+        <li>
+          <ul class="nestedList">
+             <li *ngFor="let Language of Languages"><a>{{Language}}</a></li>
+          </ul>
+         </li>
+       </ul>
+
+  </div>
+</div>

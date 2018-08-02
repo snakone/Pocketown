@@ -1,0 +1,15 @@
+body {
+  font-size: 1.2em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+.signature {
+  margin-top: 60px;
+  margin-bottom: 5px;
+
+  text-align: right;
+}

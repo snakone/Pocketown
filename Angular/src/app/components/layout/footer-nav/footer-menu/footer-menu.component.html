@@ -1,0 +1,26 @@
+<button class="nav-Menu" mat-icon-button [matMenuTriggerFor]="menu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+
+<mat-menu #menu="matMenu"  [overlapTrigger]="false">
+  <button mat-menu-item>
+    <mat-icon>home</mat-icon>
+    <span>Inicio</span>
+  </button>
+  <button [routerLink]="['about']" mat-menu-item>
+    <mat-icon>face</mat-icon>
+    <span>About Us</span>
+  </button>
+</mat-menu>
+
+<mat-menu #bookType="matMenu">
+  <button mat-menu-item><mat-icon>collections_bookmark</mat-icon>Tapa</button>
+  <button mat-menu-item><mat-icon>phone_android</mat-icon>Digital</button>
+</mat-menu>
+
+<mat-menu #genders="matMenu">
+  <button mat-menu-item><mat-icon>grade</mat-icon>Novelas</button>
+  <button mat-menu-item><mat-icon>favorite_border</mat-icon>Romántico</button>
+  <button mat-menu-item><mat-icon>web</mat-icon>Comics</button>
+  <button mat-menu-item><mat-icon>tag_faces</mat-icon>Infantil</button>
+</mat-menu>

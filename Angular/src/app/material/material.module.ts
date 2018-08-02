@@ -6,7 +6,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatBadgeModule } from '@angular/material/badge';
 import { MatExpansionModule } from '@angular/material/expansion';
 
 import { MatSidenavModule,
@@ -21,12 +20,12 @@ import { MatSidenavModule,
   imports: [MatButtonModule, MatCheckboxModule,MatToolbarModule,MatIconModule,
             MatMenuModule, MatSidenavModule, MatListModule, MatCardModule,
             MatTableModule,MatPaginatorModule, MatSortModule, MatTooltipModule,
-            MatBadgeModule, MatExpansionModule],
+            MatExpansionModule],
 
   exports: [MatButtonModule, MatCheckboxModule,MatToolbarModule,MatIconModule,
             MatMenuModule, MatSidenavModule, MatListModule, MatCardModule,
             MatTableModule,MatPaginatorModule, MatSortModule, MatTooltipModule,
-            MatBadgeModule, MatExpansionModule],
+            MatExpansionModule],
 })
 export class MaterialModule {
 

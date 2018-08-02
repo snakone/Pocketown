@@ -1,0 +1,33 @@
+<button class="nav-Menu" mat-icon-button [matMenuTriggerFor]="menu">  <!-- Menu Trigger -->
+  <mat-icon>more_vert</mat-icon>
+</button>
+
+<mat-menu #menu="matMenu"  [overlapTrigger]="false">
+
+  <button [routerLink]="['home']" routerLinkActive="active" mat-menu-item>
+    <mat-icon>home</mat-icon> <!-- Home -->
+    <span>Inicio</span>
+  </button>
+
+  <button [routerLink]="['about']" routerLinkActive="active" mat-menu-item>
+    <mat-icon>fiber_new</mat-icon> <!-- About -->
+    <span>About</span>
+  </button>
+
+  <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Admin">
+    <mat-icon>person</mat-icon> <!-- Menu Trigger Admin -->
+    <span>Admin</span>
+  </button>
+
+</mat-menu>
+
+<mat-menu #Admin="matMenu"> <!-- Admin Menu -->
+  <button routerLinkActive="active"
+          mat-menu-item><mat-icon>bookmarks</mat-icon>Libros</button>
+
+  <button routerLinkActive="active"
+          mat-menu-item><mat-icon>perm_identity</mat-icon>Autores</button>
+
+  <button routerLinkActive="active"
+          mat-menu-item><mat-icon>comment</mat-icon>Comentarios</button>
+</mat-menu>

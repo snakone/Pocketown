@@ -1,0 +1,78 @@
+
+.fixed {
+  position: fixed;
+    left: 20px;
+    bottom: 65px;
+    overflow-y: auto;
+    min-width: 150px;
+    margin-right: 5px;
+    top:60px;
+}
+
+
+/* List Styles */
+
+.mainList {
+  list-style-type: none;
+  margin: 5px;
+  padding: 10px;
+  font-size: 1.1em;
+
+}
+
+.mainList li {
+  margin:15px auto;
+}
+
+.nestedList {
+    list-style-type: none;
+    margin: 10px 0px 5px 15px;
+    font-size: 0.8em;
+}
+
+.mainList a {
+  border-bottom: 2px solid #FAD702;
+}
+
+.nestedList a {
+  border-bottom: 1px solid #3F51B5;
+  width: 100%;
+}
+
+li:last-child {
+  border: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+  display: block;
+  width: 80%;
+}
+
+li .mid {
+  width: 105%;
+}
+
+.nestedList a:hover {
+  font-size: 1.3em;
+  color:#FDD702;
+  cursor:pointer;
+}
+
+@media screen and (max-width: 600px) {
+
+  .fixed {
+  display: none;
+  }
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
