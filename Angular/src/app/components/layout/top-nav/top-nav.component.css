@@ -19,7 +19,7 @@ mat-toolbar {
   width: 200px;
   height: 70px;
   margin: 0 auto;
-  padding-top: 11px;
+  padding-top: 12px;
   padding-left: 50px;
 }
 
@@ -28,7 +28,7 @@ mat-toolbar {
 }
 
 .email-icon{
-  padding:0 18px 0 14px;
+  padding:0 35px 0 14px;
 }
 
 mat-icon:hover{
