@@ -33,7 +33,7 @@ export class PokemonComponent implements OnInit {
     if (form.value._id) {
       this.pokedexService.updatePokemon(form.value)
        .subscribe (res => {
-         this.toastr.info('Bien', 'Pokémon Actualizado');
+         this.toastr.info('Bien!', 'Pokémon Actualizado');
          this.resetForm(form);
        })
     }
