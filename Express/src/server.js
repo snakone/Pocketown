@@ -1,5 +1,6 @@
 const express = require('express');  // Require Expres Module
 const morgan = require('morgan');  // Console Logger
+const cors = require('cors'); //  Bind Server and Angular
 const { moongose } = require('./database');  // Only need the Connection
 const pokemon = require('./routes/routes');  // Require API Pokemon
 
@@ -13,6 +14,7 @@ app.set('port', process.env.PORT || 3000);  // S.O Port or Port 3000
 
 app.use(morgan('dev'));  // Use Morgan with DEV command prompt
 app.use(express.json());  // Body Parse to JSON
+app.use(cors({origin: "http://localhost:4200"}));
 
 // Routes
 

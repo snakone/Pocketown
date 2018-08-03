@@ -17,6 +17,9 @@ import { MaterialModule } from './material/material.module';
 // Routes
 import { RoutingModule } from './routes/routes';
 
+// Toastr
+import { ToastrModule } from 'ngx-toastr';
+
 // App Layout
 import { TopNavComponent } from './components/layout/top-nav/top-nav.component';
 import { TopMenuComponent } from './components/layout/top-nav/top-menu/top-menu.component';
@@ -39,7 +42,11 @@ import { PokemonComponent } from './components/admin/pokemon/pokemon.component';
 ],
   imports: [
     BrowserModule, BrowserAnimationsModule, MaterialModule, RoutingModule,
-    FormsModule, HttpClientModule
+    FormsModule, HttpClientModule,
+    ToastrModule.forRoot({  // Apply to all Toastr
+      timeOut: 3000,
+      progressBar: true
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

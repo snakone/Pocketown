@@ -8,3 +8,6 @@
 
 /* Animate CSS */
 @import "node_modules/animate.css/animate.min.css";
+
+/* Toastr */
+@import "~ngx-toastr/toastr.css";
