@@ -47,7 +47,7 @@ export class PokemonComponent implements OnInit {
   }
 
   updatePokemon(pokemon: Pokemon){
-    this.pokedexService.selectedPokemon = pokemon;
+    this.pokedexService.selectedPokemon = Object.assign({}, pokemon);;
   }
 
   deletePokemon(_id: string){
