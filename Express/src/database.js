@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// MongoDB URI Driver String Node.js
 const URI = 'mongodb+srv://Snakone:pocketvilla@cluster0-ov8vp.mongodb.net/Pocketown?retryWrites=true';
 
 mongoose.connect(URI, { useNewUrlParser: true })

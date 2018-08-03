@@ -48,4 +48,4 @@ pokemonCtrl.deletePokemon = async (req, res) => {  // Remove Pokemon from MongoD
   });
 }
 
-module.exports = pokemonCtrl;
+module.exports = pokemonCtrl;  // Exports the Object with all the Methods

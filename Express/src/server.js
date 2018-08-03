@@ -14,7 +14,7 @@ app.set('port', process.env.PORT || 3000);  // S.O Port or Port 3000
 
 app.use(morgan('dev'));  // Use Morgan with DEV command prompt
 app.use(express.json());  // Body Parse to JSON
-app.use(cors({origin: "http://localhost:4200"}));
+app.use(cors({origin: "http://localhost:4200"}));  // Use Cors to connect Angular 
 
 // Routes
 
