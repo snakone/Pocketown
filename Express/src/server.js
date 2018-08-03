@@ -1,4 +1,4 @@
-const express = require('express');  // Require Expres Module
+const express = require('express');  // Require Express Module
 const morgan = require('morgan');  // Console Logger
 const cors = require('cors'); //  Bind Server and Angular
 const { moongose } = require('./database');  // Only need the Connection
