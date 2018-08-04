@@ -14,7 +14,7 @@ pokemonCtrl.addPokemon = async (req, res) => {  // Add Pokemon to MongoDB
 //
 pokemonCtrl.getPokemon = async (req, res) => {  // Get ALL Pokemon
 
-    const pokemon = await pokemonModel.find();  // Find Pokemon in MongoDB
+    const pokemon = await pokemonModel.find().sort({ pokedex: +1 });  // Find Pokemon in MongoDB
     res.json(pokemon);  // Send Pokemon to server as JSON
 }
 
