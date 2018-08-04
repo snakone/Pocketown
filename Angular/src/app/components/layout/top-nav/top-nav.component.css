@@ -16,11 +16,11 @@ mat-toolbar {
 }
 
 .logo {
-  width: 200px;
-  height: 70px;
+  width: 185px;
+  height: 65px;
   margin: 0 auto;
   padding-top: 12px;
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .logo:hover {

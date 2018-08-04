@@ -12,6 +12,7 @@ export class PokedexComponent implements OnInit {
 
   pokedex: Pokemon[];
   urlImage: string;
+  selectedPokemon: Pokemon;
 
   constructor(private pokedexService: PokedexService) {
     this.urlImage = "../../../../assets/images/pokemon/"
@@ -23,6 +24,11 @@ export class PokedexComponent implements OnInit {
         const pokemonList = res as Pokemon[];
         this.pokedex = pokemonList;
       })
+  }
+
+  navigate(pokemon: Pokemon) {
+    this.selectedPokemon = pokemon;
+    console.log(this.selectedPokemon);
   }
 
 }

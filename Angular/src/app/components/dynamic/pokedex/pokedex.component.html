@@ -1,4 +1,5 @@
-<div class="center">
+<div class="row center">
   <span *ngFor="let pokemon of pokedex">
-<img src="{{urlImage}}{{pokemon.picture}}.png"></span>
+<img (click)="navigate(pokemon)" class="pokemon" src="{{urlImage}}{{pokemon.picture}}.png"></span>
+
 </div>
