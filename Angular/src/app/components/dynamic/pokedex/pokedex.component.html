@@ -1,5 +1,11 @@
-<div class="row center">
+<div class="center loading" *ngIf="loading">
+  <img class="loading-img" src="https://media.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.gif">
+  <p>
+  <span>LOADING...</span>
+</p>
+</div>
+
+<div class="row center animated slideInUp slower" *ngIf="pokedex">
   <span *ngFor="let pokemon of pokedex">
 <img (click)="navigate(pokemon)" class="pokemon" src="{{urlImage}}{{pokemon.picture}}.png"></span>
-
 </div>

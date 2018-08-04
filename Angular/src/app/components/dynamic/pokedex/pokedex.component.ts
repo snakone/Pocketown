@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { PokedexService } from '../../../services/pokedex.service';
 import { Pokemon } from '../../../models/pokemon';
+import { Router } from '@angular/router'; // Router
 
 @Component({
   selector: 'pokedex',
@@ -13,9 +14,12 @@ export class PokedexComponent implements OnInit {
   pokedex: Pokemon[];
   urlImage: string;
   selectedPokemon: Pokemon;
+  loading: boolean;
 
-  constructor(private pokedexService: PokedexService) {
-    this.urlImage = "../../../../assets/images/pokemon/"
+  constructor(private pokedexService: PokedexService,
+              private router: Router) {
+    this.urlImage = "../../../../assets/images/pokemon/";
+    this.loading = true;
    }
 
   ngOnInit() {
@@ -23,12 +27,13 @@ export class PokedexComponent implements OnInit {
       .subscribe(res => {
         const pokemonList = res as Pokemon[];
         this.pokedex = pokemonList;
+        this.loading = false;
       })
   }
 
   navigate(pokemon: Pokemon) {
     this.selectedPokemon = pokemon;
-    console.log(this.selectedPokemon);
+    this.router.navigate(['/pokedex', pokemon.name]);
   }
 
 }

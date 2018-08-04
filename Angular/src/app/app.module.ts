@@ -32,13 +32,15 @@ import { FooterMenuComponent } from './components/layout/footer-nav/footer-menu/
 import { WelcomeComponent } from './components/dynamic/welcome/welcome.component';
 import { AboutComponent } from './components/dynamic/about/about.component';
 import { PokedexComponent } from './components/dynamic/pokedex/pokedex.component';
-import { PokemonComponent } from './components/admin/pokemon/pokemon.component';
+import { PokemonComponent } from './components/dynamic/pokedex/pokemon/pokemon.component';
+import { AdminPokemonComponent } from './components/admin/pokemon/admin-pokemon.component';
 
 @NgModule({
   declarations: [
     AppComponent, TopNavComponent, TopMenuComponent, GridComponent,
     FixedNavComponent, FooterNavComponent, FooterMenuComponent,
     WelcomeComponent, AboutComponent, PokedexComponent, PokemonComponent,
+    AdminPokemonComponent
 ],
   imports: [
     BrowserModule, BrowserAnimationsModule, MaterialModule, RoutingModule,

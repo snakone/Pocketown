@@ -17,7 +17,7 @@ export class FixedNavComponent implements OnInit {
 
     this.navTitles = ["Database","Tools","Formato","Idioma"];
 
-    this.databases = ["Pokémon", "Moves", "Abilities", "Types", "Held items"];
+    this.databases = ["Pokédex", "Moves", "Abilities", "Types", "Held items"];
     this.tools = ["Search", "P.R.C", "Maps", "Compare", "Builder"]
     this.Formats = ["Tapa", "Digital", "Cómic"];
     this.Languages = ["Español", "Catalán", "Inglés"];

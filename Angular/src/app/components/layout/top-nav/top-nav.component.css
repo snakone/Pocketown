@@ -19,8 +19,8 @@ mat-toolbar {
   width: 185px;
   height: 65px;
   margin: 0 auto;
-  padding-top: 12px;
-  padding-left: 30px;
+  padding-top: 13px;
+  padding-left: 40px;
 }
 
 .logo:hover {

@@ -5,7 +5,7 @@
       <li class="bold"><a href="#">{{ navTitles[0] }}</a></li> <!-- Database -->
       <li>
         <ul class="nestedList">
-           <li *ngFor="let database of databases"><a>{{database}}</a></li>
+           <li><a [routerLink]="['pokedex']" routerLinkActive="active">Pokédex</a></li>
         </ul>
        </li>
      </ul>
@@ -14,7 +14,7 @@
        <li class="bold"><a href="#">{{ navTitles[1] }}</a></li> <!-- Tools -->
        <li>
          <ul class="nestedList">
-            <li *ngFor="let tool of tools"><a>{{tool}}</a></li>
+            <li><a></a></li>
          </ul>
         </li>
       </ul>
@@ -23,7 +23,7 @@
        <li><a href="#">{{ navTitles[2] }}</a></li> <!-- Formatos -->
        <li>
          <ul class="nestedList">
-            <li *ngFor="let Format of Formats"><a>{{Format}}</a></li>
+            <li><a></a></li>
          </ul>
         </li>
       </ul>
@@ -32,7 +32,7 @@
         <li><a href="#">{{ navTitles[3] }}</a></li> <!-- Idiomas -->
         <li>
           <ul class="nestedList">
-             <li *ngFor="let Language of Languages"><a>{{Language}}</a></li>
+             <li><a></a></li>
           </ul>
          </li>
        </ul>

@@ -9,11 +9,11 @@ import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-pokemon',
-  templateUrl: './pokemon.component.html',
-  styleUrls: ['./pokemon.component.css']
+  templateUrl: './admin-pokemon.component.html',
+  styleUrls: ['./admin-pokemon.component.css']
 })
 
-export class PokemonComponent implements OnInit {
+export class AdminPokemonComponent implements OnInit {
 
   constructor(private pokedexService: PokedexService,
               private toastr: ToastrService) { }

@@ -1,3 +1,9 @@
-<p>
-  pokemon works!
+<div *ngIf="selectedPokemon">
+  <p>
+  {{selectedPokemon.name}}
 </p>
+
+<p>
+  {{selectedPokemon.pokedex}}
+</p>
+</div>
