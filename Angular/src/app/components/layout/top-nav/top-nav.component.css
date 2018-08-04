@@ -23,6 +23,10 @@ mat-toolbar {
   padding-left: 40px;
 }
 
+.logo:focus{
+  outline: 0;
+}
+
 .logo:hover {
   cursor: pointer;
   filter: brightness(1.5);
