@@ -11,8 +11,11 @@ import { Pokemon } from '../../../models/pokemon';
 export class PokedexComponent implements OnInit {
 
   pokedex: Pokemon[];
+  urlImage: string;
 
-  constructor(private pokedexService: PokedexService) { }
+  constructor(private pokedexService: PokedexService) {
+    this.urlImage = "../../../../assets/images/pokemon/"
+   }
 
   ngOnInit() {
      this.pokedexService.getPokemon()
