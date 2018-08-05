@@ -10,3 +10,20 @@ span {
 .loading {
 margin-top: 45px;
 }
+
+.sticky {
+  top:60px;
+  position: sticky;
+  z-index: 1000;
+  width: 100%;
+  background: white;
+}
+
+input[type=text]:not(.browser-default) {
+  text-align: center;
+  margin: 0;
+}
+
+.top {
+  margin-top: -10px;
+}

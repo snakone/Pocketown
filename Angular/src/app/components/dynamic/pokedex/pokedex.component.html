@@ -1,15 +1,22 @@
-<div class="center loading" *ngIf="loading">
-    <img class="loading-img" src="https://media.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.gif">
+<div class="row center loading" *ngIf="loading">
+    <img class="loading-img responsive-img" src="https://media.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.gif">
   <p>
     <span>LOADING...</span>
   </p>
 </div>
 
 <div class="row center" *ngIf="pokedex">
-  <h2>Pokédex</h2>
-  <br>
+<div class="sticky">
+    <div class="container">
+        <div class="input-field top">
+          <input type="text" name="searchValue" (keyup)="onKeyUp($event)" [(ngModel)]="searchValue" placeHolder="Search a Pokémon..">
+        </div>
+    </div>
+</div>
+
     <div class=" animated slideInUp">
-      <span *ngFor="let pokemon of pokedex">
+      <span *ngFor="let pokemon of filteredPokedex">
         <img (click)="navigate(pokemon)" class="pokemon" src="{{urlImage}}{{pokemon.picture}}.png"></span>
     </div>
+
 </div>
