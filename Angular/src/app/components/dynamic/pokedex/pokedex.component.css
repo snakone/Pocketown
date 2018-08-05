@@ -8,7 +8,6 @@ span {
 }
 
 .loading {
-
 position: absolute;
 text-align: center;
 top:45%;
@@ -20,8 +19,6 @@ transform: translate(-50%, -50%);
   min-width: 90%;
 }
 
-
-
 @media (max-width: 1000px){
   .responsive-img {
     min-width: 130%;
@@ -30,7 +27,6 @@ transform: translate(-50%, -50%);
 
 @media (max-width: 600px){
   .loading {
-  top:50%;
   left:50%;
   margin-left: 0;
   }
