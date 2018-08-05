@@ -11,9 +11,13 @@ span {
 
 position: absolute;
 text-align: center;
-top:48%;
+top:45%;
 left:55%;
 transform: translate(-50%, -50%);
+}
+
+.responsive-img {
+  min-width: 90%;
 }
 
 
@@ -26,7 +30,13 @@ transform: translate(-50%, -50%);
 
 @media (max-width: 600px){
   .loading {
+  top:50%;
   left:50%;
+  margin-left: 0;
+  }
+
+  .responsive-img {
+    margin-left: -35px;
   }
 }
 
