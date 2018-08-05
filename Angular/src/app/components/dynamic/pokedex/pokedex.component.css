@@ -11,9 +11,23 @@ span {
 
 position: absolute;
 text-align: center;
-top:45%;
+top:48%;
 left:55%;
 transform: translate(-50%, -50%);
+}
+
+
+
+@media (max-width: 1000px){
+  .responsive-img {
+    min-width: 130%;
+  }
+}
+
+@media (max-width: 600px){
+  .loading {
+  left:50%;
+  }
 }
 
 .pokemon {
