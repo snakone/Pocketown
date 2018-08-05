@@ -1,9 +1,18 @@
-<div *ngIf="selectedPokemon">
-  <p>
-  {{selectedPokemon.name}}
-</p>
-
-<p>
-  {{selectedPokemon.pokedex}}
-</p>
+<div class="container" *ngIf="selectedPokemon">
+    <div class="row">
+        <div class="col s6 m6 l12">
+          <img src="{{urlImage}}{{selectedPokemon.picture}}.png">
+        </div>
+        <div class="col s6 m6 l12">
+          <p>#<span class="bold">{{selectedPokemon.pokedex}}</span> {{selectedPokemon.name}}</p>
+          <div class="row">
+            <div class="col s5 m5 l5">
+            <span class="{{selectedPokemon.type}}">{{selectedPokemon.type}}</span>
+          </div>
+            <div class="col s6 m6 l6">
+            <span class="{{selectedPokemon.type2}}">{{selectedPokemon.type2}}</span>
+              </div>
+        </div>
+    </div>
+  </div>
 </div>

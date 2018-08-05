@@ -14,9 +14,13 @@ export class PokemonComponent implements OnInit {
 
   pokedex: Pokemon[];
   selectedPokemon: Pokemon;
+  urlImage: string;
 
   constructor(private pokedexService: PokedexService,
-              private activeRoute: ActivatedRoute) { }
+              private activeRoute: ActivatedRoute) {
+
+              this.urlImage = "../../../../../assets/images/pokemon/";
+             }
 
   ngOnInit() {
     let routeParams = this.activeRoute.snapshot.params.pokemon; // Get the ID from URL
@@ -25,7 +29,7 @@ export class PokemonComponent implements OnInit {
      .subscribe(res => {
        const pokemonList = res as Pokemon[];
        this.pokedex = pokemonList.filter(function(element){ // Filter
-        return element.name == routeParams; // Pokemon ID
+        return element.picture == routeParams; // Pokemon ID
         });
       this.selectedPokemon = this.pokedex[0];
      })
