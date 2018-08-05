@@ -1,18 +1,30 @@
-<div class="container" *ngIf="selectedPokemon">
-    <div class="row">
-        <div class="col s6 m6 l12">
-          <img src="{{urlImage}}{{selectedPokemon.picture}}.png">
+<div *ngIf="selectedPokemon">
+  <section class="section">
+
+      <div class="row">
+
+        <div class="col s12 m4 l4">
+
+            <div class="col s4 m4 l4 offset-m1 offset-l1">
+              <img src="{{urlImage}}pokemon/{{selectedPokemon.picture}}.png">
+            </div>
+
+            <div class="col s6 m6 l6 offset-s1 offset-m1 offset-l1 center">
+                <p>#<span class="bold">{{selectedPokemon.pokedex}}</span> {{selectedPokemon.name}}</p>
+                <p><span class="type {{selectedPokemon.type}}">{{selectedPokemon.type}}</span>
+                <span class="type {{selectedPokemon.type2}}">{{selectedPokemon.type2}}</span>
+                </p>
+            </div>
+
         </div>
-        <div class="col s6 m6 l12">
-          <p>#<span class="bold">{{selectedPokemon.pokedex}}</span> {{selectedPokemon.name}}</p>
-          <div class="row">
-            <div class="col s5 m5 l5">
-            <span class="{{selectedPokemon.type}}">{{selectedPokemon.type}}</span>
-          </div>
-            <div class="col s6 m6 l6">
-            <span class="{{selectedPokemon.type2}}">{{selectedPokemon.type2}}</span>
-              </div>
+
+        <div class="col s12 m6 l6 offset-m1 offset-l1">
+<blockquote>
+  HOLA
+</blockquote>
         </div>
-    </div>
-  </div>
+
+      </div>
+
+  </section>
 </div>

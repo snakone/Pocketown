@@ -8,11 +8,18 @@ span {
 }
 
 .loading {
-margin-top: 45px;
-width: 100%;
+
+position: absolute;
+text-align: center;
+top:45%;
+left:55%;
+transform: translate(-50%, -50%);
 }
 
-
+.pokemon {
+  width: 56px;
+  height: 63px;
+}
 
 .sticky {
   top:60px;

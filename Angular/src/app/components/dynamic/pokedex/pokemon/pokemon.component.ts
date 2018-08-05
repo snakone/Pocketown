@@ -19,7 +19,7 @@ export class PokemonComponent implements OnInit {
   constructor(private pokedexService: PokedexService,
               private activeRoute: ActivatedRoute) {
 
-              this.urlImage = "../../../../../assets/images/pokemon/";
+              this.urlImage = "../../../../../assets/images/";
              }
 
   ngOnInit() {
@@ -32,7 +32,10 @@ export class PokemonComponent implements OnInit {
         return element.picture == routeParams; // Pokemon ID
         });
       this.selectedPokemon = this.pokedex[0];
+      console.log(this.selectedPokemon);
+      if (this.selectedPokemon.type2 == "None") this.selectedPokemon.type2 = "";
      })
+
   }
 
 }
