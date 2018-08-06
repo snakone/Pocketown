@@ -1,29 +1,28 @@
-
-.section {
-
+.inline {
+margin:0 auto;
 }
-.bold {
-
-font-weight: bold;
-}
-
-img {
-  margin: 0 auto;
-}
-
 
 .type{
-  padding: 4px 8px;
+  padding: 2px 4px;
   border-radius: 3px;
   color:white;
   font-weight: bold;
-  margin:auto 5px;
+  margin:3px;
   border: 1px solid black;
+  display: inline-grid;
+  width: 70px;
+  font-size: .8em;
 }
 
 .type:hover{
   filter: brightness(1.5);
   cursor: pointer;
+}
+
+@media (max-width: 600px){
+.type {
+  width: auto;
+}
 }
 
 .Normal {background-color: #A8A878;}

@@ -1,4 +1,5 @@
 const pokemons = require('../models/pokemon');  // Pokemon Model = MongoDB Collection
+const query = require('../queries/query');  // Pokemon Model = MongoDB Collection
 
 const pokemonCtrl = {};  // Create Object. We add Methods to it so We can use them OUTSIDE later
 
@@ -17,6 +18,13 @@ pokemonCtrl.getPokemon = async (req, res) => {  // Get ALL Pokemon
     const pokemon = await pokemons.find() // Find Pokemon in MongoDB
      .sort({ pokedex: + 1 });  // Sort Pokemon by Pokedex DESC
     res.json(pokemon);  // Send Pokemon to server as JSON
+}
+
+pokemonCtrl.filterPokemon = async (req, res, filter) => {
+
+    const pokemon = await pokemons.find(query.filter)
+     .sort({ pokedex: + 1 });
+    res.json(pokemon);
 }
 
 pokemonCtrl.getPokemonbyId = async (req, res) => {  // Get Pokemon by ID

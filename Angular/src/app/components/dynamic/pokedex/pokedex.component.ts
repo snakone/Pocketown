@@ -36,14 +36,18 @@ export class PokedexComponent implements OnInit {
 
   onKeyUp(event){  // On Key Up Javascript Event
     event.preventDefault();
-    this.filterPokemon();  // Filter Pokemon
+    this.filterPokemonbySearch();  // Filter Pokemon
   }
 
-  filterPokemon() {
+  filterPokemonbySearch() {
      this.filteredPokedex = this.pokedex.filter( ( pokemon, index ) => {  // Filter Array
       // ngModel on Input Text - Search Value
       return pokemon.name.includes(this.searchValue);  // Filter Original List into Filtered List
     } );
+  }
+
+  filterPokemonbyType(type: string){
+
   }
 
   navigate(pokemon: Pokemon) {
