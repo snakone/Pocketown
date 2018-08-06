@@ -28,15 +28,9 @@ pokemonCtrl.getPokemonbyId = async (req, res) => {  // Get Pokemon by ID
 pokemonCtrl.updatePokemon = async (req, res) => {  // Update Pokemon
 
    const { id } = req.params;  // From req.params only need ID
-   const pokemon = {  // Pokemon with updated INFO
-     name: req.body.name,
-     pokedex: req.body.pokedex,
-     grade: req.body.grade,
-     ss: req.body.ss
-   }
-   console.log(req.body);
-   
-    await pokemons.findByIdAndUpdate(id, {$set: pokemon},  // Find by ID and Update in MongoDB
+   const pokemon = req.body; // Pokemon with updated INFO
+
+   await pokemons.findByIdAndUpdate(id, {$set: pokemon},  // Find by ID and Update in MongoDB
                                              {new: true});  // New Pokemon if ID not Match
      res.json({
        status: "Pokemon actualizado"
