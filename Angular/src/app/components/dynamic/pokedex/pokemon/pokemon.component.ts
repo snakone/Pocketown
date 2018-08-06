@@ -28,13 +28,11 @@ export class PokemonComponent implements OnInit {
     this.pokedexService.getPokemon()  // HTTP POST to Server
      .subscribe(res => {  // Subscribe to the Server Response
        const pokemonList = res as Pokemon[];  // Response as Pokemon = List
-       this.pokedex = pokemonList.filter(function(element){ // Filter
+       this.pokedex = pokemonList.filter(function(element){ // Filter Pokemon List
         return element.picture == routeParams; // Pokemon Picture Name
         });
            this.selectedPokemon = this.pokedex[0];  // Always get 1 result so its 0
-      if (this.selectedPokemon.type2 == "None") this.selectedPokemon.type2 = "";
      })
-
   }
 
 }
