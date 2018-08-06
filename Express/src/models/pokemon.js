@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose');  // MongoDb
 const { Schema } = mongoose;  // Only need Schema
 
 const PokemonSchema = new Schema ({  // Pokemon Model
@@ -9,3 +9,4 @@ const PokemonSchema = new Schema ({  // Pokemon Model
 });
 // Set Pokemon Schema as mongoose Model
 module.exports = mongoose.model('Pokemon', PokemonSchema);
+// MongoDB will create a Collection 'Pokemon' -> 'pokemons'
