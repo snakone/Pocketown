@@ -1,16 +1,12 @@
 <!-- Header Section -->
 <mat-toolbar color="primary" class="header">
   <mat-toolbar-row>
-
-  <top-menu></top-menu>
-
-    <span class="example-spacer">
-      <img class="logo" [routerLink]="['home']" [src]="logoURL">
-    </span>
-
-    <a href="#">
-      <mat-icon svgIcon="trainer" class="custom-icon"></mat-icon>
-    </a>
-
+      <top-menu></top-menu>  <!-- Top Menu Component -->
+      <span class="example-spacer">  <!-- Spacer -->
+        <img class="logo" [routerLink]="['home']" [src]="logoURL">  <!-- Logo -->
+      </span>
+      <a href="#">
+        <mat-icon svgIcon="trainer" class="custom-icon"></mat-icon>  <!-- Trainer -->
+      </a>
   </mat-toolbar-row>
 </mat-toolbar>

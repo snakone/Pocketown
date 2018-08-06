@@ -11,9 +11,9 @@ import { AdminPokemonComponent } from '../components/admin/pokemon/admin-pokemon
 
 const Routes: Routes = [
   { path: 'home', component: WelcomeComponent },
-  { path: 'pokedex', component: PokedexComponent },
-  { path: 'pokedex/:pokemon', component: PokemonComponent },
-  { path: 'admin/pokemon', component: AdminPokemonComponent },
+  { path: 'pokedex', component: PokedexComponent },  // Pokedex
+  { path: 'pokedex/:pokemon', component: PokemonComponent },  // Single Pokemon
+  { path: 'admin/pokemon', component: AdminPokemonComponent },  // Admin Pokemon
   { path: 'about', component: AboutComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' } // Default Route
 ];

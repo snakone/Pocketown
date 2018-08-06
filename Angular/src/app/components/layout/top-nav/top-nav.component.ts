@@ -26,6 +26,7 @@ export class TopNavComponent {
     this.logoURL = "../../../../../assets/images/logo.png";
 
     // Icon Register
+
      this.matIconRegistry.addSvgIcon("bulbasaur", this.domSanitizer
      .bypassSecurityTrustResourceUrl("../../../../../assets/icons/bulbasaur.svg")
      );

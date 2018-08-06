@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PokedexService } from '../../../../services/pokedex.service';
-import { Pokemon } from '../../../../models/pokemon';
+import { PokedexService } from '../../../../services/pokedex.service';  // Pokedex Service
+import { Pokemon } from '../../../../models/pokemon';  // Pokemon Model
 
 import { ActivatedRoute, Router } from '@angular/router'; // Routes
 
@@ -12,8 +12,8 @@ import { ActivatedRoute, Router } from '@angular/router'; // Routes
 })
 export class PokemonComponent implements OnInit {
 
-  pokedex: Pokemon[];
-  selectedPokemon: Pokemon;
+  pokedex: Pokemon[];  // Pokedex List
+  selectedPokemon: Pokemon;  // Save selected Pokemon
   urlImage: string;
 
   constructor(private pokedexService: PokedexService,
@@ -23,16 +23,15 @@ export class PokemonComponent implements OnInit {
              }
 
   ngOnInit() {
-    let routeParams = this.activeRoute.snapshot.params.pokemon; // Get the ID from URL
+    let routeParams = this.activeRoute.snapshot.params.pokemon; // Get the Pokemon PICTURE Name from URL
 
-    this.pokedexService.getPokemon()
-     .subscribe(res => {
-       const pokemonList = res as Pokemon[];
+    this.pokedexService.getPokemon()  // HTTP POST to Server
+     .subscribe(res => {  // Subscribe to the Server Response
+       const pokemonList = res as Pokemon[];  // Response as Pokemon = List
        this.pokedex = pokemonList.filter(function(element){ // Filter
-        return element.picture == routeParams; // Pokemon ID
+        return element.picture == routeParams; // Pokemon Picture Name
         });
-      this.selectedPokemon = this.pokedex[0];
-      console.log(this.selectedPokemon);
+           this.selectedPokemon = this.pokedex[0];  // Always get 1 result so its 0
       if (this.selectedPokemon.type2 == "None") this.selectedPokemon.type2 = "";
      })
 

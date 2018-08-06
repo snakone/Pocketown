@@ -20,6 +20,9 @@ import { RoutingModule } from './routes/routes';
 // Toastr
 import { ToastrModule } from 'ngx-toastr';
 
+//Admin
+import { AdminPokemonComponent } from './components/admin/pokemon/admin-pokemon.component';
+
 // App Layout
 import { TopNavComponent } from './components/layout/top-nav/top-nav.component';
 import { TopMenuComponent } from './components/layout/top-nav/top-menu/top-menu.component';
@@ -33,7 +36,7 @@ import { WelcomeComponent } from './components/dynamic/welcome/welcome.component
 import { AboutComponent } from './components/dynamic/about/about.component';
 import { PokedexComponent } from './components/dynamic/pokedex/pokedex.component';
 import { PokemonComponent } from './components/dynamic/pokedex/pokemon/pokemon.component';
-import { AdminPokemonComponent } from './components/admin/pokemon/admin-pokemon.component';
+
 
 @NgModule({
   declarations: [
