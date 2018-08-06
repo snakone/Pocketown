@@ -36,6 +36,7 @@ import { WelcomeComponent } from './components/dynamic/welcome/welcome.component
 import { AboutComponent } from './components/dynamic/about/about.component';
 import { PokedexComponent } from './components/dynamic/pokedex/pokedex.component';
 import { PokemonComponent } from './components/dynamic/pokedex/pokemon/pokemon.component';
+import { TypesComponent } from './components/dynamic/pokedex/types/types.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { PokemonComponent } from './components/dynamic/pokedex/pokemon/pokemon.c
     AppComponent, TopNavComponent, TopMenuComponent, GridComponent,
     FixedNavComponent, FooterNavComponent, FooterMenuComponent,
     WelcomeComponent, AboutComponent, PokedexComponent, PokemonComponent,
-    AdminPokemonComponent
+    AdminPokemonComponent,
+    TypesComponent
 ],
   imports: [
     BrowserModule, BrowserAnimationsModule, MaterialModule, RoutingModule,

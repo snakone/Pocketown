@@ -2,3 +2,18 @@
 .bottom{
   padding-bottom: 50px;
 }
+
+#Pikachu {
+	opacity:0.5;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 55px; /* Place the button at the bottom of the page */
+    right: -75px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+	  font-weight:bold;
+	  float:right;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 10px; /* Rounded corners */
+}

@@ -7,6 +7,10 @@ span {
   filter: brightness(1.2);
 }
 
+.bottom {
+  margin-bottom: 20px;
+}
+
 .loading {
 position: absolute;
 text-align: center;
