@@ -1,0 +1,2 @@
+cd Angular
+npm start

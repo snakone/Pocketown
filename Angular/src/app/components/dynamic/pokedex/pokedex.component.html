@@ -7,18 +7,20 @@
 
 <div class="row center" *ngIf="pokedex">  <!-- Only if We have a Pokedex -->
   <div class="sticky">  <!-- Sticky Search Bar -->
-      <div class="container">
-          <div class="input-field top">  <!-- Search BAR -->
+
+          <div class="input-field center top">  <!-- Search BAR -->
               <input type="text" name="searchValue"
               (keyup)="onKeyUp($event)" [(ngModel)]="searchValue"
               placeHolder="Search a Pokémon..">
           </div>
-      </div>
+
   </div>
 
-  <div class=" animated slideInUp">  <!-- POKEDEX GRID -->
-    <p><pokemon-types class="bottom"></pokemon-types></p>
+  <div class="animated slideInUp">  <!-- POKEDEX GRID -->
+
     <span *ngFor="let pokemon of filteredPokedex">
-      <img (click)="navigate(pokemon)" class="pokemon" src="{{urlImage}}{{pokemon.picture}}.png"></span>
+      <img (click)="navigate(pokemon)"
+      class="pokemon" matTooltip="{{pokemon.name}}"
+      src="{{urlImage}}{{pokemon.picture}}.png"></span>
   </div>
 </div>

@@ -2,15 +2,6 @@ span {
   margin: 0 2px;
 }
 
-.sticky {
-  top:60px;
-  position: sticky;
-  z-index: 1000;
-  width: 100%;
-  background: white;
-}
-
-
 .pokemon {
   width: 56px;
   height: 63px;

@@ -1,9 +1,19 @@
+h2 {
+		font-size: 1.4em;
+		color: #87c5f5;
+		font-weight:bold;
+		text-shadow: 2px 2px #000000;
+			}
 
-.section {
-
+h3 {
+	color: black;
+	font-size: 1.1em;
+	font-weight:bold;
+	text-shadow: 2px 2px #e3f00b;
 }
-.bold {
 
+
+.bold {
 font-weight: bold;
 }
 
@@ -11,14 +21,12 @@ img {
   margin: 0 auto;
 }
 
-
 .type{
   padding: 4px 8px;
   border-radius: 3px;
   color:white;
   font-weight: bold;
   margin:auto 5px;
-  border: 1px solid black;
 }
 
 .type:hover{
@@ -44,3 +52,22 @@ img {
 .Steel {background-color: #B8B8D0;}
 .Dragon {background-color: #7038F8;}
 .Fairy {background-color: #FF69B4;}
+
+
+.grade {
+  border: 1px solid #787887;
+  color:white;
+  font-weight:bold;
+  border-radius:3px;
+  padding:5px 8px;
+  cursor: pointer;
+}
+
+.grade:hover{
+  	opacity:0.5;
+}
+
+.S {background-color: #A052A0;}
+.R {background-color: #6898F0;}
+.SR {background-color: #f9b800;}
+.SSR {background-color: #F08830;}

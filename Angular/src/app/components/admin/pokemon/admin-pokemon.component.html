@@ -7,29 +7,29 @@
               <div class="row">
 
                 <input type="hidden" name="_id"
-                #_id="ngModel" [(ngModel)]="pokedexService.selectedPokemon._id">
+                #_id="ngModel" [(ngModel)]="admin.selectedPokemon._id">
 
                 <div class="input-field col s12 m12">
                   <input type="text" name="name"
-                  #name="ngModel" [(ngModel)]="pokedexService.selectedPokemon.name"
+                  #name="ngModel" [(ngModel)]="admin.selectedPokemon.name"
                   placeholder="Enter Pokémon name">
                 </div>
 
                 <div class="input-field col s12 m12">
                   <input type="number" name="pokedex"
-                  #pokedex="ngModel" [(ngModel)]="pokedexService.selectedPokemon.pokedex"
+                  #pokedex="ngModel" [(ngModel)]="admin.selectedPokemon.pokedex"
                   placeholder="Enter Pokedex Nº">
                 </div>
 
                 <div class="input-field col s12 m12">
                   <input type="text" name="grade"
-                  #grade="ngModel" [(ngModel)]="pokedexService.selectedPokemon.grade"
+                  #grade="ngModel" [(ngModel)]="admin.selectedPokemon.grade"
                   placeholder="Enter the Pokémon Grade">
                 </div>
 
                 <div class="input-field col s12 m12">
                   <input type="number" name="ss" max="255"
-                  #ss="ngModel" [(ngModel)]="pokedexService.selectedPokemon.ss"
+                  #ss="ngModel" [(ngModel)]="admin.selectedPokemon.ss"
                   placeholder="Enter Pokémon SS">
                 </div>
 
@@ -59,7 +59,7 @@
         <th>Admin</th>
       </thead>
       <tbody>
-        <tr *ngFor="let pokemon of pokedexService.pokedex">
+        <tr *ngFor="let pokemon of admin.pokedex">
           <td>{{pokemon.name}}</td>
           <td>{{pokemon.pokedex}}</td>
           <td>{{pokemon.grade}}</td>

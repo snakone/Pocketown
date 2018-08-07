@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PokedexService } from '../../../../services/pokedex.service';  // Pokedex Service
+import { AdminService } from '../../../../services/admin.service';  // Pokedex Service
 import { Pokemon } from '../../../../models/pokemon';  // Pokemon Model
 
 import { ActivatedRoute, Router } from '@angular/router'; // Routes
@@ -16,7 +16,7 @@ export class PokemonComponent implements OnInit {
   selectedPokemon: Pokemon;  // Save selected Pokemon
   urlImage: string;
 
-  constructor(private pokedexService: PokedexService,
+  constructor(private admin: AdminService,
               private activeRoute: ActivatedRoute) {
 
               this.urlImage = "../../../../../assets/images/";
@@ -25,9 +25,9 @@ export class PokemonComponent implements OnInit {
   ngOnInit() {
     let routeParams = this.activeRoute.snapshot.params.pokemon; // Get the Pokemon PICTURE Name from URL
 
-    this.pokedexService.getPokemon()  // HTTP POST to Server
+    this.admin.getPokemon()  // HTTP POST to Server
      .subscribe(res => {  // Subscribe to the Server Response
-       const pokemonList = res as Pokemon[];  // Response as Pokemon = List
+       const pokemonList = res as any;  // Response as Pokemon = List
        this.pokedex = pokemonList.filter(function(element){ // Filter Pokemon List
         return element.picture == routeParams; // Pokemon Picture Name
         });

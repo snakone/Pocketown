@@ -1,0 +1,10 @@
+<div class="animated slideInUp">
+  <div class="row center">  <!-- Only if We have a Pokedex -->
+
+      <span *ngFor="let pokemon of pokemonResult">
+        <img (click)="navigate(pokemon)"
+        class="pokemon" matTooltip="{{pokemon.name}}"
+        src="{{urlImage}}{{pokemon.picture}}.png"></span>
+
+  </div>
+</div>

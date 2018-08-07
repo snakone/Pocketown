@@ -14,6 +14,11 @@
     <span>Pokédex</span>
   </button>
 
+  <button [routerLink]="['laboratory']" routerLinkActive="active" mat-menu-item>
+    <mat-icon svgIcon="bulbasaur"></mat-icon> <!-- Laboratory -->
+    <span>Laboratory</span>
+  </button>
+
   <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Admin">
     <mat-icon svgIcon="admin"></mat-icon> <!-- Menu Trigger Admin -->
     <span>Admin</span>

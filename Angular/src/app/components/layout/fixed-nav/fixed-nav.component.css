@@ -11,6 +11,7 @@
 
 .bold {
   font-weight: bold;
+
 }
 
 
@@ -65,7 +66,9 @@ li .mid {
 
 .nestedList a:hover {
   font-size: 1.3em;
-  color:#FDD702;
+  color: #87c5f5;
+  font-weight:bold;
+  text-shadow: 2px 2px #000000;
   cursor:pointer;
 }
 

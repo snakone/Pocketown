@@ -10,7 +10,7 @@ margin:0 auto;
   margin:3px;
   border: 1px solid black;
   display: inline-grid;
-  width: 70px;
+  width: auto;
   font-size: .8em;
 }
 

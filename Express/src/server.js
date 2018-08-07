@@ -2,7 +2,9 @@ const express = require('express');  // Require Express Module
 const morgan = require('morgan');  // Console Logger
 const cors = require('cors'); //  Bind Server and Angular
 const { moongose } = require('./database');  // Only need the Connection
-const pokemon = require('./routes/routes');  // Require API Pokemon
+const pokedex = require('./routes/pokedex-routes');  // Require API Pokemon
+const laboratory = require('./routes/laboratory-routes');  // Require API Pokemon
+const admin = require('./routes/admin-routes');  // Require API Pokemon
 
 const app = express();  // Init Express on APP
 
@@ -18,7 +20,9 @@ app.use(cors({origin: "http://localhost:4200"}));  // Use Cors to connect Angula
 
 // Routes
 
-app.use('/pokedex', pokemon);  // Pokedex Route
+app.use('/', pokedex);  // Pokedex Route
+app.use('/', laboratory);  // Laboratory Route
+app.use('/', admin);  // Laboratory Route
 
 // Listening
 

@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'pokemon-types',
-  templateUrl: './types.component.html',
-  styleUrls: ['./types.component.css']
+@Injectable({
+  providedIn: 'root'
 })
-export class TypesComponent implements OnInit {
+
+export class TypesService {
 
   types: string[];
+  selectedType: string ="";
 
   constructor() {
 
@@ -16,8 +16,4 @@ export class TypesComponent implements OnInit {
                   "Fighting", "Poison", "Psychic", "Bug", "Dark",
                   "Steel", "Fairy"];
    }
-
-  ngOnInit() {
-  }
-
 }
