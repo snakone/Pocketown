@@ -22,7 +22,6 @@ export class TopNavComponent {
 
     this.appTitle = "Pocketown";
     this.ngVersion = "Angular 6";
-    this.appMail = "mailto:sergio.martinez87.web@gmail.com?Subject=Angular%20Material";
     this.logoURL = "../../../../../assets/images/logo.png";
 
     // Icon Register
@@ -49,6 +48,10 @@ export class TopNavComponent {
 
      this.matIconRegistry.addSvgIcon("trainer", this.domSanitizer
      .bypassSecurityTrustResourceUrl("../../../../../assets/icons/trainer.svg")
+     );
+
+     this.matIconRegistry.addSvgIcon("laboratory", this.domSanitizer
+     .bypassSecurityTrustResourceUrl("../../../../../assets/icons/laboratory.svg")
      );
 
   }
