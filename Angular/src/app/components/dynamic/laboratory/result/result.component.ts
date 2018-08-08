@@ -24,14 +24,20 @@ export class ResultComponent implements OnInit {
 
   ngOnInit() {
   this.filterType = this.typeService.selectedType;
+  if (this.filterType == "") return false;  // No Type? No Filter :)
   this.filter.filterPokemon(this.filterType)
    .subscribe(res =>{
-    this.pokemonResult = res as any;  // Response as Pokemon = List
+     this.pokemonResult = res as any;  // Response as Pokemon = List
    })
+
   }
 
   navigate(pokemon: Pokemon) {
-    this.router.navigate(['/pokedex', pokemon.picture]);  // Navigate to Single Pokemon using Image NAME
+    this.router.navigate(['/pokedex', pokemon._id]);  // Navigate to Single Pokemon using Image NAME
+  }
+
+  goBack(){
+     window.history.back();
   }
 
 }

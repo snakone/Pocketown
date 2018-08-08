@@ -11,5 +11,12 @@ pokedexCtrl.getPokedex = async (req, res) => {  // Get Pokedex Pokemon
     res.json(pokemon);  // Send Pokemon to server as JSON
 }
 
+pokedexCtrl.getPokemonbyId = async (req, res) => {  // Get Pokemon by ID
+
+    const pokemon = await pokemons.findById(req.params.id);
+    console.log('ID') // Find by ID
+    res.json(pokemon);  // Send Pokemon to server as JSON
+}
+
 
 module.exports = pokedexCtrl;  // Exports the Object with all the Methods

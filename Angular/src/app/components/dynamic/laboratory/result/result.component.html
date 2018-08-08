@@ -1,10 +1,18 @@
-<div class="animated slideInUp">
-  <div class="row center">  <!-- Only if We have a Pokedex -->
+ <div class="center" *ngIf="filterType">
+   <h4>You are watching <span class="type {{filterType}}">{{filterType}}</span> Pokémon</h4>
+ </div>
 
+ <div class="center loading" *ngIf="!filterType">
+   <h4>You seem <span class="bold">lost</span>, pick up this potion to go back
+     to where you were</h4>
+     <p><img class="potion" (click)="goBack()" src="../../../../../assets/icons/hyper-potion.png"></p>
+ </div>
+
+<div class="animated slideInUp top">
+  <div class="row center">
       <span *ngFor="let pokemon of pokemonResult">
         <img (click)="navigate(pokemon)"
         class="pokemon" matTooltip="{{pokemon.name}}"
         src="{{urlImage}}{{pokemon.picture}}.png"></span>
-
   </div>
 </div>

@@ -2,6 +2,29 @@ span {
   margin: 0 2px;
 }
 
+.type{
+  padding: 6px 10px;
+  border-radius: 5px;
+  color:white;
+  font-weight: bold;
+  margin:3px;
+  border: 1px solid black;
+  display: inline-grid;
+  width: auto;
+  font-size: 1em!important;
+}
+
+.potion {
+  margin: 25px;
+}
+
+.potion:hover {
+  cursor: pointer;
+  filter:brightness(1.5);
+}
+
+.material-icons.md-48 { font-size: 48px; }
+
 .pokemon {
   width: 56px;
   height: 63px;
@@ -10,10 +33,6 @@ span {
 .pokemon:hover {
   cursor:pointer;
   filter: brightness(1.2);
-}
-
-.bottom {
-  margin-bottom: 15px;
 }
 
 .loading {
@@ -25,32 +44,13 @@ transform: translate(-50%, -50%);
 margin-top: 10px;
 }
 
-.responsive-img {
-  min-width: 90%;
-}
-
-@media (max-width: 1000px){
-  .responsive-img {
-    min-width: 130%;
-  }
-}
-
 @media (max-width: 600px){
   .loading {
   left:50%;
   margin-left: 0;
   }
-
-  .responsive-img {
-    margin-left: -35px;
-  }
-}
-
-input[type=text]:not(.browser-default) {
-  text-align: center;
-  margin: 0;
 }
 
 .top {
-  margin-top: -10px;
+  margin-top: 25px;
 }

@@ -11,3 +11,27 @@
 
 /* Toastr */
 @import "~ngx-toastr/toastr.css";
+
+
+.Normal {background-color: #A8A878;}
+.Fire {background-color: #F08030;}
+.Water {background-color: #6890F0;}
+.Electric {background-color: #F8D030;}
+.Grass {background-color: #78C850;}
+.Ice {background-color: #98D8D8;}
+.Ground {background-color: #E0C068;}
+.Flying {background-color: #A890F0;}
+.Ghost {background-color: #705898;}
+.Rock {background-color: #B8A038;}
+.Fighting {background-color: #C03028;}
+.Poison {background-color: #A040A0;}
+.Psychic {background-color: #F85888;}
+.Bug {background-color: #A8B820;}
+.Dark {background-color: #705848;}
+.Steel {background-color: #B8B8D0;}
+.Dragon {background-color: #7038F8;}
+.Fairy {background-color: #FF69B4;}
+
+.bold {
+  font-weight: bold;
+}

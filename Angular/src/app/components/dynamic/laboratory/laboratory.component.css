@@ -1,0 +1,23 @@
+.laboratory {
+  font-size: 1.2em;
+}
+
+@media (max-width:600px){
+  h3 {
+    font-size: 1.4em;
+  }
+}
+h4 {
+	color: black;
+	font-size: 1.1em;
+	font-weight:bold;
+	text-shadow: 2px 2px #e3f00b;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+blockquote {
+  border-left-color: orange;
+}

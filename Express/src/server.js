@@ -22,7 +22,7 @@ app.use(cors({origin: "http://localhost:4200"}));  // Use Cors to connect Angula
 
 app.use('/', pokedex);  // Pokedex Route
 app.use('/', laboratory);  // Laboratory Route
-app.use('/', admin);  // Laboratory Route
+app.use('/', admin);  // Admin Route
 
 // Listening
 

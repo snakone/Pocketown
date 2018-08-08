@@ -27,9 +27,8 @@ export class PokedexComponent implements OnInit {
   ngOnInit() {
      this.pokedexService.getPokedex()  // HTTP POST to Server
       .subscribe(res => {  // Subscribe to the Server Response
-        const pokemonList = res as any;  // Response as Pokemon = List
-        this.pokedex = pokemonList;  // Original List
-        this.filteredPokedex = pokemonList;  // Filtered List
+        this.pokedex = res as any;  // Response as Pokemon = List
+        this.filteredPokedex = this.pokedex;  // Filtered List
         this.loading = false;  // After We got the data No more Loading
       })
   }
@@ -48,7 +47,7 @@ export class PokedexComponent implements OnInit {
 
   navigate(pokemon: Pokemon) {
     this.selectedPokemon = pokemon;
-    this.router.navigate(['/pokedex', pokemon.picture]);  // Navigate to Single Pokemon using Image NAME
+    this.router.navigate(['/pokedex', pokemon._id]);  // Navigate to Single Pokemon using Image NAME
   }
 
 
