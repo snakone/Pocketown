@@ -6,8 +6,11 @@ const laboratoryCtrl = {};  // Create Object. We add Methods to it so We can use
 
 laboratoryCtrl.filterPokemon = async (req, res) => {
   // RegExp create Regular Expression Object from a string Pattern = Type
+  console.log(req.query.type);
+  if (req.query.type == "Any") req.query.type = ".*?";
     const filterType = new RegExp(`^${req.query.type}`);  //  Template String ES6
     const filterStat = new Object();
+
     filterStat[req.query.stat] = - 1;
     if (req.query.stat == "pokedex") filterStat[req.query.stat] = + 1;
     const pokemon = await pokemons.find({ $or: [{type: filterType},

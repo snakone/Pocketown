@@ -19,3 +19,7 @@ margin:0 auto;
   cursor: pointer;
   color:black;
 }
+
+.Any:hover {
+  color: orange;
+}

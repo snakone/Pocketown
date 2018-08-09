@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { TypesService } from '../../../services/types.service';
+import { StaticService } from '../../../services/static.service';
 
 @Component({
   selector: 'pokemon-stats',
@@ -12,14 +12,15 @@ export class StatsComponent implements OnInit {
   stats: string[];
   selectedStat: string;
 
-  constructor(private typeService: TypesService) {}
+  constructor(private staticData: StaticService) {}
 
   ngOnInit() {
-    this.stats = this.typeService.stats;
+    this.stats = this.staticData.stats;
   }
 
   showStat(stat: string){
-    this.typeService.selectedStat = stat;
+    this.staticData.selectedStat = stat;
+    if (this.staticData.selectedType == "") this.staticData.selectedType = "Any";
   }
 
 }

@@ -10,6 +10,11 @@ span {
   background: white;
 }
 
+.pokedex {
+  max-width: 900px;
+  margin:0 auto;
+}
+
 
 .pokemon {
   width: 56px;

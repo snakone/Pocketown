@@ -1,5 +1,6 @@
 .laboratory {
   font-size: 1.2em;
+  overflow: hidden;
 }
 
 @media (max-width:600px){

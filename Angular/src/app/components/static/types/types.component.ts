@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { TypesService } from '../../../services/types.service';
+import { StaticService } from '../../../services/static.service';
 
 import { Router } from '@angular/router'; // Routes
 
@@ -13,15 +13,15 @@ export class TypesComponent implements OnInit {
 
   types: string[];
 
-  constructor(private typeService: TypesService,
+  constructor(private staticData: StaticService,
               private router : Router,) {}
 
   ngOnInit() {
-    this.types = this.typeService.types;
+    this.types = this.staticData.types;
   }
 
   showType(type: string){
-    this.typeService.selectedType = type;
+    this.staticData.selectedType = type;
   }
 
 }

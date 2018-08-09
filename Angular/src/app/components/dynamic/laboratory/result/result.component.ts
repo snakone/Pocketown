@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 
-import { TypesService } from '../../../../services/types.service';  // Types Service
+import { StaticService } from '../../../../services/static.service';  // Types Service
 import { FilterService } from '../../../../services/filter.service';  // Filter Service
 import { Pokemon } from '../../../../models/pokemon';  // Pokemon Model
 import { Router } from '@angular/router'; // Router
@@ -17,17 +17,15 @@ export class ResultComponent implements OnInit, OnDestroy {
   filterStat: string;
   urlImage: string;
 
-  constructor(private typeService: TypesService,
+  constructor(private staticData: StaticService,
               private filter: FilterService,
               private router: Router) {
 
                 this.urlImage = "../../../../assets/images/pokemon/";  }
 
   ngOnInit() {
-  this.filterType = this.typeService.selectedType;
-  this.filterStat = this.typeService.selectedStat;
-  if (this.filterType == "") return false;  // No Type? No Filter :)
-  if (this.filterStat == "Pokédex Nº") this.filterStat = "pokedex";
+  this.filterType = this.staticData.selectedType;
+  this.filterStat = this.staticData.selectedStat;
   this.filter.filterPokemon(this.filterType, this.filterStat)
    .subscribe(res =>{
      this.pokemonResult = res as any;  // Response as Pokemon = List
@@ -43,8 +41,8 @@ export class ResultComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.typeService.selectedType = "Any";
-    this.typeService.selectedStat = "Pokédex Nº";
+    this.staticData.selectedType = "";
+    this.staticData.selectedStat = "";
   }
 
 }

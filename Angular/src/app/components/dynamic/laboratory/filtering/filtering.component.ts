@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 
-import { TypesService } from '../../../../services/types.service';  // Types Service
+import { StaticService } from '../../../../services/static.service';  // Types Service
 
 import { Router } from '@angular/router'; // Router
 
@@ -11,18 +11,19 @@ import { Router } from '@angular/router'; // Router
 })
 export class FilteringComponent implements OnInit {
 
-  constructor(private typeService: TypesService,
+  constructor(private staticData: StaticService,
               private router : Router) { }
 
   ngOnInit() {
   }
 
   clear(){
-    this.typeService.selectedType = "Any";
-    this.typeService.selectedStat = "Pokédex Nº";
+    this.staticData.selectedType = "";
+    this.staticData.selectedStat = "";
   }
 
   filter(){
+    if (this.staticData.selectedStat == "") this.staticData.selectedStat = "Nº";
     this.router.navigate(["laboratory/result"]);
   }
 

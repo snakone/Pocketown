@@ -4,20 +4,20 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 
-export class TypesService {
+export class StaticService {
 
   types: string[];
   stats: string[];
-  selectedType: string ="Any";
-  selectedStat: string ="Pokédex Nº";
+  selectedType: string ="";
+  selectedStat: string ="";
 
   constructor() {
 
     this.types = ["Normal", "Fighting", "Flying", "Poison", "Ground",
                   "Rock", "Bug", "Ghost", "Steel", "Fire",
                   "Water", "Grass", "Electric", "Psychic", "Ice",
-                  "Dragon", "Dark", "Fairy"];
+                  "Dragon", "Dark", "Fairy", "Any"];
 
-    this.stats = ["ATK", "DEF", "S.ATK", "S.DEF", "SPD", "SS"];
+    this.stats = ["HP", "ATK", "DEF", "S.ATK", "S.DEF", "SPD", "SS", "Nº"];
    }
 }

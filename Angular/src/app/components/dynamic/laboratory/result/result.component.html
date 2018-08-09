@@ -1,20 +1,27 @@
- <div class="center" *ngIf="filterType != 'Any'">
+ <div *ngIf="pokemonResult && filterType" class="center">
    <h4>You are watching
      <span class="type {{filterType}}">{{filterType}}</span> Pokémon</h4>
-    <h5>Sorted by <span class="bold">{{filterStat}}</span></h5>
+    <h5>Sorted by <span class="stat bold {{filterStat}}">{{filterStat}}</span></h5>
  </div>
 
- <div class="center lost" *ngIf="filterType == 'Any'">  <!-- Lost? -->
-   <h4>You seem <span class="bold">lost</span>, pick up this potion to go back
-     to where you were</h4>
-     <p><img class="potion" (click)="goBack()" src="../../../../../assets/icons/hyper-potion.png"></p>
- </div>
-
-<div class="animated slideInUp top" *ngIf="filterType != 'Any'">  <!-- Pokemon Result -->
-  <div class="row center">
+<div class="animated slideInUp center top" *ngIf="pokemonResult">  <!-- Pokemon Result -->
+  <div class="row">
       <span *ngFor="let pokemon of pokemonResult">
         <img (click)="navigate(pokemon)"
         class="pokemon" matTooltip="{{pokemon.name}}"
         src="{{urlImage}}{{pokemon.picture}}.png"></span>
   </div>
+</div>
+
+<div class="row center loading" *ngIf="!pokemonResult && filterType">  <!-- Only when Loading... -->
+    <img class="responsive-img" src="https://media.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.gif">
+  <p class="center">
+    <span>LOADING... PLEASE WAIT</span>
+  </p>
+</div>
+
+<div class="center lost" *ngIf="!pokemonResult && !filterType && !filterStat">
+  <h4>You seem <span class="bold">lost</span>, pick up this potion to go back
+    to where you were</h4>
+    <p><img class="potion" (click)="goBack()" src="../../../../../assets/icons/hyper-potion.png"></p>
 </div>

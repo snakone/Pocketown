@@ -23,7 +23,6 @@ span {
   filter:brightness(1.5);
 }
 
-.material-icons.md-48 { font-size: 48px; }
 
 .pokemon {
   width: 56px;
@@ -53,5 +52,35 @@ width: 70%;
 }
 
 .top {
-  margin-top: 25px;
+  max-width: 880px;
+  margin:25px auto auto auto;
+}
+
+.loading {
+position: absolute;
+text-align: center;
+top:50%;
+left:56%;
+transform: translate(-50%, -50%);
+margin-top: 10px;
+}
+
+.responsive-img {
+  min-width: 90%;
+}
+
+@media (max-width: 1000px){
+  .responsive-img {
+    min-width: 130%;
+    margin-left: -35px;
+  }
+
+  .loading {
+    top:45%;
+    left:52%;
+  }
+
+  .lost {
+    top:50%;
+  }
 }

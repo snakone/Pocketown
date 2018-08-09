@@ -19,7 +19,8 @@ export class FilterService {
   filterPokemon(pokemonType: string, pokemonStat: string){
     if (pokemonStat == "S.ATK") pokemonStat = "SATK";
     if (pokemonStat == "S.DEF") pokemonStat = "SDEF";
-    if (pokemonType == "Any") pokemonType = "%";
+    if (pokemonStat == "Nº") pokemonStat = "pokedex";
+
     const params = {type: pokemonType, stat: pokemonStat};  // Send the Type in HTTP Params
     return this.http.get(this.URL_API, {params: params} );  // HTTP GET to Server API - POSTMAN belike
   }

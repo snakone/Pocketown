@@ -13,11 +13,11 @@
 @import "~ngx-toastr/toastr.css";
 
 
-.Normal, .SS {background-color: #A8A878;}
-.Fire, .ATK {background-color: #F08030;}
-.Water, .DEF {background-color: #6890F0;}
+.Normal {background-color: #A8A878;}
+.Fire {background-color: #F08030;}
+.Water {background-color: #6890F0;}
 .Electric {background-color: #F8D030;}
-.Grass, .SDEF {background-color: #78C850;}
+.Grass {background-color: #78C850;}
 .Ice {background-color: #98D8D8;}
 .Ground {background-color: #E0C068;}
 .Flying {background-color: #A890F0;}
@@ -25,14 +25,23 @@
 .Rock {background-color: #B8A038;}
 .Fighting {background-color: #C03028;}
 .Poison {background-color: #A040A0;}
-.Psychic, .SATK {background-color: #F85888;}
+.Psychic {background-color: #F85888;}
 .Bug {background-color: #A8B820;}
 .Dark {background-color: #705848;}
 .Steel {background-color: #B8B8D0;}
-.Dragon, .SPD {background-color: #7038F8;}
+.Dragon {background-color: #7038F8;}
 .Fairy {background-color: #FF69B4;}
 .Any {background-color: #000000;}
 
 .bold {
   font-weight: bold;
 }
+
+.HP {color: #86F83A}
+.ATK {color: #F8F13A}
+.DEF {color: #F86B3A}
+.S\.ATK {color: #F83A3A}
+.S\.DEF {color: #3A98F8}
+.SPD {color: #673AF8}
+.SS {color: black}
+.N\º {color:grey}
