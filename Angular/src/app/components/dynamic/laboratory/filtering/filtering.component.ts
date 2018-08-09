@@ -17,14 +17,16 @@ export class FilteringComponent implements OnInit {
   ngOnInit() {
   }
 
-  clear(){
+  clear(){  // Type and Stat 0
     this.staticData.selectedType = "";
     this.staticData.selectedStat = "";
   }
 
   filter(){
-    if (this.staticData.selectedStat == "") this.staticData.selectedStat = "Nº";
-    this.router.navigate(["laboratory/result"]);
+    if (this.staticData.selectedStat == "")  // Check if We have Stat
+    this.staticData.selectedStat = "Nº"; // No Stat? -> sort by Pokedex Nº
+
+    this.router.navigate(["laboratory/result"]);  // Then go to Result
   }
 
 

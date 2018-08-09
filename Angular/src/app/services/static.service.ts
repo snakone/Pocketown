@@ -8,8 +8,8 @@ export class StaticService {
 
   types: string[];
   stats: string[];
-  selectedType: string ="";
-  selectedStat: string ="";
+  selectedType: string ="";  // Save selected Type to play with it
+  selectedStat: string ="";  // Save selected Stat to play with it
 
   constructor() {
 

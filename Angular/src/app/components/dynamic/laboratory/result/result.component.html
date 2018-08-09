@@ -1,11 +1,11 @@
- <div *ngIf="pokemonResult && filterType" class="center">
+ <div *ngIf="pokemonResult && filterType" class="center"> <!-- Filter Match! -->
    <h4>You are watching
      <span class="type {{filterType}}">{{filterType}}</span> Pokémon</h4>
     <h5>Sorted by <span class="stat bold {{filterStat}}">{{filterStat}}</span></h5>
  </div>
 
-<div class="animated slideInUp center top" *ngIf="pokemonResult">  <!-- Pokemon Result -->
-  <div class="row">
+<div class="animated slideInUp center top" *ngIf="pokemonResult">  <!-- Animated DIV -->
+  <div class="row">  <!-- POKEMON GRID -->
       <span *ngFor="let pokemon of pokemonResult">
         <img (click)="navigate(pokemon)"
         class="pokemon" matTooltip="{{pokemon.name}}"
@@ -20,7 +20,7 @@
   </p>
 </div>
 
-<div class="center lost" *ngIf="!pokemonResult && !filterType && !filterStat">
+<div class="center lost" *ngIf="!pokemonResult && !filterType && !filterStat"> <!-- Filter NO Match! -->
   <h4>You seem <span class="bold">lost</span>, pick up this potion to go back
     to where you were</h4>
     <p><img class="potion" (click)="goBack()" src="../../../../../assets/icons/hyper-potion.png"></p>

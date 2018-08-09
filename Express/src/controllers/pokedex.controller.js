@@ -7,14 +7,13 @@ const pokedexCtrl = {};  // Create Object. We add Methods to it so We can use th
 pokedexCtrl.getPokedex = async (req, res) => {  // Get Pokedex Pokemon
     // Find Pokemon in MongoDB - Pokedex only need Picture and Name
     const pokemon = await pokemons.find({},{picture: 1, name: 1})
-     .sort({ pokedex: + 1 });  // Sort Pokemon by Pokedex DESC
+     .sort({ pokedex: + 1 });  // Sort Pokemon by Pokedex ASC
     res.json(pokemon);  // Send Pokemon to server as JSON
 }
 
 pokedexCtrl.getPokemonbyId = async (req, res) => {  // Get Pokemon by ID
 
-    const pokemon = await pokemons.findById(req.params.id);
-    console.log('ID') // Find by ID
+    const pokemon = await pokemons.findById(req.params.id); // Get the Pokemon ID from params
     res.json(pokemon);  // Send Pokemon to server as JSON
 }
 

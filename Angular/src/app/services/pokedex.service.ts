@@ -22,7 +22,7 @@ export class PokedexService {
     return this.http.get(this.URL_API);  // HTTP GET to Server API - POSTMAN belike
   }
 
-  getPokemonbyId(id: string){
+  getPokemonbyId(id: string){  // URL/PokemonID
     return this.http.get(this.URL_API + `/${id}`);  // HTTP GET to Server API - POSTMAN belike
   }
 
