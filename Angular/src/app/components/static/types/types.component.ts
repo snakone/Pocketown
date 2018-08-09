@@ -17,11 +17,11 @@ export class TypesComponent implements OnInit {
               private router : Router,) {}
 
   ngOnInit() {
-    this.types = this.staticData.types;
+    this.types = this.staticData.types;  // Get the Types List
   }
 
   showType(type: string){
-    this.staticData.selectedType = type;
+    this.staticData.selectedType = type;  // Assing the selectedType to the Service
   }
 
 }

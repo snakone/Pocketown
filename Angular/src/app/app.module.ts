@@ -36,12 +36,14 @@ import { WelcomeComponent } from './components/dynamic/welcome/welcome.component
 import { AboutComponent } from './components/dynamic/about/about.component';
 import { PokedexComponent } from './components/dynamic/pokedex/pokedex.component';
 import { PokemonComponent } from './components/dynamic/pokedex/pokemon/pokemon.component';
-import { TypesComponent } from './components/static/types/types.component';
 import { LaboratoryComponent } from './components/dynamic/laboratory/laboratory.component';
 import { SearchComponent } from './components/dynamic/laboratory/search/search.component';
 import { ResultComponent } from './components/dynamic/laboratory/result/result.component';
-import { StatsComponent } from './components/static/stats/stats.component';
 import { FilteringComponent } from './components/dynamic/laboratory/filtering/filtering.component';
+
+// Static components
+import { StatsComponent } from './components/static/stats/stats.component';
+import { TypesComponent } from './components/static/types/types.component';
 
 
 @NgModule({
@@ -49,7 +51,8 @@ import { FilteringComponent } from './components/dynamic/laboratory/filtering/fi
     AppComponent, TopNavComponent, TopMenuComponent, GridComponent,
     FixedNavComponent, FooterNavComponent, FooterMenuComponent,
     WelcomeComponent, AboutComponent, PokedexComponent, PokemonComponent,
-    AdminPokemonComponent, TypesComponent, LaboratoryComponent, SearchComponent, ResultComponent, StatsComponent, FilteringComponent
+    AdminPokemonComponent, TypesComponent, LaboratoryComponent, SearchComponent,
+    ResultComponent, StatsComponent, FilteringComponent
 
 ],
   imports: [
