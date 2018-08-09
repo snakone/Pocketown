@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http'; //  Make HTTP Request to API
 import { Pokemon } from '../models/pokemon';  // Pokemon Model
-import { Type } from '../models/type';  // Pokemon Model
+
 
 @Injectable({
   providedIn: 'root'
@@ -16,8 +16,11 @@ export class FilterService {
 
   constructor(private http: HttpClient) { }
 
-  filterPokemon(tipo: string){
-    const params = {type: tipo};
+  filterPokemon(pokemonType: string, pokemonStat: string){
+    if (pokemonStat == "S.ATK") pokemonStat = "SATK";
+    if (pokemonStat == "S.DEF") pokemonStat = "SDEF";
+    if (pokemonType == "Any") pokemonType = "%";
+    const params = {type: pokemonType, stat: pokemonStat};  // Send the Type in HTTP Params
     return this.http.get(this.URL_API, {params: params} );  // HTTP GET to Server API - POSTMAN belike
   }
 

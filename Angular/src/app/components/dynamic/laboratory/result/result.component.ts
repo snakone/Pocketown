@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
-import { TypesService } from '../../../../services/types.service';  // Pokedex Service
-import { FilterService } from '../../../../services/filter.service';  // Pokedex Service
+import { TypesService } from '../../../../services/types.service';  // Types Service
+import { FilterService } from '../../../../services/filter.service';  // Filter Service
 import { Pokemon } from '../../../../models/pokemon';  // Pokemon Model
 import { Router } from '@angular/router'; // Router
 
@@ -10,10 +10,11 @@ import { Router } from '@angular/router'; // Router
   templateUrl: './result.component.html',
   styleUrls: ['./result.component.css']
 })
-export class ResultComponent implements OnInit {
+export class ResultComponent implements OnInit, OnDestroy {
 
   pokemonResult: Pokemon[];
   filterType: string;
+  filterStat: string;
   urlImage: string;
 
   constructor(private typeService: TypesService,
@@ -24,12 +25,12 @@ export class ResultComponent implements OnInit {
 
   ngOnInit() {
   this.filterType = this.typeService.selectedType;
+  this.filterStat = this.typeService.selectedStat;
   if (this.filterType == "") return false;  // No Type? No Filter :)
-  this.filter.filterPokemon(this.filterType)
+  this.filter.filterPokemon(this.filterType, this.filterStat)
    .subscribe(res =>{
      this.pokemonResult = res as any;  // Response as Pokemon = List
    })
-
   }
 
   navigate(pokemon: Pokemon) {
@@ -38,6 +39,11 @@ export class ResultComponent implements OnInit {
 
   goBack(){
      window.history.back();
+  }
+
+  ngOnDestroy() {
+    this.typeService.selectedType = "Any";
+    this.typeService.selectedStat = "Pokédex Nº";
   }
 
 }

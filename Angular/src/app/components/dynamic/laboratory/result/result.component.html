@@ -1,14 +1,16 @@
- <div class="center" *ngIf="filterType">
-   <h4>You are watching <span class="type {{filterType}}">{{filterType}}</span> Pokémon</h4>
+ <div class="center" *ngIf="filterType != 'Any'">
+   <h4>You are watching
+     <span class="type {{filterType}}">{{filterType}}</span> Pokémon</h4>
+    <h5>Sorted by <span class="bold">{{filterStat}}</span></h5>
  </div>
 
- <div class="center loading" *ngIf="!filterType">
+ <div class="center lost" *ngIf="filterType == 'Any'">  <!-- Lost? -->
    <h4>You seem <span class="bold">lost</span>, pick up this potion to go back
      to where you were</h4>
      <p><img class="potion" (click)="goBack()" src="../../../../../assets/icons/hyper-potion.png"></p>
  </div>
 
-<div class="animated slideInUp top">
+<div class="animated slideInUp top" *ngIf="filterType != 'Any'">  <!-- Pokemon Result -->
   <div class="row center">
       <span *ngFor="let pokemon of pokemonResult">
         <img (click)="navigate(pokemon)"

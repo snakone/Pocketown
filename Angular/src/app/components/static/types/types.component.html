@@ -1,3 +1,4 @@
 <div class="row inline center">
-  <span (click)="onFilter(type)" *ngFor="let type of types" class="type {{type}}">{{type}}</span>
+  <span (click)="showType(type)"
+  *ngFor="let type of types" class="type {{type}}">{{type}}</span>
 </div>

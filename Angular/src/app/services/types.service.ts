@@ -7,13 +7,17 @@ import { Injectable } from '@angular/core';
 export class TypesService {
 
   types: string[];
-  selectedType: string ="";
+  stats: string[];
+  selectedType: string ="Any";
+  selectedStat: string ="Pokédex Nº";
 
   constructor() {
 
-    this.types = ["Normal", "Fire", "Water", "Electric", "Grass",
-                  "Ice", "Ground", "Flying", "Ghost", "Rock",
-                  "Fighting", "Poison", "Psychic", "Bug", "Dark",
-                  "Steel", "Fairy"];
+    this.types = ["Normal", "Fighting", "Flying", "Poison", "Ground",
+                  "Rock", "Bug", "Ghost", "Steel", "Fire",
+                  "Water", "Grass", "Electric", "Psychic", "Ice",
+                  "Dragon", "Dark", "Fairy"];
+
+    this.stats = ["ATK", "DEF", "S.ATK", "S.DEF", "SPD", "SS"];
    }
 }

@@ -1,0 +1,15 @@
+<div class="animated slideInRight center top"
+*ngIf="typeService.selectedType != 'Any' || typeService.selectedStat != 'Pokédex Nº'">
+
+Filter
+  <span class="type {{typeService.selectedType}}">
+    {{typeService.selectedType}}
+  </span> Pokémon
+
+  <span *ngIf="typeService.selectedStat"> by
+      <span class="bold">{{typeService.selectedStat}}</span>
+  </span>?
+  <div class="actions">
+  <button class="btn blue" (click)="filter()">Filter!</button>
+  <button class="btn orange" (click)="clear()">Clear</button></div>
+</div>

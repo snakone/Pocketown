@@ -1,9 +1,9 @@
-.inline {
-margin:0 auto;
+.top {
+  margin-top: 40px;
 }
 
 .type{
-  padding: 2px 4px;
+  padding: 4px 8px;
   border-radius: 3px;
   color:white;
   font-weight: bold;
@@ -11,11 +11,13 @@ margin:0 auto;
   border: 1px solid black;
   display: inline-grid;
   width: auto;
-  font-size: .7em!important;
+  font-size: .9em!important;
 }
 
-.type:hover{
-  filter: brightness(1.5);
-  cursor: pointer;
-  color:black;
+.actions {
+  margin-top: 25px;
+}
+
+button {
+  margin: auto 20px;
 }

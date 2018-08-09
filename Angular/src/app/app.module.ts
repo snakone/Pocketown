@@ -40,6 +40,8 @@ import { TypesComponent } from './components/static/types/types.component';
 import { LaboratoryComponent } from './components/dynamic/laboratory/laboratory.component';
 import { SearchComponent } from './components/dynamic/laboratory/search/search.component';
 import { ResultComponent } from './components/dynamic/laboratory/result/result.component';
+import { StatsComponent } from './components/static/stats/stats.component';
+import { FilteringComponent } from './components/dynamic/laboratory/filtering/filtering.component';
 
 
 @NgModule({
@@ -47,7 +49,7 @@ import { ResultComponent } from './components/dynamic/laboratory/result/result.c
     AppComponent, TopNavComponent, TopMenuComponent, GridComponent,
     FixedNavComponent, FooterNavComponent, FooterMenuComponent,
     WelcomeComponent, AboutComponent, PokedexComponent, PokemonComponent,
-    AdminPokemonComponent, TypesComponent, LaboratoryComponent, SearchComponent, ResultComponent
+    AdminPokemonComponent, TypesComponent, LaboratoryComponent, SearchComponent, ResultComponent, StatsComponent, FilteringComponent
 
 ],
   imports: [

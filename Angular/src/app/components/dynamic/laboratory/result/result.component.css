@@ -35,17 +35,18 @@ span {
   filter: brightness(1.2);
 }
 
-.loading {
+.lost {
 position: absolute;
 text-align: center;
 top:45%;
 left:55%;
 transform: translate(-50%, -50%);
 margin-top: 10px;
+width: 70%;
 }
 
 @media (max-width: 600px){
-  .loading {
+  .lost {
   left:50%;
   margin-left: 0;
   }

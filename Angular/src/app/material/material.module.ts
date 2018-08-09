@@ -7,6 +7,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatRadioModule } from '@angular/material/radio';
+
 
 import { MatSidenavModule,
          MatListModule,
@@ -20,12 +22,12 @@ import { MatSidenavModule,
   imports: [MatButtonModule, MatCheckboxModule,MatToolbarModule,MatIconModule,
             MatMenuModule, MatSidenavModule, MatListModule, MatCardModule,
             MatTableModule,MatPaginatorModule, MatSortModule, MatTooltipModule,
-            MatExpansionModule],
+            MatExpansionModule, MatRadioModule],
 
   exports: [MatButtonModule, MatCheckboxModule,MatToolbarModule,MatIconModule,
             MatMenuModule, MatSidenavModule, MatListModule, MatCardModule,
             MatTableModule,MatPaginatorModule, MatSortModule, MatTooltipModule,
-            MatExpansionModule],
+            MatExpansionModule, MatRadioModule],
 })
 export class MaterialModule {
 

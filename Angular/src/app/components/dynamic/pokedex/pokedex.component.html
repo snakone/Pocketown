@@ -1,19 +1,18 @@
 <div class="row center loading" *ngIf="loading">  <!-- Only when Loading... -->
     <img class="responsive-img" src="https://media.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.gif">
   <p class="center">
-    <span>LOADING...</span>
+    <span>LOADING... PLEASE WAIT</span>
   </p>
 </div>
 
 <div class="row center" *ngIf="pokedex">  <!-- Only if We have a Pokedex -->
+
   <div class="sticky">  <!-- Sticky Search Bar -->
-
-          <div class="input-field center top">  <!-- Search BAR -->
-              <input type="text" name="searchValue"
-              (keyup)="onKeyUp($event)" [(ngModel)]="searchValue"
-              placeHolder="Search a Pokémon..">
-          </div>
-
+        <div class="input-field center top">  <!-- Key Up Event -->
+            <input type="text" name="searchValue"
+            (keyup)="onKeyUp($event)" [(ngModel)]="searchValue"
+            placeHolder="Search a Pokémon..">
+        </div>
   </div>
 
   <div class="animated slideInUp">  <!-- POKEDEX GRID -->
@@ -23,4 +22,5 @@
       class="pokemon" matTooltip="{{pokemon.name}}"
       src="{{urlImage}}{{pokemon.picture}}.png"></span>
   </div>
-</div>
+
+</div>  <!-- End of Angular IF -->
