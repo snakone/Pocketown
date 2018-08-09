@@ -27,6 +27,7 @@ export class ResultComponent implements OnInit, OnDestroy {
   this.filterType = this.typeService.selectedType;
   this.filterStat = this.typeService.selectedStat;
   if (this.filterType == "") return false;  // No Type? No Filter :)
+  if (this.filterStat == "Pokédex Nº") this.filterStat = "pokedex";
   this.filter.filterPokemon(this.filterType, this.filterStat)
    .subscribe(res =>{
      this.pokemonResult = res as any;  // Response as Pokemon = List

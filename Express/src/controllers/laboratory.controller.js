@@ -9,7 +9,7 @@ laboratoryCtrl.filterPokemon = async (req, res) => {
     const filterType = new RegExp(`^${req.query.type}`);  //  Template String ES6
     const filterStat = new Object();
     filterStat[req.query.stat] = - 1;
-    console.log(req.query.type);
+    if (req.query.stat == "pokedex") filterStat[req.query.stat] = + 1;
     const pokemon = await pokemons.find({ $or: [{type: filterType},
                                                 {type2: filterType}]
     }).sort(filterStat);  // Sort Pokemon by Pokedex DESC
