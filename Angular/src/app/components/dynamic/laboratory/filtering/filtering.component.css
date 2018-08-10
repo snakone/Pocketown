@@ -26,3 +26,8 @@
 button {
   margin: auto 20px;
 }
+
+.Any:not(.type) {
+  background: none;
+  color:grey;
+}

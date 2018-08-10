@@ -19,9 +19,14 @@ export class StatsComponent implements OnInit {
   }
 
   showStat(stat: string){
+
     this.staticData.selectedStat = stat;
+
+
+
     if (this.staticData.selectedType == "") // No Type selected? -> Any
     this.staticData.selectedType = "Any";
+
   }
 
 }

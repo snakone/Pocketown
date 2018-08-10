@@ -15,6 +15,8 @@ export class ResultComponent implements OnInit, OnDestroy {
   pokemonResult: Pokemon[];  // Pokemon List Result
   filterType: string;  // Type to filter
   filterStat: string;  // Stat to filter
+  filterEvo: string;  // Evolution to filter
+  evolutionName: string;  // Evolution Name
   urlImage: string;
 
   constructor(private staticData: StaticService,
@@ -26,8 +28,16 @@ export class ResultComponent implements OnInit, OnDestroy {
   ngOnInit() {
   this.filterType = this.staticData.selectedType;  // Get the Type from the Service
   this.filterStat = this.staticData.selectedStat;  // Get the Stat from the Service
+  this.filterEvo = this.staticData.selectedEvolution;  // Get the Evolution from the Service
+  this.evolutionName = this.staticData.evolutionName;  // Get the Evlution NAME from the Service
+
+  // Checking - Need to know on the Result if None were clicked
+  if (this.filterStat == "") this.filterStat = "Nº";
+  if (this.evolutionName == "") this.evolutionName = "Any";
+
   this.filter.filterPokemon(this.filterType,
-                            this.filterStat)  // Filter Pokemon with the Type and Stat
+                            this.filterStat,
+                            this.filterEvo)  // Filter Pokemon with the Type, Stat and Evolution
    .subscribe(res =>{
      this.pokemonResult = res as any;  // Response as Pokemon = List
    })
@@ -41,9 +51,12 @@ export class ResultComponent implements OnInit, OnDestroy {
      window.history.back();  // Browser Back Action
   }
 
-  ngOnDestroy() {  // Type and Stat 0 on exit
+  ngOnDestroy() {  // Type, Stat and Evolution 0 on exit
     this.staticData.selectedType = "";
     this.staticData.selectedStat = "";
+    this.staticData.selectedEvolution = "";
+    this.staticData.evolutionName = "";
+    this.pokemonResult = [];
   }
 
 }

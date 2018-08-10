@@ -22,6 +22,7 @@ export class TypesComponent implements OnInit {
 
   showType(type: string){
     this.staticData.selectedType = type;  // Assing the selectedType to the Service
+
   }
 
 }

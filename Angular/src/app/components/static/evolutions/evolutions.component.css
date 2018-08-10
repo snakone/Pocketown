@@ -1,0 +1,23 @@
+.radio-button {
+  width: 120px;
+}
+
+.center {
+  margin-left: -15px;
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-size: 1.3em;
+}
+
+@media (max-width: 1000px){
+  .radio-button {
+    width: 32%;
+    margin:5px auto;
+  }
+}
+
+.Any {
+  background: none;
+}

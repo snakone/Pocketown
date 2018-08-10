@@ -16,13 +16,15 @@ export class FilterService {
 
   constructor(private http: HttpClient) { }
 
-  filterPokemon(pokemonType: string, pokemonStat: string){
+  filterPokemon(Type: string, Stat: string, Evolution: string){
     // Checking before sending data to Server
-    if (pokemonStat == "S.ATK") pokemonStat = "SATK";  // Match MongoDB property
-    if (pokemonStat == "S.DEF") pokemonStat = "SDEF";  // Match MongoDB property
-    if (pokemonStat == "Nº") pokemonStat = "pokedex";  // Match MongoDB property
-    if (pokemonType == "Any") pokemonType = ".*?";  // No Type? RegExp to match ALL *
-    const params = {type: pokemonType, stat: pokemonStat};  // Send the Type and Stat in HTTP Params
+    if (Stat == "S.ATK") Stat = "SATK";  // Match MongoDB property
+    if (Stat == "S.DEF") Stat = "SDEF";  // Match MongoDB property
+    if (Stat == "Nº") Stat = "pokedex";  // Match MongoDB property
+    if (Type == "Any") Type = ".*?";  // No Type? RegExp to match ALL *
+    if (Evolution == "" || Evolution == "6") Evolution = ".*?";  // No Evolution or ANY? RegExp to match ALL *
+
+    const params = {type: Type, stat: Stat, evolution: Evolution};  // Send the Type, Stat and Evolution in HTTP Params
     return this.http.get(this.URL_API, {params: params} );  // HTTP GET to Server API - POSTMAN belike
   }
 

@@ -13,7 +13,7 @@ import { ActivatedRoute } from '@angular/router'; // Routes
 export class PokemonComponent implements OnInit {
 
   pokedex: Pokemon[];  // Pokedex List
-  selectedPokemon: Pokemon;  // Save selected Pokemon
+  pokemon: Pokemon;  // Save selected Pokemon
   urlImage: string;
 
   constructor(private pokedexService: PokedexService,
@@ -23,10 +23,10 @@ export class PokemonComponent implements OnInit {
              }
 
   ngOnInit() {
-    let routeParams = this.activeRoute.snapshot.params.pokemon; // Get the Pokemon ID Name from URL
+    let routeParams = this.activeRoute.snapshot.params.pokemon; // Get the Pokemon ID from URL
     this.pokedexService.getPokemonbyId(routeParams)  // HTTP POST to Server with Pokemon ID
      .subscribe(res => {  // Subscribe to the Server Response
-       this.selectedPokemon = res as any;  // Response as Pokemon = List
+       this.pokemon = res as any;  // Response as Pokemon
      })
   }
 

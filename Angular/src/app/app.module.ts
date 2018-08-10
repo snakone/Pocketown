@@ -44,6 +44,7 @@ import { FilteringComponent } from './components/dynamic/laboratory/filtering/fi
 // Static components
 import { StatsComponent } from './components/static/stats/stats.component';
 import { TypesComponent } from './components/static/types/types.component';
+import { EvolutionsComponent } from './components/static/evolutions/evolutions.component';
 
 
 @NgModule({
@@ -52,7 +53,7 @@ import { TypesComponent } from './components/static/types/types.component';
     FixedNavComponent, FooterNavComponent, FooterMenuComponent,
     WelcomeComponent, AboutComponent, PokedexComponent, PokemonComponent,
     AdminPokemonComponent, TypesComponent, LaboratoryComponent, SearchComponent,
-    ResultComponent, StatsComponent, FilteringComponent
+    ResultComponent, StatsComponent, FilteringComponent, EvolutionsComponent
 
 ],
   imports: [
