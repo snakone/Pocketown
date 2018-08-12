@@ -22,7 +22,7 @@ export class FilteringComponent implements OnInit {
     this.staticData.selectedType = "";
     this.staticData.selectedStat = "";
     this.staticData.selectedEvolution = "";
-    this.staticData.evolutionName = "";
+    this.staticData.evolutionName = "Any";
   }
 
   filter(){

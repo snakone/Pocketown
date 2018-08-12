@@ -22,7 +22,8 @@ export class FilterService {
     if (Stat == "S.DEF") Stat = "SDEF";  // Match MongoDB property
     if (Stat == "Nº") Stat = "pokedex";  // Match MongoDB property
     if (Type == "Any") Type = ".*?";  // No Type? RegExp to match ALL *
-    if (Evolution == "" || Evolution == "6") Evolution = ".*?";  // No Evolution or ANY? RegExp to match ALL *
+    // No Evolution or ANY? RegExp to match ALL *
+    if (Evolution == "" || Evolution == "6") Evolution = ".*?";
 
     const params = {type: Type, stat: Stat, evolution: Evolution};  // Send the Type, Stat and Evolution in HTTP Params
     return this.http.get(this.URL_API, {params: params} );  // HTTP GET to Server API - POSTMAN belike

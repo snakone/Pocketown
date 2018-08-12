@@ -7,10 +7,11 @@ export class Pokemon {
   type2: string;
   picture: string;
   ss: number;
+  evolution: string;
 
   contructor(id: string, name: string, pokedex: number,
              grade: string, type: string, type2: string,
-             picture: string, ss: number){
+             picture: string, ss: number, evolution: string){
 
                this._id = id;
                this.name = name;
@@ -20,5 +21,6 @@ export class Pokemon {
                this.type2 = type2;
                this.picture = picture;
                this.ss = ss;
+               this.evolution = evolution;
             }
 }

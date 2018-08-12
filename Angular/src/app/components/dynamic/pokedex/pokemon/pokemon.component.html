@@ -1,4 +1,27 @@
 <div *ngIf="pokemon">
-{{pokemon.nature}}<br>
-{{pokemon.evolution}}
+    <div class="row center"> <!-- First Row -->
+        <div class="col s12 m12 l6 animated slideInDown">  <!-- Left Column -->
+            <pokemon-type [pokemon]="pokemon"></pokemon-type>  <!-- Pokemon Type -->
+            <pokemon-bio [pokemon]="pokemon"></pokemon-bio>  <!-- Pokemon Bio -->
+        </div>
+        <div class="col s12 m12 l6 center overflow">  <!-- Right Column -->
+            <pokemon-stadistics [pokemon]="pokemon"></pokemon-stadistics>  <!-- Pokemon Stats -->
+        </div>
+    </div>
+    <div class="row center">  <!-- Second Row -->
+        <div class="col s12 m12 l6">  <!-- Left Column -->
+            <pokemon-nature [pokemon]="pokemon"></pokemon-nature>  <!-- Pokemon Nature & Ability -->
+        </div>
+        <div class="col s12 m12 l6 overflow">  <!-- Right Column -->
+            <pokemon-match [pokemon]="pokemon"></pokemon-match>  <!-- Pokemon Match Up -->
+        </div>
+    </div>
+    <div class="row center">  <!-- Third Row -->
+        <div class="col s12 m12 l6">  <!-- Column -->
+            <pokemon-stadistics [pokemon]="pokemon"></pokemon-stadistics>
+        </div>
+        <div class="col s12 m12 l6 overflow">  <!-- Column -->
+            <pokemon-items [pokemon]="pokemon"></pokemon-items>  <!-- Pokemon Items -->
+        </div>
+    </div>
 </div>

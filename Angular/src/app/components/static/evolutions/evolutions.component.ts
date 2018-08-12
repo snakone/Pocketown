@@ -10,11 +10,9 @@ import { StaticService } from '../../../services/static.service';  // Static Ser
 export class EvolutionsComponent implements OnInit {
 
   evolutions: string[];
-  urlImage: string;
 
-  constructor(private staticData: StaticService) {
-        this.urlImage = "../../../../assets/images/pokemon/sprites/"
-   }
+
+  constructor(private staticData: StaticService) {}
 
   ngOnInit() {
       this.evolutions = this.staticData.evolutions;  // Get the Stats List

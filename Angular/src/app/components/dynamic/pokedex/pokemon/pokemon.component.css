@@ -1,73 +1,8 @@
-h2 {
-		font-size: 1.4em;
-		color: #87c5f5;
-		font-weight:bold;
-		text-shadow: 2px 2px #000000;
-			}
 
-h3 {
-	color: black;
-	font-size: 1.1em;
-	font-weight:bold;
-	text-shadow: 2px 2px #e3f00b;
+.overflow {
+  overflow: hidden;
 }
 
-
-.bold {
-font-weight: bold;
+.row {
+  margin-bottom: 35px;
 }
-
-img {
-  margin: 0 auto;
-}
-
-.type{
-  padding: 4px 8px;
-  border-radius: 3px;
-  color:white;
-  font-weight: bold;
-  margin:auto 5px;
-}
-
-.type:hover{
-  filter: brightness(1.5);
-  cursor: pointer;
-}
-
-.Normal {background-color: #A8A878;}
-.Fire {background-color: #F08030;}
-.Water {background-color: #6890F0;}
-.Electric {background-color: #F8D030;}
-.Grass {background-color: #78C850;}
-.Ice {background-color: #98D8D8;}
-.Ground {background-color: #E0C068;}
-.Flying {background-color: #A890F0;}
-.Ghost {background-color: #705898;}
-.Rock {background-color: #B8A038;}
-.Fighting {background-color: #C03028;}
-.Poison {background-color: #A040A0;}
-.Psychic {background-color: #F85888;}
-.Bug {background-color: #A8B820;}
-.Dark {background-color: #705848;}
-.Steel {background-color: #B8B8D0;}
-.Dragon {background-color: #7038F8;}
-.Fairy {background-color: #FF69B4;}
-
-
-.grade {
-  border: 1px solid #787887;
-  color:white;
-  font-weight:bold;
-  border-radius:3px;
-  padding:5px 8px;
-  cursor: pointer;
-}
-
-.grade:hover{
-  	opacity:0.5;
-}
-
-.S {background-color: #A052A0;}
-.R {background-color: #6898F0;}
-.SR {background-color: #f9b800;}
-.SSR {background-color: #F08830;}

@@ -29,11 +29,13 @@ export class ResultComponent implements OnInit, OnDestroy {
   this.filterType = this.staticData.selectedType;  // Get the Type from the Service
   this.filterStat = this.staticData.selectedStat;  // Get the Stat from the Service
   this.filterEvo = this.staticData.selectedEvolution;  // Get the Evolution from the Service
-  this.evolutionName = this.staticData.evolutionName;  // Get the Evlution NAME from the Service
+  this.evolutionName = this.staticData.evolutionName;  // Get the Evolution NAME from the Service
 
   // Checking - Need to know on the Result if None were clicked
   if (this.filterStat == "") this.filterStat = "Nº";
-  if (this.evolutionName == "") this.evolutionName = "Any";
+  if (this.staticData.evolutionName == "") {  // No Evolution selected? -> Any
+  this.evolutionName = "Any";
+  this.staticData.evolutionName = "Any"; }
 
   this.filter.filterPokemon(this.filterType,
                             this.filterStat,
@@ -55,7 +57,7 @@ export class ResultComponent implements OnInit, OnDestroy {
     this.staticData.selectedType = "";
     this.staticData.selectedStat = "";
     this.staticData.selectedEvolution = "";
-    this.staticData.evolutionName = "";
+    this.staticData.evolutionName = "Any";
     this.pokemonResult = [];
   }
 

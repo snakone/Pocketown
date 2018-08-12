@@ -1,0 +1,40 @@
+.table {
+  margin-top: 20px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.highlight td {
+  width: 100px;
+}
+
+.highlight td:last-child {
+  font-weight: bold;
+}
+
+
+.pkm-img {
+padding-top: 20px;
+width: 105px;
+height: auto;
+}
+
+.pkm-img:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+.grade {
+  border: 1px solid #787887;
+  color:white;
+  font-weight:bold;
+  border-radius:3px;
+  padding:5px 8px;
+  cursor: pointer;
+}
+
+
+.S {background-color: #A052A0;}
+.R {background-color: #6898F0;}
+.SR {background-color: #f9b800;}
+.SSR {background-color: #F08830;}

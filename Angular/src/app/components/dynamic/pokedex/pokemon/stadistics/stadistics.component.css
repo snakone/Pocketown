@@ -1,0 +1,77 @@
+
+.stats {
+text-align: center;
+margin: 0 auto;
+padding-right: 15px;
+max-width: 70%;
+}
+
+.total {
+  margin-top: 25px;
+  font-size: 1.3em;
+}
+
+/* PROGRESS BARS */
+
+.HP, .ATK, .DEF, .SATK, .SDEF, .SPD {
+  font-size: .6em;
+  line-height: 1.5em;
+  text-indent: .5em;
+  width: 16em;
+  height: 2em;
+  border: 1px solid #00000f;
+  background: #fff;
+	vertical-align: middle;
+	margin: 5px auto;
+}
+
+::-webkit-progress-bar { background: #d3d3d3; margin: 0 auto; }
+.HP::-webkit-progress-value { background: #0f0; border-right: 1px solid #000; }
+.ATK::-webkit-progress-value { background: #ffff00; border-right: 1px solid #000; }
+.DEF::-webkit-progress-value { background: #ffa500; border-right: 1px solid #000; }
+.SATK::-webkit-progress-value { background: #ff0000; border-right: 1px solid #000; }
+.SDEF::-webkit-progress-value { background: #17c9e3; border-right: 1px solid #000; }
+.SPD::-webkit-progress-value { background: #0000ff; border-right: 1px solid #000; }
+
+
+td {
+	padding: 5px;
+}
+
+/* FULL RESPONSIVE BARS TILL 355px */
+
+@media (max-width: 1200px){
+
+  .HP, .ATK, .DEF, .SATK, .SDEF, .SPD {
+    width: 12em;
+  }
+}
+
+@media (max-width: 992px){
+
+  .stats {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 600px){
+
+  .HP, .ATK, .DEF, .SATK, .SDEF, .SPD {
+    width: 13em;
+  }
+
+  .stats {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 500px){
+
+  .HP, .ATK, .DEF, .SATK, .SDEF, .SPD {
+    width: 14em;
+  }
+
+  .stats {
+    max-width: 75%;
+  }
+}

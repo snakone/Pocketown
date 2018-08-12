@@ -26,4 +26,14 @@ export class PokedexService {
     return this.http.get(this.URL_API + `/${id}`);  // HTTP GET to Server API - POSTMAN belike
   }
 
+  evolutionToString(evolution: string) {  // Changing Evolution Number to String
+    if (evolution == "1") evolution = "Tiny";
+    if (evolution == "2") evolution = "Medium";
+    if (evolution == "3") evolution = "Final";
+    if (evolution == "4") evolution = "Mega";
+    if (evolution == "5") evolution = "R2";
+
+    return evolution;
+  }
+
 }

@@ -12,14 +12,13 @@ import { ActivatedRoute } from '@angular/router'; // Routes
 })
 export class PokemonComponent implements OnInit {
 
-  pokedex: Pokemon[];  // Pokedex List
   pokemon: Pokemon;  // Save selected Pokemon
   urlImage: string;
 
   constructor(private pokedexService: PokedexService,
               private activeRoute: ActivatedRoute) {
 
-              this.urlImage = "../../../../../assets/images/";
+              this.urlImage = "../../../../../assets/images/pokemon/";
              }
 
   ngOnInit() {
@@ -27,7 +26,13 @@ export class PokemonComponent implements OnInit {
     this.pokedexService.getPokemonbyId(routeParams)  // HTTP POST to Server with Pokemon ID
      .subscribe(res => {  // Subscribe to the Server Response
        this.pokemon = res as any;  // Response as Pokemon
+
+       // Changing Evolution Number to String
+       this.pokemon.evolution = this.pokedexService
+        .evolutionToString(this.pokemon.evolution);
      })
+
+
   }
 
 }

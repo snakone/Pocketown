@@ -12,7 +12,7 @@ export class StaticService {
   selectedType: string ="";  // Save selected Type to play with it
   selectedStat: string ="";  // Save selected Stat to play with it
   selectedEvolution: string = "";  // Save selected Evolution to play with it
-  evolutionName: string;  //  Convert number to evolution Name
+  evolutionName: string = "Any";  //  Convert number to evolution Name
 
   constructor() {
 

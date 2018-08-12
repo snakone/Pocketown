@@ -14,7 +14,7 @@ laboratoryCtrl.filterPokemon = async (req, res) => {
     filterStat[req.query.stat] = + 1 // Pokedex is sorted ASC
     else filterStat[req.query.stat] = - 1;  // { stat: -1 }
 
-    const pokemon = await pokemons.find({ evolution: filterEvolution,  // Evolution Number
+    const pokemon = await pokemons.find({ evolution: filterEvolution,  // Evolution Pattern /^2/
                                           $or: [{type: filterType},  // RegExp Pattern /^Fire/
                                                 {type2: filterType}]
 

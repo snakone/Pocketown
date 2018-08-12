@@ -22,8 +22,6 @@ export class StatsComponent implements OnInit {
 
     this.staticData.selectedStat = stat;
 
-
-
     if (this.staticData.selectedType == "") // No Type selected? -> Any
     this.staticData.selectedType = "Any";
 
