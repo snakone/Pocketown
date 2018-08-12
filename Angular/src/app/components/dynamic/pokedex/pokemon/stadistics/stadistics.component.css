@@ -3,7 +3,7 @@
 text-align: center;
 margin: 0 auto;
 padding-right: 15px;
-max-width: 70%;
+max-width: 60%;
 }
 
 .total {
@@ -73,5 +73,16 @@ td {
 
   .stats {
     max-width: 75%;
+  }
+}
+
+@media (max-width: 345px){
+
+  .HP, .ATK, .DEF, .SATK, .SDEF, .SPD {
+    width: 12em;
+  }
+
+  .stats {
+    max-width: 80%;
   }
 }

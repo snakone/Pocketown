@@ -10,7 +10,7 @@
   <div class="sticky">  <!-- Sticky Search Bar -->
         <div class="input-field center top">  <!-- Key Up Event -->
             <input type="text" name="searchValue"
-            (keyup)="onKeyUp()" [(ngModel)]="searchValue"
+            (keyup)="onKeyUp($event)" [(ngModel)]="searchValue"
             placeHolder="Search a Pokémon..">
         </div>
   </div>

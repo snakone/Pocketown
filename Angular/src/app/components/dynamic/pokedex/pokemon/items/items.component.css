@@ -1,11 +1,31 @@
 h4 {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
-.center { 
+@media (max-width: 993px){
+
+  h4 {
+      margin-top: 35px;
+  }
+}
+
+.center {
   margin: 0 auto;
+}
+
+.items {
+  width: 70%;
+  margin: 25px auto auto auto;
+}
+
+@media (max-width: 540px){
+
+  .items {
+    width: 85%;
+  }
 }
 
 img {
   padding: 10px;
+  width: 75px;
 }

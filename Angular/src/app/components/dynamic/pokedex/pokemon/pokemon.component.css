@@ -1,8 +1,11 @@
-
 .overflow {
   overflow: hidden;
 }
 
 .row {
-  margin-bottom: 35px;
+  margin: 30px auto;
+}
+
+.firstRow {
+  margin-top: 0;
 }
