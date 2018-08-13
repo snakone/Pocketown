@@ -5,6 +5,7 @@ import { Pokemon } from '../../../../models/pokemon';  // Pokemon Model
 
 import { ActivatedRoute } from '@angular/router'; // Routes
 
+
 @Component({
   selector: 'app-pokemon',
   templateUrl: './pokemon.component.html',
@@ -31,7 +32,6 @@ export class PokemonComponent implements OnInit {
        this.pokemon.evolution = this.pokedexService
         .evolutionToString(this.pokemon.evolution);
      })
-
 
   }
 

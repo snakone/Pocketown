@@ -1,27 +1,29 @@
 .overflow {
   overflow: hidden;
+  margin-top: -20px;
 }
 
 .row {
   margin: 30px auto;
 }
 
-.border-color {
-border-left: 2px dotted orange;
-border-left-width: thin;
+::ng-deep .mat-tab-header {
+
+  position: sticky!important;
+  position: -webkit-sticky!important; /* For macOS/iOS Safari */
+  top: 50px!important; /* Sets the sticky toolbar to be on top */
+  z-index: 1000!important; /* Ensure that your app's content doesn't overlap the toolbar */
 }
 
-.border-color-right {
-  border-right: 2px dotted orange;
-  border-right-width: thin;
+::ng-deep .mat-tab-labels {
+    justify-content: center!important; /* align items in Main Axis */
 }
 
-@media (max-width:992px){
-  .border-color, .border-color-right {
-    border: none;
-  }
+::ng-deep .mat-tab-label {
+  min-width: 25px !important;
+  padding: 0 20px!important;
 }
 
-.firstRow {
-  margin-top: 0;
+::ng-deep .mat-tab-body-content {
+  overflow: hidden !important;
 }

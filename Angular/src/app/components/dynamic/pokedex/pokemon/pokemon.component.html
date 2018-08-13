@@ -1,27 +1,60 @@
 <div *ngIf="pokemon" class="overflow">
-    <div class="row center firstRow"> <!-- First Row -->
-        <div class="col s12 m12 l6 animated slideInDown">  <!-- Left Column -->
-            <pokemon-type [pokemon]="pokemon"></pokemon-type>  <!-- Pokemon Type -->
-            <pokemon-bio [pokemon]="pokemon"></pokemon-bio>  <!-- Pokemon Bio -->
-        </div>
-        <div class="col s12 m12 l6 center animated slideInRight border-color">  <!-- Right Column -->
-            <pokemon-stadistics [pokemon]="pokemon"></pokemon-stadistics>  <!-- Pokemon Stats -->
-        </div>
-    </div>
-    <div class="row center">  <!-- Second Row -->
-        <div class="col s12 m12 l6 animated slideInDown border-color-right">  <!-- Left Column -->
+<mat-tab-group>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+     <img width="20px" style="padding:0" src="../../../../../assets/icons/pokeicon.png">
+   </ng-template>
+
+     <div class="row center"> <!-- First Row -->
+      <div class="col s12 m12 l6">  <!-- Left Column -->
+          <pokemon-type [pokemon]="pokemon"></pokemon-type>  <!-- Pokemon Type -->
+          <pokemon-bio [pokemon]="pokemon"></pokemon-bio>  <!-- Pokemon Bio -->
+      </div>
+      <div class="col s12 m12 l6 center">  <!-- Right Column -->
+          <pokemon-stadistics [pokemon]="pokemon"></pokemon-stadistics>  <!-- Pokemon Stats -->
+      </div>
+  </div></mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+     <img width="20px" src="../../../../../assets/icons/pokeicon.png">
+   </ng-template> <div class="row center">  <!-- Second Row -->
+
+        <div class="col s12 m12 l6">  <!-- Left Column -->
             <pokemon-nature [pokemon]="pokemon"></pokemon-nature>  <!-- Pokemon Nature & Ability -->
         </div>
-        <div class="col s12 m12 l6 animated slideInRight">  <!-- Right Column -->
+        <div class="col s12 m12 l6">  <!-- Right Column -->
             <pokemon-items [pokemon]="pokemon"></pokemon-items>  <!-- Pokemon Match Up -->
         </div>
-    </div>
+    </div> </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+     <img width="20px" src="../../../../../assets/icons/pokeicon.png">
+   </ng-template>
+
     <div class="row center">  <!-- Third Row -->
-        <div class="col s12 m12 l6 animated slideInDown">  <!-- Left Column -->
-            <pokemon-match [pokemon]="pokemon"></pokemon-match>  <!-- Pokemon Items -->
-        </div>
-        <div class="col s12 m12 l6 animated slideInRight border-color">  <!-- Right Column -->
-            <pokemon-efforts [pokemon]="pokemon"></pokemon-efforts>  <!-- Pokemon Efforts -->
-        </div>
-    </div>
+      <div class="col s12 m12 l6">  <!-- Left Column -->
+          <pokemon-match [pokemon]="pokemon"></pokemon-match>  <!-- Pokemon Items -->
+      </div>
+      <div class="col s12 m12 l6">  <!-- Right Column -->
+          <pokemon-efforts [pokemon]="pokemon"></pokemon-efforts>  <!-- Pokemon Efforts -->
+      </div>
+  </div> </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+     <img width="20px" src="../../../../../assets/icons/pokeicon.png">
+   </ng-template>
+    Content 4 </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+     <img width="20px" src="../../../../../assets/icons/pokeicon.png">
+   </ng-template>
+    Content 5 </mat-tab>
+
+</mat-tab-group>
+
 </div>
