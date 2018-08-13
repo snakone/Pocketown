@@ -28,8 +28,8 @@
                 </div>
 
                 <div class="input-field col s12 m12">
-                  <input type="number" name="ss" max="255"
-                  #ss="ngModel" [(ngModel)]="admin.selectedPokemon.ss"
+                  <input type="number" name="SS" max="255"
+                  #SS="ngModel" [(ngModel)]="admin.selectedPokemon.SS"
                   placeholder="Enter Pokémon SS">
                 </div>
 
@@ -63,7 +63,7 @@
           <td>{{pokemon.name}}</td>
           <td>{{pokemon.pokedex}}</td>
           <td>{{pokemon.grade}}</td>
-          <td>{{pokemon.ss}}</td>
+          <td>{{pokemon.SS}}</td>
           <td>
             <mat-icon (click)="updatePokemon(pokemon)">edit</mat-icon>
             <mat-icon (click)="deletePokemon(pokemon._id)">delete</mat-icon>

@@ -3,11 +3,11 @@ margin:0 auto;
 }
 
 .type{
-  padding: 2px 4px;
+  padding: 2px 2px;
   border-radius: 3px;
   color:white;
   font-weight: bold;
-  margin:3px;
+  margin:2px;
   border: 1px solid black;
   display: inline-grid;
   width: auto;

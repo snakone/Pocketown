@@ -3,17 +3,16 @@
   margin-top: -20px;
 }
 
-.row {
-  margin: 30px auto;
+img {
+  width: 25px
 }
 
-::ng-deep .mat-tab-header {
-
+/* ::ng-deep .mat-tab-header {
   position: sticky!important;
-  position: -webkit-sticky!important; /* For macOS/iOS Safari */
-  top: 50px!important; /* Sets the sticky toolbar to be on top */
-  z-index: 1000!important; /* Ensure that your app's content doesn't overlap the toolbar */
-}
+  position: -webkit-sticky!important;
+  top: 50px!important;
+  z-index: 1000!important;
+} */
 
 ::ng-deep .mat-tab-labels {
     justify-content: center!important; /* align items in Main Axis */
