@@ -25,7 +25,8 @@ export class FilterService {
     // No Evolution or ANY? RegExp to match ALL *
     if (Evolution == "" || Evolution == "6") Evolution = ".*?";
 
-    const params = {type: Type, stat: Stat, evolution: Evolution};  // Send the Type, Stat and Evolution in HTTP Params
+    // Send the Type, Stat and Evolution in HTTP Params
+    const params = {type: Type, stat: Stat, evolution: Evolution};
     return this.http.get(this.URL_API, {params: params} );  // HTTP GET to Server API - POSTMAN belike
   }
 

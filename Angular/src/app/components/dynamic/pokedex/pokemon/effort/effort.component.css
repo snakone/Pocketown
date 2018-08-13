@@ -1,0 +1,57 @@
+.effortBars {
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px){
+
+  h4 {
+      margin-top: 50px;
+  }
+}
+
+/* PROGRESS BAR FOR IV ON RESOURCE PRC */
+
+progress {
+
+	border: solid 1px #373d40;
+	width:85%;
+	height: 25px;
+	position:relative;
+	border-radius: 5px;
+}
+
+progress:before {
+  content: attr(data-label);
+  text-align:center;
+  font-weight:bold;
+  font-size: 0.9em;
+  vertical-align: middle;
+  /*Position text over the progress bar */
+  position:absolute;
+  left:0;
+  right:0;
+  margin-top:1px;
+}
+
+.HP, .ATK, .DEF, .S\.ATK, .S\.DEF, .SPD {
+  text-shadow: 1px 1px black;
+}
+
+.HP {
+  color: #5f9839;
+}
+
+progress::-webkit-progress-bar {
+	border-radius: 5px;
+  background-color: #e7e7e7;
+}
+
+progress::-webkit-progress-value {
+	border-radius: 5px;
+	background: #96EF6F;
+}
+
+h4 {
+  margin-bottom: 30px;
+}

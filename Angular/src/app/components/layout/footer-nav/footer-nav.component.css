@@ -48,31 +48,6 @@ mat-toolbar {
  color: white;
 }
 
-.fa-linkedin {
- background: #007bb5;
- color: white;
-}
-
-.fa-instagram {
- background: #125688;
- color: white;
-}
-
-.fa-flickr {
- background: #f40083;
- color: white;
-}
-
-.fa-rss {
- background: #ff6600;
- color: white;
-}
-
-.fa-skype {
- background: #00aff0;
- color: white;
-}
-
 .inline-social-icons {
  padding-left:5px;
 

@@ -2,7 +2,7 @@ h4 {
   margin-bottom: 15px;
 }
 
-@media (max-width: 993px){
+@media (max-width: 992px){
 
   h4 {
       margin-top: 35px;
@@ -14,14 +14,29 @@ h4 {
 }
 
 .items {
-  width: 70%;
+  width: 80%;
   margin: 25px auto auto auto;
+}
+
+@media (min-width: 1200px){
+
+  .items {
+    width: 60%;
+  }
 }
 
 @media (max-width: 540px){
 
   .items {
     width: 85%;
+  }
+}
+
+
+@media (max-width: 400px){
+
+  .items {
+    width: 100%;
   }
 }
 

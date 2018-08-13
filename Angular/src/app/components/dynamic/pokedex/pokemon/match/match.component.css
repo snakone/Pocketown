@@ -3,9 +3,10 @@
   margin: 25px auto auto auto;
 }
 
-@media (max-width:993px){
+@media (max-width: 993px){
+
   h4 {
-    margin-top: 30px;
+      margin-top: 1px;
   }
 }
 

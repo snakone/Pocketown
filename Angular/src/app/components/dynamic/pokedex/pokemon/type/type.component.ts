@@ -10,9 +10,12 @@ import { Pokemon } from '../../../../../models/pokemon';  // Pokemon Model
 
 export class TypeComponent implements OnInit {
 
+  urlImage: string;
   @Input() pokemon: Pokemon;
 
-  constructor() { }
+  constructor() {
+        this.urlImage = "../../../../../../assets/images/pokemon/";
+  }
 
   ngOnInit() {
   }

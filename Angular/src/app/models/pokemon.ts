@@ -8,6 +8,14 @@ export class Pokemon {
   picture: string;
   ss: number;
   evolution: string;
+  nature: string;
+  nature2: string;
+  good1: string;
+  good2: string;
+  good3: string;
+  bad1: string;
+  bad2: string;
+  bad3: string;
 
   contructor(id: string, name: string, pokedex: number,
              grade: string, type: string, type2: string,

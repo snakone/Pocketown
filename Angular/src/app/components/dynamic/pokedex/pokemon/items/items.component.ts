@@ -18,8 +18,6 @@ export class ItemsComponent implements OnInit {
         this.urlImage = "../../../../../../assets/images/items/";
    }
 
-  ngOnInit() {
-    console.log(this.pokemon);
-  }
+  ngOnInit() { }
 
 }

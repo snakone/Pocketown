@@ -23,6 +23,7 @@ max-width: 60%;
   background: #fff;
 	vertical-align: middle;
 	margin: 5px auto;
+  border-radius: 3px;
 }
 
 ::-webkit-progress-bar { background: #d3d3d3; margin: 0 auto; }

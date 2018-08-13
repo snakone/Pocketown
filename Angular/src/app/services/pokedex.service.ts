@@ -33,7 +33,7 @@ export class PokedexService {
     if (evolution == "4") evolution = "Mega";
     if (evolution == "5") evolution = "R2";
 
-    return evolution;
+    return evolution; 
   }
 
 }

@@ -6,6 +6,22 @@
   margin: 30px auto;
 }
 
+.border-color {
+border-left: 2px dotted orange;
+border-left-width: thin;
+}
+
+.border-color-right {
+  border-right: 2px dotted orange;
+  border-right-width: thin;
+}
+
+@media (max-width:992px){
+  .border-color, .border-color-right {
+    border: none;
+  }
+}
+
 .firstRow {
   margin-top: 0;
 }

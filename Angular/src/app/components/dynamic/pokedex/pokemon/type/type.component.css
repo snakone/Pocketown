@@ -1,9 +1,9 @@
 .type {
-  padding: 6px 10px;
+  padding: 4px 8px;
   border-radius: 3px;
   color:white;
   font-weight: bold;
-  margin: 15px 5px;
+  margin: auto 5px;
   border: 1px solid black;
   display: inline-grid;
   width: auto;

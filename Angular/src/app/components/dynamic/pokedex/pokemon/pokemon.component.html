@@ -4,24 +4,24 @@
             <pokemon-type [pokemon]="pokemon"></pokemon-type>  <!-- Pokemon Type -->
             <pokemon-bio [pokemon]="pokemon"></pokemon-bio>  <!-- Pokemon Bio -->
         </div>
-        <div class="col s12 m12 l6 center animated slideInRight">  <!-- Right Column -->
+        <div class="col s12 m12 l6 center animated slideInRight border-color">  <!-- Right Column -->
             <pokemon-stadistics [pokemon]="pokemon"></pokemon-stadistics>  <!-- Pokemon Stats -->
         </div>
     </div>
     <div class="row center">  <!-- Second Row -->
-        <div class="col s12 m12 l6 animated slideInDown">  <!-- Left Column -->
+        <div class="col s12 m12 l6 animated slideInDown border-color-right">  <!-- Left Column -->
             <pokemon-nature [pokemon]="pokemon"></pokemon-nature>  <!-- Pokemon Nature & Ability -->
         </div>
         <div class="col s12 m12 l6 animated slideInRight">  <!-- Right Column -->
-            <pokemon-match [pokemon]="pokemon"></pokemon-match>  <!-- Pokemon Match Up -->
+            <pokemon-items [pokemon]="pokemon"></pokemon-items>  <!-- Pokemon Match Up -->
         </div>
     </div>
     <div class="row center">  <!-- Third Row -->
         <div class="col s12 m12 l6 animated slideInDown">  <!-- Left Column -->
-            <pokemon-stadistics [pokemon]="pokemon"></pokemon-stadistics>
+            <pokemon-match [pokemon]="pokemon"></pokemon-match>  <!-- Pokemon Items -->
         </div>
-        <div class="col s12 m12 l6 animated slideInRight">  <!-- Right Column -->
-            <pokemon-items [pokemon]="pokemon"></pokemon-items>  <!-- Pokemon Items -->
+        <div class="col s12 m12 l6 animated slideInRight border-color">  <!-- Right Column -->
+            <pokemon-efforts [pokemon]="pokemon"></pokemon-efforts>  <!-- Pokemon Efforts -->
         </div>
     </div>
 </div>
