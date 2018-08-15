@@ -5,7 +5,6 @@
     <ng-template mat-tab-label>
      <img class="icon" src="../../../../../assets/icons/pokeicon.png">
    </ng-template>
-
      <div class="row"> <!-- First Row -->
       <div class="col s12 m12 l12">  <!-- Left Column -->
           <pokemon-bio [pokemon]="pokemon"></pokemon-bio>  <!-- Pokemon Bio -->
@@ -17,22 +16,20 @@
      <img class="icon" src="../../../../../assets/icons/bars.png">
    </ng-template>
     <div class="row center">  <!-- Second Row -->
-
         <div class="col s12 m12 l12">  <!-- Column -->
-
+            <pokemon-stadistics [pokemon]="pokemon"></pokemon-stadistics>  <!-- Pokemon Stadistics -->
         </div>
 
     </div> </mat-tab>
 
   <mat-tab>
     <ng-template mat-tab-label>
-     <img class="icon" src="../../../../../assets/icons/pokeicon.png">
+     <img class="icon" src="../../../../../assets/icons/nature.png">
    </ng-template>
 
     <div class="row center">  <!-- Third Row -->
       <div class="col s12 m12 l12">  <!-- Column -->
-          <pokemon-match [pokemon]="pokemon"></pokemon-match>  <!-- Pokemon Items -->
-          <pokemon-efforts [pokemon]="pokemon"></pokemon-efforts>  <!-- Pokemon Efforts -->
+          <pokemon-nature [pokemon]="pokemon"></pokemon-nature>  <!-- Pokemon Nature -->
       </div>
 
   </div> </mat-tab>
@@ -44,7 +41,7 @@
 
        <div class="row center">  <!-- Third Row -->
          <div class="col s12 m12 l12">  <!-- Column -->
-            <pokemon-items [pokemon]="pokemon"></pokemon-items>  <!-- Pokemon Match Up -->
+            <pokemon-items [pokemon]="pokemon"></pokemon-items>  <!-- Pokemon Items -->
          </div>
 
   </div> </mat-tab>
@@ -55,16 +52,29 @@
      </ng-template>
      <div class="row center">  <!-- Third Row -->
        <div class="col s12 m12 l12">  <!-- Column -->
-           <pokemon-match [pokemon]="pokemon"></pokemon-match>  <!-- Pokemon Items -->
+           <pokemon-match [pokemon]="pokemon"></pokemon-match>  <!-- Pokemon Match -->
        </div>
 
    </div> </mat-tab>
 
   <mat-tab>
     <ng-template mat-tab-label>
-     <img class="icon" src="../../../../../assets/icons/pokeicon.png">
+     <img class="icon" src="../../../../../assets/icons/moves.png">
    </ng-template>
      </mat-tab>
+
+
+   <mat-tab>
+     <ng-template mat-tab-label>
+      <img class="icon" src="../../../../../assets/icons/effort.png">
+    </ng-template>
+    <div class="row center">  <!-- Third Row -->
+      <div class="col s12 m12 l12">  <!-- Column -->
+          <pokemon-effort [pokemon]="pokemon"></pokemon-effort>  <!-- Pokemon Effort Points -->
+      </div>
+
+  </div> </mat-tab>
+
 
 </mat-tab-group>
 

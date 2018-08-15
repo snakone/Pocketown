@@ -11,8 +11,11 @@ import { Pokemon } from '../../../../../models/pokemon';  // Pokemon Model
 export class StadisticsComponent implements OnInit {
 
   @Input() pokemon: Pokemon;
+  urlImage: string;
 
-  constructor() { }
+  constructor() {
+    this.urlImage = "../../../../../../assets/images/pokemon/";
+  }
 
   ngOnInit() {
 

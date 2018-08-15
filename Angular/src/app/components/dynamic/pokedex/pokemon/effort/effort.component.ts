@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Pokemon } from '../../../../../models/pokemon';  // Pokemon Model
 
 @Component({
-  selector: 'pokemon-efforts',
+  selector: 'pokemon-effort',
   templateUrl: './effort.component.html',
   styleUrls: ['./effort.component.css']
 })
@@ -11,8 +11,11 @@ import { Pokemon } from '../../../../../models/pokemon';  // Pokemon Model
 export class EffortComponent implements OnInit {
 
   @Input() pokemon: Pokemon;
+  urlImage: string;
 
-  constructor() { }
+  constructor() {
+      this.urlImage = "../../../../../../assets/images/pokemon/";
+  }
 
   ngOnInit() {
 

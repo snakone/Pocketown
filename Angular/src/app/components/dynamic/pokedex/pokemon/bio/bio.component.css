@@ -18,8 +18,14 @@ margin-top: 10px;
   margin: 0 3px;
 }
 
+.familiar:hover {
+  cursor:pointer;
+  filter: brightness(1.2);
+}
+
 .info {
   margin-top: 20px;
+  text-align: center;
 }
 
 mat-icon {
@@ -29,6 +35,11 @@ mat-icon {
 
 .like {
   color:pink;
+}
+
+.like:hover {
+  cursor:pointer;
+  color:red;
 }
 
 .card {

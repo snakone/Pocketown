@@ -16,8 +16,11 @@ export class NatureComponent implements OnInit {
   bad: string;
   nature: Nature;
   nature2: Nature;
+  urlImage: string;
 
-  constructor(private natureService: NatureService) { }
+  constructor(private natureService: NatureService) {
+      this.urlImage = "../../../../../../assets/images/pokemon/";
+   }
 
   ngOnInit() {
     this.nature = this.natureService.getNature(this.pokemon.nature);

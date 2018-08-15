@@ -1,13 +1,42 @@
 .effortBars {
-  width: 60%;
-  margin: 0 auto;
+  width: 75%;
+  margin: 15px auto auto auto;
 }
 
-@media (max-width: 992px){
+.header {
+  margin-bottom: 5px;
+}
 
-  h4 {
-      margin-top: 50px;
-  }
+.pkm-img {
+  position: absolute;
+  right:20px;
+  top:10px;
+  width:56px;
+}
+
+.item {
+  width: 60px;
+}
+
+.card {
+  max-width: 300px;
+  margin: 20px auto auto auto;
+  min-height: 275px;
+}
+
+.top {
+  margin-top: 10px;
+}
+
+mat-card-subtitle {
+  text-align: left;
+}
+
+.header-image {
+  background-image: url('../../../../../../assets/icons/effort.png');
+  background-size: cover;
+  margin-right: 10px;
+  border-radius: 0;
 }
 
 /* PROGRESS BAR FOR IV ON RESOURCE PRC */
@@ -50,8 +79,4 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
 	border-radius: 5px;
 	background: #96EF6F;
-}
-
-h4 {
-  margin-bottom: 30px;
 }

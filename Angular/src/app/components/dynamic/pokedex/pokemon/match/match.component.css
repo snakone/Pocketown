@@ -15,7 +15,11 @@ img {
 }
 
 .top {
-  margin-top: 20px;
+  margin-top: 10px;
+}
+
+mat-card-subtitle {
+  text-align: left;
 }
 
 .card {

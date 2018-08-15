@@ -1,15 +1,49 @@
 
 .stats {
 text-align: center;
-margin: 0 auto;
-padding-right: 15px;
-max-width: 60%;
+margin: 0 auto auto -10px;
 }
 
 .total {
-  margin-top: 25px;
+  margin-top: 35px auto auto auto;
   font-size: 1.3em;
 }
+
+.header {
+  margin-bottom: 5px;
+}
+
+.top {
+  margin-top: 10px;
+}
+
+.centered {
+  margin-right: 10px;
+}
+
+.pkm-img {
+  position: absolute;
+  right:20px;
+  top:10px;
+  width:56px;
+}
+
+.card {
+  max-width: 300px;
+  margin: 20px auto auto auto;
+}
+
+mat-card-subtitle {
+  text-align: left;
+}
+
+.header-image {
+  background-image: url('../../../../../../assets/icons/bars.png');
+  background-size: cover;
+  margin-right: 10px;
+  border-radius: 0;
+}
+
 
 /* PROGRESS BARS */
 
@@ -37,53 +71,4 @@ max-width: 60%;
 
 td {
 	padding: 5px;
-}
-
-/* FULL RESPONSIVE BARS TILL 355px */
-
-@media (max-width: 1200px){
-
-  .HP, .ATK, .DEF, .SATK, .SDEF, .SPD {
-    width: 12em;
-  }
-}
-
-@media (max-width: 992px){
-
-  .stats {
-    max-width: 70%;
-  }
-}
-
-@media (max-width: 600px){
-
-  .HP, .ATK, .DEF, .SATK, .SDEF, .SPD {
-    width: 13em;
-  }
-
-  .stats {
-    max-width: 60%;
-  }
-}
-
-@media (max-width: 500px){
-
-  .HP, .ATK, .DEF, .SATK, .SDEF, .SPD {
-    width: 14em;
-  }
-
-  .stats {
-    max-width: 75%;
-  }
-}
-
-@media (max-width: 345px){
-
-  .HP, .ATK, .DEF, .SATK, .SDEF, .SPD {
-    width: 12em;
-  }
-
-  .stats {
-    max-width: 80%;
-  }
 }

@@ -1,33 +1,47 @@
-<!-- Progress Bar -->
-  <h4>Pokémon SS</h4>
-  <div class="stats">
-        <table class="centered">
-          <tbody>
-            <tr><td>HP</td>
-              <td><progress class="HP" value="{{pokemon.HP}}" max="255"></progress></td>
-              <td>{{pokemon.HP}}</td>
-            </tr>
-            <tr><td>ATK</td>
-              <td><progress class="ATK" value="{{pokemon.ATK}}" max="255"></progress></td>
-              <td>{{pokemon.ATK}}</td>
-            </tr>
-            <tr><td>DEF</td>
-              <td><progress class="DEF" value="{{pokemon.DEF}}" max="255"></progress></td>
-              <td>{{pokemon.DEF}}</td>
-            </tr>
-            <tr><td>SATK</td>
-              <td><progress class="SATK" value="{{pokemon.SATK}}" max="255"></progress></td>
-              <td>{{pokemon.SATK}}</td>
-            </tr>
-            <tr><td>SDEF</td>
-              <td><progress class="SDEF" value="{{pokemon.SDEF}}" max="255"></progress></td>
-              <td>{{pokemon.SDEF}}</td>
-            </tr>
-            <tr><td>SPD</td>
-              <td><progress class="SPD" value="{{pokemon.SPD}}" max="255"></progress></td>
-              <td>{{pokemon.SPD}}</td>
-            </tr>
-          </tbody>
-        </table>
-    </div>
-    <div class="total">Total: <span class="bold">{{pokemon.SS}}</span></div>
+
+<mat-card class="card">
+  <img class="pkm-img" src="{{urlImage}}{{pokemon.picture}}.png"/>
+  <mat-card-header class="header">
+    <div mat-card-avatar class="header-image"></div>
+    <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
+    <mat-card-subtitle>{{pokemon.description}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="top">
+
+    <h5>Pokémon SS</h5>
+        <div class="row center stats">
+
+                <table class="centered">
+                  <tbody>
+                    <tr><td>HP</td>
+                      <td><progress class="HP" value="{{pokemon.HP}}" max="255"></progress></td>
+                      <td>{{pokemon.HP}}</td>
+                    </tr>
+                    <tr><td>ATK</td>
+                      <td><progress class="ATK" value="{{pokemon.ATK}}" max="255"></progress></td>
+                      <td>{{pokemon.ATK}}</td>
+                    </tr>
+                    <tr><td>DEF</td>
+                      <td><progress class="DEF" value="{{pokemon.DEF}}" max="255"></progress></td>
+                      <td>{{pokemon.DEF}}</td>
+                    </tr>
+                    <tr><td>SATK</td>
+                      <td><progress class="SATK" value="{{pokemon.SATK}}" max="255"></progress></td>
+                      <td>{{pokemon.SATK}}</td>
+                    </tr>
+                    <tr><td>SDEF</td>
+                      <td><progress class="SDEF" value="{{pokemon.SDEF}}" max="255"></progress></td>
+                      <td>{{pokemon.SDEF}}</td>
+                    </tr>
+                    <tr><td>SPD</td>
+                      <td><progress class="SPD" value="{{pokemon.SPD}}" max="255"></progress></td>
+                      <td>{{pokemon.SPD}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+
+            <p class="total">Total: <span class="bold">{{pokemon.SS}}</span></p>
+
+  </mat-card-content>
+</mat-card>

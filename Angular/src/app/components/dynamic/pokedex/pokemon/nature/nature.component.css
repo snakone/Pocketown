@@ -1,10 +1,45 @@
-h4 {
-  margin-bottom: 30px;
+.header {
+  margin-bottom: 5px;
+}
+
+.pkm-img {
+  position: absolute;
+  right:20px;
+  top:10px;
+  width:56px;
+}
+
+.item {
+  width: 60px;
+}
+
+.card {
+  max-width: 300px;
+  margin: 20px auto auto auto;
+  min-height: 275px;
+}
+
+.top {
+  margin-top: 10px;
+}
+
+mat-card-subtitle {
+  text-align: left;
+}
+
+.row {
+  margin-top: 15px;
+}
+
+.header-image {
+  background-image: url('../../../../../../assets/icons/nature64.png');
+  background-size: cover;
+  margin-right: 10px;
+  border-radius: 0;
 }
 
 .nature {
-  width: 80%;
-  margin: 0 auto;
+  margin: 30px auto auto auto;
 }
 
 .good {

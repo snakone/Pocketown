@@ -26,7 +26,8 @@
 
     <div class="row center family">
         <span *ngFor="let familiar of family" (click)="goPokemon(familiar)">
-          <img class="familiar" src="{{urlImage}}{{familiar.picture}}.png"/>
+          <img class="familiar" matTooltip="{{familiar.name}}"
+          src="{{urlImage}}{{familiar.picture}}.png"/>
         </span>
     </div>
 

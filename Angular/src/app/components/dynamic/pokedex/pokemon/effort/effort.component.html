@@ -1,9 +1,21 @@
-<h4>Effort Points</h4>
-    <div class="effortBars">
-        <progress class="HP" value="{{pokemon.ef_HP}}" max="4" data-label="HP"></progress>
-        <progress class="ATK" value="{{pokemon.ef_ATK}}" max="4" data-label="ATK"></progress>
-        <progress class="DEF" value="{{pokemon.ef_DEF}}" max="4" data-label="DEF"></progress>
-        <progress class="S.ATK" value="{{pokemon.ef_SATK}}" max="4" data-label="S.ATK"></progress>
-        <progress class="S.DEF" value="{{pokemon.ef_SDEF}}" max="4" data-label="S.DEF"></progress>
-        <progress class="SPD" value="{{pokemon.ef_SPD}}" max="4" data-label="SPD"></progress>
-    </div>
+    <mat-card class="card">
+      <img class="pkm-img" src="{{urlImage}}{{pokemon.picture}}.png"/>
+      <mat-card-header class="header">
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
+        <mat-card-subtitle>{{pokemon.description}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content class="top">
+
+        <h5>Effort Points</h5>
+        <div class="effortBars">
+            <progress class="HP" value="{{pokemon.ef_HP}}" max="4" data-label="HP"></progress>
+            <progress class="ATK" value="{{pokemon.ef_ATK}}" max="4" data-label="ATK"></progress>
+            <progress class="DEF" value="{{pokemon.ef_DEF}}" max="4" data-label="DEF"></progress>
+            <progress class="S.ATK" value="{{pokemon.ef_SATK}}" max="4" data-label="S.ATK"></progress>
+            <progress class="S.DEF" value="{{pokemon.ef_SDEF}}" max="4" data-label="S.DEF"></progress>
+            <progress class="SPD" value="{{pokemon.ef_SPD}}" max="4" data-label="SPD"></progress>
+        </div>
+
+      </mat-card-content>
+    </mat-card>

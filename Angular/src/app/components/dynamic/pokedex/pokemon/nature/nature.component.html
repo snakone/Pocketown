@@ -1,14 +1,26 @@
-    <h4>Nature & Ability</h4>
-      <div class="nature">
-          <p>
-            <span class="bold">{{pokemon.nature}}: </span>
-            <span class="good">{{nature.good}}</span>
-            <span class="bad"> {{nature.bad}}</span>
-          </p>
-          <p>
-             <span class="bold">{{pokemon.nature2}}: </span>
-             <span class="good">{{nature2.good}}</span>
-             <span class="bad"> {{nature2.bad}}</span>
-          </p>
-          <p>Ability: <span class="bold">{{pokemon.ability}}</span></p>
-      </div>
+      <mat-card class="card">
+        <img class="pkm-img" src="{{urlImage}}{{pokemon.picture}}.png"/>
+        <mat-card-header class="header">
+          <div mat-card-avatar class="header-image"></div>
+          <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
+          <mat-card-subtitle>{{pokemon.description}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="top">
+
+          <h5>Nature & Ability</h5>
+          <div class="nature">
+              <p>
+                <span class="bold">{{pokemon.nature}}: </span>
+                <span class="good">{{nature.good}}</span>
+                <span class="bad"> {{nature.bad}}</span>
+              </p>
+              <p>
+                 <span class="bold">{{pokemon.nature2}}: </span>
+                 <span class="good">{{nature2.good}}</span>
+                 <span class="bad"> {{nature2.bad}}</span>
+              </p>
+              <p>Ability: <span class="bold">{{pokemon.ability}}</span></p>
+          </div>
+
+        </mat-card-content>
+      </mat-card>
