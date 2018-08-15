@@ -4,7 +4,6 @@
 
 .center {
   margin-left: -15px;
-  margin-bottom: 20px;
 }
 
 .bold {
@@ -21,3 +20,9 @@
 .Any {
   background: none;
 }
+
+.Tiny {color:#bbdefb}
+.Little {color:#64b5f6}
+.Adult {color:#2196f3}
+.Mega {color:#1976d2}
+.R2 {color:#0d47a1}

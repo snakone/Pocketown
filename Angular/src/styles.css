@@ -46,14 +46,6 @@
 .SS {color: black}
 .N\º {color:grey}
 
-.Tiny {color:#bbdefb}
-.Little {color:#64b5f6}
-.Adult {color:#2196f3}
-.Mega {color:#1976d2}
-.R2 {color:#0d47a1}
-
-.Tiny {background-color: grey;}
-.S, .Little {background-color: #A052A0;}
-.R, .Adult {background-color: #6898F0;}
-.SR, .Mega {background-color: #f9b800;}
-.SSR, .R2 {background-color: #F08830;}
+.bottom{
+  padding-bottom: 50px;
+}

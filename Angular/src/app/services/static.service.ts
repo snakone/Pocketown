@@ -23,6 +23,6 @@ export class StaticService {
 
     this.stats = ["HP", "ATK", "DEF", "S.ATK", "S.DEF", "SPD", "SS", "Nº"];  // Stats
 
-    this.evolutions = ["Tiny", "Medium", "Final", "Mega", "Mega R2", "Any"];  // Evolutions
+    this.evolutions = ["Tiny", "Little", "Adult", "Mega", "Mega R2", "Any"];  // Evolutions
    }
 }

@@ -1,13 +1,11 @@
-.bottom{
-  padding-bottom: 50px;
-}
+
 
 #Pikachu {
 	  opacity:0.5;
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 55px; /* Place the button at the bottom of the page */
-    right: -85px; /* Place the button 25px from the right */
+    right: -75px; /* Place the button 25px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */

@@ -75,3 +75,9 @@ mat-icon {
   cursor: pointer;
   color:black;
 }
+
+.Tiny {background-color: grey;}
+.S, .Little {background-color: #A052A0;}
+.R, .Adult {background-color: #6898F0;}
+.SR, .Mega {background-color: #f9b800;}
+.SSR, .R2 {background-color: #F08830;}

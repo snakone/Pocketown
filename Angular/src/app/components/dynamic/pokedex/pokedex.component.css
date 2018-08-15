@@ -25,10 +25,6 @@ span {
   filter: brightness(1.2);
 }
 
-.bottom {
-  margin-bottom: 15px;
-}
-
 .loading {
 position: absolute;
 text-align: center;

@@ -1,3 +1,10 @@
+<div class="row center loading" *ngIf="!pokemonResult && filterType">  <!-- Only when Loading... -->
+    <img class="responsive-img" src="https://i.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.webp">
+  <p class="center">
+    <span class="bold">LOADING... PLEASE WAIT</span>
+  </p>
+</div>
+
  <div *ngIf="pokemonResult && filterType" class="center"> <!-- Filter Match! -->
    <h4>You are watching
      <span class="type {{filterType}}">{{filterType}}</span> Pokémon</h4>
@@ -5,20 +12,13 @@
     and <span class="bold {{evolutionName}}">{{evolutionName}}</span> Evolution</h5>
  </div>
 
-<div class="animated slideInUp center top" *ngIf="pokemonResult && filterType">  <!-- Animated DIV -->
+<div class="animated slideInUp center top bottom" *ngIf="pokemonResult && filterType">  <!-- Animated DIV -->
   <div class="row">  <!-- POKEMON GRID -->
       <span *ngFor="let pokemon of pokemonResult">
         <img (click)="navigate(pokemon)"
         class="pokemon" matTooltip="{{pokemon.name}}"
         src="{{urlImage}}{{pokemon.picture}}.png"></span>
   </div>
-</div>
-
-<div class="row center loading" *ngIf="!pokemonResult && filterType">  <!-- Only when Loading... -->
-    <img class="responsive-img" src="https://i.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.webp">
-  <p class="center">
-    <span class="bold">LOADING... PLEASE WAIT</span>
-  </p>
 </div>
 
 <div class="center lost" *ngIf="!filterType"> <!-- Filter NO Match! -->

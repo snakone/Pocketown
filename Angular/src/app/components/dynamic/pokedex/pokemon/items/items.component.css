@@ -27,7 +27,6 @@
   background-image: url('../../../../../../assets/icons/items.png');
   background-size: cover;
   margin-right: 10px;
-  border-radius: 5px;
 }
 
 .grade, .evolution, .legend {
