@@ -56,12 +56,10 @@ import { BioComponent } from './components/dynamic/pokedex/pokemon/bio/bio.compo
 import { StadisticsComponent } from './components/dynamic/pokedex/pokemon/stadistics/stadistics.component';
 import { MatchComponent } from './components/dynamic/pokedex/pokemon/match/match.component';
 import { NatureComponent } from './components/dynamic/pokedex/pokemon/nature/nature.component';
-import { TypeComponent } from './components/dynamic/pokedex/pokemon/type/type.component';
 import { EffortComponent } from './components/dynamic/pokedex/pokemon/effort/effort.component';
 import { ItemsComponent } from './components/dynamic/pokedex/pokemon/items/items.component';
 import { MovesComponent } from './components/dynamic/pokedex/pokemon/moves/moves.component';
 import { ZmoveComponent } from './components/dynamic/pokedex/pokemon/zmove/zmove.component';
-
 
 
 @NgModule({
@@ -72,7 +70,7 @@ import { ZmoveComponent } from './components/dynamic/pokedex/pokemon/zmove/zmove
     AdminPokemonComponent, TypesComponent, LaboratoryComponent, SearchComponent,
     ResultComponent, StatsComponent, FilteringComponent, EvolutionsComponent,
     StadisticsComponent, BioComponent, MatchComponent, NatureComponent,
-    TypeComponent, EffortComponent, ItemsComponent, MovesComponent, ZmoveComponent
+    EffortComponent, ItemsComponent, MovesComponent, ZmoveComponent
 
 ],
   imports: [

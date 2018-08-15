@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 import { PokedexService } from '../../../../services/pokedex.service';  // Pokedex Service
 import { Pokemon } from '../../../../models/pokemon';  // Pokemon Model
@@ -13,8 +13,9 @@ import { ActivatedRoute } from '@angular/router'; // Routes
 })
 export class PokemonComponent implements OnInit {
 
-  pokemon: Pokemon;  // Save selected Pokemon
+  @Output() pokemon: Pokemon;  // Save selected Pokemon
   urlImage: string;
+  family: string[];
 
   constructor(private pokedexService: PokedexService,
               private activeRoute: ActivatedRoute) {
@@ -27,10 +28,6 @@ export class PokemonComponent implements OnInit {
     this.pokedexService.getPokemonbyId(routeParams)  // HTTP POST to Server with Pokemon ID
      .subscribe(res => {  // Subscribe to the Server Response
        this.pokemon = res as any;  // Response as Pokemon
-
-       // Changing Evolution Number to String
-       this.pokemon.evolution = this.pokedexService
-        .evolutionToString(this.pokemon.evolution);
      })
 
   }

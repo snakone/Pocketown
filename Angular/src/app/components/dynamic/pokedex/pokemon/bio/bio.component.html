@@ -1,27 +1,37 @@
-     <div class="bio">
-  <div class="col s6 m6 l6">
- <img class="pkm-img"  matTooltip="{{pokemon.name}}"
-  src="{{urlImage}}{{pokemon.picture}}.png"/>
-  </div>
-  <div class="col s6 m6 l6">
-    <div class="table center">
-        <table class="centered highlight">
-          <tbody>
-            <tr>
-              <td>Nº</td>
-              <td>#{{pokemon.pokedex}}</td>
-            </tr>
-            <tr>
-              <td>Grade</td>
-              <td><span class="grade {{pokemon.grade}}">
-                {{pokemon.grade}}</span></td>
-            </tr>
-            <tr>
-              <td>Evolution</td>
-              <td>{{pokemon.evolution}}</td>
-            </tr>
-          </tbody>
-        </table>
+<mat-card class="card">
+  <img class="pkm-img" src="{{urlImage}}{{pokemon.picture}}.png"/>
+  <mat-card-header class="header">
+    <div mat-card-avatar class="header-image"></div>
+    <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
+    <mat-card-subtitle>{{pokemon.description}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+
+    <p class="center">
+      <span class="type {{pokemon.type}}">{{pokemon.type}}</span>
+      <span *ngIf="pokemon.type2"
+      class="type {{pokemon.type2}}">{{pokemon.type2}}</span>
+    </p>
+
+    <p class="info">{{pokemon.info}}</p>
+
+    <div class="row">
+      <div class="col s6 m6 l6 center">
+        <span class="bold">Evolution:</span> <span class="evolution {{pokemon.evolution}}">{{pokemon.evolution}}</span>
+      </div>
+      <div class="col s6 m6 l6 center">
+        <span class="bold">Grade:</span> <span class="grade {{pokemon.grade}}">{{pokemon.grade}}</span>
+      </div>
     </div>
-  </div>
-</div>
+
+    <div class="row center family">
+        <span *ngFor="let familiar of family" (click)="goPokemon(familiar)">
+          <img class="familiar" src="{{urlImage}}{{familiar.picture}}.png"/>
+        </span>
+    </div>
+
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <mat-icon class="like">favorite</mat-icon>
+  </mat-card-actions>
+</mat-card>

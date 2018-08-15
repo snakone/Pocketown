@@ -1,50 +1,77 @@
-.table {
-  margin-top: 20px;
-  width: 90%;
-  margin: 10px auto;
-}
-
-.bio {
-  width: 75%;
-  margin: 0 auto;
-}
-
-@media (max-width: 540px){
-
-  .bio {
-    width: 100%;
-  }
-}
-
-.highlight td {
-  width: 100px;
-}
-
-.highlight td:last-child {
-  font-weight: bold;
+.header {
+  margin-bottom: 5px;
 }
 
 .pkm-img {
-padding-top: 20px;
-width: 105px;
-height: auto;
+  position: absolute;
+  right:20px;
+  top:10px;
+  width:56px;
 }
 
-.pkm-img:hover {
-  cursor: pointer;
-  filter: brightness(1.2);
+.family {
+margin-top: 10px;
 }
 
-.grade {
+.familiar {
+  width: 30px;
+  margin: 0 3px;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+mat-icon {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.like {
+  color:pink;
+}
+
+.card {
+  max-width: 300px;
+  margin: 20px auto auto auto;
+}
+
+.row {
+  margin-top: 25px;
+}
+
+.header-image {
+  background-image: url('../../../../../../assets/icons/pokeicon.png');
+  background-size: cover;
+  margin-right: 10px;
+}
+
+
+.grade, .evolution, .legend {
   border: 1px solid #787887;
   color:white;
   font-weight:bold;
   border-radius:3px;
   padding:5px 8px;
   cursor: pointer;
+  margin-left: 15px;
 }
 
-.S {background-color: #A052A0;}
-.R {background-color: #6898F0;}
-.SR {background-color: #f9b800;}
-.SSR {background-color: #F08830;}
+
+.type {
+  padding: 4px 8px;
+  border-radius: 3px;
+  color:white;
+  font-weight: bold;
+  margin: auto 5px;
+  border: 1px solid black;
+  display: inline-grid;
+  width: auto;
+  font-size: 1.1em!important;
+}
+
+.type:hover{
+  filter: brightness(1.5);
+  cursor: pointer;
+  color:black;
+}

@@ -1,46 +1,41 @@
-h4 {
-  margin-bottom: 15px;
+.header {
+  margin-bottom: 5px;
 }
 
-@media (max-width: 992px){
-
-  h4 {
-      margin-top: 35px;
-  }
+.pkm-img {
+  position: absolute;
+  right:20px;
+  top:10px;
+  width:56px;
 }
 
-.center {
-  margin: 0 auto;
+.card {
+  max-width: 300px;
+  margin: 20px auto auto auto;
+  min-height: 300px;
 }
 
-.items {
-  width: 80%;
-  margin: 25px auto auto auto;
+.top {
+  margin-top: 20px;
 }
 
-@media (min-width: 1200px){
-
-  .items {
-    width: 60%;
-  }
+.row {
+  margin-top: 25px;
 }
 
-@media (max-width: 540px){
-
-  .items {
-    width: 85%;
-  }
+.header-image {
+  background-image: url('../../../../../../assets/icons/items.png');
+  background-size: cover;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
-
-@media (max-width: 400px){
-
-  .items {
-    width: 100%;
-  }
-}
-
-img {
-  padding: 10px;
-  width: 75px;
+.grade, .evolution, .legend {
+  border: 1px solid #787887;
+  color:white;
+  font-weight:bold;
+  border-radius:3px;
+  padding:5px 8px;
+  cursor: pointer;
+  margin-left: 15px;
 }

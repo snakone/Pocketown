@@ -1,29 +1,37 @@
-.match {
-  width: 100%;
-  margin: 25px auto auto auto;
-}
-
-@media (max-width: 993px){
-
-  h4 {
-      margin-top: 1px;
-  }
+.header {
+  margin-bottom: 5px;
 }
 
 img {
- width: 50px;
- margin: 2px;
+  width: 60px;
+  margin: 0 5px;
 }
 
-img:hover {
-  cursor: pointer;
-  filter: brightness(1.2);
+.pkm-img {
+  position: absolute;
+  right:20px;
+  top:10px;
+  width:56px;
 }
 
-@media (max-width:437px){
-  img {
-    width: 35px;
-  }
+.top {
+  margin-top: 20px;
+}
+
+.card {
+  max-width: 300px;
+  margin: 20px auto auto auto;
+}
+
+.row {
+  margin-top: 15px;
+}
+
+.header-image {
+  background-image: url('../../../../../../assets/icons/match.png');
+  background-size: cover;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
 .good , .bad {

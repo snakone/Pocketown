@@ -17,5 +17,12 @@ pokedexCtrl.getPokemonbyId = async (req, res) => {  // Get Pokemon by ID
     res.json(pokemon);  // Send Pokemon to server as JSON
 }
 
+pokedexCtrl.getFamily = async (req, res) => {  // Get Pokemon Family
+
+    const filterFamily = new RegExp(`^${req.params.family}`);  //  Template String ES6 Pattern
+    const family = await pokemons.find({ family: filterFamily}); // Only need Name and Picture
+    res.json(family);  // Send Family to server as JSON
+}
+
 
 module.exports = pokedexCtrl;  // Exports the Object with all the Methods

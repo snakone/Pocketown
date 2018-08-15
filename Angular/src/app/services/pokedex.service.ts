@@ -26,14 +26,18 @@ export class PokedexService {
     return this.http.get(this.URL_API + `/${id}`);  // HTTP GET to Server API - POSTMAN belike
   }
 
+  getFamily(family: string){  // Get the Pokemon Family
+    return this.http.get(this.URL_API + `/family/${family}`);   // HTTP GET to Server API - POSTMAN belike
+  }
+
   evolutionToString(evolution: string) {  // Changing Evolution Number to String
     if (evolution == "1") evolution = "Tiny";
-    if (evolution == "2") evolution = "Medium";
-    if (evolution == "3") evolution = "Final";
+    if (evolution == "2") evolution = "Little";
+    if (evolution == "3") evolution = "Adult";
     if (evolution == "4") evolution = "Mega";
     if (evolution == "5") evolution = "R2";
 
-    return evolution; 
+    return evolution;
   }
 
 }

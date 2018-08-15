@@ -6,6 +6,7 @@ export class Pokemon {
   type: string;
   type2: string;
   picture: string;
+  family: string;
   ss: number;
   evolution: string;
   nature: string;
@@ -16,6 +17,7 @@ export class Pokemon {
   bad1: string;
   bad2: string;
   bad3: string;
+  attack: string;
 
   contructor(id: string, name: string, pokedex: number,
              grade: string, type: string, type2: string,

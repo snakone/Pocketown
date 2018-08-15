@@ -15,7 +15,6 @@ span {
   margin:0 auto;
 }
 
-
 .pokemon {
   width: 56px;
   height: 63px;
@@ -34,7 +33,7 @@ span {
 position: absolute;
 text-align: center;
 top:45%;
-left:55%;
+left:56%;
 transform: translate(-50%, -50%);
 margin-top: 10px;
 }
