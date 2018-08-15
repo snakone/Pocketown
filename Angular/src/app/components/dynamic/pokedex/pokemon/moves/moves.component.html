@@ -1,3 +1,27 @@
-<p>
-  moves works!
-</p>
+<mat-card class="card">
+  <img class="pkm-img" src="{{urlImage}}{{pokemon.picture}}.png"/>
+  <mat-card-header class="header">
+    <div mat-card-avatar class="header-image"></div>
+    <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
+    <mat-card-subtitle>{{pokemon.description}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="top">
+
+    <h5>Recommened Moves</h5>
+        <div class="row center">
+            <div class="col s6 m6 l6">
+                <p>{{pokemon.move1}}</p>
+                <p>{{pokemon.move2}}</p>
+            </div>
+            <div class="col s6 m6 l6">
+                <p>{{pokemon.move3}}</p>
+                <p>{{pokemon.move4}}</p>
+            </div>
+        </div>
+        <div *ngIf="pokemon.evolution == 'Mega' || pokemon.evolution == 'R2'" class="center lessTop">
+          <span>{{pokemon.zmove}}</span>
+          <span><img class="zMove" src="{{urlzMove}}{{pokemon.z_picture}}.gif"/></span>
+        </div>
+
+  </mat-card-content>
+</mat-card>
