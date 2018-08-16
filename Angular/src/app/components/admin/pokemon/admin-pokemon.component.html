@@ -1,5 +1,5 @@
 
-  <div class="row">
+  <div class="row" id="top">
     <div class="col s12 m12">
       <div class="card">
         <div class="card-content">
@@ -33,6 +33,12 @@
                   placeholder="Enter Pokémon SS">
                 </div>
 
+                <div class="input-field col s12 m12">
+                  <input type="text" name="info"
+                  #info="ngModel" [(ngModel)]="admin.selectedPokemon.info"
+                  placeholder="Enter the Pokémon Info">
+                </div>
+
                 <div class="card-action">
                   <div class="input-field col s12 m12 center">
                     <button type="submit" class="btn blue">Save</button>
@@ -54,18 +60,14 @@
       <thead>
         <th>Name</th>
         <th>Pokédex</th>
-        <th>Grade</th>
-        <th>SS</th>
         <th>Admin</th>
       </thead>
       <tbody>
         <tr *ngFor="let pokemon of admin.pokedex">
           <td>{{pokemon.name}}</td>
           <td>{{pokemon.pokedex}}</td>
-          <td>{{pokemon.grade}}</td>
-          <td>{{pokemon.SS}}</td>
           <td>
-            <mat-icon (click)="updatePokemon(pokemon)">edit</mat-icon>
+            <a href="admin/pokemon#top"><mat-icon (click)="updatePokemon(pokemon)">edit</mat-icon></a>
             <mat-icon (click)="deletePokemon(pokemon._id)">delete</mat-icon>
           </td>
         </tr>

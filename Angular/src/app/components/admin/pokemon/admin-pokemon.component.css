@@ -4,4 +4,10 @@ button {
 
 mat-icon {
   margin:0 10px;
+  color: blue;
+}
+
+mat-icon:hover {
+  color:red;
+  cursor: pointer;
 }

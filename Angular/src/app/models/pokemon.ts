@@ -18,6 +18,7 @@ export class Pokemon {
   bad2: string;
   bad3: string;
   attack: string;
+  info: string;
 
   contructor(id: string, name: string, pokedex: number,
              grade: string, type: string, type2: string,
