@@ -45,5 +45,10 @@ export class AppComponent {
    this.matIconRegistry.addSvgIcon("laboratory", this.domSanitizer
    .bypassSecurityTrustResourceUrl("../assets/icons/laboratory.svg")
    );
+
+   this.matIconRegistry.addSvgIcon("move", this.domSanitizer
+   .bypassSecurityTrustResourceUrl("../assets/icons/move.svg")
+   );
+
   }
 }

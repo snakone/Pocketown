@@ -28,5 +28,9 @@
 
 <mat-menu #Admin="matMenu"> <!-- Admin Menu -->
   <button [routerLink]="['admin/pokemon']" routerLinkActive="active"
-          mat-menu-item><mat-icon svgIcon="psyduck"></mat-icon>Pokémon</button>
+          mat-menu-item><mat-icon svgIcon="psyduck"></mat-icon>Pokémon
+  </button>
+  <button [routerLink]="['admin/move']" routerLinkActive="active"
+          mat-menu-item><mat-icon svgIcon="move"></mat-icon>Moves
+  </button>
 </mat-menu>

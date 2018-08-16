@@ -30,7 +30,7 @@ adminCtrl.updatePokemon = async (req, res) => {  // Update Pokemon
    const pokemon = req.body; // Pokemon with updated INFO
 
    await pokemons.findByIdAndUpdate(id, {$set: pokemon},  // Find by ID and Update in MongoDB
-                                             {new: true});  // New Pokemon if ID not Match
+                                        {new: true});  // New Pokemon if ID not Match
      res.json({
        status: "Pokemon actualizado"
      });
