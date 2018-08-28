@@ -40,11 +40,13 @@ import { AboutComponent } from './components/dynamic/about/about.component';
 // Pokedex
 import { PokedexComponent } from './components/dynamic/pokedex/pokedex.component';
 import { PokemonComponent } from './components/dynamic/pokedex/pokemon/pokemon.component';
-//Laboratory
+// Laboratory
 import { LaboratoryComponent } from './components/dynamic/laboratory/laboratory.component';
 import { SearchComponent } from './components/dynamic/laboratory/search/search.component';
 import { ResultComponent } from './components/dynamic/laboratory/result/result.component';
 import { FilteringComponent } from './components/dynamic/laboratory/filtering/filtering.component';
+// Moves
+import { MovesComponent } from './components/dynamic/moves/moves.component';
 
 // Static Components //
 import { StatsComponent } from './components/static/stats/stats.component';
@@ -58,7 +60,7 @@ import { MatchComponent } from './components/dynamic/pokedex/pokemon/match/match
 import { NatureComponent } from './components/dynamic/pokedex/pokemon/nature/nature.component';
 import { EffortComponent } from './components/dynamic/pokedex/pokemon/effort/effort.component';
 import { ItemsComponent } from './components/dynamic/pokedex/pokemon/items/items.component';
-import { MovesComponent } from './components/dynamic/pokedex/pokemon/moves/moves.component';
+import { PokemonMovesComponent } from './components/dynamic/pokedex/pokemon/moves/pokemon-moves.component';
 import { AdminMoveComponent } from './components/admin/move/admin-move.component';
 
 
@@ -70,7 +72,8 @@ import { AdminMoveComponent } from './components/admin/move/admin-move.component
     AdminPokemonComponent, TypesComponent, LaboratoryComponent, SearchComponent,
     ResultComponent, StatsComponent, FilteringComponent, EvolutionsComponent,
     StadisticsComponent, BioComponent, MatchComponent, NatureComponent,
-    EffortComponent, ItemsComponent, MovesComponent, MovesComponent, AdminMoveComponent
+    EffortComponent, ItemsComponent, PokemonMovesComponent, MovesComponent,
+    AdminMoveComponent
 
 ],
   imports: [

@@ -1,0 +1,31 @@
+    <div class="sticky">  <!-- Sticky Search Bar -->
+          <div class="input-field center top">  <!-- Key Up Event -->
+              <input type="text" name="searchValue"
+              (keyup)="onKeyUp($event)" [(ngModel)]="searchValue"
+              placeHolder="Search a Pokémon Move..">
+          </div>
+    </div>
+
+<div class="row center moves">
+    <mat-card *ngFor="let move of filteredMoveList" class="col s12 m12 l6 card center">
+      <mat-card-content>
+      <span class="type {{move.type}}">{{move.name}}</span>
+
+        <p>
+          <span class="stat"><span class="bold">Power:</span> {{move.power}}</span>
+          <span class="stat"><span class="bold">Hit Rate:</span> {{move.hit}}</span>
+          <span class="stat"><span class="bold">Type:</span>
+            <span class="bold {{move.type}}_move"> {{move.type}}</span>
+         </span>
+        </p>
+        <p>
+          <span class="stat"><span class="bold">Attack:</span> {{move.attack}}</span>
+          <span class="stat"><span class="bold">PP:</span> {{move.pp}}</span>
+          <span class="stat"><span class="bold">Move:</span> {{move.z}}</span>
+        </p>
+        <p class="info">
+        {{move.info}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+</div>

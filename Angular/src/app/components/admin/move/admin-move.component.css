@@ -11,3 +11,7 @@ mat-icon:hover {
   color:red;
   cursor: pointer;
 }
+
+.card .card-action {
+  border-top: 0;
+}

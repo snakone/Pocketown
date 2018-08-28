@@ -1,0 +1,70 @@
+.header {
+  margin-bottom: 5px;
+}
+
+.pkm-img {
+  position: absolute;
+  right:20px;
+  top:10px;
+  width:56px;
+}
+
+h5 {
+  margin-bottom: 0;
+}
+
+.type{
+  padding: 4px 8px;
+  border-radius: 3px;
+  color:white;
+  font-weight: bold;
+  margin:3px;
+  border: 1px solid black;
+  display: inline-grid;
+  width: auto;
+  font-size: .9em!important;
+}
+
+.zMove {
+  width: 80%;
+  margin: -10px auto auto auto;
+  border-radius: 4px;
+}
+
+.lessTop {
+  margin-top: -10px;
+}
+
+.card {
+  max-width: 300px;
+  margin: 20px auto auto auto;
+}
+
+.mat-card {
+  padding: 24px 24px 10px 24px;
+}
+
+.top {
+  margin-top: 10px;
+}
+
+mat-card-subtitle {
+  text-align: left;
+}
+
+
+.header-image {
+  background-image: url('../../../../../../assets/icons/moves.png');
+  background-size: cover;
+  margin-right: 10px;
+  border-radius: 0;
+}
+
+.zName{
+	background: #cdeb8e;
+	background: -moz-linear-gradient(right, red 0%, yellow 100%);
+	background: -webkit-linear-gradient(right, red 0%,yellow 100%);
+	background: linear-gradient(to right, red , yellow);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 );
+
+}

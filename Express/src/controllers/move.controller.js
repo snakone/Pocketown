@@ -8,19 +8,28 @@ moveCtrl.addMove = async (req, res) => {  // Add Move to MongoDB
 
   const move = new moves(req.body);  // Get the html Body -> Move Object
   await move.save();  // Save on MongoDB
-  res.json('Move Guardado');
+  res.json('Move Guardado'); 
 }
 
 moveCtrl.getMove = async (req, res) => {  // Get ALL Move
 
     const move = await moves.find() // Find Move in MongoDB
-     .sort({ pokedex: + 1 });  // Sort Move by Pokedex DESC
+     .sort({ name: + 1 });  // Sort Move by Name DESC
     res.json(move);  // Send Move to server as JSON
 }
 
 moveCtrl.getMovebyId = async (req, res) => {  // Get Move by ID
 
     const move = await moves.findById(req.params.id);  // Find by ID
+    res.json(move);  // Send Move to server as JSON
+}
+
+moveCtrl.getMoveTypebyName = async (req, res) => {  // Get Move by ID
+
+    m = { "$match" : { "name" : { "$in" : req.query.moves } } };
+    a = { "$addFields" : { "__order" : { "$indexOfArray" : [ req.query.moves, "$name" ] } } };
+    s = { "$sort" : { "__order" : 1 } };// Find by ID
+    const move = await moves.aggregate( [ m, a, s ] );
     res.json(move);  // Send Move to server as JSON
 }
 

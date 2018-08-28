@@ -11,6 +11,7 @@
 
 .item {
   width: 60px;
+  padding: 4px;
 }
 
 .card {
@@ -39,6 +40,6 @@ mat-card-subtitle {
 }
 
 .items {
-  width: 80%;
+  width: 100%;
   margin: 20px auto auto auto;
 }

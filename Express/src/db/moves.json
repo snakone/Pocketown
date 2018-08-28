@@ -1,487 +1,487 @@
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b291"},"name":"Thunder Shock","z":"No","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b292"},"name":"Charm","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Fairy","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b293"},"name":"Tail Whip","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b294"},"name":"Sweet Kiss","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"75"},"type":"Fairy","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b295"},"name":"Growl","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b296"},"name":"Quick Attack","z":"No","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b297"},"name":"Agility","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b298"},"name":"Scratch","z":"No","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"35"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b299"},"name":"Roar","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b29a"},"name":"Ember","z":"No","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b29b"},"name":"Smokescreen","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b29c"},"name":"Rage","z":"No","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b29d"},"name":"Scary Face","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b29e"},"name":"Dragon Rage","z":"No","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b29f"},"name":"Bubble","z":"No","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a0"},"name":"Withdraw","z":"No","power":{"$numberInt":"40"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a1"},"name":"Water Gun","z":"No","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a2"},"name":"Rain Dance","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a3"},"name":"Vine Whip","z":"No","power":{"$numberInt":"45"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a4"},"name":"Growth","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a5"},"name":"Synthesis","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a6"},"name":"Sand Attack","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a7"},"name":"Gust","z":"No","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"35"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a8"},"name":"Whirlwind","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a9"},"name":"Mirror Wave","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2aa"},"name":"String Shot","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"95"},"type":"Bug","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ab"},"name":"Harden","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ac"},"name":"Confusion","z":"No","power":{"$numberInt":"50"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ad"},"name":"Leer","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ae"},"name":"Horn Attack","z":"No","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2af"},"name":"Acid","z":"No","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b0"},"name":"Tackle","z":"No","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"35"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b1"},"name":"Pound","z":"No","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"35"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b2"},"name":"Karate Chop","z":"No","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b3"},"name":"Pay Day","z":"No","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b4"},"name":"Razor Wind","z":"No","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b5"},"name":"Jump Kick","z":"No","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b6"},"name":"Rolling Kick","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b7"},"name":"Sing","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"55"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b8"},"name":"Sonic Boom","z":"No","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b9"},"name":"Disable","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ba"},"name":"Mist","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2bb"},"name":"Bubble Beam","z":"No","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2bc"},"name":"Aurora Beam","z":"No","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2bd"},"name":"Peck","z":"No","power":{"$numberInt":"35"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"35"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2be"},"name":"Low Kick","z":"No","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2bf"},"name":"Fissure","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"30"},"type":"Ground","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c0"},"name":"Hypnosis","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"60"},"type":"Psychic","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c1"},"name":"Meditate","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c2"},"name":"Teleport","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c3"},"name":"Night Shade","z":"No","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c4"},"name":"Mimic","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c5"},"name":"Screech","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c6"},"name":"Confuse Ray","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c7"},"name":"Defense Curl","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c8"},"name":"Metronome","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c9"},"name":"Self-Destruct","z":"No","power":{"$numberInt":"200"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ca"},"name":"Lick","z":"No","power":{"$numberInt":"30"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2cb"},"name":"Smog","z":"No","power":{"$numberInt":"30"},"attack":"Special","hit":{"$numberInt":"70"},"type":"Poison","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2cc"},"name":"Sludge","z":"No","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2cd"},"name":"Bone Club","z":"No","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Ground","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ce"},"name":"Clamp","z":"No","power":{"$numberInt":"35"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Water","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2cf"},"name":"Spike Cannon","z":"No","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d0"},"name":"Constrict","z":"No","power":{"$numberInt":"10"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"35"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d1"},"name":"Amnesia","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d2"},"name":"Kinesis","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d3"},"name":"Barrage","z":"No","power":{"$numberInt":"15"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d4"},"name":"Leech Life","z":"No","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d5"},"name":"Lovely Kiss","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"75"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d6"},"name":"Transform","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d7"},"name":"Flash","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d8"},"name":"Splash","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d9"},"name":"Acid Armor","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2da"},"name":"Crabhammer","z":"No","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Water","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2db"},"name":"Explosion","z":"No","power":{"$numberInt":"250"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2dc"},"name":"Sharpen","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2dd"},"name":"Conversion","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2de"},"name":"False Swipe","z":"No","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2df"},"name":"Triple Kick","z":"No","power":{"$numberInt":"10"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Fighting","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e0"},"name":"Flail","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e1"},"name":"Conversion 2","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e2"},"name":"Aeroblast","z":"No","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"95"},"type":"Flying","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e3"},"name":"Cotton Spore","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"85"},"type":"Grass","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e4"},"name":"Spite","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e5"},"name":"Powder Snow","z":"No","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e6"},"name":"Octazooka","z":"No","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Water","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e7"},"name":"Foresight","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e8"},"name":"Bone Rush","z":"No","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Ground","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e9"},"name":"Sandstorm","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Rock","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ea"},"name":"Endure","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2eb"},"name":"Milk Drink","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ec"},"name":"Spark","z":"No","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ed"},"name":"Fury Cutter","z":"No","power":{"$numberInt":"10"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Bug","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ee"},"name":"Attract","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ef"},"name":"Encore","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f0"},"name":"Vital Throw","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f1"},"name":"Sunny Day","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f2"},"name":"Rock Smash","z":"No","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f3"},"name":"Hail","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f4"},"name":"Mud Sport","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f5"},"name":"Hyper Voice","z":"No","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f6"},"name":"Bullet Seed","z":"No","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f7"},"name":"Iron Defense","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f8"},"name":"Howl","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f9"},"name":"Covet","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2fa"},"name":"Gyro Ball","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2fb"},"name":"Assurance","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2fc"},"name":"Embargo","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2fd"},"name":"Psycho Shift","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2fe"},"name":"Magnet Rise","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ff"},"name":"Aqua Tail","z":"No","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Water","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b300"},"name":"Vacuum Wave","z":"No","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b301"},"name":"Captivate","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b302"},"name":"Double Hit","z":"No","power":{"$numberInt":"35"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b303"},"name":"Twineedle","z":"No","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b304"},"name":"Psywave","z":"No","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b305"},"name":"Pin Missile","z":"No","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Bug","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b306"},"name":"Double Kick","z":"No","power":{"$numberInt":"30"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b307"},"name":"Submission","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"80"},"type":"Fighting","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b308"},"name":"Slash","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b309"},"name":"Bonemerang","z":"No","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Ground","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b30a"},"name":"Hyper Fang","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b30b"},"name":"Seismic Toss","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b30c"},"name":"Strength","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b30d"},"name":"Tri Attack","z":"No","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b30e"},"name":"Super Fang","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b30f"},"name":"Absorb","z":"No","power":{"$numberInt":"20"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b310"},"name":"Mega Drain","z":"No","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b311"},"name":"Mind Reader","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b312"},"name":"Snore","z":"No","power":{"$numberInt":"50"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b313"},"name":"Wing Attack","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"35"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b314"},"name":"Dig","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b315"},"name":"Horn Drill","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"30"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b316"},"name":"Wrap","z":"No","power":{"$numberInt":"15"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b317"},"name":"Bite","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b318"},"name":"Rapid Spin","z":"No","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b319"},"name":"Feint Attack","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b31a"},"name":"Slam","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"75"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b31b"},"name":"Zap Cannon","z":"No","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"50"},"type":"Electric","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b31c"},"name":"Leech Seed","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"90"},"type":"Grass","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b31d"},"name":"Icy Wind","z":"No","power":{"$numberInt":"55"},"attack":"Special","hit":{"$numberInt":"95"},"type":"Ice","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b31e"},"name":"Double Slap","z":"No","power":{"$numberInt":"15"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b31f"},"name":"Comet Punch","z":"No","power":{"$numberInt":"18"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b320"},"name":"Barrier","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b321"},"name":"Rollout","z":"No","power":{"$numberInt":"30"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Rock","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b322"},"name":"Swagger","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b323"},"name":"Haze","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b324"},"name":"Bide","z":"No","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b325"},"name":"Mega Punch","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b326"},"name":"Thunder Wave","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b327"},"name":"Sleep Talk","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b328"},"name":"Dynamic Punch","z":"No","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"50"},"type":"Fighting","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b329"},"name":"Dragon Breath","z":"No","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b32a"},"name":"Egg Bomb","z":"No","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"75"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b32b"},"name":"Vice Grip","z":"No","power":{"$numberInt":"55"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b32c"},"name":"Morning Sun","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b32d"},"name":"Moonlight","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Fairy","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b32e"},"name":"Twister","z":"No","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b32f"},"name":"Razor Leaf","z":"No","power":{"$numberInt":"55"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Grass","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b330"},"name":"Ancient Power","z":"No","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Rock","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b331"},"name":"Future Sight","z":"No","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Psychic","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b332"},"name":"Stomp","z":"No","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b333"},"name":"Beat Up","z":"No","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b334"},"name":"Mega Kick","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"75"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b335"},"name":"Charge","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b336"},"name":"Grudge","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b337"},"name":"Dive","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b338"},"name":"Sweet Scent","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b339"},"name":"Swift","z":"No","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b33a"},"name":"Air Cutter","z":"No","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"95"},"type":"Flying","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b33b"},"name":"Rock Tomb","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Rock","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b33c"},"name":"Silver Wind","z":"No","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b33d"},"name":"Stun Spore","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"75"},"type":"Grass","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b33e"},"name":"Aerial Ace","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b33f"},"name":"Headbutt","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b340"},"name":"Block","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b341"},"name":"Take Down","z":"No","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b342"},"name":"Double-Edge","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b343"},"name":"Shock Wave","z":"No","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b344"},"name":"Water Pulse","z":"No","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b345"},"name":"Gravity","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b346"},"name":"Miracle Eye","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b347"},"name":"Soft-Boiled","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b348"},"name":"Healing Wish","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b349"},"name":"Brine","z":"No","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b34a"},"name":"Feint","z":"No","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b34b"},"name":"Payback","z":"No","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b34c"},"name":"Glare","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b34d"},"name":"Dream Eater","z":"No","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b34e"},"name":"Poison Gas","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"90"},"type":"Poison","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b34f"},"name":"Power Swap","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b350"},"name":"Guard Swap","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b351"},"name":"Punishment","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b352"},"name":"Last Resort","z":"No","power":{"$numberInt":"140"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b353"},"name":"Sucker Punch","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b354"},"name":"Supersonic","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"55"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b355"},"name":"Rock Polish","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Rock","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b356"},"name":"Poison Jab","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b357"},"name":"Psybeam","z":"No","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b358"},"name":"Seed Bomb","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b359"},"name":"Air Slash","z":"No","power":{"$numberInt":"75"},"attack":"Special","hit":{"$numberInt":"95"},"type":"Flying","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b35a"},"name":"Power Gem","z":"No","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Rock","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b35b"},"name":"Poison Sting","z":"No","power":{"$numberInt":"15"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"35"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b35c"},"name":"Energy Ball","z":"No","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b35d"},"name":"Nasty Plot","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b35e"},"name":"Avalanche","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b35f"},"name":"Ice Shard","z":"No","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b360"},"name":"Shadow Claw","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b361"},"name":"Thunder Fang","z":"No","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Electric","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b362"},"name":"Ice Fang","z":"No","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Ice","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b363"},"name":"Fire Fang","z":"No","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Fire","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b364"},"name":"Mud Bomb","z":"No","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Ground","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b365"},"name":"Psycho Cut","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b366"},"name":"Flash Cannon","z":"No","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b367"},"name":"Rock Climb","z":"No","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b368"},"name":"Trick Room","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b369"},"name":"Lava Plume","z":"No","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b36a"},"name":"Iron Head","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b36b"},"name":"Sky Attack","z":"No","power":{"$numberInt":"140"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Flying","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b36c"},"name":"Charge Beam","z":"No","power":{"$numberInt":"50"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Electric","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b36d"},"name":"Focus Energy","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b36e"},"name":"Ominous Wind","z":"No","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b36f"},"name":"Whirlpool","z":"No","power":{"$numberInt":"15"},"attack":"Special","hit":{"$numberInt":"70"},"type":"Water","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b370"},"name":"Flamethrower","z":"No","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b371"},"name":"Heat Wave","z":"No","power":{"$numberInt":"95"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Fire","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b372"},"name":"Reflect","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b373"},"name":"Torment","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b374"},"name":"Will-O-Wisp","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"85"},"type":"Fire","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b375"},"name":"Facade","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b376"},"name":"Focus Punch","z":"No","power":{"$numberInt":"150"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b377"},"name":"Safeguard","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b378"},"name":"Superpower","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b379"},"name":"Yawn","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b37a"},"name":"Eruption","z":"No","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b37b"},"name":"Solar Beam","z":"No","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b37c"},"name":"Surf","z":"No","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b37d"},"name":"Ice Beam","z":"No","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b37e"},"name":"Blast Burn","z":"No","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Fire","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b37f"},"name":"Hydro Cannon","z":"No","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Water","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b380"},"name":"Curse","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b381"},"name":"Overheat","z":"No","power":{"$numberInt":"130"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Fire","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b382"},"name":"Fury Attack","z":"No","power":{"$numberInt":"15"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b383"},"name":"Skull Bash","z":"No","power":{"$numberInt":"130"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b384"},"name":"Shadow Punch","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b385"},"name":"Extrasensory","z":"No","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b386"},"name":"Sheer Cold","z":"No","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"30"},"type":"Ice","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b387"},"name":"Hyper Beam","z":"No","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b388"},"name":"Fire Blast","z":"No","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Fire","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b389"},"name":"Waterfall","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b38a"},"name":"Hydro Pump","z":"No","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"80"},"type":"Water","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b38b"},"name":"March Punch","z":"No","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b38c"},"name":"Dragon Claw","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b38d"},"name":"Frenzy Plant","z":"No","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Grass","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b38e"},"name":"Bounce","z":"No","power":{"$numberInt":"85"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Flying","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b38f"},"name":"Drill Peck","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b390"},"name":"Volt Tackle","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b391"},"name":"Belly Drum","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b392"},"name":"Roost","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b393"},"name":"Mud-Slap","z":"No","power":{"$numberInt":"20"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b394"},"name":"Pursuit","z":"No","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b395"},"name":"Hammer Arm","z":"No","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Fighting","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b396"},"name":"Spikes","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b397"},"name":"Fire Punch","z":"No","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b398"},"name":"Counter","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b399"},"name":"Destiny Bond","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b39a"},"name":"Pluck","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b39b"},"name":"Metal Burst","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b39c"},"name":"U-turn","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b39d"},"name":"Perish Song","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b39e"},"name":"Ice Punch","z":"No","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b39f"},"name":"Detect","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a0"},"name":"Thunder Punch","z":"No","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a1"},"name":"Heal Block","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a2"},"name":"Lock-On","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a3"},"name":"High Jump Kick","z":"No","power":{"$numberInt":"130"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Fighting","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a4"},"name":"Giga Drain","z":"No","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a5"},"name":"Double Team","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a6"},"name":"Worry Seed","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a7"},"name":"Guillotine","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"30"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a8"},"name":"Toxic Spikes","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a9"},"name":"Aqua Ring","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3aa"},"name":"Petal Dance","z":"No","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ab"},"name":"Flare Blitz","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ac"},"name":"Rock Throw","z":"No","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Rock","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ad"},"name":"Thunder","z":"No","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"70"},"type":"Electric","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ae"},"name":"Night Slash","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3af"},"name":"Swords Dance","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b0"},"name":"Steel Wing","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Steel","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b1"},"name":"Fly","z":"No","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Flying","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b2"},"name":"X-Scissor","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b3"},"name":"Dragon Pulse","z":"No","power":{"$numberInt":"85"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b4"},"name":"Sludge Bomb","z":"No","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b5"},"name":"Fury Swipes","z":"No","power":{"$numberInt":"18"},"attack":"Physical","hit":{"$numberInt":"80"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b6"},"name":"Heal Bell","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b7"},"name":"Focus Blast","z":"No","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"70"},"type":"Fighting","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b8"},"name":"Pain Split","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b9"},"name":"Earth Power","z":"No","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ba"},"name":"Giga Impact","z":"No","power":{"$numberInt":"150"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3bb"},"name":"Magnitude","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3bc"},"name":"Bullet Punch","z":"No","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3bd"},"name":"Dizzy Punch","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3be"},"name":"Spore","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3bf"},"name":"Baton Pass","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c0"},"name":"Body Slam","z":"No","power":{"$numberInt":"85"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c1"},"name":"Iron Tail","z":"No","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"75"},"type":"Steel","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c2"},"name":"Metal Claw","z":"No","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Steel","pp":{"$numberInt":"35"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c3"},"name":"Poison Powder","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"75"},"type":"Poison","pp":{"$numberInt":"35"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c4"},"name":"Sleep Powder","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"75"},"type":"Grass","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c5"},"name":"Zen Headbutt","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Psychic","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c6"},"name":"Light Screen","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c7"},"name":"Cross Chop","z":"No","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"80"},"type":"Fighting","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c8"},"name":"Recover","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c9"},"name":"Draco Meteor","z":"No","power":{"$numberInt":"130"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Dragon","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ca"},"name":"Discharge","z":"No","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3cb"},"name":"Minimize","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3cc"},"name":"Leaf Storm","z":"No","power":{"$numberInt":"130"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Grass","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3cd"},"name":"Gunk Shot","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"80"},"type":"Poison","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ce"},"name":"Mirror Coat","z":"No","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3cf"},"name":"Stone Edge","z":"No","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"80"},"type":"Rock","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d0"},"name":"Psych Up","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d1"},"name":"Grass Knot","z":"No","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d2"},"name":"Thrash","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d3"},"name":"Protect","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d4"},"name":"Outrage","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d5"},"name":"Knock Off","z":"No","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d6"},"name":"Endeavor","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d7"},"name":"Wake-Up Slap","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d8"},"name":"Shadow Ball","z":"No","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d9"},"name":"Imprison","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3da"},"name":"Refresh","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3db"},"name":"Rest","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3dc"},"name":"Secret Power","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3dd"},"name":"Rock Slide","z":"No","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Rock","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3de"},"name":"Tailwind","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3df"},"name":"Acupressure","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e0"},"name":"Arm Thrust","z":"No","power":{"$numberInt":"15"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e1"},"name":"Tail Glow","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e2"},"name":"Close Combat","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e3"},"name":"Luster Purge","z":"No","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e4"},"name":"Mist Ball","z":"No","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e5"},"name":"Blaze Kick","z":"No","power":{"$numberInt":"85"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Fire","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e6"},"name":"Thunderbolt","z":"No","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e7"},"name":"Trump Card","z":"No","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e8"},"name":"Ice Ball","z":"No","power":{"$numberInt":"30"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Ice","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e9"},"name":"Wring Out","z":"No","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ea"},"name":"Power Trick","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3eb"},"name":"Gastro Acid","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ec"},"name":"Lucky Chant","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ed"},"name":"Needle Arm","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ee"},"name":"Slack Off","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ef"},"name":"Toxic","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"90"},"type":"Poison","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f0"},"name":"Poison Fang","z":"No","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f1"},"name":"Crush Claw","z":"No","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f2"},"name":"Fake Out","z":"No","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f3"},"name":"Uproar","z":"No","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f4"},"name":"Meteor Mash","z":"No","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Steel","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f5"},"name":"Astonish","z":"No","power":{"$numberInt":"30"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f6"},"name":"Aromatherapy","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f7"},"name":"Force Palm","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f8"},"name":"Aura Sphere","z":"No","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f9"},"name":"Fake Tears","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3fa"},"name":"Stockpile","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3fb"},"name":"Dark Pulse","z":"No","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3fc"},"name":"Spit Up","z":"No","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3fd"},"name":"Odor Sleuth","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3fe"},"name":"Swallow","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ff"},"name":"Sacred Fire","z":"No","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Fire","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b400"},"name":"Metal Sound","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"85"},"type":"Steel","pp":{"$numberInt":"40"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b401"},"name":"Bug Buzz","z":"No","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b402"},"name":"GrassWhistle","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"55"},"type":"Grass","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b403"},"name":"Dragon Rush","z":"No","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"75"},"type":"Dragon","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b404"},"name":"Tickle","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b405"},"name":"Infinity Energy","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b406"},"name":"Water Spout","z":"No","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b407"},"name":"Signal Beam","z":"No","power":{"$numberInt":"75"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b408"},"name":"Brave Bird","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b409"},"name":"Psychic","z":"No","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b40a"},"name":"Nightmare","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b40b"},"name":"Sky Uppercut","z":"No","power":{"$numberInt":"85"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Fighting","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b40c"},"name":"Sand Tomb","z":"No","power":{"$numberInt":"35"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Ground","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b40d"},"name":"Flatter","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b40e"},"name":"Muddy Water","z":"No","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Water","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b40f"},"name":"Megahorn","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Bug","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b410"},"name":"Memento","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b411"},"name":"Icicle Spear","z":"No","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b412"},"name":"Crunch","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b413"},"name":"Shadow Sneak","z":"No","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"30"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b414"},"name":"Reversal","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b415"},"name":"Smelling Salts","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b416"},"name":"Mirror Shot","z":"No","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Steel","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b417"},"name":"Taunt","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b418"},"name":"Bulk Up","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b419"},"name":"Defog","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b41a"},"name":"Ancient Force of God","z":"Yes","power":{"$numberInt":"110"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b41b"},"name":"Wish","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b41c"},"name":"Mud Shot","z":"No","power":{"$numberInt":"55"},"attack":"Special","hit":{"$numberInt":"95"},"type":"Ground","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b41d"},"name":"Poison Tail","z":"No","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"25"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b41e"},"name":"Ingrain","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b41f"},"name":"Extreme Speed","z":"No","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b420"},"name":"Power Whip","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Grass","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b421"},"name":"Rock Wrecker","z":"No","power":{"$numberInt":"150"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Rock","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b422"},"name":"Cross Poison","z":"No","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b423"},"name":"Magical Leaf","z":"No","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b424"},"name":"Water Sport","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b425"},"name":"Magnet Bomb","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b426"},"name":"Leaf Blade","z":"No","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b427"},"name":"Rock Blast","z":"No","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Rock","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b428"},"name":"Stealth Rock","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Rock","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b429"},"name":"Magic Coat","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b42a"},"name":"Judgment","z":"No","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b42b"},"name":"Bug Bite","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b42c"},"name":"Retaliate","z":"No","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b42d"},"name":"Wood Hammer","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b42e"},"name":"Aqua Jet","z":"No","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b42f"},"name":"Head Smash","z":"No","power":{"$numberInt":"150"},"attack":"Physical","hit":{"$numberInt":"80"},"type":"Rock","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b430"},"name":"Doom Desire","z":"No","power":{"$numberInt":"140"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b431"},"name":"Roar of Time","z":"No","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Dragon","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b432"},"name":"Spacial Rend","z":"No","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"95"},"type":"Dragon","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b433"},"name":"Lunar Dance","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b434"},"name":"Crush Grip","z":"No","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b435"},"name":"Magma Storm","z":"No","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"75"},"type":"Fire","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b436"},"name":"Dark Void","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"80"},"type":"Dark","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b437"},"name":"Seed Flare","z":"No","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Grass","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b438"},"name":"Psycho Boost","z":"No","power":{"$numberInt":"140"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Psychic","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b439"},"name":"Shadow Force","z":"No","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b43a"},"name":"Sunsteel Strike","z":"No","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b43b"},"name":"Moongeist Beam","z":"No","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b43c"},"name":"Earthquake","z":"No","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b43d"},"name":"Brick Break","z":"No","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b43e"},"name":"Calm Mind","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b43f"},"name":"Substitute","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b440"},"name":"Drain Punch","z":"No","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b441"},"name":"Dragon Dance","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b442"},"name":"Mirror Move","z":"No","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"20"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b443"},"name":"Fire Spin","z":"No","power":{"$numberInt":"35"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Fire","pp":{"$numberInt":"15"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b444"},"name":"Mega Leaves Cut","z":"Yes","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b445"},"name":"Mega Thunder","z":"Yes","power":{"$numberInt":"30"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b446"},"name":"Mega Tornado","z":"Yes","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b291"},"name":"Thunder Shock","z":"Normal","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b292"},"name":"Charm","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Fairy","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b293"},"name":"Tail Whip","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b294"},"name":"Sweet Kiss","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"75"},"type":"Fairy","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b295"},"name":"Growl","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b296"},"name":"Quick Attack","z":"Normal","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b297"},"name":"Agility","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b298"},"name":"Scratch","z":"Normal","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"35"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b299"},"name":"Roar","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b29a"},"name":"Ember","z":"Normal","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b29b"},"name":"Smokescreen","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b29c"},"name":"Rage","z":"Normal","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b29d"},"name":"Scary Face","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b29e"},"name":"Dragon Rage","z":"Normal","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b29f"},"name":"Bubble","z":"Normal","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a0"},"name":"Withdraw","z":"Normal","power":{"$numberInt":"40"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a1"},"name":"Water Gun","z":"Normal","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a2"},"name":"Rain Dance","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a3"},"name":"Vine Whip","z":"Normal","power":{"$numberInt":"45"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a4"},"name":"Growth","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a5"},"name":"Synthesis","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a6"},"name":"Sand Attack","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a7"},"name":"Gust","z":"Normal","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"35"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a8"},"name":"Whirlwind","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2a9"},"name":"Mirror Wave","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2aa"},"name":"String Shot","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"95"},"type":"Bug","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ab"},"name":"Harden","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ac"},"name":"Confusion","z":"Normal","power":{"$numberInt":"50"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ad"},"name":"Leer","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ae"},"name":"Horn Attack","z":"Normal","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2af"},"name":"Acid","z":"Normal","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b0"},"name":"Tackle","z":"Normal","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"35"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b1"},"name":"Pound","z":"Normal","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"35"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b2"},"name":"Karate Chop","z":"Normal","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b3"},"name":"Pay Day","z":"Normal","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b4"},"name":"Razor Wind","z":"Normal","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b5"},"name":"Jump Kick","z":"Normal","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b6"},"name":"Rolling Kick","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b7"},"name":"Sing","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"55"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b8"},"name":"Sonic Boom","z":"Normal","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2b9"},"name":"Disable","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ba"},"name":"Mist","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2bb"},"name":"Bubble Beam","z":"Normal","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2bc"},"name":"Aurora Beam","z":"Normal","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2bd"},"name":"Peck","z":"Normal","power":{"$numberInt":"35"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"35"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2be"},"name":"Low Kick","z":"Normal","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2bf"},"name":"Fissure","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"30"},"type":"Ground","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c0"},"name":"Hypnosis","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"60"},"type":"Psychic","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c1"},"name":"Meditate","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c2"},"name":"Teleport","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c3"},"name":"Night Shade","z":"Normal","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c4"},"name":"Mimic","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c5"},"name":"Screech","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c6"},"name":"Confuse Ray","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c7"},"name":"Defense Curl","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c8"},"name":"Metronome","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2c9"},"name":"Self-Destruct","z":"Normal","power":{"$numberInt":"200"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ca"},"name":"Lick","z":"Normal","power":{"$numberInt":"30"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2cb"},"name":"Smog","z":"Normal","power":{"$numberInt":"30"},"attack":"Special","hit":{"$numberInt":"70"},"type":"Poison","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2cc"},"name":"Sludge","z":"Normal","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2cd"},"name":"Bone Club","z":"Normal","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Ground","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ce"},"name":"Clamp","z":"Normal","power":{"$numberInt":"35"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Water","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2cf"},"name":"Spike Cannon","z":"Normal","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d0"},"name":"Constrict","z":"Normal","power":{"$numberInt":"10"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"35"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d1"},"name":"Amnesia","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d2"},"name":"Kinesis","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d3"},"name":"Barrage","z":"Normal","power":{"$numberInt":"15"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d4"},"name":"Leech Life","z":"Normal","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d5"},"name":"Lovely Kiss","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"75"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d6"},"name":"Transform","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d7"},"name":"Flash","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d8"},"name":"Splash","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2d9"},"name":"Acid Armor","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2da"},"name":"Crabhammer","z":"Normal","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Water","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2db"},"name":"Explosion","z":"Normal","power":{"$numberInt":"250"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2dc"},"name":"Sharpen","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2dd"},"name":"Conversion","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2de"},"name":"False Swipe","z":"Normal","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2df"},"name":"Triple Kick","z":"Normal","power":{"$numberInt":"10"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Fighting","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e0"},"name":"Flail","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e1"},"name":"Conversion 2","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e2"},"name":"Aeroblast","z":"Normal","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"95"},"type":"Flying","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e3"},"name":"Cotton Spore","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"85"},"type":"Grass","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e4"},"name":"Spite","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e5"},"name":"Powder Snow","z":"Normal","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e6"},"name":"Octazooka","z":"Normal","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Water","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e7"},"name":"Foresight","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e8"},"name":"Bone Rush","z":"Normal","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Ground","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2e9"},"name":"Sandstorm","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Rock","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ea"},"name":"Endure","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2eb"},"name":"Milk Drink","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ec"},"name":"Spark","z":"Normal","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ed"},"name":"Fury Cutter","z":"Normal","power":{"$numberInt":"10"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Bug","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ee"},"name":"Attract","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ef"},"name":"Encore","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f0"},"name":"Vital Throw","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f1"},"name":"Sunny Day","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f2"},"name":"Rock Smash","z":"Normal","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f3"},"name":"Hail","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f4"},"name":"Mud Sport","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f5"},"name":"Hyper Voice","z":"Normal","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f6"},"name":"Bullet Seed","z":"Normal","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f7"},"name":"Iron Defense","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f8"},"name":"Howl","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2f9"},"name":"Covet","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2fa"},"name":"Gyro Ball","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2fb"},"name":"Assurance","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2fc"},"name":"Embargo","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2fd"},"name":"Psycho Shift","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2fe"},"name":"Magnet Rise","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b2ff"},"name":"Aqua Tail","z":"Normal","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Water","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b300"},"name":"Vacuum Wave","z":"Normal","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b301"},"name":"Captivate","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b302"},"name":"Double Hit","z":"Normal","power":{"$numberInt":"35"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b303"},"name":"Twineedle","z":"Normal","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b304"},"name":"Psywave","z":"Normal","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b305"},"name":"Pin Missile","z":"Normal","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Bug","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b306"},"name":"Double Kick","z":"Normal","power":{"$numberInt":"30"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b307"},"name":"Submission","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"80"},"type":"Fighting","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b308"},"name":"Slash","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b309"},"name":"Bonemerang","z":"Normal","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Ground","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b30a"},"name":"Hyper Fang","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b30b"},"name":"Seismic Toss","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b30c"},"name":"Strength","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b30d"},"name":"Tri Attack","z":"Normal","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b30e"},"name":"Super Fang","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b30f"},"name":"Absorb","z":"Normal","power":{"$numberInt":"20"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b310"},"name":"Mega Drain","z":"Normal","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b311"},"name":"Mind Reader","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b312"},"name":"Snore","z":"Normal","power":{"$numberInt":"50"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b313"},"name":"Wing Attack","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"35"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b314"},"name":"Dig","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b315"},"name":"Horn Drill","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"30"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b316"},"name":"Wrap","z":"Normal","power":{"$numberInt":"15"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b317"},"name":"Bite","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b318"},"name":"Rapid Spin","z":"Normal","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b319"},"name":"Feint Attack","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b31a"},"name":"Slam","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"75"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b31b"},"name":"Zap Cannon","z":"Normal","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"50"},"type":"Electric","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b31c"},"name":"Leech Seed","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"90"},"type":"Grass","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b31d"},"name":"Icy Wind","z":"Normal","power":{"$numberInt":"55"},"attack":"Special","hit":{"$numberInt":"95"},"type":"Ice","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b31e"},"name":"Double Slap","z":"Normal","power":{"$numberInt":"15"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b31f"},"name":"Comet Punch","z":"Normal","power":{"$numberInt":"18"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b320"},"name":"Barrier","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b321"},"name":"Rollout","z":"Normal","power":{"$numberInt":"30"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Rock","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b322"},"name":"Swagger","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b323"},"name":"Haze","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b324"},"name":"Bide","z":"Normal","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b325"},"name":"Mega Punch","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b326"},"name":"Thunder Wave","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b327"},"name":"Sleep Talk","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b328"},"name":"Dynamic Punch","z":"Normal","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"50"},"type":"Fighting","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b329"},"name":"Dragon Breath","z":"Normal","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b32a"},"name":"Egg Bomb","z":"Normal","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"75"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b32b"},"name":"Vice Grip","z":"Normal","power":{"$numberInt":"55"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b32c"},"name":"Morning Sun","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b32d"},"name":"Moonlight","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Fairy","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b32e"},"name":"Twister","z":"Normal","power":{"$numberInt":"40"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b32f"},"name":"Razor Leaf","z":"Normal","power":{"$numberInt":"55"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Grass","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b330"},"name":"Ancient Power","z":"Normal","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Rock","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b331"},"name":"Future Sight","z":"Normal","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Psychic","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b332"},"name":"Stomp","z":"Normal","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b333"},"name":"Beat Up","z":"Normal","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b334"},"name":"Mega Kick","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"75"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b335"},"name":"Charge","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b336"},"name":"Grudge","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b337"},"name":"Dive","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b338"},"name":"Sweet Scent","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b339"},"name":"Swift","z":"Normal","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b33a"},"name":"Air Cutter","z":"Normal","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"95"},"type":"Flying","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b33b"},"name":"Rock Tomb","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Rock","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b33c"},"name":"Silver Wind","z":"Normal","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b33d"},"name":"Stun Spore","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"75"},"type":"Grass","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b33e"},"name":"Aerial Ace","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b33f"},"name":"Headbutt","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b340"},"name":"Block","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b341"},"name":"Take Down","z":"Normal","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b342"},"name":"Double-Edge","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b343"},"name":"Shock Wave","z":"Normal","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b344"},"name":"Water Pulse","z":"Normal","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b345"},"name":"Gravity","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b346"},"name":"Miracle Eye","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b347"},"name":"Soft-Boiled","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b348"},"name":"Healing Wish","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b349"},"name":"Brine","z":"Normal","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b34a"},"name":"Feint","z":"Normal","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b34b"},"name":"Payback","z":"Normal","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b34c"},"name":"Glare","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b34d"},"name":"Dream Eater","z":"Normal","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b34e"},"name":"Poison Gas","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"90"},"type":"Poison","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b34f"},"name":"Power Swap","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b350"},"name":"Guard Swap","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b351"},"name":"Punishment","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b352"},"name":"Last Resort","z":"Normal","power":{"$numberInt":"140"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b353"},"name":"Sucker Punch","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b354"},"name":"Supersonic","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"55"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b355"},"name":"Rock Polish","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Rock","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b356"},"name":"Poison Jab","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b357"},"name":"Psybeam","z":"Normal","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b358"},"name":"Seed Bomb","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b359"},"name":"Air Slash","z":"Normal","power":{"$numberInt":"75"},"attack":"Special","hit":{"$numberInt":"95"},"type":"Flying","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b35a"},"name":"Power Gem","z":"Normal","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Rock","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b35b"},"name":"Poison Sting","z":"Normal","power":{"$numberInt":"15"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"35"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b35c"},"name":"Energy Ball","z":"Normal","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b35d"},"name":"Nasty Plot","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b35e"},"name":"Avalanche","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b35f"},"name":"Ice Shard","z":"Normal","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b360"},"name":"Shadow Claw","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b361"},"name":"Thunder Fang","z":"Normal","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Electric","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b362"},"name":"Ice Fang","z":"Normal","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Ice","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b363"},"name":"Fire Fang","z":"Normal","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Fire","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b364"},"name":"Mud Bomb","z":"Normal","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Ground","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b365"},"name":"Psycho Cut","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b366"},"name":"Flash Cannon","z":"Normal","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b367"},"name":"Rock Climb","z":"Normal","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b368"},"name":"Trick Room","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b369"},"name":"Lava Plume","z":"Normal","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b36a"},"name":"Iron Head","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b36b"},"name":"Sky Attack","z":"Normal","power":{"$numberInt":"140"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Flying","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b36c"},"name":"Charge Beam","z":"Normal","power":{"$numberInt":"50"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Electric","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b36d"},"name":"Focus Energy","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b36e"},"name":"Ominous Wind","z":"Normal","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b36f"},"name":"Whirlpool","z":"Normal","power":{"$numberInt":"15"},"attack":"Special","hit":{"$numberInt":"70"},"type":"Water","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b370"},"name":"Flamethrower","z":"Normal","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b371"},"name":"Heat Wave","z":"Normal","power":{"$numberInt":"95"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Fire","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b372"},"name":"Reflect","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b373"},"name":"Torment","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b374"},"name":"Will-O-Wisp","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"85"},"type":"Fire","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b375"},"name":"Facade","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b376"},"name":"Focus Punch","z":"Normal","power":{"$numberInt":"150"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b377"},"name":"Safeguard","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b378"},"name":"Superpower","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b379"},"name":"Yawn","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b37a"},"name":"Eruption","z":"Normal","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b37b"},"name":"Solar Beam","z":"Normal","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b37c"},"name":"Surf","z":"Normal","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b37d"},"name":"Ice Beam","z":"Normal","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b37e"},"name":"Blast Burn","z":"Normal","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Fire","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b37f"},"name":"Hydro Cannon","z":"Normal","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Water","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b380"},"name":"Curse","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b381"},"name":"Overheat","z":"Normal","power":{"$numberInt":"130"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Fire","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b382"},"name":"Fury Attack","z":"Normal","power":{"$numberInt":"15"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b383"},"name":"Skull Bash","z":"Normal","power":{"$numberInt":"130"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b384"},"name":"Shadow Punch","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b385"},"name":"Extrasensory","z":"Normal","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b386"},"name":"Sheer Cold","z":"Normal","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"30"},"type":"Ice","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b387"},"name":"Hyper Beam","z":"Normal","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b388"},"name":"Fire Blast","z":"Normal","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Fire","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b389"},"name":"Waterfall","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b38a"},"name":"Hydro Pump","z":"Normal","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"80"},"type":"Water","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b38b"},"name":"March Punch","z":"Normal","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b38c"},"name":"Dragon Claw","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b38d"},"name":"Frenzy Plant","z":"Normal","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Grass","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b38e"},"name":"Bounce","z":"Normal","power":{"$numberInt":"85"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Flying","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b38f"},"name":"Drill Peck","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b390"},"name":"Volt Tackle","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b391"},"name":"Belly Drum","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b392"},"name":"Roost","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b393"},"name":"Mud-Slap","z":"Normal","power":{"$numberInt":"20"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b394"},"name":"Pursuit","z":"Normal","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b395"},"name":"Hammer Arm","z":"Normal","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Fighting","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b396"},"name":"Spikes","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b397"},"name":"Fire Punch","z":"Normal","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b398"},"name":"Counter","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b399"},"name":"Destiny Bond","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b39a"},"name":"Pluck","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b39b"},"name":"Metal Burst","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b39c"},"name":"U-turn","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b39d"},"name":"Perish Song","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b39e"},"name":"Ice Punch","z":"Normal","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b39f"},"name":"Detect","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a0"},"name":"Thunder Punch","z":"Normal","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a1"},"name":"Heal Block","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a2"},"name":"Lock-On","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a3"},"name":"High Jump Kick","z":"Normal","power":{"$numberInt":"130"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Fighting","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a4"},"name":"Giga Drain","z":"Normal","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a5"},"name":"Double Team","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a6"},"name":"Worry Seed","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a7"},"name":"Guillotine","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"30"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a8"},"name":"Toxic Spikes","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3a9"},"name":"Aqua Ring","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3aa"},"name":"Petal Dance","z":"Normal","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ab"},"name":"Flare Blitz","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ac"},"name":"Rock Throw","z":"Normal","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Rock","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ad"},"name":"Thunder","z":"Normal","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"70"},"type":"Electric","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ae"},"name":"Night Slash","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3af"},"name":"Swords Dance","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b0"},"name":"Steel Wing","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Steel","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b1"},"name":"Fly","z":"Normal","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Flying","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b2"},"name":"X-Scissor","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b3"},"name":"Dragon Pulse","z":"Normal","power":{"$numberInt":"85"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b4"},"name":"Sludge Bomb","z":"Normal","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b5"},"name":"Fury Swipes","z":"Normal","power":{"$numberInt":"18"},"attack":"Physical","hit":{"$numberInt":"80"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b6"},"name":"Heal Bell","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b7"},"name":"Focus Blast","z":"Normal","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"70"},"type":"Fighting","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b8"},"name":"Pain Split","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3b9"},"name":"Earth Power","z":"Normal","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ba"},"name":"Giga Impact","z":"Normal","power":{"$numberInt":"150"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3bb"},"name":"Magnitude","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3bc"},"name":"Bullet Punch","z":"Normal","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3bd"},"name":"Dizzy Punch","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3be"},"name":"Spore","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3bf"},"name":"Baton Pass","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c0"},"name":"Body Slam","z":"Normal","power":{"$numberInt":"85"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c1"},"name":"Iron Tail","z":"Normal","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"75"},"type":"Steel","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c2"},"name":"Metal Claw","z":"Normal","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Steel","pp":{"$numberInt":"35"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c3"},"name":"Poison Powder","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"75"},"type":"Poison","pp":{"$numberInt":"35"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c4"},"name":"Sleep Powder","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"75"},"type":"Grass","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c5"},"name":"Zen Headbutt","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Psychic","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c6"},"name":"Light Screen","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c7"},"name":"Cross Chop","z":"Normal","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"80"},"type":"Fighting","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c8"},"name":"Recover","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3c9"},"name":"Draco Meteor","z":"Normal","power":{"$numberInt":"130"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Dragon","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ca"},"name":"Discharge","z":"Normal","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3cb"},"name":"Minimize","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3cc"},"name":"Leaf Storm","z":"Normal","power":{"$numberInt":"130"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Grass","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3cd"},"name":"Gunk Shot","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"80"},"type":"Poison","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ce"},"name":"Mirror Coat","z":"Normal","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3cf"},"name":"Stone Edge","z":"Normal","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"80"},"type":"Rock","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d0"},"name":"Psych Up","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d1"},"name":"Grass Knot","z":"Normal","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d2"},"name":"Thrash","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d3"},"name":"Protect","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d4"},"name":"Outrage","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d5"},"name":"Knock Off","z":"Normal","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d6"},"name":"Endeavor","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d7"},"name":"Wake-Up Slap","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d8"},"name":"Shadow Ball","z":"Normal","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3d9"},"name":"Imprison","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3da"},"name":"Refresh","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3db"},"name":"Rest","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3dc"},"name":"Secret Power","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3dd"},"name":"Rock Slide","z":"Normal","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Rock","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3de"},"name":"Tailwind","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3df"},"name":"Acupressure","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e0"},"name":"Arm Thrust","z":"Normal","power":{"$numberInt":"15"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e1"},"name":"Tail Glow","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e2"},"name":"Close Combat","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e3"},"name":"Luster Purge","z":"Normal","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e4"},"name":"Mist Ball","z":"Normal","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e5"},"name":"Blaze Kick","z":"Normal","power":{"$numberInt":"85"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Fire","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e6"},"name":"Thunderbolt","z":"Normal","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e7"},"name":"Trump Card","z":"Normal","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e8"},"name":"Ice Ball","z":"Normal","power":{"$numberInt":"30"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Ice","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3e9"},"name":"Wring Out","z":"Normal","power":{"$numberInt":"0"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ea"},"name":"Power Trick","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3eb"},"name":"Gastro Acid","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ec"},"name":"Lucky Chant","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ed"},"name":"Needle Arm","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ee"},"name":"Slack Off","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ef"},"name":"Toxic","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"90"},"type":"Poison","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f0"},"name":"Poison Fang","z":"Normal","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f1"},"name":"Crush Claw","z":"Normal","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f2"},"name":"Fake Out","z":"Normal","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f3"},"name":"Uproar","z":"Normal","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f4"},"name":"Meteor Mash","z":"Normal","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Steel","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f5"},"name":"Astonish","z":"Normal","power":{"$numberInt":"30"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f6"},"name":"Aromatherapy","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f7"},"name":"Force Palm","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f8"},"name":"Aura Sphere","z":"Normal","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3f9"},"name":"Fake Tears","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3fa"},"name":"Stockpile","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3fb"},"name":"Dark Pulse","z":"Normal","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3fc"},"name":"Spit Up","z":"Normal","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3fd"},"name":"Odor Sleuth","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3fe"},"name":"Swallow","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b3ff"},"name":"Sacred Fire","z":"Normal","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Fire","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b400"},"name":"Metal Sound","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"85"},"type":"Steel","pp":{"$numberInt":"40"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b401"},"name":"Bug Buzz","z":"Normal","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b402"},"name":"GrassWhistle","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"55"},"type":"Grass","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b403"},"name":"Dragon Rush","z":"Normal","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"75"},"type":"Dragon","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b404"},"name":"Tickle","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b405"},"name":"Infinity Energy","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b406"},"name":"Water Spout","z":"Normal","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b407"},"name":"Signal Beam","z":"Normal","power":{"$numberInt":"75"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b408"},"name":"Brave Bird","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b409"},"name":"Psychic","z":"Normal","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b40a"},"name":"Nightmare","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b40b"},"name":"Sky Uppercut","z":"Normal","power":{"$numberInt":"85"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Fighting","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b40c"},"name":"Sand Tomb","z":"Normal","power":{"$numberInt":"35"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Ground","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b40d"},"name":"Flatter","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b40e"},"name":"Muddy Water","z":"Normal","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Water","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b40f"},"name":"Megahorn","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Bug","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b410"},"name":"Memento","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b411"},"name":"Icicle Spear","z":"Normal","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ice","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b412"},"name":"Crunch","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b413"},"name":"Shadow Sneak","z":"Normal","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"30"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b414"},"name":"Reversal","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b415"},"name":"Smelling Salts","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b416"},"name":"Mirror Shot","z":"Normal","power":{"$numberInt":"65"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Steel","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b417"},"name":"Taunt","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b418"},"name":"Bulk Up","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b419"},"name":"Defog","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b41a"},"name":"Ancient Force of God","z":"Z","power":{"$numberInt":"110"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b41b"},"name":"Wish","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b41c"},"name":"Mud Shot","z":"Normal","power":{"$numberInt":"55"},"attack":"Special","hit":{"$numberInt":"95"},"type":"Ground","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b41d"},"name":"Poison Tail","z":"Normal","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"25"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b41e"},"name":"Ingrain","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b41f"},"name":"Extreme Speed","z":"Normal","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b420"},"name":"Power Whip","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"85"},"type":"Grass","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b421"},"name":"Rock Wrecker","z":"Normal","power":{"$numberInt":"150"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Rock","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b422"},"name":"Cross Poison","z":"Normal","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Poison","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b423"},"name":"Magical Leaf","z":"Normal","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b424"},"name":"Water Sport","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b425"},"name":"Magnet Bomb","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b426"},"name":"Leaf Blade","z":"Normal","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b427"},"name":"Rock Blast","z":"Normal","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Rock","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b428"},"name":"Stealth Rock","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Rock","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b429"},"name":"Magic Coat","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b42a"},"name":"Judgment","z":"Normal","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b42b"},"name":"Bug Bite","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b42c"},"name":"Retaliate","z":"Normal","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b42d"},"name":"Wood Hammer","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Grass","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b42e"},"name":"Aqua Jet","z":"Normal","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b42f"},"name":"Head Smash","z":"Normal","power":{"$numberInt":"150"},"attack":"Physical","hit":{"$numberInt":"80"},"type":"Rock","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b430"},"name":"Doom Desire","z":"Normal","power":{"$numberInt":"140"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b431"},"name":"Roar of Time","z":"Normal","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Dragon","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b432"},"name":"Spacial Rend","z":"Normal","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"95"},"type":"Dragon","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b433"},"name":"Lunar Dance","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b434"},"name":"Crush Grip","z":"Normal","power":{"$numberInt":"0"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b435"},"name":"Magma Storm","z":"Normal","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"75"},"type":"Fire","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b436"},"name":"Dark Void","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"80"},"type":"Dark","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b437"},"name":"Seed Flare","z":"Normal","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Grass","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b438"},"name":"Psycho Boost","z":"Normal","power":{"$numberInt":"140"},"attack":"Special","hit":{"$numberInt":"90"},"type":"Psychic","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b439"},"name":"Shadow Force","z":"Normal","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b43a"},"name":"Sunsteel Strike","z":"Normal","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b43b"},"name":"Moongeist Beam","z":"Normal","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ghost","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b43c"},"name":"Earthquake","z":"Normal","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b43d"},"name":"Brick Break","z":"Normal","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b43e"},"name":"Calm Mind","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b43f"},"name":"Substitute","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Normal","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b440"},"name":"Drain Punch","z":"Normal","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"10"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b441"},"name":"Dragon Dance","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b442"},"name":"Mirror Move","z":"Normal","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Flying","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b443"},"name":"Fire Spin","z":"Normal","power":{"$numberInt":"35"},"attack":"Special","hit":{"$numberInt":"85"},"type":"Fire","pp":{"$numberInt":"15"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b444"},"name":"Mega Leaves Cut","z":"Z","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b445"},"name":"Mega Thunder","z":"Z","power":{"$numberInt":"30"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b446"},"name":"Mega Tornado","z":"Z","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":"1"}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b447"},"name":"Dark Matter Ball","z":"R2","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b448"},"name":"Mega Eruption","z":"Yes","power":{"$numberInt":"110"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fire","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b449"},"name":"Extreme Rush","z":"Yes","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b44a"},"name":"Phoenix Rage","z":"Yes","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b44b"},"name":"Sea Wave","z":"Yes","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b44c"},"name":"Cross Cutting","z":"Yes","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b44d"},"name":"Mega Dark Matter","z":"Yes","power":{"$numberInt":"150"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b448"},"name":"Mega Eruption","z":"Z","power":{"$numberInt":"110"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fire","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b449"},"name":"Extreme Rush","z":"Z","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b44a"},"name":"Phoenix Rage","z":"Z","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b44b"},"name":"Sea Wave","z":"Z","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b44c"},"name":"Cross Cutting","z":"Z","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b44d"},"name":"Mega Dark Matter","z":"Z","power":{"$numberInt":"150"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b44e"},"name":"Steel Impact","z":"R2","power":{"$numberInt":"140"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b44f"},"name":"Water Shuriken","z":"No","power":{"$numberInt":"15"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"20"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b44f"},"name":"Water Shuriken","z":"Normal","power":{"$numberInt":"15"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"20"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b450"},"name":"Plus Water Push","z":"R2","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b451"},"name":"No Move","z":"Yes","power":{"$numberInt":"0"},"attack":"None","hit":{"$numberInt":"0"},"type":"None","pp":"0"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b451"},"name":"No Move","z":"Z","power":{"$numberInt":"0"},"attack":"None","hit":{"$numberInt":"0"},"type":"None","pp":"0"}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b452"},"name":"Ultra Destroy","z":"R2","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fairy","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b453"},"name":"Dragon Arrive","z":"R2","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b454"},"name":"Mega Steel Rush","z":"Yes","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Steel","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b455"},"name":"Nightmare Curse","z":"Yes","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dark","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b456"},"name":"Ghost Imprison","z":"Yes","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b457"},"name":"Primordial Sky Thunder","z":"Yes","power":{"$numberInt":"30"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b458"},"name":"Mega Poison Hit","z":"Yes","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Poison","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b459"},"name":"Evil Dream Wave","z":"Yes","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b45a"},"name":"Mega Earthquake","z":"Yes","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ground","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b45b"},"name":"Mega Steel Claw","z":"Yes","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b45c"},"name":"Mega Izuna Drop","z":"Yes","power":{"$numberInt":"130"},"attack":"Physical","hit":{"$numberInt":"130"},"type":"Normal","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b454"},"name":"Mega Steel Rush","z":"Z","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Steel","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b455"},"name":"Nightmare Curse","z":"Z","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dark","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b456"},"name":"Ghost Imprison","z":"Z","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b457"},"name":"Primordial Sky Thunder","z":"Z","power":{"$numberInt":"30"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b458"},"name":"Mega Poison Hit","z":"Z","power":{"$numberInt":"20"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Poison","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b459"},"name":"Evil Dream Wave","z":"Z","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b45a"},"name":"Mega Earthquake","z":"Z","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ground","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b45b"},"name":"Mega Steel Claw","z":"Z","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b45c"},"name":"Mega Izuna Drop","z":"Z","power":{"$numberInt":"130"},"attack":"Physical","hit":{"$numberInt":"130"},"type":"Normal","pp":"1"}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b45d"},"name":"Waveguide Slash","z":"R2","power":{"$numberInt":"100"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b45e"},"name":"Mega Whirlpool","z":"Yes","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b45f"},"name":"Urtal Magic Wave","z":"Yes","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b460"},"name":"RE-Create","z":"Yes","power":{"$numberInt":"110"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b461"},"name":"Ice Dragon Rush","z":"Yes","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ice","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b462"},"name":"Mega Dragon Rush","z":"Yes","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b463"},"name":"Mega Magic Wave","z":"Yes","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b464"},"name":"Millions Wave","z":"Yes","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b465"},"name":"Mega King Kick","z":"Yes","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b466"},"name":"Mega Sky Rush","z":"Yes","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b467"},"name":"Mega Thunder Shock","z":"Yes","power":{"$numberInt":"50"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Electric","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b468"},"name":"Mega Conflagration","z":"Yes","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b469"},"name":"Urtal Kick","z":"Yes","power":{"$numberInt":"110"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b46a"},"name":"Mega Rush Hit","z":"Yes","power":{"$numberInt":"50"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b46b"},"name":"Urtal Spin Attack","z":"Yes","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b46c"},"name":"Super Air Bomb","z":"Yes","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b46d"},"name":"Mega Cut","z":"Yes","power":{"$numberInt":"110"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b46e"},"name":"Devil Sky Claw","z":"Yes","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b46f"},"name":"Mega Psychic Wave","z":"Yes","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b470"},"name":"Mega Speedy Mash","z":"Yes","power":{"$numberInt":"30"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b471"},"name":"Mega Rock Stream","z":"Yes","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b472"},"name":"Mega Dragon Claw","z":"Yes","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b473"},"name":"Rage Rush","z":"Yes","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b474"},"name":"Rage Horn Attack","z":"Yes","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b45e"},"name":"Mega Whirlpool","z":"Z","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b45f"},"name":"Urtal Magic Wave","z":"Z","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b460"},"name":"RE-Create","z":"Z","power":{"$numberInt":"110"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Normal","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b461"},"name":"Ice Dragon Rush","z":"Z","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Ice","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b462"},"name":"Mega Dragon Rush","z":"Z","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b463"},"name":"Mega Magic Wave","z":"Z","power":{"$numberInt":"90"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b464"},"name":"Millions Wave","z":"Z","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b465"},"name":"Mega King Kick","z":"Z","power":{"$numberInt":"65"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b466"},"name":"Mega Sky Rush","z":"Z","power":{"$numberInt":"50"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Flying","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b467"},"name":"Mega Thunder Shock","z":"Z","power":{"$numberInt":"50"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Electric","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b468"},"name":"Mega Conflagration","z":"Z","power":{"$numberInt":"70"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b469"},"name":"Urtal Kick","z":"Z","power":{"$numberInt":"110"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b46a"},"name":"Mega Rush Hit","z":"Z","power":{"$numberInt":"50"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Normal","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b46b"},"name":"Urtal Spin Attack","z":"Z","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b46c"},"name":"Super Air Bomb","z":"Z","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b46d"},"name":"Mega Cut","z":"Z","power":{"$numberInt":"110"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b46e"},"name":"Devil Sky Claw","z":"Z","power":{"$numberInt":"75"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ghost","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b46f"},"name":"Mega Psychic Wave","z":"Z","power":{"$numberInt":"60"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b470"},"name":"Mega Speedy Mash","z":"Z","power":{"$numberInt":"30"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b471"},"name":"Mega Rock Stream","z":"Z","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b472"},"name":"Mega Dragon Claw","z":"Z","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Psychic","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b473"},"name":"Rage Rush","z":"Z","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Bug","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b474"},"name":"Rage Horn Attack","z":"Z","power":{"$numberInt":"25"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":"1"}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b475"},"name":"Final Gambit","z":"New","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b476"},"name":"Dual Chop","z":"New","power":{"$numberInt":"40"},"attack":"Physical","hit":{"$numberInt":"90"},"type":"Dragon","pp":{"$numberInt":"15"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b477"},"name":"Reflect Type","z":"New","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"0"},"type":"Normal","pp":{"$numberInt":"15"}}
@@ -589,10 +589,10 @@
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4dd"},"name":"Moon God Power","z":"R2","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"95"},"type":"Ghost","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4de"},"name":"Blasted Earth","z":"R2","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Ground","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4df"},"name":"Super Water Gun","z":"R2","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b4e0"},"name":"Blizzard","z":"No","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"70"},"type":"Ice","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b4e0"},"name":"Blizzard","z":"Normal","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"70"},"type":"Ice","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4e1"},"name":"Sunbeam","z":"R2","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"95"},"type":"Steel","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4e2"},"name":"Wonder Room","z":"New","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"10"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b4e3"},"name":"Hyperspace Hole","z":"No","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b4e3"},"name":"Hyperspace Hole","z":"Normal","power":{"$numberInt":"80"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4e4"},"name":"Dimension Claw","z":"R2","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4e5"},"name":"Black Light","z":"R2","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4e6"},"name":"Devastating Hit","z":"R2","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"5"}}
@@ -600,7 +600,7 @@
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4e8"},"name":"Evil Power","z":"R2","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4e9"},"name":"Shadow Spread","z":"R2","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fighting","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4ea"},"name":"Water Impact","z":"R2","power":{"$numberInt":"140"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b4eb"},"name":"Mega Space Caos","z":"Yes","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b4eb"},"name":"Mega Space Caos","z":"Z","power":{"$numberInt":"150"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4ec"},"name":"Thunder Clap","z":"R2","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4ed"},"name":"Inferno","z":"R2","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4ee"},"name":"Torrent Burst","z":"R2","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"5"}}
@@ -610,7 +610,7 @@
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4f2"},"name":"Desert Whirlpool","z":"R2","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4f3"},"name":"Dark Matter","z":"R2","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4f4"},"name":"Metal Pressure","z":"R2","power":{"$numberInt":"110"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b4f5"},"name":"Phoenix Rage (P)","z":"Yes","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"5"}}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b4f5"},"name":"Phoenix Rage (P)","z":"Z","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4f6"},"name":"Dragon Swing","z":"R2","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dragon","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4f7"},"name":"Rapid Strangler","z":"R2","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b4f8"},"name":"Stream Water","z":"R2","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Water","pp":{"$numberInt":"5"}}
@@ -624,10 +624,9 @@
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b500"},"name":"Telekinesis","z":"New","power":{"$numberInt":"0"},"attack":"Status","hit":{"$numberInt":"100"},"type":"Psychic","pp":{"$numberInt":"15"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b501"},"name":"Lighting Tornado Rush","z":"R2","power":{"$numberInt":"120"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Electric","pp":{"$numberInt":"5"}}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b502"},"name":"Fire Tornado Rush","z":"R2","power":{"$numberInt":"120"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Fire","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b503"},"name":"Mega Whirlpool (P)","z":"Yes","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Water","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b504"},"name":"Millions Energy","z":"Yes","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b505"},"name":"Savage Whirl Slash","z":"Yes","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b503"},"name":"Mega Whirlpool (P)","z":"Z","power":{"$numberInt":"90"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Water","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b504"},"name":"Millions Energy","z":"Z","power":{"$numberInt":"60"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Grass","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b505"},"name":"Savage Whirl Slash","z":"Z","power":{"$numberInt":"80"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":"1"}
 {"_id":{"$oid":"5b7545a1590fe11f0cd3b506"},"name":"Waveguide Slash","z":"R2","power":{"$numberInt":"100"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Dark","pp":{"$numberInt":"5"}}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b507"},"name":"Frozen Heart Hit","z":"Yes","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b508"},"name":"Bright Sun","z":"Yes","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":"1"}
-{"_id":{"$oid":"5b7545a1590fe11f0cd3b509"},"name":"","z":null,"power":{"$numberInt":null},"attack":null,"hit":{"$numberInt":null},"type":null,"pp":null}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b507"},"name":"Frozen Heart Hit","z":"Z","power":{"$numberInt":"110"},"attack":"Special","hit":{"$numberInt":"100"},"type":"Dragon","pp":"1"}
+{"_id":{"$oid":"5b7545a1590fe11f0cd3b508"},"name":"Bright Sun","z":"Z","power":{"$numberInt":"70"},"attack":"Physical","hit":{"$numberInt":"100"},"type":"Steel","pp":"1"}

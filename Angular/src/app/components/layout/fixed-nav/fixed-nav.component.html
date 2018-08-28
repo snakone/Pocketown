@@ -6,7 +6,7 @@
       <li>
         <ul class="nestedList">
            <li><a [routerLink]="['pokedex']" routerLinkActive="active">Pokédex</a></li> <!-- Pokedex -->
-           <li><a [routerLink]="['laboratory']" routerLinkActive="active">Laboratory</a></li> <!-- Pokedex -->
+           <li><a [routerLink]="['moves']" routerLinkActive="active">Moves</a></li> <!-- Moves -->
         </ul>
        </li>
      </ul>
@@ -15,7 +15,7 @@
        <li class="bold"><a href="#">{{ navTitles[1] }}</a></li> <!-- Tools -->
        <li>
          <ul class="nestedList">
-            <li><a></a></li>
+          <li><a [routerLink]="['laboratory']" routerLinkActive="active">Laboratory</a></li> <!-- Laboratory -->
          </ul>
         </li>
       </ul>

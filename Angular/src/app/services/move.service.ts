@@ -11,8 +11,9 @@ import { Move } from '../models/move';  // Move Model
 export class MoveService {
 
   selectedMove: Move;  // Save selected Move
-  moveList: Move[];  // Pokedex with Move List
+  moveList: Move[];  // Move List
   readonly ADMIN_API = "http://localhost:3000/admin/move";  // Server API
+  readonly MOVE_API = "http://localhost:3000/admin/move_name";  // Server API
 
 
   constructor(private http: HttpClient) {
@@ -21,6 +22,11 @@ export class MoveService {
 
   getMove(){
     return this.http.get(this.ADMIN_API);  // HTTP GET to Server API - POSTMAN belike
+  }
+
+  getMoveTypebyName(moves: string[]){
+    const params = {moves: moves};
+    return this.http.get(this.MOVE_API, {params: params});
   }
 
   addMove(move: Move){  // We add a Move

@@ -1,0 +1,85 @@
+.sticky {
+  top:60px;
+  position: sticky;
+  z-index: 1000;
+  width: 100%;
+  background: white;
+  margin-bottom: 15px;
+}
+
+.type{
+  padding: 5px 10px;
+  border-radius: 3px;
+  color:white;
+  font-weight: bold;
+  border: 1px solid black;
+  display: inline-grid;
+  width: auto;
+  font-size: .9em!important;
+}
+
+.stat {
+  margin: auto 8px;
+}
+
+.info {
+  padding: 10px!important;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1100px) {
+  .stat {
+    margin: auto 3px;
+  }
+}
+
+@media (max-width:993px) {
+  .stat {
+    margin: auto 15px;
+  }
+}
+
+.moves {
+  width: 98%;
+  margin:0 auto;
+}
+
+.card{
+  padding: 15px;
+  margin: 10px auto;
+  box-sizing: border-box!important;
+}
+
+.top {
+  margin-top: -10px;
+}
+
+.row {
+  padding-bottom: 45px;
+  margin: 0 auto;
+}
+
+input[type=text]:not(.browser-default) {
+  text-align: center;
+  margin: 0;
+}
+
+
+.Normal_move {color: #A8A878;}
+.Fire_move {color: #F08030;}
+.Water_move {color: #6890F0;}
+.Electric_move {color: #F8D030;}
+.Grass_move {color: #78C850;}
+.Ice_move {color: #98D8D8;}
+.Ground_move {color: #E0C068;}
+.Flying_move {color: #A890F0;}
+.Ghost_move {color: #705898;}
+.Rock_move {color: #B8A038;}
+.Fighting_move {color: #C03028;}
+.Poison_move {color: #A040A0;}
+.Psychic_move {color: #F85888;}
+.Bug_move {color: #A8B820;}
+.Dark_move {color: #705848;}
+.Steel_move {color: #B8B8D0;}
+.Dragon_move {color: #7038F8;}
+.Fairy_move {color: #FF69B4;}

@@ -12,7 +12,6 @@
 /* Toastr */
 @import "~ngx-toastr/toastr.css";
 
-
 .Normal {background-color: #A8A878;}
 .Fire {background-color: #F08030;}
 .Water {background-color: #6890F0;}
@@ -33,9 +32,7 @@
 .Fairy {background-color: #FF69B4;}
 .Any {background-color: #000000;}
 
-.bold {
-  font-weight: bold;
-}
+.bold {font-weight: bold;}
 
 .HP {color: #86F83A}
 .ATK {color: #F8F13A}
@@ -46,6 +43,4 @@
 .SS {color: black}
 .N\º {color:grey}
 
-.bottom{
-  padding-bottom: 50px;
-}
+.bottom{padding-bottom: 50px;}

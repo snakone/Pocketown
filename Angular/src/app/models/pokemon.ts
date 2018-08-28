@@ -7,7 +7,28 @@ export class Pokemon {
   type2: string;
   picture: string;
   family: string;
-  ss: number;
+  legend: string;
+  description: string;
+  ability: string;
+  bability: string;
+  item: string;
+  item_picture: string;
+  item2: string;
+  item2_picture: string;
+  z_picture: string;
+  HP: number;
+  ATK: number;
+  DEF: number;
+  SATK: number;
+  SDEF: number;
+  SPD: number;
+  SS: number;
+  ef_HP: number;
+  ef_ATK: number;
+  ef_DEF: number;
+  ef_SATK: number;
+  ef_SDEF: number;
+  ef_SPD: number;
   evolution: string;
   nature: string;
   nature2: string;
@@ -19,10 +40,15 @@ export class Pokemon {
   bad3: string;
   attack: string;
   info: string;
+  move1: string;
+  move2: string;
+  move3: string;
+  move4: string;
+  zmove: string;
 
   contructor(id: string, name: string, pokedex: number,
              grade: string, type: string, type2: string,
-             picture: string, ss: number, evolution: string){
+             picture: string, SS: number, evolution: string){
 
                this._id = id;
                this.name = name;
@@ -31,7 +57,7 @@ export class Pokemon {
                this.type = type;
                this.type2 = type2;
                this.picture = picture;
-               this.ss = ss;
+               this.SS = SS;
                this.evolution = evolution;
             }
 }
