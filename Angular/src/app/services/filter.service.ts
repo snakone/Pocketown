@@ -12,7 +12,7 @@ export class FilterService {
 
   filteredPokemon: Pokemon[];  // List of Filtered Pokemon
 
-  readonly URL_API = "https://polar-brook-88639.herokuapp.com/laboratory";  // Server API
+  readonly URL_API = "https://pocketown-server.herokuapp.com/laboratory";  // Server API
 
   constructor(private http: HttpClient) { }
 

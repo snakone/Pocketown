@@ -11,7 +11,7 @@ export class AdminService {
 
   selectedPokemon: Pokemon;  // Save selected Pokemon
   pokedex: Pokemon[];  // Pokedex with Pokemon List
-  readonly ADMIN_API = "https://polar-brook-88639.herokuapp.com/admin/pokemon";  // Server API
+  readonly ADMIN_API = "https://pocketown-server.herokuapp.com/admin/pokemon";  // Server API
 
 
   constructor(private http: HttpClient) {

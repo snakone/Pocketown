@@ -12,8 +12,8 @@ export class MoveService {
 
   selectedMove: Move;  // Save selected Move
   moveList: Move[];  // Move List
-  readonly ADMIN_API = "https://polar-brook-88639.herokuapp.com/admin/move";  // Server API
-  readonly MOVE_API = "https://polar-brook-88639.herokuapp.com/admin/move_name";  // Server API for Move Names
+  readonly ADMIN_API = "https://pocketown-server.herokuapp.com/admin/move";  // Server API
+  readonly MOVE_API = "https://pocketown-server.herokuapp.com/admin/move_name";  // Server API for Move Names
 
 
   constructor(private http: HttpClient) {
