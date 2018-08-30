@@ -12,12 +12,13 @@ const app = express();  // Init Express on APP
 // Server SETTING
 
 app.set('port', process.env.PORT || 3000);  // S.O Port or Port 3000
+app.set('pocketown', '');
 
 // Middlewares
 
 app.use(morgan('dev'));  // Use Morgan with DEV command prompt
 app.use(express.json());  // Body Parse to JSON
-app.use(cors({origin: "http://localhost:4200"}));  // Use Cors to connect Angular
+app.use(cors({origin: pocketown}));  // Use Cors to connect Angular
 
 // Routes
 
