@@ -11,6 +11,6 @@ const MoveSchema = new Schema ({  // Move Model
   'attack': {type: String, required: true},
   'info': {type: String, required: true}
 });
-// Set Pokemon Schema as mongoose Model
+// Set Move Schema as mongoose Model
 module.exports = mongoose.model('Move', MoveSchema);
 // MongoDB will create a Collection 'Move' -> 'moves'

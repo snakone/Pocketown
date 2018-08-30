@@ -25,7 +25,7 @@ export class AdminMoveComponent implements OnInit {
   getMove(){
      this.moveService.getMove()  // HTTP POST to Server
      .subscribe(res => {  // Subscribe to the Server Response
-      this.moveService.moveList = res as any;  // Response as Service Pokedex = List
+      this.moveService.moveList = res as any;  // Response as Service Move = List
     });
   }
 

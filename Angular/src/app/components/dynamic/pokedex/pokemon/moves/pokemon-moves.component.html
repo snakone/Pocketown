@@ -2,25 +2,25 @@
   <img class="pkm-img" src="{{urlImage}}{{pokemon.picture}}.png"/>
   <mat-card-header class="header">
     <div mat-card-avatar class="header-image"></div>
-    <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
-    <mat-card-subtitle>{{pokemon.description}}</mat-card-subtitle>
+    <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>  <!-- Pokemon Name -->
+    <mat-card-subtitle>{{pokemon.description}}</mat-card-subtitle>  <!-- Pokemon Description -->
   </mat-card-header>
   <mat-card-content class="top">
 
     <h5>Recommened Moves</h5>
         <div class="row center">
             <div class="col s6 m6 l6">
-                <p><span class="type {{moves[0].type}}">{{pokemon.move1}}</span></p>
-                <p><span class="type {{moves[1].type}}">{{pokemon.move2}}</span></p>
+                <p><span class="type {{moves[0].type}}">{{pokemon.move1}}</span></p>  <!-- Move 1 -->
+                <p><span class="type {{moves[1].type}}">{{pokemon.move2}}</span></p>  <!-- Move 2 -->
             </div>
             <div class="col s6 m6 l6">
-                <p><span class="type {{moves[2].type}}">{{pokemon.move3}}</span></p>
-                <p><span class="type {{moves[3].type}}">{{pokemon.move4}}</span></p>
+                <p><span class="type {{moves[2].type}}">{{pokemon.move3}}</span></p>  <!-- Move 3 -->
+                <p><span class="type {{moves[3].type}}">{{pokemon.move4}}</span></p>  <!-- Move 4 -->
             </div>
         </div>
         <div *ngIf="pokemon.evolution == 'Mega' || pokemon.evolution == 'R2'" class="center lessTop">
-          <span><img class="zMove" src="{{urlzMove}}{{pokemon.z_picture}}.gif"/></span>
-          <span class="type zName">{{pokemon.zmove}}</span>
+          <h5>Z Move</h5>
+          <p><span class="type zName">{{pokemon.zmove}}</span></p>  <!-- Z Move -->
         </div>
 
   </mat-card-content>

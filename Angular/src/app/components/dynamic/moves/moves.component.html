@@ -1,3 +1,11 @@
+<div class="center loading" *ngIf="loading">  <!-- Only when Loading... -->
+    <img class="responsive-img" src="https://i.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.webp">
+  <p class="center">
+    <span class="bold">LOADING... PLEASE WAIT</span>
+  </p>
+</div>
+
+<div class="moves" *ngIf="filteredMoveList">
     <div class="sticky">  <!-- Sticky Search Bar -->
           <div class="input-field center top">  <!-- Key Up Event -->
               <input type="text" name="searchValue"
@@ -6,26 +14,27 @@
           </div>
     </div>
 
-<div class="row center moves">
-    <mat-card *ngFor="let move of filteredMoveList" class="col s12 m12 l6 card center">
-      <mat-card-content>
-      <span class="type {{move.type}}">{{move.name}}</span>
+    <div class="row center move animated slideInRight">  <!-- Move Card -->
+        <mat-card *ngFor="let move of filteredMoveList" class="col s12 m12 l12 card center">
+          <mat-card-content>
+          <span class="type {{move.type}}">{{move.name}}</span>  <!-- Move Name -->
 
-        <p>
-          <span class="stat"><span class="bold">Power:</span> {{move.power}}</span>
-          <span class="stat"><span class="bold">Hit Rate:</span> {{move.hit}}</span>
-          <span class="stat"><span class="bold">Type:</span>
-            <span class="bold {{move.type}}_move"> {{move.type}}</span>
-         </span>
-        </p>
-        <p>
-          <span class="stat"><span class="bold">Attack:</span> {{move.attack}}</span>
-          <span class="stat"><span class="bold">PP:</span> {{move.pp}}</span>
-          <span class="stat"><span class="bold">Move:</span> {{move.z}}</span>
-        </p>
-        <p class="info">
-        {{move.info}}
-        </p>
-      </mat-card-content>
-    </mat-card>
+            <p>
+              <span class="stat"><span class="bold">Power:</span> {{move.power}}</span>  <!-- Move Power -->
+              <span class="stat"><span class="bold">Hit Rate:</span> {{move.hit}}</span>  <!-- Move Hit -->
+              <span class="stat"><span class="bold">Type:</span>  <!-- Move Type -->
+                <span class="bold {{move.type}}_move"> {{move.type}}</span>
+             </span>
+            </p>
+            <p>
+              <span class="stat"><span class="bold">Attack:</span> {{move.attack}}</span>  <!-- Move Attack Type -->
+              <span class="stat"><span class="bold">PP:</span> {{move.pp}}</span>  <!-- Move PP -->
+              <span class="stat"><span class="bold">Move:</span> {{move.z}}</span>  <!-- Move Special -->
+            </p>
+            <p class="info">  <!-- Move Info -->
+            {{move.info}}
+            </p>
+          </mat-card-content>
+        </mat-card>
+    </div> <!-- End of Move Card -->
 </div>

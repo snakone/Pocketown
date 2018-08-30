@@ -62,6 +62,7 @@ import { EffortComponent } from './components/dynamic/pokedex/pokemon/effort/eff
 import { ItemsComponent } from './components/dynamic/pokedex/pokemon/items/items.component';
 import { PokemonMovesComponent } from './components/dynamic/pokedex/pokemon/moves/pokemon-moves.component';
 import { AdminMoveComponent } from './components/admin/move/admin-move.component';
+import { VictoryRoadComponent } from './components/static/guides/victory-road/victory-road.component';
 
 
 @NgModule({
@@ -73,7 +74,8 @@ import { AdminMoveComponent } from './components/admin/move/admin-move.component
     ResultComponent, StatsComponent, FilteringComponent, EvolutionsComponent,
     StadisticsComponent, BioComponent, MatchComponent, NatureComponent,
     EffortComponent, ItemsComponent, PokemonMovesComponent, MovesComponent,
-    AdminMoveComponent
+    AdminMoveComponent,
+    VictoryRoadComponent
 
 ],
   imports: [

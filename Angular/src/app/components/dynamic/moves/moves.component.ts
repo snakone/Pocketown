@@ -14,15 +14,19 @@ export class MovesComponent implements OnInit {
   moveList: Move[];
   filteredMoveList: Move[];
   panelOpenState = false;
+  loading: boolean;  // Whenever the data is loaded or NOT
   searchValue: string = "";  // Input Value to Search For - ngModel on HTML
 
-  constructor(private moveService: MoveService) { }
+  constructor(private moveService: MoveService) {
+        this.loading = true;  // Start at true, always need to load at first time
+   }
 
   ngOnInit() {
-    this.moveService.getMove()
+    this.moveService.getMove()  // Get Move List
      .subscribe(res => {
        this.moveList = res as Move[];
        this.filteredMoveList = this.moveList;
+       this.loading = false;  // After We got the data No more Loading
      })
   }
 

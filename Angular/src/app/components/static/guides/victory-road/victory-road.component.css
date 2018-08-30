@@ -1,0 +1,78 @@
+.type{
+  padding: 3px 6px;
+  border-radius: 3px;
+  color:white;
+  font-weight: bold;
+  margin:2px;
+  border: 1px solid black;
+  display: inline-grid;
+  width: auto;
+  font-size: .8em!important;
+}
+
+.type:hover{
+  filter: brightness(1.5);
+  cursor: pointer;
+  color:black;
+}
+
+.row {
+  padding-bottom: 55px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5%;
+}
+
+iframe {
+  width: 90%;
+  margin: 0 auto;
+  height: 200px;
+}
+
+hr.separator {
+	width:90%;
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+	border-radius:3px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ol {
+  color: #ccc;
+  list-style-type: none;
+}
+
+ol li {
+  position: relative;
+  font: bold italic 45px/1.5 Helvetica, Verdana, sans-serif;
+  padding: 10px 15px;
+}
+
+li p {
+  font: 12px/1.5 Helvetica, sans-serif;
+  padding-left: 25px;
+  color: #555;
+}
+
+.list {
+  position: absolute;
+  left: -25px;
+}
+
+.pokeball-list li {
+    padding: auto 15px;
+    border-bottom: solid 1px #e2e6e8;
+		background: url("../../../../../assets/images/guides/victory-road/pokeball.png") 0px 1.05em no-repeat;
+	}
+
+  .pokeball-list li p {
+    padding-left: 35px;
+    padding-top: 5px;
+  }

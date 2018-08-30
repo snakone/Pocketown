@@ -13,7 +13,7 @@ export class MoveService {
   selectedMove: Move;  // Save selected Move
   moveList: Move[];  // Move List
   readonly ADMIN_API = "http://localhost:3000/admin/move";  // Server API
-  readonly MOVE_API = "http://localhost:3000/admin/move_name";  // Server API
+  readonly MOVE_API = "http://localhost:3000/admin/move_name";  // Server API for Move Names
 
 
   constructor(private http: HttpClient) {
@@ -25,8 +25,8 @@ export class MoveService {
   }
 
   getMoveTypebyName(moves: string[]){
-    const params = {moves: moves};
-    return this.http.get(this.MOVE_API, {params: params});
+    const params = {moves: moves};  // Array of 4 Moves Names
+    return this.http.get(this.MOVE_API, {params: params});  // HTTP GET to Server API - POSTMAN belike
   }
 
   addMove(move: Move){  // We add a Move

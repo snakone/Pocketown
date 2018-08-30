@@ -8,7 +8,7 @@ moveCtrl.addMove = async (req, res) => {  // Add Move to MongoDB
 
   const move = new moves(req.body);  // Get the html Body -> Move Object
   await move.save();  // Save on MongoDB
-  res.json('Move Guardado'); 
+  res.json('Move Guardado');
 }
 
 moveCtrl.getMove = async (req, res) => {  // Get ALL Move
@@ -24,12 +24,12 @@ moveCtrl.getMovebyId = async (req, res) => {  // Get Move by ID
     res.json(move);  // Send Move to server as JSON
 }
 
-moveCtrl.getMoveTypebyName = async (req, res) => {  // Get Move by ID
+moveCtrl.getMoveTypebyName = async (req, res) => {  // Get Move Type by Name
 
-    m = { "$match" : { "name" : { "$in" : req.query.moves } } };
-    a = { "$addFields" : { "__order" : { "$indexOfArray" : [ req.query.moves, "$name" ] } } };
-    s = { "$sort" : { "__order" : 1 } };// Find by ID
-    const move = await moves.aggregate( [ m, a, s ] );
+    match = { "$match" : { "name" : { "$in" : req.query.moves } } };  // Match
+    add = { "$addFields" : { "__order" : { "$indexOfArray" : [ req.query.moves, "$name" ] } } };  // Add Field
+    sort = { "$sort" : { "__order" : 1 } };  // Sort Result
+    const move = await moves.aggregate( [match, add, sort] );  // Match the Moves Array Names, Add an Index, Sort Moves as We GET THEM
     res.json(move);  // Send Move to server as JSON
 }
 

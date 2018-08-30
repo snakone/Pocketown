@@ -43,6 +43,10 @@
   width: 100%;
 }
 
+.nestedList .victory {
+  width: 120%;
+}
+
 li:last-child {
   border: none;
 }
