@@ -50,5 +50,21 @@ export class AppComponent {
    .bypassSecurityTrustResourceUrl("../assets/icons/move.svg")
    );
 
+   this.matIconRegistry.addSvgIcon("tools", this.domSanitizer
+   .bypassSecurityTrustResourceUrl("../assets/icons/tools.svg")
+   );
+
+   this.matIconRegistry.addSvgIcon("database", this.domSanitizer
+   .bypassSecurityTrustResourceUrl("../assets/icons/database.svg")
+   );
+
+   this.matIconRegistry.addSvgIcon("guides", this.domSanitizer
+   .bypassSecurityTrustResourceUrl("../assets/icons/guides.svg")
+   );
+
+   this.matIconRegistry.addSvgIcon("victory-road", this.domSanitizer
+   .bypassSecurityTrustResourceUrl("../assets/icons/victory-road.svg")
+   );
+
   }
 }

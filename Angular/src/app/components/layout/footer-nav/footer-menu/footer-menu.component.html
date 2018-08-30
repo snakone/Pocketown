@@ -2,25 +2,47 @@
   <mat-icon>more_vert</mat-icon>
 </button>
 
-<mat-menu #menu="matMenu"  [overlapTrigger]="false">
-  <button mat-menu-item>
-    <mat-icon>home</mat-icon>
-    <span>Inicio</span>
+<mat-menu #menu="matMenu" [overlapTrigger]="false">
+
+  <button [routerLink]="['home']" routerLinkActive="active" mat-menu-item>
+    <mat-icon svgIcon="pikachu"></mat-icon> <!-- Home -->
+    <span>Home</span>
   </button>
-  <button [routerLink]="['about']" mat-menu-item>
-    <mat-icon>face</mat-icon>
-    <span>About Us</span>
+
+  <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Database">
+    <mat-icon svgIcon="database"></mat-icon> <!-- Database -->
+    <span>Database</span>
+  </button>
+
+  <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Tools">
+    <mat-icon svgIcon="tools"></mat-icon> <!-- Tools -->
+    <span>Tools</span>
+  </button>
+
+  <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Guides">
+    <mat-icon svgIcon="guides"></mat-icon> <!-- Guides -->
+    <span>Guides</span>
+  </button>
+
+</mat-menu>
+
+<mat-menu #Database="matMenu"> <!-- Database Menu -->
+  <button [routerLink]="['pokedex']" routerLinkActive="active"
+          mat-menu-item><mat-icon svgIcon="bulbasaur"></mat-icon>Pokédex
+  </button>
+  <button [routerLink]="['moves']" routerLinkActive="active"
+          mat-menu-item><mat-icon svgIcon="move"></mat-icon>Moves
   </button>
 </mat-menu>
 
-<mat-menu #bookType="matMenu">
-  <button mat-menu-item><mat-icon>collections_bookmark</mat-icon>Tapa</button>
-  <button mat-menu-item><mat-icon>phone_android</mat-icon>Digital</button>
+<mat-menu #Tools="matMenu"> <!-- Tools Menu -->
+  <button [routerLink]="['laboratory']" routerLinkActive="active"
+          mat-menu-item><mat-icon svgIcon="laboratory"></mat-icon>Laboratory
+  </button>
 </mat-menu>
 
-<mat-menu #genders="matMenu">
-  <button mat-menu-item><mat-icon>grade</mat-icon>Novelas</button>
-  <button mat-menu-item><mat-icon>favorite_border</mat-icon>Romántico</button>
-  <button mat-menu-item><mat-icon>web</mat-icon>Comics</button>
-  <button mat-menu-item><mat-icon>tag_faces</mat-icon>Infantil</button>
+<mat-menu #Guides="matMenu"> <!-- Guides Menu -->
+  <button [routerLink]="['guides/victory-road']" routerLinkActive="active"
+          mat-menu-item><mat-icon svgIcon="victory-road"></mat-icon>Victory Road
+  </button>
 </mat-menu>

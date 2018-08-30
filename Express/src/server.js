@@ -13,12 +13,11 @@ const app = express();  // Init Express on APP
 
 app.set('port', process.env.PORT || 3000);  // S.O Port or Port 3000
 
-
 // Middlewares
 
 app.use(morgan('dev'));  // Use Morgan with DEV command prompt
 app.use(express.json());  // Body Parse to JSON
-app.use(cors({origin: "http://pocketown-angular.epizy.com"}));  // Use Cors to connect Angular
+app.use(cors({origin: "http://localhost:4200"}));  // Use Cors to connect Angular
 
 // Routes
 

@@ -2,11 +2,11 @@
   <mat-icon>more_vert</mat-icon>
 </button>
 
-<mat-menu #menu="matMenu"  [overlapTrigger]="false">
+<mat-menu #menu="matMenu" [overlapTrigger]="false">
 
   <button [routerLink]="['home']" routerLinkActive="active" mat-menu-item>
     <mat-icon svgIcon="pikachu"></mat-icon> <!-- Home -->
-    <span>Inicio</span>
+    <span>Home</span>
   </button>
 
   <button [routerLink]="['pokedex']" routerLinkActive="active" mat-menu-item>
@@ -19,8 +19,13 @@
     <span>Laboratory</span>
   </button>
 
+  <button [routerLink]="['']" mat-menu-item>
+    <mat-icon svgIcon="trainer"></mat-icon> <!-- Login -->
+    <span>Login</span>
+  </button>
+
   <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Admin">
-    <mat-icon svgIcon="admin"></mat-icon> <!-- Menu Trigger Admin -->
+    <mat-icon svgIcon="admin"></mat-icon>
     <span>Admin</span>
   </button>
 

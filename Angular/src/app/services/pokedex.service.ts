@@ -11,7 +11,7 @@ export class PokedexService {
 
   selectedPokemon: Pokemon;  // Save selected Pokemon
   pokedex: Pokemon[];  // Pokedex with Pokemon List
-  readonly URL_API = "https://pocketown-server.herokuapp.com/pokedex";  // Server API
+  readonly URL_API = "http://localhost:3000/pokedex";  // Server API
 
 
   constructor(private http: HttpClient) {
