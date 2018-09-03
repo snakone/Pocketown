@@ -15,6 +15,10 @@ span {
   margin:0 auto;
 }
 
+.bottom {
+  padding-bottom: 60px;
+}
+
 .pokemon {
   width: 56px;
   height: 63px;

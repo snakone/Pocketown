@@ -15,7 +15,6 @@ export class Pokemon {
   item_picture: string;
   item2: string;
   item2_picture: string;
-  z_picture: string;
   HP: number;
   ATK: number;
   DEF: number;

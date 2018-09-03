@@ -28,12 +28,7 @@ export class MatchComponent implements OnInit {
    }
 
   ngOnInit() {
-     this.good1 = this.pokemon.good1.replace(/(?<!^)([A-Z])/g, " $1");  // Replace "MegaCharizardX" into "Mega Charizard X"
-     this.good2 = this.pokemon.good2.replace(/(?<!^)([A-Z])/g, " $1");
-     this.good3 = this.pokemon.good3.replace(/(?<!^)([A-Z])/g, " $1");
-     this.bad1 = this.pokemon.bad1.replace(/(?<!^)([A-Z])/g, " $1");
-     this.bad2 = this.pokemon.bad2.replace(/(?<!^)([A-Z])/g, " $1");
-     this.bad3 = this.pokemon.bad3.replace(/(?<!^)([A-Z])/g, " $1");
+
 
      this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
       .subscribe(res => {
@@ -46,22 +41,30 @@ export class MatchComponent implements OnInit {
 
   }
 
+  putSpaces(){
+    this.good1 = this.pokemon.good1.replace(/(?<!^)([A-Z])/g, " $1");  // Replace "MegaCharizardX" into "Mega Charizard X"
+    this.good2 = this.pokemon.good2.replace(/(?<!^)([A-Z])/g, " $1");
+    this.good3 = this.pokemon.good3.replace(/(?<!^)([A-Z])/g, " $1");
+    this.bad1 = this.pokemon.bad1.replace(/(?<!^)([A-Z])/g, " $1");
+    this.bad2 = this.pokemon.bad2.replace(/(?<!^)([A-Z])/g, " $1");
+    this.bad3 = this.pokemon.bad3.replace(/(?<!^)([A-Z])/g, " $1");
+  }
+
   goPokemon(familiar){
       this.pokemon = familiar;
       // Changing Evolution Number to String
       this.pokemon.evolution = this.pokedexService
        .evolutionToString(this.pokemon.evolution);
+      this.putSpaces();
   }
 
-  navigate(pokemon: string) {
-    this.adminService.getPokemonbyName(pokemon)
+  getPokemonbyName(pokemonName: string) {
+  this.adminService.getPokemonbyName(pokemonName)
      .subscribe(res =>{
        const pokemon = res[0] as any;
        this.pokemon = pokemon;
+       this.putSpaces();
      })
-
-
-
   }
 
 }

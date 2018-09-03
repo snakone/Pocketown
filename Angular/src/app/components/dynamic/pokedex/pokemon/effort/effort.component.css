@@ -7,6 +7,10 @@
   margin-bottom: 5px;
 }
 
+.mat-card-title {
+  font-size: .8em;
+}
+
 .pkm-img {
   position: absolute;
   right:20px;
@@ -21,12 +25,12 @@
 .card {
   max-width: 300px;
   margin: 20px auto auto auto;
-  min-height: 420px;
+  min-height: 410px;
 }
 
 .family {
   position: absolute;
-  bottom:20px;
+  bottom:12px;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;

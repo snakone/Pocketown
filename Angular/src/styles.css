@@ -31,6 +31,11 @@
 .Dragon {background-color: #7038F8;}
 .Fairy {background-color: #FF69B4;}
 .Any {background-color: #000000;}
+.Battle {
+	background: -moz-linear-gradient(right, red 0%, orange 100%);
+	background: -webkit-linear-gradient(right, red 0%,orange 100%);
+	background: linear-gradient(to right, red , orange);
+}
 
 .bold {font-weight: bold;}
 
@@ -42,5 +47,3 @@
 .SPD {color: #673AF8}
 .SS {color: black}
 .N\º {color:grey}
-
-.bottom{padding-bottom: 50px;}
