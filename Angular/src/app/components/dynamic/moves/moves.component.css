@@ -44,7 +44,7 @@
 
 .info {
   margin: 0 auto;
-  width: 75%;
+  width: 85%;
 }
 
 @media screen and (min-width: 993px) and (max-width: 1100px) {
@@ -134,4 +134,5 @@ margin-top: 10px;
   .responsive-img {
     margin-left: -35px;
   }
+
 }

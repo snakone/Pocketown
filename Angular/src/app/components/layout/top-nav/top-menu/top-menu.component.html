@@ -1,41 +1,58 @@
-<button class="nav-Menu" mat-icon-button [matMenuTriggerFor]="menu">  <!-- Menu Trigger -->
+
+<button class="nav-Menu" mat-icon-button [matMenuTriggerFor]="menu">
   <mat-icon>more_vert</mat-icon>
 </button>
 
 <mat-menu #menu="matMenu" [overlapTrigger]="false">
 
-  <button [routerLink]="['home']" routerLinkActive="active" mat-menu-item>
-    <mat-icon svgIcon="pikachu"></mat-icon> <!-- Home -->
-    <span>Home</span>
+  <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Database">
+    <mat-icon svgIcon="database"></mat-icon> <!-- Database -->
+    <span>Data</span>
   </button>
 
-  <button [routerLink]="['pokedex']" routerLinkActive="active" mat-menu-item>
-    <mat-icon svgIcon="bulbasaur"></mat-icon> <!-- Pokedex -->
-    <span>Pokédex</span>
+  <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Tools">
+    <mat-icon svgIcon="tools"></mat-icon> <!-- Tools -->
+    <span>Tools</span>
   </button>
 
-  <button [routerLink]="['laboratory']" routerLinkActive="active" mat-menu-item>
-    <mat-icon svgIcon="laboratory"></mat-icon> <!-- Laboratory -->
-    <span>Laboratory</span>
+  <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Guides">
+    <mat-icon svgIcon="guides"></mat-icon> <!-- Guides -->
+    <span>Guides</span>
   </button>
 
-  <button [routerLink]="['']" mat-menu-item>
-    <mat-icon svgIcon="trainer"></mat-icon> <!-- Login -->
-    <span>Login</span>
-  </button>
-
-  <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Admin">
+   <!-- <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Admin">
     <mat-icon svgIcon="admin"></mat-icon>
     <span>Admin</span>
-  </button>
+  </button> -->
 
 </mat-menu>
 
-<mat-menu #Admin="matMenu"> <!-- Admin Menu -->
+<mat-menu #Database="matMenu" > <!-- Database Menu -->
+  <button [routerLink]="['pokedex']" routerLinkActive="active"
+          mat-menu-item><mat-icon svgIcon="bulbasaur"></mat-icon>Pokédex
+  </button>
+  <button [routerLink]="['moves']" routerLinkActive="active"
+          mat-menu-item><mat-icon svgIcon="move"></mat-icon>Moves
+  </button>
+</mat-menu>
+
+<mat-menu #Tools="matMenu" > <!-- Tools Menu -->
+  <button [routerLink]="['laboratory']" routerLinkActive="active"
+          mat-menu-item><mat-icon svgIcon="laboratory"></mat-icon>Laboratory
+  </button>
+</mat-menu>
+
+<mat-menu #Guides="matMenu"> <!-- Guides Menu -->
+  <button [routerLink]="['guides/victory-road']" routerLinkActive="active"
+          mat-menu-item><mat-icon svgIcon="victory-road"></mat-icon>Victory Road
+  </button>
+</mat-menu>
+
+ <!-- <mat-menu #Admin="matMenu">
   <button [routerLink]="['admin/pokemon']" routerLinkActive="active"
           mat-menu-item><mat-icon svgIcon="psyduck"></mat-icon>Pokémon
   </button>
   <button [routerLink]="['admin/move']" routerLinkActive="active"
           mat-menu-item><mat-icon svgIcon="move"></mat-icon>Moves
   </button>
-</mat-menu>
+</mat-menu> -->

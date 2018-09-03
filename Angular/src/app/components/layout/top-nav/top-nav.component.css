@@ -36,10 +36,6 @@ mat-toolbar {
   flex: 1 1 auto;
 }
 
-.top-icon{
-  padding:0 35px 0 14px;
-}
-
 .custom-icon {
   margin: 0 10px;
   width: 30px;
@@ -50,7 +46,7 @@ mat-toolbar {
 
 mat-icon:hover{
   cursor:pointer;
-filter: brightness(1.5);
+  filter: brightness(1.5);
 }
 
 

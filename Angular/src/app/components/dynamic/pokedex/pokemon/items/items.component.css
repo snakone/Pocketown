@@ -9,24 +9,75 @@
   width:56px;
 }
 
+p {
+  margin-top: 20px;
+}
+
+.info {
+  width: 90%;
+  margin: auto auto;
+}
+
+.bottom {
+  margin-bottom: 20px;
+}
+
 .item {
   width: 60px;
   padding: 4px;
 }
 
+.item:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
 .card {
   max-width: 300px;
   margin: 20px auto auto auto;
-  min-height: 275px;
+  min-height: 420px;
+}
+
+.type{
+  padding: 5px 10px;
+  border-radius: 3px;
+  color:white;
+  font-weight: bold;
+  border: 1px solid black;
+  display: inline-grid;
+  width: auto;
+  font-size: .9em!important;
+}
+
+.family {
+  position: absolute;
+  bottom:20px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.familiar {
+  width: 30px;
+  margin: 0 3px;
 }
 
 .top {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+@media (min-width:599px) {
+  .top {
+    margin-top: 10px;
+  }
 }
 
 mat-card-subtitle {
   text-align: left;
 }
+
 
 .row {
   margin-top: 25px;
@@ -43,3 +94,10 @@ mat-card-subtitle {
   width: 100%;
   margin: 20px auto auto auto;
 }
+
+.Common {background-color: blue;}
+.Rare:not(.Very) {background-color: black;}
+.Very {background-color: orange;}
+.Epic {background-color: red;}
+.Gym {background-color: deeppink;}
+.Legendary {background-color: purple;}

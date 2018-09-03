@@ -14,10 +14,14 @@
     border-radius: 10px; /* Rounded corners */
 }
 
-
-
 @media (min-width: 600px) {
 	.row {
 		margin-left: 25px;
+	}
+}
+
+@media (min-width: 993px) {
+	.row {
+		margin-left: 40px;
 	}
 }

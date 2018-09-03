@@ -20,7 +20,8 @@ pokedexCtrl.getPokemonbyId = async (req, res) => {  // Get Pokemon by ID
 pokedexCtrl.getFamily = async (req, res) => {  // Get Pokemon Family
 
     const filterFamily = new RegExp(`^${req.params.family}`);  //  Template String ES6 Pattern
-    const family = await pokemons.find({ family: filterFamily}); // "/^Mega/" Pattern
+    const family = await pokemons.find({ family: filterFamily})  // "/^Mega/" Pattern
+     .sort({ pokedex: + 1 }); // Sort Pokemon by Pokedex ASC 
     res.json(family);  // Send Family to server as JSON
 }
 

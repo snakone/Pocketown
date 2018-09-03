@@ -4,17 +4,18 @@ text-align: center;
 margin: 0 auto auto -10px;
 }
 
-.total {
-  margin-top: 35px auto auto auto;
-  font-size: 1.3em;
-}
-
 .header {
   margin-bottom: 5px;
 }
 
 .top {
-  margin-top: 10px;
+  margin-top: 22px;
+}
+
+@media (min-width:599px) {
+  .top {
+    margin-top: 12px;
+  }
 }
 
 .centered {
@@ -31,6 +32,22 @@ margin: 0 auto auto -10px;
 .card {
   max-width: 300px;
   margin: 20px auto auto auto;
+  min-height: 420px;
+}
+
+.family {
+  position: absolute;
+  bottom:20px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.familiar {
+  width: 30px;
+  margin: 0 3px;
 }
 
 mat-card-subtitle {

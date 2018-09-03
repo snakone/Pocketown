@@ -1,14 +1,12 @@
-
     <mat-card class="card">
       <img class="pkm-img" src="{{urlImage}}{{pokemon.picture}}.png"/>
       <mat-card-header class="header">
         <div mat-card-avatar class="header-image"></div>
         <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
-        <mat-card-subtitle>{{pokemon.description}}</mat-card-subtitle>
+        <mat-card-subtitle>Match Up</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content class="top">
 
-      <h5>Match Up</h5>
       <div class="row">
         <div class="col s6 m6 l6">
             <span class="type Grass">GOOD</span>  <!-- Good Pokemon -->
@@ -37,6 +35,13 @@
                 src="{{urlImage}}{{pokemon.bad3}}.png"></span>
             </div>
         </div>
+      </div>
+
+      <div class="row center family">
+          <span *ngFor="let familiar of family" (click)="goPokemon(familiar)">
+            <img class="familiar" matTooltip="{{familiar.name}}"
+            src="{{urlImage}}{{familiar.picture}}.png"/>
+          </span>
       </div>
 
       </mat-card-content>

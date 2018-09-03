@@ -3,11 +3,10 @@
   <mat-card-header class="header">
     <div mat-card-avatar class="header-image"></div>
     <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>  <!-- Pokemon Name -->
-    <mat-card-subtitle>{{pokemon.description}}</mat-card-subtitle>  <!-- Pokemon Description -->
+    <mat-card-subtitle>Moves</mat-card-subtitle>  <!-- Pokemon Description -->
   </mat-card-header>
   <mat-card-content class="top">
 
-    <h5>Recommened Moves</h5>
         <div class="row center">
             <div class="col s6 m6 l6">
                 <p><span class="type {{moves[0].type}}">{{pokemon.move1}}</span></p>  <!-- Move 1 -->
@@ -18,9 +17,16 @@
                 <p><span class="type {{moves[3].type}}">{{pokemon.move4}}</span></p>  <!-- Move 4 -->
             </div>
         </div>
-        <div *ngIf="pokemon.evolution == 'Mega' || pokemon.evolution == 'R2'" class="center lessTop">
+        <div *ngIf="pokemon.evolution == 'Mega' || pokemon.evolution == 'R2'" class="cente">
           <h5>Z Move</h5>
           <p><span class="type zName">{{pokemon.zmove}}</span></p>  <!-- Z Move -->
+        </div>
+
+        <div class="row center family">
+            <span *ngFor="let familiar of family" (click)="goPokemon(familiar)">
+              <img class="familiar" matTooltip="{{familiar.name}}"
+              src="{{urlImage}}{{familiar.picture}}.png"/>
+            </span>
         </div>
 
   </mat-card-content>

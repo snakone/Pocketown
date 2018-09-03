@@ -31,13 +31,25 @@ h5 {
   border-radius: 4px;
 }
 
-.lessTop {
-  margin-top: -10px;
-}
-
 .card {
   max-width: 300px;
   margin: 20px auto auto auto;
+  min-height: 420px;
+}
+
+.family {
+  position: absolute;
+  bottom:20px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.familiar {
+  width: 30px;
+  margin: 0 3px;
 }
 
 .mat-card {
@@ -45,7 +57,13 @@ h5 {
 }
 
 .top {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+@media (min-width:599px) {
+  .top {
+    margin-top: 10px;
+  }
 }
 
 mat-card-subtitle {

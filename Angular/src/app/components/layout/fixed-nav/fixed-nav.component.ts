@@ -10,7 +10,7 @@ export class FixedNavComponent implements OnInit {
   navTitles: string[];
 
   constructor() {
-    this.navTitles = ["Database","Tools","Guides","Idioma"];
+    this.navTitles = ["Database","Tools","Guides"];
   }
 
   ngOnInit() {

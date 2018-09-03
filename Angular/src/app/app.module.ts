@@ -25,6 +25,7 @@ import { HttpClientModule } from "@angular/common/http";
 
 //Admin
 import { AdminPokemonComponent } from './components/admin/pokemon/admin-pokemon.component';
+import { AdminMoveComponent } from './components/admin/move/admin-move.component';
 
 // App Layout //
 import { TopNavComponent } from './components/layout/top-nav/top-nav.component';
@@ -61,8 +62,13 @@ import { NatureComponent } from './components/dynamic/pokedex/pokemon/nature/nat
 import { EffortComponent } from './components/dynamic/pokedex/pokemon/effort/effort.component';
 import { ItemsComponent } from './components/dynamic/pokedex/pokemon/items/items.component';
 import { PokemonMovesComponent } from './components/dynamic/pokedex/pokemon/moves/pokemon-moves.component';
-import { AdminMoveComponent } from './components/admin/move/admin-move.component';
+
+// Pocketown guides
 import { VictoryRoadComponent } from './components/static/guides/victory-road/victory-road.component';
+
+// Image Carousel
+import { EventsComponent } from './components/dynamic/welcome/events/events.component';
+import { RecommenedComponent } from './components/dynamic/welcome/recommened/recommened.component';
 
 
 @NgModule({
@@ -74,8 +80,7 @@ import { VictoryRoadComponent } from './components/static/guides/victory-road/vi
     ResultComponent, StatsComponent, FilteringComponent, EvolutionsComponent,
     StadisticsComponent, BioComponent, MatchComponent, NatureComponent,
     EffortComponent, ItemsComponent, PokemonMovesComponent, MovesComponent,
-    AdminMoveComponent,
-    VictoryRoadComponent
+    AdminMoveComponent, VictoryRoadComponent, EventsComponent, RecommenedComponent
 
 ],
   imports: [

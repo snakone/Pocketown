@@ -1,0 +1,114 @@
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ede"},"item":"Mystic Water","grade":"Rare","picture":"MysticWater","type":"Water","info":"This teardrop-shaped gem boosts the power of Water-type moves by 20%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6edf"},"item":"Pink Bow","grade":"Common","picture":"PinkBow","type":"Normal","info":"Boosts the power of Normal-type moves by 10% when held."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ee0"},"item":"Charcoal","grade":"Rare","picture":"Charcoal","type":"Fire","info":"Its a combustible fuel that boost the power of Fire-type moves by 20%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ee1"},"item":"Amulet Coin","grade":"Very Common","picture":"AmuletCoin","type":"Battle","info":"It doubles any prize money received if the holding Pokemon joins a battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ee2"},"item":"Smoke Ball","grade":"Very Common","picture":"SmokeBall","type":"Battle","info":"It enables the holder to flee from any wild Pokemon encounter without fail."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ee3"},"item":"Dragon Scale","grade":"Common","picture":"DragonScale","type":"Dragon","info":"This tough scale boosts the power of Dragon-type moves by 10%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ee4"},"item":"Black Belt","grade":"Rare","picture":"BlackBelt","type":"Fighting","info":"This Belt Boosts the power of Fighting-type moves by 20%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ee5"},"item":"Kings Rock","grade":"Rare","picture":"KingsRock","type":"Battle","info":"When inflicts damage"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ee6"},"item":"Bright Powder","grade":"Rare","picture":"BrightPowder","type":"Battle","info":"It casts a glare that lowers the opposing Pokemon accuracy by 10%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ee7"},"item":"Silver Powder","grade":"Rare","picture":"SilverPowder","type":"Bug","info":"Its a silver powder that will boost the power of Bug-type moves by 20%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ee8"},"item":"Metal Coat","grade":"Rare","picture":"MetalCoat","type":"Steel","info":"Its a metallic film that can boost the power of Steel-type moves by 20%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ee9"},"item":"Soft Sand","grade":"Rare","picture":"SoftSand","type":"Ground","info":"Its a loose"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6eea"},"item":"Hard Stone","grade":"Rare","picture":"HardStone","type":"Rock","info":"Its a durable stone that boosts the power of Rock-type moves by 20%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6eeb"},"item":"Black Glasses","grade":"Rare","picture":"BlackGlasses","type":"Dark","info":"A shady-looking glasses that boost the power of Dark-type moves by 20%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6eec"},"item":"Miracle Seed","grade":"Rare","picture":"MiracleSeed","type":"Grass","info":"Its a seed imbued that boosts the power of Grass-type moves by 20%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6eed"},"item":"Magnet","grade":"Rare","picture":"Magnet","type":"Electric","info":"Its a magnet that boosts the power of Electric-type moves by 20%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6eee"},"item":"Sharp Beak","grade":"Rare","picture":"SharpBeak","type":"Flying","info":"Its a long"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6eef"},"item":"Poison Barb","grade":"Rare","picture":"PoisonBarb","type":"Poison","info":"This poisonous barb boosts the power of Poison-type moves by 20%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ef0"},"item":"Never-Melt Ice","grade":"Rare","picture":"NeverMeltIce","type":"Ice","info":"Its a piece of ice that boosts the power of Ice-type moves by 20%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ef1"},"item":"Spell Tag","grade":"Rare","picture":"SpellTag","type":"Ghost","info":"Its a sinister tag that boosts the power of Ghost-type moves by 20%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ef2"},"item":"Twisted Spoon","grade":"Rare","picture":"TwistedSpoon","type":"Psychic","info":"Spoon imbued with telekinetic power"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ef3"},"item":"Dragon Fang","grade":"Rare","picture":"DragonFang","type":"Dragon","info":"This hard and sharp fang boosts the power of Dragon-type moves by 20%"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ef4"},"item":"Polkadot Bow","grade":"Rare","picture":"PolkadotBow","type":"Normal","info":"Boosts the power of Normal-type moves by 20% when held."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ef5"},"item":"Quick Claw","grade":"Epic","picture":"QuickClaw","type":"Battle","info":"This light"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ef6"},"item":"Leftovers","grade":"Epic","picture":"Leftovers","type":"Battle","info":"The holders HP is restored by 1/16 of is max HP every turn during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ef7"},"item":"Berserk Gene","grade":"Very Rare","picture":"BerserkGene","type":"Battle","info":"Confuses the holder and raises Its Attack by 1 stages."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ef8"},"item":"Sharp Coin","grade":"Very Rare","picture":"SharpCoin","type":"Normal","info":"Boost 15% ATK for Normal type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ef9"},"item":"Tough Egg","grade":"Very Rare","picture":"ToughEgg","type":"Normal","info":"Boost 15% DEF for Normal type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6efa"},"item":"One Punch","grade":"Very Rare","picture":"OnePunch","type":"Fighting","info":"Boost 15% ATK for Fighting type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6efb"},"item":"Tough Belt","grade":"Very Rare","picture":"ToughBelt","type":"Fighting","info":"Boost 2 stage critical hit ratio for Fighting type move in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6efc"},"item":"Crows Jade","grade":"Very Rare","picture":"CrowsJade","type":"Flying","info":"Boost 15% ATK for Flying type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6efd"},"item":"Huge Beak","grade":"Very Rare","picture":"HugeBeak","type":"Flying","info":"Boost 2 stage critical hit ratio for Flying type move in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6efe"},"item":"Fresh Onion","grade":"Very Rare","picture":"FreshOnion","type":"Ground","info":"Boost 15% ATK for Ground type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6eff"},"item":"Old Bone","grade":"Very Rare","picture":"OldBone","type":"Ground","info":"Boost 30% power for Ground type move in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f00"},"item":"Ghost Jade","grade":"Very Rare","picture":"GhostJade","type":"Ghost","info":"Boost 15% S.ATK for Ghost type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f01"},"item":"Ghost Spell","grade":"Very Rare","picture":"GhostSpell","type":"Ghost","info":"Boost 15% S.DEF for Ghost type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f02"},"item":"Orichalcos","grade":"Very Rare","picture":"Orichalcos","type":"Steel","info":"Boost 15% ATK for Steel type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f03"},"item":"Steel Arrow","grade":"Very Rare","picture":"SteelArrow","type":"Steel","info":"Boost 15% S.ATK for Steel type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f04"},"item":"Conductive Jade","grade":"Very Rare","picture":"ConductiveJade","type":"Electric","info":"Boost 15% S.ATK for Electric type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f05"},"item":"Volt Absorb","grade":"Very Rare","picture":"VoltAbsorb","type":"Electric","info":"Boost 30% power for Electric type move in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f06"},"item":"Intact Spoon","grade":"Very Rare","picture":"IntactSpoon","type":"Psychic","info":"Boost 15% S.ATK for Psychic type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f07"},"item":"Brokon Spoon","grade":"Very Rare","picture":"BrokonSpoon","type":"Electric","info":"Boost 20% power for Electric type move in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f08"},"item":"Cracked Ice","grade":"Very Rare","picture":"CrackedIce","type":"Ice","info":"Boost 15% S.ATK for Ice type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f09"},"item":"Natural Ice","grade":"Very Rare","picture":"NaturalIce","type":"Ice","info":"Boost 40% power for Ice type move in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f0a"},"item":"Dragon Tooth","grade":"Very Rare","picture":"DragonTooth","type":"Dragon","info":"Boost 15% S.ATK for Dragon type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f0b"},"item":"Shiny Jade","grade":"Very Rare","picture":"ShinyJade","type":"Dragon","info":"Boost 20% power for Dragon type move in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f0c"},"item":"Sunglasses","grade":"Very Rare","picture":"Sunglasses","type":"Dark","info":"Boost 15% S.ATK for Dark type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f0d"},"item":"Excited Powder","grade":"Very Rare","picture":"ExcitedPowder","type":"Dark","info":"Boost 15% SPD for Dark type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f0e"},"item":"Fairy Scale","grade":"Very Rare","picture":"FairyScale","type":"Fairy","info":"Boost 15% S.DEF for Fairy type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f0f"},"item":"Fairy Crown","grade":"Very Rare","picture":"FairyCrown","type":"Fairy","info":"Boost 15% S.ATK for Fairy type Pokemon in battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f10"},"item":"Grass Bracer","grade":"Gym","picture":"GrassBracer","type":"Grass","info":"Boosts the SPD of Grass-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f11"},"item":"Grass Orb","grade":"Gym","picture":"GrassOrb","type":"Grass","info":"Boosts the power of Grass-type moves by 30% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f12"},"item":"Grass Charm","grade":"Gym","picture":"GrassCharm","type":"Grass","info":"Boosts the S.DEF of Grass-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f13"},"item":"Grass Sash","grade":"Gym","picture":"GrassSash","type":"Grass","info":"Boosts the S.ATK of Grass-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f14"},"item":"Grass Scarf","grade":"Gym","picture":"GrassScarf","type":"Grass","info":"Boosts the DEF of Grass-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f15"},"item":"Grass Claw","grade":"Gym","picture":"GrassClaw","type":"Grass","info":"Boosts the ATK of Grass-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f16"},"item":"Fire Bracer","grade":"Gym","picture":"FireBracer","type":"Fire","info":"Boosts the SPD of Fire-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f17"},"item":"Fire Orb","grade":"Gym","picture":"FireOrb","type":"Fire","info":"Boosts the power of Fire-type moves by 30% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f18"},"item":"Fire Charm","grade":"Gym","picture":"FireCharm","type":"Fire","info":"Boosts the S.DEF of Fire-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f19"},"item":"Fire Sash","grade":"Gym","picture":"FireSash","type":"Fire","info":"Boosts the S.ATK of Fire-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f1a"},"item":"Fire Scarf","grade":"Gym","picture":"FireScarf","type":"Fire","info":"Boosts the DEF of Fire-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f1b"},"item":"Fire Claw","grade":"Gym","picture":"FireClaw","type":"Fire","info":"Boosts the ATK of Fire-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f1c"},"item":"Water Bracer","grade":"Gym","picture":"WaterBracer","type":"Water","info":"Boosts the SPD of Water-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f1d"},"item":"Water Orb","grade":"Gym","picture":"WaterOrb","type":"Water","info":"Boosts the power of Water-type moves by 30% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f1e"},"item":"Water Charm","grade":"Gym","picture":"WaterCharm","type":"Water","info":"Boosts the S.DEF of Water-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f1f"},"item":"Water Sash","grade":"Gym","picture":"WaterSash","type":"Water","info":"Boosts the S.ATK of Water-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f20"},"item":"Water Scarf","grade":"Gym","picture":"WaterScarf","type":"Water","info":"Boosts the DEF of Water-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f21"},"item":"Water Claw","grade":"Gym","picture":"WaterClaw","type":"Water","info":"Boosts the ATK of Water-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f22"},"item":"Bug Bracer","grade":"Gym","picture":"BugBracer","type":"Bug","info":"Boosts the SPD of Bug-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f23"},"item":"Bug Orb","grade":"Gym","picture":"BugOrb","type":"Bug","info":"Boosts the power of Bug-type moves by 30% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f24"},"item":"Bug Charm","grade":"Gym","picture":"BugCharm","type":"Bug","info":"Boosts the S.DEF of Bug-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f25"},"item":"Bug Sash","grade":"Gym","picture":"BugSash","type":"Bug","info":"Boosts the S.ATK of Bug-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f26"},"item":"Bug Scarf","grade":"Gym","picture":"BugScarf","type":"Bug","info":"Boosts the DEF of Bug-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f27"},"item":"Bug Claw","grade":"Gym","picture":"BugClaw","type":"Bug","info":"Boosts the ATK of Bug-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f28"},"item":"Poison Bracer","grade":"Gym","picture":"PoisonBracer","type":"Poison","info":"Boosts the SPD of Poison-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f29"},"item":"Poison Orb","grade":"Gym","picture":"PoisonOrb","type":"Poison","info":"Boosts the power of Poison-type moves by 30% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f2a"},"item":"Poison Charm","grade":"Gym","picture":"PoisonCharm","type":"Poison","info":"Boosts the S.DEF of Poison-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f2b"},"item":"Poison Sash","grade":"Gym","picture":"PoisonSash","type":"Poison","info":"Boosts the S.ATK of Poison-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f2c"},"item":"Poison Scarf","grade":"Gym","picture":"PoisonScarf","type":"Poison","info":"Boosts the DEF of Poison-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f2d"},"item":"Poison Claw","grade":"Gym","picture":"PoisonClaw","type":"Poison","info":"Boosts the ATK of Poison-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f2e"},"item":"Rock Bracer","grade":"Gym","picture":"RockBracer","type":"Rock","info":"Boosts the SPD of Rock-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f2f"},"item":"Rock Orb","grade":"Gym","picture":"RockOrb","type":"Rock","info":"Boosts the power of Rock-type moves by 30% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f30"},"item":"Rock Charm","grade":"Gym","picture":"RockCharm","type":"Rock","info":"Boosts the S.DEF of Rock-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f31"},"item":"Rock Sash","grade":"Gym","picture":"RockSash","type":"Rock","info":"Boosts the S.ATK of Rock-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f32"},"item":"Rock Scarf","grade":"Gym","picture":"RockScarf","type":"Rock","info":"Boosts the DEF of Rock-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f33"},"item":"Rock Claw","grade":"Gym","picture":"RockClaw","type":"Rock","info":"Boosts the ATK of Rock-type Pokemon by 10% during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f34"},"item":"Destruction Heart Y","grade":"Legendary","picture":"DestructionHeartY","type":"Battle","info":"Exclusive Hold Item of Mega Mewtwo Y. Boost 15% S.ATK and 5% SPD during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f35"},"item":"Destruction Heart X","grade":"Legendary","picture":"DestructionHeartX","type":"Battle","info":"Exclusive Hold Item of Mega Mewtwo X. Boost 2 Stage critical hit ratios for Psychic & Fighting moves."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f36"},"item":"Rage Feather","grade":"Legendary","picture":"RageFeather","type":"Battle","info":"Exclusive Hold Item of Mega Lugia X. Boost 10% S.DEF & DEF during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f37"},"item":"Neptune Heart","grade":"Legendary","picture":"NeptuneHeart","type":"Battle","info":"Exclusive Hold Item of Mega Lugia Y. Boost 20% S.ATK during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f38"},"item":"Phoenix Crown","grade":"Legendary","picture":"PhoenixCrown","type":"Battle","info":"Exclusive Hold Item of Mega Ho oh X. Boost 10% ATK and 20% SPD during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f39"},"item":"Phoenix Feather","grade":"Legendary","picture":"PhoenixFeather","type":"Battle","info":"Exclusive Hold Item of Mega Ho oh Y. Boost 20% S.ATK during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f3a"},"item":"Frozen Soil","grade":"Legendary","picture":"FrozenSoil","type":"Battle","info":"Exclusive Hold Item of Mega Kyogre X. Boost 10% S.ATK & S.DEF during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f3b"},"item":"Horrible Gem","grade":"Legendary","picture":"HorribleGem","type":"Battle","info":"Exclusive Hold Item of Mega Kyogre Y. Boost 20% ATK during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f3c"},"item":"Purgatory Claw","grade":"Legendary","picture":"PurgatoryClaw","type":"Battle","info":"Exclusive Hold Item of Mega Groudon X. Boost 20% ATK during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f3d"},"item":"Origin Stone","grade":"Legendary","picture":"OriginStone","type":"Battle","info":"Exclusive Hold Item of Mega Groudon Y. Boost 10% S.ATK & S.DEF during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f3e"},"item":"Rayquaza Scale","grade":"Legendary","picture":"RayquazaScale","type":"Battle","info":"Exclusive Hold Item of Mega Rayquaza X. Boost 2 Stage critical hit ratios for Dragon & Normal moves."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f3f"},"item":"Air Armor","grade":"Legendary","picture":"AirArmor","type":"Battle","info":"Exclusive Hold Item of Mega Rayquaza Y. Boost 10% ATK and 15% DEF during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f40"},"item":"Time Square","grade":"Legendary","picture":"TimeSquare","type":"Battle","info":"Exclusive Hold Item of Mega Dialga X. Boost 20% S.ATK during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f41"},"item":"Space Jade","grade":"Legendary","picture":"SpaceJade","type":"Battle","info":"Exclusive Hold Item of Mega Dialga Y. Boost 20% ATK during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f42"},"item":"Space Stone","grade":"Legendary","picture":"SpaceStone","type":"Battle","info":"Exclusive Hold Item of Mega Palkia X. Boost 20% S.ATK during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f43"},"item":"Dimension Core","grade":"Legendary","picture":"DimensionCore","type":"Battle","info":"Exclusive Hold Item of Mega Palkia Y. Boost 20% ATK during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f44"},"item":"Origin Metal","grade":"Legendary","picture":"OriginMetal","type":"Battle","info":"Exclusive Hold Item of Mega Regigigas. Boost 10% ATK & DEF during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f45"},"item":"Ghost Spine","grade":"Legendary","picture":"GhostSpine","type":"Battle","info":"Exclusive Hold Item of Mega Giratina. Boost 15% ATK and 10% DEF during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f46"},"item":"Rainbow Slate","grade":"Legendary","picture":"RainbowSlate","type":"Battle","info":"Exclusive Hold Item of Mega Arceus X. Boost 15% Power of all moves during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f47"},"item":"World Stone","grade":"Legendary","picture":"WorldStone","type":"Battle","info":"Exclusive Hold Item of Mega Arceus Y. Boost 20% Chance to make foe flinched when hit."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f48"},"item":"Sunrise Light","grade":"Legendary","picture":"SunriseLight","type":"Battle","info":"Exclusive Hold Item of Mega Solgaleo X. Boost 20% ATK during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f49"},"item":"Moon Eye","grade":"Legendary","picture":"MoonEye","type":"Battle","info":"Exclusive Hold Item of Mega Lunala. Boost 15% S.ATK and 5% S.DEF during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f4a"},"item":"Feather of Reality","grade":"Legendary","picture":"FeatherofReality","type":"Battle","info":"Exclusive Hold Item of Mega Reshiram. Boost 20% S.ATK during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f4b"},"item":"Ideal Scale","grade":"Legendary","picture":"IdealScale","type":"Battle","info":"Exclusive Hold Item of Mega Zekrom. Boost 20% ATK during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f4c"},"item":"Pure Plumage","grade":"Legendary","picture":"PurePlumage","type":"Battle","info":"Exclusive Hold Item of Mega Shaymin X. Boost 10% DEF & S.DEF during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f4d"},"item":"Scorching Claw","grade":"Legendary","picture":"ScorchingClaw","type":"Battle","info":"Exclusive Hold Item of Mega Heatran. Boost 10% ATK & DEF during battle."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f4e"},"item":"Manaphy Crystal","grade":"Legendary","picture":"ManaphyCrystal","type":"Battle","info":"Exclusive Hold Item of Mega Manaphy. Boost 15% Chance to bound the enemy when hit."}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6f4f"},"item":"","grade":null,"picture":null,"type":null,"info":null}

@@ -4,6 +4,7 @@ import { Pokemon } from '../../../../../models/pokemon';  // Pokemon Model
 import { Move } from '../../../../../models/move';  // Pokemon Model
 
 import { MoveService } from '../../../../../services/move.service';  // Nature Service
+import { PokedexService } from '../../../../../services/pokedex.service';  // Pokedex Service
 
 @Component({
   selector: 'pokemon-moves',
@@ -17,8 +18,10 @@ export class PokemonMovesComponent implements OnInit {
   urlImage: string;
   urlzMove: string;
   moves: string[];
+  family: string[];  // Pokemon Familiars
 
-  constructor(private moveService: MoveService) {
+  constructor(private moveService: MoveService,
+              private pokedexService: PokedexService) {
       this.urlImage = "../../../../../../assets/images/pokemon/";
       this.urlzMove = "../../../../../../assets/images/zmoves/";
    }
@@ -30,6 +33,21 @@ export class PokemonMovesComponent implements OnInit {
       this.moves = res as string[];  // Moves now are Pokemon Move Types
      })
 
+     this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
+      .subscribe(res => {
+        this.family = res as any;  // Respond Server
+      });
+
+      // Changing Evolution Number to String
+      this.pokemon.evolution = this.pokedexService
+       .evolutionToString(this.pokemon.evolution);
+  }
+
+  goPokemon(familiar){
+      this.pokemon = familiar;
+      // Changing Evolution Number to String
+      this.pokemon.evolution = this.pokedexService
+       .evolutionToString(this.pokemon.evolution);
   }
 
 }

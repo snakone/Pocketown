@@ -151,3 +151,15 @@ li p {
   cursor: pointer;
   filter: brightness(1.2);
 }
+
+.subTitle {
+  color: black;
+	font-size: 1.1em;
+	font-weight:bold;
+	text-shadow: 2px 2px #e3f00b;
+}
+
+blockquote {
+  border-left-color: orange;
+  font-size: 1.2em;
+}

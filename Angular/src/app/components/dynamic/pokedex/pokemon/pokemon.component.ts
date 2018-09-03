@@ -20,7 +20,7 @@ export class PokemonComponent implements OnInit {
   constructor(private pokedexService: PokedexService,
               private activeRoute: ActivatedRoute) {
 
-              this.urlImage = "../../../../../assets/images/pokemon/";
+              this.urlImage = "../../../../../assets/icons/";
              }
 
   ngOnInit() {

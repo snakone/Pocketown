@@ -3,11 +3,10 @@
         <mat-card-header class="header">
           <div mat-card-avatar class="header-image"></div>
           <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
-          <mat-card-subtitle>{{pokemon.description}}</mat-card-subtitle>
+          <mat-card-subtitle>Nature & Ability</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content class="top">
 
-          <h5>Nature & Ability</h5>
           <div class="nature">
               <p>
                 <span class="bold">{{pokemon.nature}}: </span>
@@ -20,6 +19,13 @@
                  <span class="bad"> {{nature2.bad}}</span>
               </p>
               <p>Ability: <span class="bold">{{pokemon.ability}}</span></p>
+          </div>
+
+          <div class="row center family">
+              <span *ngFor="let familiar of family" (click)="goPokemon(familiar)">
+                <img class="familiar" matTooltip="{{familiar.name}}"
+                src="{{urlImage}}{{familiar.picture}}.png"/>
+              </span>
           </div>
 
         </mat-card-content>

@@ -3,7 +3,7 @@ span {
 }
 
 .sticky {
-  top:60px;
+  top: 60px;
   position: sticky;
   z-index: 1000;
   width: 100%;

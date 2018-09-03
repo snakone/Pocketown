@@ -1,6 +1,7 @@
 .laboratory {
   font-size: 1.2em;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 @media (max-width:600px){
@@ -8,6 +9,7 @@
     font-size: 1.4em;
   }
 }
+
 h4 {
 	color: black;
 	font-size: 1.1em;

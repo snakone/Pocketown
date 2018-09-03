@@ -3,8 +3,8 @@
 }
 
 img {
-  width: 60px;
-  margin: 0 5px;
+  width: 50px;
+  margin: 0 15px;
 }
 
 .pkm-img {
@@ -15,7 +15,13 @@ img {
 }
 
 .top {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+@media (min-width:599px) {
+  .top {
+    margin-top: 10px;
+  }
 }
 
 mat-card-subtitle {
@@ -25,6 +31,22 @@ mat-card-subtitle {
 .card {
   max-width: 300px;
   margin: 20px auto auto auto;
+  min-height: 420px;
+}
+
+.family {
+  position: absolute;
+  bottom:20px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.familiar {
+  width: 30px;
+  margin: 0 3px;
 }
 
 .row {
@@ -43,7 +65,7 @@ mat-card-subtitle {
 }
 
 .type{
-  padding: 4px 8px;
+  padding: 2px 4px;
   border-radius: 3px;
   color:white;
   font-weight: bold;

@@ -1,0 +1,43 @@
+h4 {
+  margin: 20px auto;
+}
+
+.h4 {
+  color: black;
+  font-weight:bold;
+  text-shadow: 2px 2px #e3f00b;
+  font-size: 1.2em;
+}
+
+img {
+  border-radius: 5px;
+  width: 100%;
+  max-height: 190px;
+}
+
+.type{
+  padding: 4px 8px;
+  border-radius: 3px;
+  color:white;
+  font-weight: bold;
+  margin:2px;
+  border: 1px solid black;
+  display: inline-grid;
+  width: auto;
+  font-size: .7em!important;
+}
+
+.bordered-feature-image {
+    width: 80%;
+		display: block;
+		background: #fff url("../../../../../assets/images/carousel/bg05.png");
+		padding: 5px 5px 0 5px;
+		border-radius:5px;
+		box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
+		margin: 0 auto 1.5em auto;
+		outline: 0;
+	}
+
+.pokemon {
+  margin-top: 10px;
+}
