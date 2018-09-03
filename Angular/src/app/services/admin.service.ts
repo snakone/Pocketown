@@ -12,6 +12,7 @@ export class AdminService {
   selectedPokemon: Pokemon;  // Save selected Pokemon
   pokedex: Pokemon[];  // Pokedex with Pokemon List
   readonly ADMIN_API = "http://localhost:3000/admin/pokemon";  // Server API
+  readonly POKEMON_NAME_API = "http://localhost:3000/admin/pokemon_name";  // Server API
 
 
   constructor(private http: HttpClient) {
@@ -20,6 +21,11 @@ export class AdminService {
 
   getPokemon(){
     return this.http.get(this.ADMIN_API);  // HTTP GET to Server API - POSTMAN belike
+  }
+
+  getPokemonbyName(name: string){
+    const params = {name: name};  // Pokemon Name
+    return this.http.get(this.POKEMON_NAME_API, {params: params});  // HTTP GET to Server API - POSTMAN belike
   }
 
   addPokemon(pokemon: Pokemon){  // We add a Pokemon
