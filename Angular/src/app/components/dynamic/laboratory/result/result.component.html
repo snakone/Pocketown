@@ -12,7 +12,7 @@
     and <span class="bold {{evolutionName}}">{{evolutionName}}</span> Evolution</h5>
  </div>
 
-<div class="animated slideInUp center top bottom" *ngIf="pokemonResult && filterType">  <!-- Animated DIV -->
+<div class="animated slideInUp center top" *ngIf="pokemonResult && filterType">  <!-- Animated DIV -->
   <div class="row">  <!-- POKEMON GRID -->
       <span *ngFor="let pokemon of pokemonResult">
         <img (click)="navigate(pokemon)"
