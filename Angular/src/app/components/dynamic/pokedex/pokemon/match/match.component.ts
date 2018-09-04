@@ -42,7 +42,8 @@ export class MatchComponent implements OnInit {
   }
 
   putSpaces(){
-    this.good1 = this.pokemon.good1.replace(/(?<!^)([A-Z])/g, " $1");  // Replace "MegaCharizardX" into "Mega Charizard X"
+    // Replace "MegaCharizardX" into "Mega Charizard X"
+    this.good1 = this.pokemon.good1.replace(/(?<!^)([A-Z])/g, " $1");
     this.good2 = this.pokemon.good2.replace(/(?<!^)([A-Z])/g, " $1");
     this.good3 = this.pokemon.good3.replace(/(?<!^)([A-Z])/g, " $1");
     this.bad1 = this.pokemon.bad1.replace(/(?<!^)([A-Z])/g, " $1");
