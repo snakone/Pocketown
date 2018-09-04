@@ -7,7 +7,7 @@ const move = require('../controllers/move.controller');  // Controller
 // MOVES Routes
 
 moveRouter.post('/admin/move', move.addMove); // Add Move to MongoDB
-moveRouter.get('/admin/move', move.getMove);  // Get Pokedex Move
+moveRouter.get('/admin/move', move.getMove);  // Get All Moves
 moveRouter.get('/admin/move/:id', move.getMovebyId);  // Get Move by ID
 moveRouter.get('/admin/move_name', move.getMoveTypebyName);  // Get Move by ID
 moveRouter.put('/admin/move/:id', move.updateMove);  // Update Move by ID

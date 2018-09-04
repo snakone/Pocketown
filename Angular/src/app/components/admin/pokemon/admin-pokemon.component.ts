@@ -33,7 +33,7 @@ export class AdminPokemonComponent implements OnInit {
     if (form.value._id) {  // Already Pokemon ID? -> Update
       this.admin.updatePokemon(form.value)  // Update Pokemon with Form Values
        .subscribe (res => {  // Subscribe to the Server Response
-         this.toastr.info('Bien!', 'Pokémon Actualizado');
+         this.toastr.info('Good!', 'Pokémon Updated');
          this.resetForm(form);  // Reset Form
          this.getPokemon();
        })
@@ -41,7 +41,7 @@ export class AdminPokemonComponent implements OnInit {
     else {  // Not Pokemon ID? Oh, New Pokemon?
       this.admin.addPokemon(form.value)  // Add Pokemon with Form Values
       .subscribe(res => {  // Subscribe to the Server Response
-        this.toastr.success('Genial!', 'Pokémon Agregado');
+        this.toastr.success('Great!', 'Pokémon Added');
         this.resetForm(form);  // Reset Form
         this.getPokemon();
       });
@@ -58,7 +58,7 @@ export class AdminPokemonComponent implements OnInit {
     this.admin.deletePokemon(_id)  // Delete Pokemon by ID
      .subscribe( res => {  // Subscribe to the Server Response
         this.getPokemon();  // Once Deleted, Update the Pokedex List
-        this.toastr.warning('Vaya!', 'Pokémon Eliminado');
+        this.toastr.warning('Oh Well!', 'Pokémon Deleted');
      });
     }
   }

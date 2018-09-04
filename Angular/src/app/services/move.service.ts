@@ -12,7 +12,7 @@ export class MoveService {
 
   selectedMove: Move;  // Save selected Move
   moveList: Move[];  // Move List
-  readonly ADMIN_API = "http://localhost:3000/admin/move";  // Server API
+  readonly ADMIN_API = "http://localhost:3000/admin/move";  // Server API Moves
   readonly MOVE_API = "http://localhost:3000/admin/move_name";  // Server API for Move Names
 
 

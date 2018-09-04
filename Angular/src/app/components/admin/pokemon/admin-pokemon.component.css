@@ -15,3 +15,7 @@ mat-icon:hover {
 .card .card-action {
   border-top: 0;
 }
+
+.btn {
+  margin: 5px;
+}

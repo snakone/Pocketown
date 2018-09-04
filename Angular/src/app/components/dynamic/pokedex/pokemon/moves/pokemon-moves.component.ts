@@ -27,7 +27,9 @@ export class PokemonMovesComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.moves = [this.pokemon.move1, this.pokemon.move2, this.pokemon.move3, this.pokemon.move4]; // Assign Pokemon Moves
+    this.moves = [this.pokemon.move1, this.pokemon.move2,
+                  this.pokemon.move3, this.pokemon.move4];  // Assign Pokemon Moves
+
     this.moveService.getMoveTypebyName(this.moves) // Send Pokemon Moves to Server to know the Type
      .subscribe(res => {
       this.moves = res as string[];  // Moves now are Pokemon Move Types

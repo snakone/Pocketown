@@ -1,0 +1,32 @@
+<div class="center loading" *ngIf="loading">  <!-- Only when Loading... -->
+    <img class="responsive-img" src="https://i.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.webp">
+  <p class="center">
+    <span class="bold">LOADING... PLEASE WAIT</span>
+  </p>
+</div>
+
+<div class="pokeItems" *ngIf="filteredpokeItemList">
+    <div class="sticky">  <!-- Sticky Search Bar -->
+          <div class="input-field center top">  <!-- Key Up Event -->
+              <input type="text" name="searchValue"
+              (keyup)="onKeyUp($event)" [(ngModel)]="searchValue"
+              placeHolder="Search a Pokémon Held Item...">
+          </div>
+    </div>
+
+    <div class="row center pokeItem animated slideInDown">  <!-- Held Item Card -->
+        <mat-card *ngFor="let pokeItem of filteredpokeItemList" class="col s12 m12 l12 card center">
+          <mat-card-content>
+            <p><img class="picture" src="{{urlImage}}{{pokeItem.picture}}.png"/></p>
+
+            <p><span class="type item">{{pokeItem.item}}</span></p>  <!-- Held Item Name -->
+            <p>
+              <span class="stat type {{pokeItem.type}}">{{pokeItem.type}}</span>  <!-- Held Item Type -->
+              <span class="stat type {{pokeItem.grade}}">{{pokeItem.grade}}</span>  <!-- Held Item Grade -->
+            </p>
+
+            <p class="info">{{pokeItem.info}}</p>
+          </mat-card-content>
+        </mat-card>
+    </div> <!-- End of pokeItem Card -->
+</div>

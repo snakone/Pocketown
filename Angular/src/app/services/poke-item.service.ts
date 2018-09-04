@@ -24,8 +24,8 @@ export class pokeItemService {
     return this.http.get(this.ADMIN_API);  // HTTP GET to Server API - POSTMAN belike
   }
 
-  getpokeItembyName(pokeitem: string){
-    const params = {pokeItem: pokeitem};  // pokeItem Name
+  getpokeItembyName(name: string){
+    const params = {pokeItem: name};  // pokeItem Name
     return this.http.get(this.POKEITEM_API, {params: params});  // HTTP GET to Server API - POSTMAN belike
   }
 

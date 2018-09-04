@@ -27,7 +27,7 @@ adminCtrl.getPokemonbyId = async (req, res) => {  // Get Pokemon by ID
 adminCtrl.getPokemonbyName = async (req, res) => {  // Get Pokemon ID by Name
 
   const filterPokemon = new RegExp(`^${req.query.name}`);  //  Template String ES6 Pattern
-  const pokemon = await pokemons.find({ picture: filterPokemon});  // "/^Charcoal/" Pattern
+  const pokemon = await pokemons.find({ picture: filterPokemon});  // "/^MegaCharizardX/" Pattern
   res.json(pokemon);  // Send pokeItem to server as JSON
 
 }

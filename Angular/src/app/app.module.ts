@@ -26,6 +26,7 @@ import { HttpClientModule } from "@angular/common/http";
 //Admin
 import { AdminPokemonComponent } from './components/admin/pokemon/admin-pokemon.component';
 import { AdminMoveComponent } from './components/admin/move/admin-move.component';
+import { AdminpokeItemComponent } from './components/admin/poke-item/admin-poke-item.component';
 
 // App Layout //
 import { TopNavComponent } from './components/layout/top-nav/top-nav.component';
@@ -35,9 +36,9 @@ import { FixedNavComponent } from './components/layout/fixed-nav/fixed-nav.compo
 import { FooterNavComponent } from './components/layout/footer-nav/footer-nav.component';
 import { FooterMenuComponent } from './components/layout/footer-nav/footer-menu/footer-menu.component';
 
-// Dinamic Components //
+// Dynamic Components //
 import { WelcomeComponent } from './components/dynamic/welcome/welcome.component';
-import { AboutComponent } from './components/dynamic/about/about.component';
+
 // Pokedex
 import { PokedexComponent } from './components/dynamic/pokedex/pokedex.component';
 import { PokemonComponent } from './components/dynamic/pokedex/pokemon/pokemon.component';
@@ -48,6 +49,8 @@ import { ResultComponent } from './components/dynamic/laboratory/result/result.c
 import { FilteringComponent } from './components/dynamic/laboratory/filtering/filtering.component';
 // Moves
 import { MovesComponent } from './components/dynamic/moves/moves.component';
+// Held Items
+import { pokeItemsComponent } from './components/dynamic/poke-items/poke-items.component';
 
 // Static Components //
 import { StatsComponent } from './components/static/stats/stats.component';
@@ -75,12 +78,13 @@ import { RecommenedComponent } from './components/dynamic/welcome/recommened/rec
   declarations: [
     AppComponent, TopNavComponent, TopMenuComponent, GridComponent,
     FixedNavComponent, FooterNavComponent, FooterMenuComponent,
-    WelcomeComponent, AboutComponent, PokedexComponent, PokemonComponent,
+    WelcomeComponent, PokedexComponent, PokemonComponent,
     AdminPokemonComponent, TypesComponent, LaboratoryComponent, SearchComponent,
     ResultComponent, StatsComponent, FilteringComponent, EvolutionsComponent,
     StadisticsComponent, BioComponent, MatchComponent, NatureComponent,
     EffortComponent, ItemsComponent, PokemonMovesComponent, MovesComponent,
-    AdminMoveComponent, VictoryRoadComponent, EventsComponent, RecommenedComponent
+    AdminMoveComponent, VictoryRoadComponent, EventsComponent, RecommenedComponent,
+    AdminpokeItemComponent, pokeItemsComponent
 
 ],
   imports: [

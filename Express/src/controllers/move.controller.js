@@ -29,7 +29,8 @@ moveCtrl.getMoveTypebyName = async (req, res) => {  // Get Move Type by Name
     match = { "$match" : { "name" : { "$in" : req.query.moves } } };  // Match
     add = { "$addFields" : { "__order" : { "$indexOfArray" : [ req.query.moves, "$name" ] } } };  // Add Field
     sort = { "$sort" : { "__order" : 1 } };  // Sort Result
-    const move = await moves.aggregate( [match, add, sort] );  // Match the Moves Array Names, Add an Index, Sort Moves as We GET THEM
+    // Match the Moves Array Names, Add an Index, Sort Moves as We GET THEM
+    const move = await moves.aggregate( [match, add, sort] );
     res.json(move);  // Send Move to server as JSON
 }
 

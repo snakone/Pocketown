@@ -33,7 +33,7 @@ export class AdminMoveComponent implements OnInit {
     if (form.value._id) {  // Already Move ID? -> Update
       this.moveService.updateMove(form.value)  // Update Move with Form Values
        .subscribe (res => {  // Subscribe to the Server Response
-         this.toastr.info('Bien!', 'Move Actualizado');
+         this.toastr.info('Good!', 'Move Updated!');
          this.resetForm(form);  // Reset Form
          this.getMove();
        })
@@ -41,7 +41,7 @@ export class AdminMoveComponent implements OnInit {
     else {  // Not Move ID? Oh, New Move?
       this.moveService.addMove(form.value)  // Add Move with Form Values
       .subscribe(res => {  // Subscribe to the Server Response
-        this.toastr.success('Genial!', 'Move Agregado');
+        this.toastr.success('Great!', 'Move Added');
         this.resetForm(form);  // Reset Form
         this.getMove();
       });
@@ -58,7 +58,7 @@ export class AdminMoveComponent implements OnInit {
     this.moveService.deleteMove(_id)  // Delete Move by ID
      .subscribe( res => {  // Subscribe to the Server Response
         this.getMove();  // Once Deleted, Update the Pokedex List
-        this.toastr.warning('Vaya!', 'Move Eliminado');
+        this.toastr.warning('Oh Well!', 'Move Deleted');
      });
     }
   }

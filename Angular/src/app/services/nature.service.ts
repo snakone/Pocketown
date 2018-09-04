@@ -13,6 +13,7 @@ export class NatureService {
   constructor() {
 
   this.natures = [
+
 // ATK+
 {name:"Lonely",good:"ATK +10%",bad:"DEF -10%"},{name:"Adamant",good:"ATK +10%",bad:"S.ATK -10%"},
 {name:"Naughty",good:"ATK +10%",bad:"S.DEF -10%"},{name:"Brave",good:"ATK +10%",bad:"SPD -10%"},
@@ -59,6 +60,5 @@ getNature(nature:string) {
   })
   return this.filteredNature[0];  // We only get one so it's always on position 0
 }
-
 
 }

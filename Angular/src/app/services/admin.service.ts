@@ -12,7 +12,7 @@ export class AdminService {
   selectedPokemon: Pokemon;  // Save selected Pokemon
   pokedex: Pokemon[];  // Pokedex with Pokemon List
   readonly ADMIN_API = "http://localhost:3000/admin/pokemon";  // Server API
-  readonly POKEMON_NAME_API = "http://localhost:3000/admin/pokemon_name";  // Server API
+  readonly POKEMON_NAME_API = "http://localhost:3000/admin/pokemon_name";  // Serer API GET Pokemon by Name
 
 
   constructor(private http: HttpClient) {

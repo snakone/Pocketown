@@ -66,5 +66,9 @@ export class AppComponent {
    .bypassSecurityTrustResourceUrl("../assets/icons/victory-road.svg")
    );
 
+   this.matIconRegistry.addSvgIcon("poke-item", this.domSanitizer
+   .bypassSecurityTrustResourceUrl("../assets/icons/poke-item.svg")
+   );
+
   }
 }

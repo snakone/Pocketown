@@ -6,7 +6,7 @@ const pokedex = require('./routes/pokedex-routes');  // Require API Pokedex
 const laboratory = require('./routes/laboratory-routes');  // Require API Laboratory
 const admin = require('./routes/admin-routes');  // Require API Admin Pokemon
 const move = require('./routes/move-routes');  // Require API Admin Move
-const pokeItem = require('./routes/poke-items-routes');  // Require API Admin Move
+const pokeItem = require('./routes/poke-items-routes');  // Require API Poke Items
 
 const app = express();  // Init Express on APP
 
@@ -22,7 +22,8 @@ app.use(cors({origin: "http://localhost:4200"}));  // Use Cors to connect Angula
 
 
 // var allowedOrigins = ['http://pocketown-angular.epizy.com',
-//                       'http://pocketown-admin.epizy.com'];
+//                       'http://pocketown-admin.epizy.com'];  // Allowed URLs
+// 
 // app.use(cors({
 //   origin: function(origin, callback){
 //     // allow requests with no origin
@@ -33,7 +34,7 @@ app.use(cors({origin: "http://localhost:4200"}));  // Use Cors to connect Angula
 //                 'allow access from the specified Origin.';
 //       return callback(new Error(msg), false);
 //     }
-//     return callback(null, true);
+//     return callback(null, true); // Return Connection
 //   }
 // }));
 
