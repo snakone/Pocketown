@@ -28,8 +28,6 @@ export class MatchComponent implements OnInit {
    }
 
   ngOnInit() {
-
-
      this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
       .subscribe(res => {
         this.family = res as any;  // Respond Server
