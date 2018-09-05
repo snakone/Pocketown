@@ -33,7 +33,9 @@ mat-toolbar {
 }
 
 .example-spacer {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .custom-icon {

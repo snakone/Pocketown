@@ -4,6 +4,7 @@ span {
 
 .sticky {
   top: 60px;
+  position: -webkit-sticky;
   position: sticky;
   z-index: 1000;
   width: 100%;
@@ -26,7 +27,8 @@ span {
 
 .pokemon:hover {
   cursor:pointer;
-  filter: brightness(1.2);
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 
 .loading {
@@ -34,7 +36,9 @@ position: absolute;
 text-align: center;
 top:45%;
 left:56%;
-transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
 margin-top: 10px;
 }
 
