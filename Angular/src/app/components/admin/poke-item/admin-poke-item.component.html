@@ -1,80 +1,79 @@
+<div class="row" id="top">
+  <div class="col s12 m12 l12">
+    <div class="card">     <!-- DATA FORM -->
+      <div class="card-content">
+        <form #addpokeItemForm="ngForm" (ngSubmit)="addpokeItem(addpokeItemForm)">
+            <div class="row">
 
-  <div class="row" id="top">
-    <div class="col s12 m12 l12">
-      <div class="card">
-        <div class="card-content">
-          <form #addpokeItemForm="ngForm" (ngSubmit)="addpokeItem(addpokeItemForm)">
-              <div class="row">
+              <input type="hidden" name="_id"
+              #_id="ngModel" [(ngModel)]="pokeItemService.selectedpokeItem._id">
 
-                <input type="hidden" name="_id"
-                #_id="ngModel" [(ngModel)]="pokeItemService.selectedpokeItem._id">
-
-                <div class="input-field col s12 m6 l6">
-                  <span class="helper-text bold"> Held Item</span>
-                  <input type="text" name="item"
-                  #item="ngModel" [(ngModel)]="pokeItemService.selectedpokeItem.item"
-                  placeholder="Enter Pokémon Held Item name">
-                </div>
-
-                <div class="input-field col s12 m6 l6">
-                  <span class="helper-text bold">Held Item Grade</span>
-                  <input type="text" name="grade"
-                  #grade="ngModel" [(ngModel)]="pokeItemService.selectedpokeItem.grade"
-                  placeholder="Enter Pokémon Item grade">
-                </div>
-
-                <div class="input-field col s12 m6 l6">
-                  <span class="helper-text bold">Held Item Type</span>
-                  <input type="text" name="type"
-                  #type="ngModel" [(ngModel)]="pokeItemService.selectedpokeItem.type"
-                  placeholder="Enter Pokémon Held Item type">
-                </div>
-
-                <div class="input-field col s12 m6 l6">
-                  <span class="helper-text bold">Held Item Picture</span>
-                  <input type="text" name="picture"
-                  #picture="ngModel" [(ngModel)]="pokeItemService.selectedpokeItem.picture"
-                  placeholder="Enter Pokémon Item picture">
-                </div>
-
-                <div class="input-field col s12 m12 l12">
-                  <span class="helper-text bold">Held Item Info</span>
-                  <input type="text" name="info"
-                  #info="ngModel" [(ngModel)]="pokeItemService.selectedpokeItem.info"
-                  placeholder="Enter Pokémon Held Item info">
-                </div>
-
-                <div class="card-action">
-                  <div class="input-field col s12 m12 l12 center">
-                    <button type="submit" class="btn blue">Save</button>
-                    <button (click)="resetForm(addMoveForm)"class="btn green">Clean</button>
-                  </div>
-                </div>
-
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold"> Held Item</span>  <!-- Held Item Name -->
+                <input type="text" name="item"
+                #item="ngModel" [(ngModel)]="pokeItemService.selectedpokeItem.item"
+                placeholder="Enter Pokémon Held Item name">
               </div>
-          </form>
-        </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Held Item Grade</span>  <!-- Grade -->
+                <input type="text" name="grade"
+                #grade="ngModel" [(ngModel)]="pokeItemService.selectedpokeItem.grade"
+                placeholder="Enter Pokémon Item grade">
+              </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Held Item Type</span>   <!-- Type -->
+                <input type="text" name="type"
+                #type="ngModel" [(ngModel)]="pokeItemService.selectedpokeItem.type"
+                placeholder="Enter Pokémon Held Item type">
+              </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Held Item Picture</span>   <!-- Picture -->
+                <input type="text" name="picture"
+                #picture="ngModel" [(ngModel)]="pokeItemService.selectedpokeItem.picture"
+                placeholder="Enter Pokémon Item picture">
+              </div>
+
+              <div class="input-field col s12 m12 l12">
+                <span class="helper-text bold">Held Item Info</span>   <!-- Info -->
+                <input type="text" name="info"
+                #info="ngModel" [(ngModel)]="pokeItemService.selectedpokeItem.info"
+                placeholder="Enter Pokémon Held Item info">
+              </div>
+
+              <div class="card-action">
+                <div class="input-field col s12 m12 l12 center">
+                  <button type="submit" class="btn blue">Save</button>
+                  <button (click)="resetForm(addMoveForm)"class="btn green">Clean</button>
+                </div>
+              </div>
+
+            </div>
+        </form>
       </div>
     </div>
-
   </div>
 
-  <div class="row bottom">
-    <div class="col s12 m12">
-    <table class="centered striped">
-      <thead>
-        <th class="center">Name</th>
-        <th class="center">Admin</th>
-      </thead>
-      <tbody>
-        <tr *ngFor="let pokeItem of pokeItemService.pokeItemList">
-          <td>{{pokeItem.item}}</td>
-          <td>
-            <a href="admin/pokeItem#top"><mat-icon (click)="updatepokeItem(pokeItem)">edit</mat-icon></a>
-            <mat-icon (click)="deletepokeItem(pokeItem._id)">delete</mat-icon>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
+</div>
+
+<div class="row bottom">
+  <div class="col s12 m12">
+  <table class="centered striped">
+    <thead>
+      <th class="center">Name</th>
+      <th class="center">Admin</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pokeItem of pokeItemService.pokeItemList">
+        <td>{{pokeItem.item}}</td>
+        <td>
+          <a href="admin/pokeItem#top"><mat-icon (click)="updatepokeItem(pokeItem)">edit</mat-icon></a>
+          <mat-icon (click)="deletepokeItem(pokeItem._id)">delete</mat-icon>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   </div>
+</div>

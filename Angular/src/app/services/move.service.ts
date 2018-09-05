@@ -15,6 +15,7 @@ export class MoveService {
   readonly ADMIN_API = "http://localhost:3000/admin/move";  // Server API Moves
   readonly MOVE_API = "http://localhost:3000/admin/move_name";  // Server API for Move Names
 
+  // Heroku Server --> https://pocketown-server.herokuapp.com
 
   constructor(private http: HttpClient) {
     this.selectedMove = <Move>{};  // At start We have empty Move

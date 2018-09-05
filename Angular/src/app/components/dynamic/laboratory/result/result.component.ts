@@ -23,7 +23,7 @@ export class ResultComponent implements OnInit, OnDestroy {
               private filter: FilterService,
               private router: Router) {
 
-                this.urlImage = "../../../../assets/images/pokemon/";  }
+              this.urlImage = "../../../../assets/images/pokemon/";  }
 
   ngOnInit() {
   this.filterType = this.staticData.selectedType;  // Get the Type from the Service

@@ -5,33 +5,32 @@
     <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
     <mat-card-subtitle>{{pokemon.description}}</mat-card-subtitle>
   </mat-card-header>
-  <div class="valign-wrapper">
+
       <mat-card-content class="top">
-
         <p class="center">
-          <span class="type {{pokemon.type}}">{{pokemon.type}}</span>
+          <span class="type {{pokemon.type}}">{{pokemon.type}}</span>  <!-- Pokémon Type -->
           <span *ngIf="pokemon.type2"
-          class="type {{pokemon.type2}}">{{pokemon.type2}}</span>
+          class="type {{pokemon.type2}}">{{pokemon.type2}}</span>   <!-- Pokémon Type 2 -->
         </p>
-
-        <p class="info">{{pokemon.info}}</p>
+        <p class="info">{{pokemon.info}}</p>   <!-- Pokémon Info -->
 
         <div class="row">
           <div class="col s6 m6 l6 center">
-            <span class="bold">Evolution:</span> <span class="evolution {{pokemon.evolution}}">{{pokemon.evolution}}</span>
+            <span class="bold">Evolution:</span>
+            <span class="evolution {{pokemon.evolution}}">{{pokemon.evolution}}</span>  <!-- Evolution -->
           </div>
           <div class="col s6 m6 l6 center">
-            <span class="bold">Grade:</span> <span class="grade {{pokemon.grade}}">{{pokemon.grade}}</span>
+            <span class="bold">Grade:</span>
+            <span class="grade {{pokemon.grade}}">{{pokemon.grade}}</span>  <!-- Pokémon Grade -->
           </div>
         </div>
 
-        <div class="row center family">
+        <div class="row center family">    <!-- Familiars -->
             <span *ngFor="let familiar of family" (click)="goPokemon(familiar)">
               <img class="familiar" matTooltip="{{familiar.name}}"
               src="{{urlImage}}{{familiar.picture}}.png"/>
             </span>
         </div>
+        </mat-card-content>
 
-      </mat-card-content>
- </div>
 </mat-card>

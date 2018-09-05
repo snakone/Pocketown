@@ -25,7 +25,7 @@ export class BioComponent implements OnInit {
   ngOnInit() {
     this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
      .subscribe(res => {
-       this.family = res as any;  // Respond Server
+       this.family = res as any;  // Respond Server as Family
      });
 
      // Changing Evolution Number to String

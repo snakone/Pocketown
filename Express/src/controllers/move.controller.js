@@ -8,7 +8,7 @@ moveCtrl.addMove = async (req, res) => {  // Add Move to MongoDB
 
   const move = new moves(req.body);  // Get the html Body -> Move Object
   await move.save();  // Save on MongoDB
-  res.json('Move Guardado');
+  res.json('Move Saved');
 }
 
 moveCtrl.getMove = async (req, res) => {  // Get ALL Move
@@ -36,13 +36,13 @@ moveCtrl.getMoveTypebyName = async (req, res) => {  // Get Move Type by Name
 
 moveCtrl.updateMove = async (req, res) => {  // Update Move
 
-   const { id } = req.params;  // From req.params only need ID
+   const { id } = req.params;  // From req.params only need Move ID
    const move = req.body; // Move with updated INFO
 
    await moves.findByIdAndUpdate(id, {$set: move},  // Find by ID and Update in MongoDB
                                      {new: true});  // New Move if ID not Match
      res.json({
-       status: "Move actualizado"
+       status: "Move Updated"
      });
 }
 
@@ -50,7 +50,7 @@ moveCtrl.deleteMove = async (req, res) => {  // Remove Move from MongoDB
 
   await moves.findByIdAndRemove(req.params.id);  // Remove by ID
   res.json({
-    status: "Move Eliminado"
+    status: "Move Deleted"
   });
 }
 

@@ -15,7 +15,7 @@ export class PokemonComponent implements OnInit {
 
   @Output() pokemon: Pokemon;  // Save selected Pokemon
   urlImage: string;
-  family: string[];
+  family: string[];  // Pokemon Family
 
   constructor(private pokedexService: PokedexService,
               private activeRoute: ActivatedRoute) {
@@ -27,7 +27,7 @@ export class PokemonComponent implements OnInit {
     let routeParams = this.activeRoute.snapshot.params.pokemon; // Get the Pokemon ID from URL
     this.pokedexService.getPokemonbyId(routeParams)  // HTTP POST to Server with Pokemon ID
      .subscribe(res => {  // Subscribe to the Server Response
-       this.pokemon = res as any;  // Response as Pokemon
+       this.pokemon = res as Pokemon;  // Response as Pokemon
      })
 
   }

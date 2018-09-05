@@ -19,9 +19,9 @@ export class VictoryRoadComponent implements OnInit {
   ngOnInit() {
   }
 
-  scrollToElement($element): void {
+  scrollToElement($element): void {  // Smooth Scrolling on Anchor Links
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-    // Smooth Scrolling on Anchor Links
+
   }
 
 }

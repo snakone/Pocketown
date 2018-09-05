@@ -8,7 +8,7 @@ pokeItemCtrl.addpokeItem = async (req, res) => {  // Add pokeItem to MongoDB
 
   const pokeItem = new pokeItems(req.body);  // Get the html Body -> pokeItem Object
   await pokeItem.save();  // Save on MongoDB
-  res.json('pokeItem Guardado');
+  res.json('Held Item Saved');
 }
 
 pokeItemCtrl.getpokeItem = async (req, res) => {  // Get ALL pokeItem
@@ -40,15 +40,15 @@ pokeItemCtrl.updatepokeItem = async (req, res) => {  // Update pokeItem
    await pokeItems.findByIdAndUpdate(id, {$set: pokeItem},  // Find by ID and Update in MongoDB
                                      {new: true});  // New pokeItem if ID not Match
      res.json({
-       status: "pokeItem actualizado"
+       status: "Held Item Updated"
      });
 }
 
-pokeItemCtrl.deletepokeItem = async (req, res) => {  // RepokeItem pokeItem from MongoDB
+pokeItemCtrl.deletepokeItem = async (req, res) => {  // Remove pokeItem pokeItem from MongoDB
 
-  await pokeItems.findByIdAndRepokeItem(req.params.id);  // RepokeItem by ID
+  await pokeItems.findByIdAndRepokeItem(req.params.id);  // Remove pokeItem by ID
   res.json({
-    status: "pokeItem Eliminado"
+    status: "Held Item Deleted"
   });
 }
 

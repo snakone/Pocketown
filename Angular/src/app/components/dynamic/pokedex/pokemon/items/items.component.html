@@ -1,55 +1,50 @@
-    <mat-card class="card">
-      <img class="pkm-img" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
-      <mat-card-header class="header">
-        <div mat-card-avatar class="header-image"></div>
-        <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
-        <mat-card-subtitle>Held Items</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content class="top">
+<mat-card class="card">
+  <img class="pkm-img" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
+  <mat-card-header class="header">
+    <div mat-card-avatar class="header-image"></div>
+    <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
+    <mat-card-subtitle>Held Items</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="top">
 
-            <div class="row center items">
-                <div class="col s6 m6 l6">
-                      <div>{{pokemon.item}}</div>
-                      <img (click)="openDescripItem1()" class="item" src="{{urlImage}}{{pokemon.item_picture}}.png"/>
-                </div>
-                <div class="col s6 m6 l6">
-                      <div>{{pokemon.item2}}</div>
-                      <img (click)="openDescripItem2()" class="item" src="{{urlImage}}{{pokemon.item2_picture}}.png"/>
-                </div>
-            </div>
+      <div class="row center items">
+          <div class="col s6 m6 l6">
+            <span>{{pokemon.item}}</span> <img (click)="openDescripItem1()"
+            class="item" src="{{urlImage}}{{pokemon.item_picture}}.png"/>  <!-- Pokémon Item 1 -->
+          </div>
+          <div class="col s6 m6 l6">
+            <span>{{pokemon.item2}}</span> <img (click)="openDescripItem2()"
+            class="item" src="{{urlImage}}{{pokemon.item2_picture}}.png"/>  <!-- Pokémon Item 2 -->
+          </div>
+      </div>
 
-            <div class="center descrip" *ngIf="showDescripItem1 && item1">
-                <div class="col s6 m6 l6">
-                  <span class="type {{item1.type}}">{{item1.type}}</span>
-                </div>
-                <div class="col s6 m6 l6 bottom">
-                  <span class="type {{item1.grade}}">{{item1.grade}}</span>
-                </div>
+      <div class="center descrip" *ngIf="showDescripItem1 && item1">
+          <div class="col s6 m6 l6">
+            <span class="type {{item1.type}}">{{item1.type}}</span>  <!-- Item 1 Type -->
+          </div>
+          <div class="col s6 m6 l6 bottom">
+            <span class="type {{item1.grade}}">{{item1.grade}}</span>  <!-- Item 1 Grade -->
+          </div>
+          <p class="info">{{ item1.info }}</p>   <!-- Item 1 Info -->
+      </div>
 
-                <p class="info">{{ item1.info }}</p>
+      <div class="center descrip" *ngIf="showDescripItem2 && item2">
+          <div class="col s6 m6 l6">
+            <span class="type {{item2.type}}">{{item2.type}}</span>   <!-- Item 2 Type -->
+          </div>
+          <div class="col s6 m6 l6 bottom">
+            <span class="type {{item2.grade}}">{{item2.grade}}</span>   <!-- Item 2 Grade -->
+          </div>
+          <p class="info">{{ item2.info }}</p>   <!-- Item 2 Info -->
+      </div>
 
-            </div>
+      <div class="row center family">    <!-- Familiars -->
+          <p>* Obtain this Items doing <span class="bold">2P Instance</span></p>
+          <span *ngFor="let familiar of family" (click)="goPokemon(familiar)">
+            <img class="familiar" matTooltip="{{familiar.name}}"
+            src="{{urlPokemon}}{{familiar.picture}}.png"/>
+          </span>
+      </div>
 
-            <div class="center descrip" *ngIf="showDescripItem2 && item2">
-                <div class="col s6 m6 l6">
-                  <span class="type {{item2.type}}">{{item2.type}}</span>
-                </div>
-                <div class="col s6 m6 l6 bottom">
-                  <span class="type {{item2.grade}}">{{item2.grade}}</span>
-                </div>
-
-                <p class="info">{{ item2.info }}</p>
-
-            </div>
-
-            <div class="row center family">
-                <p>* Obtain this Items doing <span class="bold">2P Instance</span></p>
-
-                <span *ngFor="let familiar of family" (click)="goPokemon(familiar)">
-                  <img class="familiar" matTooltip="{{familiar.name}}"
-                  src="{{urlPokemon}}{{familiar.picture}}.png"/>
-                </span>
-            </div>
-
-      </mat-card-content>
-    </mat-card>
+  </mat-card-content>
+</mat-card>

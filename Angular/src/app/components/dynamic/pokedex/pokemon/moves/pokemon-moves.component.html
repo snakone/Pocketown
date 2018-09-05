@@ -22,7 +22,7 @@
           <p><span class="type zName">{{pokemon.zmove}}</span></p>  <!-- Z Move -->
         </div>
 
-        <div class="row center family">
+        <div class="row center family">    <!-- Familiars -->
             <span *ngFor="let familiar of family" (click)="goPokemon(familiar)">
               <img class="familiar" matTooltip="{{familiar.name}}"
               src="{{urlImage}}{{familiar.picture}}.png"/>

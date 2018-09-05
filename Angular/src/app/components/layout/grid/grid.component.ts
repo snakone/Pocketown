@@ -17,7 +17,7 @@ export class GridComponent implements OnInit {
 
 @HostListener('window:scroll') do(){  // Host Listener Window Scroll
 
-  let pikachu = document.getElementById("Pikachu").style;  // Get the Button
+  let pikachu = document.getElementById("Pikachu").style;  // Get the Pikachu Button
   let scroll = document.documentElement.scrollTop;  // Get the Document Scroll Value
 
   scroll > 350 ?
@@ -25,7 +25,6 @@ export class GridComponent implements OnInit {
 }
 
 topFunction():void {  // Animation using JQuery
-  
   $('body,html').animate({
 				scrollTop: 0
 			}, 800);  // 0.8 Seconds

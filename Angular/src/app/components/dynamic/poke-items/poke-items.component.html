@@ -17,19 +17,15 @@
     <div class="row center pokeItem animated slideInUp">  <!-- Held Item Card -->
         <mat-card *ngFor="let pokeItem of filteredpokeItemList" class="col s12 m12 l12 card center">
           <mat-card-content>
-
-
             <p><span class="bold">{{pokeItem.item}}</span></p>  <!-- Held Item Name -->
 
             <p><img class="picture" src="{{urlImage}}{{pokeItem.picture}}.png"/></p>
 
-
-              <p> <span class="stat type {{pokeItem.type}}">{{pokeItem.type}}</span>
-              <span class="stat type {{pokeItem.grade}}">{{pokeItem.grade}}</span></p>    <!-- Held Item Type -->
+              <p> <span class="stat type {{pokeItem.type}}">{{pokeItem.type}}</span>  <!-- Held Item Type -->
+              <span class="stat type {{pokeItem.grade}}">{{pokeItem.grade}}</span></p>  <!-- Held Item Grade -->
               <!-- Held Item Grade -->
 
-
-            <p class="info">{{pokeItem.info}}</p>
+            <p class="info">{{pokeItem.info}}</p>  <!-- Pokémon Info -->
 
           </mat-card-content>
         </mat-card>

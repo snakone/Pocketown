@@ -1,101 +1,100 @@
+<div class="row" id="top">
+  <div class="col s12 m12 l12">
+    <div class="card">     <!-- DATA FORM -->
+      <div class="card-content">
+        <form #addMoveForm="ngForm" (ngSubmit)="addMove(addMoveForm)">
+            <div class="row">
 
-  <div class="row" id="top">
-    <div class="col s12 m12 l12">
-      <div class="card">
-        <div class="card-content">
-          <form #addMoveForm="ngForm" (ngSubmit)="addMove(addMoveForm)">
-              <div class="row">
+              <input type="hidden" name="_id"
+              #_id="ngModel" [(ngModel)]="moveService.selectedMove._id">
 
-                <input type="hidden" name="_id"
-                #_id="ngModel" [(ngModel)]="moveService.selectedMove._id">
-
-                <div class="input-field col s12 m6 l6">
-                  <span class="helper-text bold">Move Name</span>
-                  <input type="text" name="name"
-                  #name="ngModel" [(ngModel)]="moveService.selectedMove.name"
-                  placeholder="Enter Move name">
-                </div>
-
-                <div class="input-field col s12 m6 l6">
-                  <span class="helper-text bold">Z Move?</span>
-                  <input type="text" name="z"
-                  #z="ngModel" [(ngModel)]="moveService.selectedMove.z"
-                  placeholder="It's Z Move?">
-                </div>
-
-                <div class="input-field col s12 m6 l6">
-                  <span class="helper-text bold">Move Power</span>
-                  <input type="number" name="power"
-                  #power="ngModel" [(ngModel)]="moveService.selectedMove.power"
-                  placeholder="Enter Move Power">
-                </div>
-
-                <div class="input-field col s12 m6 l6">
-                  <span class="helper-text bold">Hit Rate</span>
-                  <input type="number" name="hit"
-                  #hit="ngModel" [(ngModel)]="moveService.selectedMove.hit"
-                  placeholder="Enter Move Hit Ratio">
-                </div>
-
-                <div class="input-field col s12 m6 l6">
-                  <span class="helper-text bold">Move PP</span>
-                  <input type="number" name="pp"
-                  #pp="ngModel" [(ngModel)]="moveService.selectedMove.pp"
-                  placeholder="Enter Move PP">
-                </div>
-
-                <div class="input-field col s12 m6 l6">
-                  <span class="helper-text bold">Move Type</span>
-                  <input type="text" name="type"
-                  #type="ngModel" [(ngModel)]="moveService.selectedMove.type"
-                  placeholder="Move Type">
-                </div>
-
-                <div class="input-field col s12 m6 l6">
-                  <span class="helper-text bold">Attack Type</span>
-                  <input type="text" name="attack"
-                  #attack="ngModel" [(ngModel)]="moveService.selectedMove.attack"
-                  placeholder="Move Attack; Phy/Spe/Status">
-                </div>
-
-                <div class="input-field col s12 m6 l6">
-                  <span class="helper-text bold">Description</span>
-                  <input type="text" name="info"
-                  #info="ngModel" [(ngModel)]="moveService.selectedMove.info"
-                  placeholder="Enter Move Description">
-                </div>
-                <br>
-                <div class="card-action">
-                  <div class="input-field col s12 m12 l12 center">
-                    <button type="submit" class="btn blue">Save</button>
-                    <button (click)="resetForm(addMoveForm)"class="btn green">Clean</button>
-                  </div>
-                </div>
-
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Move Name</span>  <!-- Move Name -->
+                <input type="text" name="name"
+                #name="ngModel" [(ngModel)]="moveService.selectedMove.name"
+                placeholder="Enter Move name">
               </div>
-          </form>
-        </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Z Move?</span>  <!-- Z Move? -->
+                <input type="text" name="z"
+                #z="ngModel" [(ngModel)]="moveService.selectedMove.z"
+                placeholder="It's Z Move?">
+              </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Move Power</span>  <!-- Move Power -->
+                <input type="number" name="power"
+                #power="ngModel" [(ngModel)]="moveService.selectedMove.power"
+                placeholder="Enter Move Power">
+              </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Hit Rate</span>   <!-- Hit Rate -->
+                <input type="number" name="hit"
+                #hit="ngModel" [(ngModel)]="moveService.selectedMove.hit"
+                placeholder="Enter Move Hit Ratio">
+              </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Move PP</span>  <!-- Move PP -->
+                <input type="number" name="pp"
+                #pp="ngModel" [(ngModel)]="moveService.selectedMove.pp"
+                placeholder="Enter Move PP">
+              </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Move Type</span>  <!-- Move Type -->
+                <input type="text" name="type"
+                #type="ngModel" [(ngModel)]="moveService.selectedMove.type"
+                placeholder="Move Type">
+              </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Attack Type</span>  <!-- Attack Type -->
+                <input type="text" name="attack"
+                #attack="ngModel" [(ngModel)]="moveService.selectedMove.attack"
+                placeholder="Move Attack; Phy/Spe/Status">
+              </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Description</span>  <!-- Move Description -->
+                <input type="text" name="info"
+                #info="ngModel" [(ngModel)]="moveService.selectedMove.info"
+                placeholder="Enter Move Description">
+              </div>
+              <br>
+              <div class="card-action">
+                <div class="input-field col s12 m12 l12 center">
+                  <button type="submit" class="btn blue">Save</button>
+                  <button (click)="resetForm(addMoveForm)"class="btn green">Clean</button>
+                </div>
+              </div>
+
+            </div>
+        </form>
       </div>
     </div>
-
   </div>
 
-  <div class="row bottom">
-    <div class="col s12 m12">
-    <table class="centered striped">
-      <thead>
-        <th class="center">Name</th>
-        <th class="center">Admin</th>
-      </thead>
-      <tbody>
-        <tr *ngFor="let move of moveService.moveList">
-          <td>{{move.name}}</td>
-          <td>
-            <a href="admin/move#top"><mat-icon (click)="updateMove(move)">edit</mat-icon></a>
-            <mat-icon (click)="deleteMove(move._id)">delete</mat-icon>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
+</div>
+
+<div class="row bottom">
+  <div class="col s12 m12">
+  <table class="centered striped">
+    <thead>
+      <th class="center">Name</th>
+      <th class="center">Admin</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let move of moveService.moveList">
+        <td>{{move.name}}</td>
+        <td>
+          <a href="admin/move#top"><mat-icon (click)="updateMove(move)">edit</mat-icon></a>
+          <mat-icon (click)="deleteMove(move._id)">delete</mat-icon>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   </div>
+</div>

@@ -26,12 +26,12 @@ export class NatureComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.nature = this.natureService.getNature(this.pokemon.nature);
-    this.nature2 = this.natureService.getNature(this.pokemon.nature2);
+    this.nature = this.natureService.getNature(this.pokemon.nature);  // Get Nature 1 from the Service
+    this.nature2 = this.natureService.getNature(this.pokemon.nature2);  // Get Nature 2 from the Service
 
     this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
      .subscribe(res => {
-       this.family = res as any;  // Respond Server
+       this.family = res as any;  // Respond Server as Family
      });
 
      // Changing Evolution Number to String

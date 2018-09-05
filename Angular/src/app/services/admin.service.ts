@@ -14,6 +14,7 @@ export class AdminService {
   readonly ADMIN_API = "http://localhost:3000/admin/pokemon";  // Server API
   readonly POKEMON_NAME_API = "http://localhost:3000/admin/pokemon_name";  // Serer API GET Pokemon by Name
 
+  // Heroku Server --> https://pocketown-server.herokuapp.com
 
   constructor(private http: HttpClient) {
     this.selectedPokemon = <Pokemon>{};  // At start We have empty Pokemon

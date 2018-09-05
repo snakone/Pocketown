@@ -6,6 +6,6 @@ const laboratory = require('../controllers/laboratory.controller');  // Controll
 
 // LABORATORY Routes
 
-LaboratoryRouter.get('/laboratory', laboratory.filterPokemon);  // Filter Pokemon
+LaboratoryRouter.get('/laboratory', laboratory.filterPokemon);  // Filter Pokémon
 
 module.exports = LaboratoryRouter;  // Export router - Export Class on TypeScript

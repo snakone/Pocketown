@@ -1,9 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import { Pokemon } from '../../../../../models/pokemon';  // Pokemon Model
+import { pokeItem } from '../../../../../models/poke-item';  // Pokemon Model
+
 import { PokedexService } from '../../../../../services/pokedex.service';  // Pokedex Service
 import { pokeItemService } from '../../../../../services/poke-item.service';  // Pokedex Service
-import { pokeItem } from '../../../../../models/poke-item';  // Pokemon Model
 
 @Component({
   selector: 'pokemon-items',
@@ -32,7 +33,7 @@ export class ItemsComponent implements OnInit {
    ngOnInit() {
      this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
       .subscribe(res => {
-        this.family = res as any;  // Respond Server
+        this.family = res as any;  // Respond Server as Family
       });
 
       // Changing Evolution Number to String
@@ -46,16 +47,15 @@ export class ItemsComponent implements OnInit {
        this.pokemon.evolution = this.pokedexService
         .evolutionToString(this.pokemon.evolution);
 
-      // We do this everytime You select a Pokemon
-      // Getting Poke Item Object from Server given his Name
+      // We do this everytime You select a Pokemon //
 
+      // Getting Poke Item 1 Object from Server given his Name
       this.pokeitemService.getpokeItembyName(this.pokemon.item_picture)
        .subscribe(res =>{
          this.item1 = res[0] as pokeItem;
        })
 
-       // Getting Poke Item Object from Server given his Name
-
+      // Getting Poke Item 2 Object from Server given his Name
        this.pokeitemService.getpokeItembyName(this.pokemon.item2_picture)
        .subscribe(res =>{
          this.item2 = res[0] as pokeItem;
@@ -63,11 +63,10 @@ export class ItemsComponent implements OnInit {
    }
 
    openDescripItem1(){
-     this.showDescripItem1 = true;
+     this.showDescripItem1 = true;  // Show & Hide Description
      this.showDescripItem2 = false;
 
-     // Getting Poke Item Object from Server given his Name
-
+     // Getting Poke Item 1 Object from Server given his Name
      this.pokeitemService.getpokeItembyName(this.pokemon.item_picture)
       .subscribe(res =>{
         this.item1 = res[0] as pokeItem;
@@ -76,14 +75,13 @@ export class ItemsComponent implements OnInit {
    }
 
    openDescripItem2(){
-     this.showDescripItem1 = false;
+     this.showDescripItem1 = false;  // Show & Hide Description
      this.showDescripItem2 = true;
 
-     // Getting Poke Item Object from Server given his Name
-
+     // Getting Poke Item 2 Object from Server given his Name
      this.pokeitemService.getpokeItembyName(this.pokemon.item2_picture)
-     .subscribe(res =>{
-       this.item2 = res[0] as pokeItem;
+      .subscribe(res =>{
+        this.item2 = res[0] as pokeItem;
      })
    }
 

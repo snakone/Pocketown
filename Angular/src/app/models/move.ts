@@ -1,5 +1,5 @@
 export class Move {
-      _id: string
+      _id: string  // MongoDB ID
       name: string;
       z: string;
       power: number;

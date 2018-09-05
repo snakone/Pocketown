@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'; //  Make HTTP Request to API
 import { Pokemon } from '../models/pokemon';  // Pokemon Model
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -13,6 +12,8 @@ export class FilterService {
   filteredPokemon: Pokemon[];  // List of Filtered Pokemon
 
   readonly URL_API = "http://localhost:3000/laboratory";  // Server API Laboratory
+
+  // Heroku Server --> https://pocketown-server.herokuapp.com
 
   constructor(private http: HttpClient) { }
 

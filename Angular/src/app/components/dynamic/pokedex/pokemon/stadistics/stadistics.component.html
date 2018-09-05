@@ -7,39 +7,38 @@
   </mat-card-header>
   <mat-card-content class="top">
 
-        <div class="row center stats">
+    <div class="row center stats">
+        <table class="centered">
+          <tbody>
+            <tr><td>HP</td>
+              <td><progress class="HP" value="{{pokemon.HP}}" max="255"></progress></td>
+              <td>{{pokemon.HP}}</td>    <!-- Pokémon HP -->
+            </tr>
+            <tr><td>ATK</td>
+              <td><progress class="ATK" value="{{pokemon.ATK}}" max="255"></progress></td>
+              <td>{{pokemon.ATK}}</td>    <!-- Pokémon ATK -->
+            </tr>
+            <tr><td>DEF</td>
+              <td><progress class="DEF" value="{{pokemon.DEF}}" max="255"></progress></td>
+              <td>{{pokemon.DEF}}</td>    <!-- Pokémon DEF -->
+            </tr>
+            <tr><td>SATK</td>
+              <td><progress class="SATK" value="{{pokemon.SATK}}" max="255"></progress></td>
+              <td>{{pokemon.SATK}}</td>    <!-- Pokémon S.ATK -->
+            </tr>
+            <tr><td>SDEF</td>
+              <td><progress class="SDEF" value="{{pokemon.SDEF}}" max="255"></progress></td>
+              <td>{{pokemon.SDEF}}</td>    <!-- Pokémon S.DEF -->
+            </tr>
+            <tr><td>SPD</td>
+              <td><progress class="SPD" value="{{pokemon.SPD}}" max="255"></progress></td>
+              <td>{{pokemon.SPD}}</td>    <!-- Pokémon SPD -->
+            </tr>
+          </tbody>
+        </table>
+     </div>
 
-                <table class="centered">
-                  <tbody>
-                    <tr><td>HP</td>
-                      <td><progress class="HP" value="{{pokemon.HP}}" max="255"></progress></td>
-                      <td>{{pokemon.HP}}</td>
-                    </tr>
-                    <tr><td>ATK</td>
-                      <td><progress class="ATK" value="{{pokemon.ATK}}" max="255"></progress></td>
-                      <td>{{pokemon.ATK}}</td>
-                    </tr>
-                    <tr><td>DEF</td>
-                      <td><progress class="DEF" value="{{pokemon.DEF}}" max="255"></progress></td>
-                      <td>{{pokemon.DEF}}</td>
-                    </tr>
-                    <tr><td>SATK</td>
-                      <td><progress class="SATK" value="{{pokemon.SATK}}" max="255"></progress></td>
-                      <td>{{pokemon.SATK}}</td>
-                    </tr>
-                    <tr><td>SDEF</td>
-                      <td><progress class="SDEF" value="{{pokemon.SDEF}}" max="255"></progress></td>
-                      <td>{{pokemon.SDEF}}</td>
-                    </tr>
-                    <tr><td>SPD</td>
-                      <td><progress class="SPD" value="{{pokemon.SPD}}" max="255"></progress></td>
-                      <td>{{pokemon.SPD}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-        </div>
-
-        <div class="row center family">
+        <div class="row center family">    <!-- Familiars -->
             <span *ngFor="let familiar of family" (click)="goPokemon(familiar)">
               <img class="familiar" matTooltip="{{familiar.name}}"
               src="{{urlImage}}{{familiar.picture}}.png"/>

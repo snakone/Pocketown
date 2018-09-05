@@ -15,6 +15,7 @@ export class pokeItemService {
   readonly ADMIN_API = "http://localhost:3000/admin/pokeItem";  // Server API
   readonly POKEITEM_API = "http://localhost:3000/admin/pokeItem_name";  // Server API for pokeItem Names
 
+  // Heroku Server --> https://pocketown-server.herokuapp.com
 
   constructor(private http: HttpClient) {
     this.selectedpokeItem = <pokeItem>{};  // At start We have empty pokeItem

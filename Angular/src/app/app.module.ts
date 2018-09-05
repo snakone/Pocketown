@@ -78,9 +78,9 @@ import { RecommenedComponent } from './components/dynamic/welcome/recommened/rec
   declarations: [
     AppComponent, TopNavComponent, TopMenuComponent, GridComponent,
     FixedNavComponent, FooterNavComponent, FooterMenuComponent,
-    WelcomeComponent, PokedexComponent, PokemonComponent,
-    AdminPokemonComponent, TypesComponent, LaboratoryComponent, SearchComponent,
-    ResultComponent, StatsComponent, FilteringComponent, EvolutionsComponent,
+    WelcomeComponent, PokedexComponent, PokemonComponent, AdminPokemonComponent,
+    TypesComponent, LaboratoryComponent, SearchComponent, ResultComponent,
+    StatsComponent, FilteringComponent, EvolutionsComponent,
     StadisticsComponent, BioComponent, MatchComponent, NatureComponent,
     EffortComponent, ItemsComponent, PokemonMovesComponent, MovesComponent,
     AdminMoveComponent, VictoryRoadComponent, EventsComponent, RecommenedComponent,

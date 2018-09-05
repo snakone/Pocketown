@@ -3,8 +3,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Pokemon } from '../../../../../models/pokemon';  // Pokemon Model
 
 import { PokedexService } from '../../../../../services/pokedex.service';  // Pokedex Service
+
 import { AdminService } from '../../../../../services/admin.service';  // Pokedex Service
-import { Router } from '@angular/router'; // Router
 
 @Component({
   selector: 'pokemon-match',
@@ -21,8 +21,7 @@ export class MatchComponent implements OnInit {
   family: string[];  // Pokemon Familiars
 
   constructor(private pokedexService: PokedexService,
-              private adminService: AdminService,
-              private router: Router) {
+              private adminService: AdminService) {
       this.urlImage = "../../../../../../assets/images/pokemon/";
    }
 
@@ -52,15 +51,15 @@ export class MatchComponent implements OnInit {
       // Changing Evolution Number to String
       this.pokemon.evolution = this.pokedexService
        .evolutionToString(this.pokemon.evolution);
-      this.putSpaces();
+      this.putSpaces();  // Setting Spaces on Pokémon Name
   }
 
-  getPokemonbyName(pokemonName: string) {
-  this.adminService.getPokemonbyName(pokemonName)
+  getPokebyName(name: string) {
+  this.adminService.getPokemonbyName(name)
      .subscribe(res =>{
-       const pokemon = res[0] as any;
+       const pokemon = res[0] as any;  // We only get one result so its position 0
        this.pokemon = pokemon;
-       this.putSpaces();
+       this.putSpaces();  // Setting Spaces on Pokémon Name
      })
   }
 

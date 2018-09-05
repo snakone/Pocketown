@@ -16,17 +16,17 @@ import { VictoryRoadComponent } from '../components/static/guides/victory-road/v
 
 
 const Routes: Routes = [
-  { path: 'home', component: WelcomeComponent },
+  { path: 'home', component: WelcomeComponent },  // Home
   { path: 'pokedex', component: PokedexComponent },  // Pokedex
   { path: 'laboratory', component: LaboratoryComponent },  // Laboratory
   { path: 'moves', component: MovesComponent },  // Moves
   { path: 'held-items', component: pokeItemsComponent },  // Pokémon Held Items
   { path: 'laboratory/result', component: ResultComponent },  // Laboratory Results
-  { path: 'pokedex/:pokemon', component: PokemonComponent },  // Single Pokemon
+  { path: 'pokedex/:pokemon', component: PokemonComponent },  // Single Pokémon
   { path: 'guides/victory-road', component: VictoryRoadComponent },  // Victory Road Guide
   { path: 'admin/pokemon', component: AdminPokemonComponent },  // Admin Pokemon
   { path: 'admin/move', component: AdminMoveComponent },  // Admin Pokemon Moves
-  { path: 'admin/pokeItem', component: AdminpokeItemComponent },  // Admin Pokemon Moves
+  { path: 'admin/pokeItem', component: AdminpokeItemComponent },  // Admin Pokémon Held Items
   { path: '**', pathMatch: 'full', redirectTo: 'home' } // Default Route
 ];
 

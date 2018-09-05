@@ -13,6 +13,7 @@ export class PokedexService {
   pokedex: Pokemon[];  // Pokedex with Pokemon List
   readonly URL_API = "http://localhost:3000/pokedex";  // Server API Pokedex
 
+  // Heroku Server --> https://pocketown-server.herokuapp.com
 
   constructor(private http: HttpClient) {
     this.selectedPokemon = <Pokemon>{};  // At start We have empty Pokemon

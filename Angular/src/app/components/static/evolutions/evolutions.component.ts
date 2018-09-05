@@ -15,7 +15,7 @@ export class EvolutionsComponent implements OnInit {
   constructor(private staticData: StaticService) {}
 
   ngOnInit() {
-      this.evolutions = this.staticData.evolutions;  // Get the Stats List
+      this.evolutions = this.staticData.evolutions;  // Get the Evolution List
   }
 
   showEvolution(id: string, evolution: string){

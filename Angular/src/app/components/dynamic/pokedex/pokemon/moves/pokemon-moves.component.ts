@@ -16,14 +16,12 @@ export class PokemonMovesComponent implements OnInit {
 
   @Input() pokemon: Pokemon;
   urlImage: string;
-  urlzMove: string;
   moves: string[];
   family: string[];  // Pokemon Familiars
 
   constructor(private moveService: MoveService,
               private pokedexService: PokedexService) {
       this.urlImage = "../../../../../../assets/images/pokemon/";
-      this.urlzMove = "../../../../../../assets/images/zmoves/";
    }
 
   ngOnInit() {

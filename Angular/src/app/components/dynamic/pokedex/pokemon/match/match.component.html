@@ -1,48 +1,49 @@
-    <mat-card class="card">
-      <img class="pkm-img" src="{{urlImage}}{{pokemon.picture}}.png"/>
-      <mat-card-header class="header">
-        <div mat-card-avatar class="header-image"></div>
-        <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
-        <mat-card-subtitle>Match Up</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content class="top">
+<mat-card class="card">
+  <img class="pkm-img" src="{{urlImage}}{{pokemon.picture}}.png"/>
+  <mat-card-header class="header">
+    <div mat-card-avatar class="header-image"></div>
+    <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
+    <mat-card-subtitle>Match Up</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="top">
 
-      <div class="row">
-        <div class="col s6 m6 l6">
-            <span class="type Grass">GOOD</span>  <!-- Good Pokemon -->
-              <div class="good">
-                <span><img matTooltip="{{good1}}" (click)="getPokemonbyName(pokemon.good1)"
-                  src="{{urlImage}}{{pokemon.good1}}.png"></span>
+  <div class="row">
 
-                <span><img matTooltip="{{good2}}" (click)="getPokemonbyName(pokemon.good2)"
-                  src="{{urlImage}}{{pokemon.good2}}.png"></span>
+    <div class="col s6 m6 l6">
+        <span class="type Grass">GOOD</span>  <!-- Good Pokemon -->
+          <div class="good">
+            <span><img matTooltip="{{good1}}" (click)="getPokebyName(pokemon.good1)"
+              src="{{urlImage}}{{pokemon.good1}}.png"></span>  <!-- Good 1 -->
 
-                <span><img matTooltip="{{good3}}" (click)="getPokemonbyName(pokemon.good3)"
-                  src="{{urlImage}}{{pokemon.good3}}.png"></span>
-              </div>
+            <span><img matTooltip="{{good2}}" (click)="getPokebyName(pokemon.good2)"
+              src="{{urlImage}}{{pokemon.good2}}.png"></span>  <!-- Good 2 -->
+
+            <span><img matTooltip="{{good3}}" (click)="getPokebyName(pokemon.good3)"
+              src="{{urlImage}}{{pokemon.good3}}.png"></span>  <!-- Good 3 -->
           </div>
+    </div>
+    <div class="col s6 m6 l6">
+      <span class="type Fighting">BAD</span>  <!-- Bad Pokemon -->
+        <div class="bad">
+          <span><img matTooltip="{{bad1}}" (click)="getPokebyName(pokemon.bad1)"
+            src="{{urlImage}}{{pokemon.bad1}}.png"></span>  <!-- Bad 1 -->
 
-        <div class="col s6 m6 l6">
-          <span class="type Fighting">BAD</span>  <!-- Bad Pokemon -->
-            <div class="bad">
-              <span><img matTooltip="{{bad1}}" (click)="getPokemonbyName(pokemon.bad1)"
-                src="{{urlImage}}{{pokemon.bad1}}.png"></span>
+          <span><img matTooltip="{{bad2}}" (click)="getPokebyName(pokemon.bad2)"
+            src="{{urlImage}}{{pokemon.bad2}}.png"></span>  <!-- Bad 2 -->
 
-              <span><img matTooltip="{{bad2}}" (click)="getPokemonbyName(pokemon.bad2)"
-                src="{{urlImage}}{{pokemon.bad2}}.png"></span>
-
-              <span><img matTooltip="{{bad3}}" (click)="getPokemonbyName(pokemon.bad3)"
-                src="{{urlImage}}{{pokemon.bad3}}.png"></span>
-            </div>
+          <span><img matTooltip="{{bad3}}" (click)="getPokebyName(pokemon.bad3)"
+            src="{{urlImage}}{{pokemon.bad3}}.png"></span>  <!-- Bad 3 -->
         </div>
-      </div>
+    </div>
 
-      <div class="row center family">
-          <span *ngFor="let familiar of family" (click)="goPokemon(familiar)">
-            <img class="familiar" matTooltip="{{familiar.name}}"
-            src="{{urlImage}}{{familiar.picture}}.png"/>
-          </span>
-      </div>
+  </div>
 
-      </mat-card-content>
-    </mat-card>
+  <div class="row center family">  <!-- Familiars -->
+      <span *ngFor="let familiar of family" (click)="goPokemon(familiar)">
+        <img class="familiar" matTooltip="{{familiar.name}}"
+        src="{{urlImage}}{{familiar.picture}}.png"/>
+      </span>
+  </div>
+
+  </mat-card-content>
+</mat-card>
