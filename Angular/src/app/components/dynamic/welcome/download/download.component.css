@@ -1,0 +1,9 @@
+.download {
+  width: 150px;
+  margin: 0 10px;
+}
+
+.download:hover {
+  cursor: pointer;
+  filter: brightness(1.5);
+}

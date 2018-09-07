@@ -73,6 +73,8 @@ import { PokemonMovesComponent } from './components/dynamic/pokedex/pokemon/move
 
 // Pocketown guides
 import { VictoryRoadComponent } from './components/static/guides/victory-road/victory-road.component';
+import { MoveComponent } from './components/dynamic/moves/move/move.component';
+import { PokeItemComponent } from './components/dynamic/poke-items/poke-item/poke-item.component';
 
 
 @NgModule({
@@ -85,7 +87,7 @@ import { VictoryRoadComponent } from './components/static/guides/victory-road/vi
     StadisticsComponent, BioComponent, MatchComponent, NatureComponent,
     EffortComponent, ItemsComponent, PokemonMovesComponent, MovesComponent,
     AdminMoveComponent, VictoryRoadComponent, EventsComponent, BannerComponent,
-    AdminpokeItemComponent, pokeItemsComponent, DownloadComponent
+    AdminpokeItemComponent, pokeItemsComponent, DownloadComponent, MoveComponent, PokeItemComponent
 
 ],
   imports: [

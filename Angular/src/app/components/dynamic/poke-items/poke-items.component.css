@@ -18,6 +18,16 @@
   font-size: .9em!important;
 }
 
+.picture {
+    width: 56px;
+    margin: 3px;
+}
+
+.picture:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
 .item {
   color:white;
   background: #3F51B5;
@@ -28,17 +38,9 @@
   margin: 0 auto;
 }
 
-@media (min-width:1400px) {
-  .pokeItem {
-    max-width: 50%;
-    margin: 0 auto;
-  }
-
-}
-
 @media (min-width:1000px) {
   .pokeItem {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -111,8 +113,6 @@ margin-top: 10px;
 .responsive-img {
   min-width: 90%;
 }
-
-
 
 @media (max-width: 1000px){
   .responsive-img {

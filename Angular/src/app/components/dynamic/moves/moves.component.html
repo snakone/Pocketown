@@ -14,27 +14,8 @@
         </div>
   </div>
 
-  <div class="row center move animated slideInUp">  <!-- Move Card -->
-      <mat-card *ngFor="let move of filteredMoveList" class="col s12 m12 l12 card center">
-        <mat-card-content>
-        <span class="type {{move.type}}">{{move.name}}</span>  <!-- Move Name -->
-
-          <p>
-            <span class="stat"><span class="bold">Power:</span> {{move.power}}</span>  <!-- Move Power -->
-            <span class="stat"><span class="bold">Hit Rate:</span> {{move.hit}}</span>  <!-- Move Hit -->
-            <span class="stat"><span class="bold">Type:</span>  <!-- Move Type -->
-              <span class="bold {{move.type}}_move"> {{move.type}}</span>
-           </span>
-          </p>
-          <p>
-            <span class="stat"><span class="bold">Attack:</span> {{move.attack}}</span>  <!-- Move Attack Type -->
-            <span class="stat"><span class="bold">PP:</span> {{move.pp}}</span>  <!-- Move PP -->
-            <span class="stat"><span class="bold">Move:</span> {{move.z}}</span>  <!-- Move Special -->
-          </p>
-          <p class="info">  <!-- Move Info -->
-          {{move.info}}
-          </p>
-        </mat-card-content>
-      </mat-card>
-  </div> <!-- End of Move Card -->
+  <div class="row center move animated slideInUp">
+        <span (click)="navigate(move)" *ngFor="let move of filteredMoveList"
+        class="type {{move.type}}">{{move.name}}</span>  <!-- Move Name -->
+  </div>
 </div>

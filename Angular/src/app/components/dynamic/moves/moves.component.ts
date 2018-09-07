@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { Move } from '../../../models/move';  // Pokemon Model
 
-import { MoveService } from '../../../services/move.service';  // Nature Service
+import { MoveService } from '../../../services/move.service';  // Move Service
+import { Router } from '@angular/router'; // Router
 
 @Component({
   selector: 'app-moves',
@@ -17,7 +18,8 @@ export class MovesComponent implements OnInit {
   loading: boolean;  // Whenever the data is loaded or NOT
   searchValue: string = "";  // Input Value to Search For - ngModel on HTML
 
-  constructor(private moveService: MoveService) {
+  constructor(private moveService: MoveService,
+              private router: Router) {
         this.loading = true;  // Start at true, always need to load at first time
    }
 
@@ -28,6 +30,10 @@ export class MovesComponent implements OnInit {
        this.filteredMoveList = this.moveList;
        this.loading = false;  // After We got the data No more Loading
      })
+  }
+
+  navigate(move: Move) {
+    this.router.navigate(['/moves', move._id]);  // Navigate to Single Pokemon using Pokemon ID
   }
 
   onKeyUp(event){  // On Key Up Javascript Event

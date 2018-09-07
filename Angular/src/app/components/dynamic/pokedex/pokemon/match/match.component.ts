@@ -4,7 +4,7 @@ import { Pokemon } from '../../../../../models/pokemon';  // Pokemon Model
 
 import { PokedexService } from '../../../../../services/pokedex.service';  // Pokedex Service
 
-import { AdminService } from '../../../../../services/admin.service';  // Pokedex Service
+import { PokemonService } from '../../../../../services/pokemon.service';  // Pokedex Service
 
 @Component({
   selector: 'pokemon-match',
@@ -21,7 +21,7 @@ export class MatchComponent implements OnInit {
   family: string[];  // Pokemon Familiars
 
   constructor(private pokedexService: PokedexService,
-              private adminService: AdminService) {
+              private pokemonService: PokemonService) {
       this.urlImage = "../../../../../../assets/images/pokemon/";
    }
 
@@ -55,7 +55,7 @@ export class MatchComponent implements OnInit {
   }
 
   getPokebyName(name: string) {
-  this.adminService.getPokemonbyName(name)
+  this.pokemonService.getPokemonbyName(name)
      .subscribe(res =>{
        const pokemon = res[0] as any;  // We only get one result so its position 0
        this.pokemon = pokemon;

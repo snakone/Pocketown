@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { pokeItem } from '../../../models/poke-item';  // Pokemon Model
 
 import { pokeItemService } from '../../../services/poke-item.service';  // Nature Service
+import { Router } from '@angular/router'; // Router
 
 @Component({
   selector: 'app-pokeItems',
@@ -17,7 +18,8 @@ export class pokeItemsComponent implements OnInit {
   searchValue: string = "";  // Input Value to Search For - ngModel on HTML
   urlImage: string;
 
-  constructor(private pokeItemService: pokeItemService) {
+  constructor(private pokeItemService: pokeItemService,
+              private router: Router) {
         this.loading = true;  // Start at true, always need to load at first time
         this.urlImage = "../../../../assets/images/items/"
    }
@@ -29,6 +31,10 @@ export class pokeItemsComponent implements OnInit {
        this.filteredpokeItemList = this.pokeItemList;
        this.loading = false;  // After We got the data No more Loading
      })
+  }
+
+  navigate(pokeitem: string) {
+    this.router.navigate(['/held-items', pokeitem]);  // Navigate to Single Pokemon using Pokemon ID
   }
 
   onKeyUp(event){  // On Key Up Javascript Event

@@ -6,11 +6,11 @@ const pokeItem = require('../controllers/poke-item.controller');  // Controller
 
 // MOVES Routes
 
-pokeItemsRouter.post('/admin/pokeItem', pokeItem.addpokeItem); // Add pokeItem to MongoDB
-pokeItemsRouter.get('/admin/pokeItem', pokeItem.getpokeItem);  // Get pokeItem
-pokeItemsRouter.get('/admin/pokeItem/:id', pokeItem.getpokeItembyId);  // Get pokeItem by ID
-pokeItemsRouter.get('/admin/pokeItem_name', pokeItem.getpokeItembyName);  // Get pokeItem by Name
-pokeItemsRouter.put('/admin/pokeItem/:id', pokeItem.updatepokeItem);  // Update pokeItem by ID
-pokeItemsRouter.delete('/admin/pokeItem/:id', pokeItem.deletepokeItem);  // Delete pokeItem from MongoDB
+pokeItemsRouter.post('/held-items', pokeItem.addpokeItem); // Add pokeItem to MongoDB
+pokeItemsRouter.get('/held-items', pokeItem.getpokeItem);  // Get pokeItem
+pokeItemsRouter.get('/held-items/:id', pokeItem.getpokeItembyId);  // Get pokeItem by ID
+pokeItemsRouter.get('/held-item_name', pokeItem.getpokeItembyName);  // Get pokeItem by Name
+pokeItemsRouter.put('/held-items/:id', pokeItem.updatepokeItem);  // Update pokeItem by ID
+pokeItemsRouter.delete('/held-items/:id', pokeItem.deletepokeItem);  // Delete pokeItem from MongoDB
 
 module.exports = pokeItemsRouter;  // Export router - Export Class on TypeScript

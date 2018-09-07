@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { PokeitemsService } from './poke-item.service';
+import { pokeItemService } from './poke-item.service';
 
-describe('PokeitemsService', () => {
+describe('pokeItemService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [PokeitemsService]
+      providers: [pokeItemService]
     });
   });
 
-  it('should be created', inject([PokeitemsService], (service: PokeitemsService) => {
+  it('should be created', inject([pokeItemService], (service: pokeItemService) => {
     expect(service).toBeTruthy();
   }));
 });

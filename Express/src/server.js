@@ -4,7 +4,7 @@ const cors = require('cors'); //  Bind Server and Angular
 const { moongose } = require('./database');  // Only need the Connection
 const pokedex = require('./routes/pokedex-routes');  // Require API Pokedex
 const laboratory = require('./routes/laboratory-routes');  // Require API Laboratory
-const admin = require('./routes/admin-routes');  // Require API Admin Pokemon
+const pokemon = require('./routes/pokemon-routes');  // Require API Admin Pokemon
 const move = require('./routes/move-routes');  // Require API Admin Move
 const pokeItem = require('./routes/poke-items-routes');  // Require API Poke Items
 
@@ -23,7 +23,7 @@ app.use(cors({origin: "http://localhost:4200"}));  // Use Cors to connect Angula
 
 // var allowedOrigins = ['http://pocketown-angular.epizy.com',
 //                       'http://pocketown-admin.epizy.com'];  // Allowed URLs
-// 
+//
 // app.use(cors({
 //   origin: function(origin, callback){
 //     // allow requests with no origin
@@ -42,7 +42,7 @@ app.use(cors({origin: "http://localhost:4200"}));  // Use Cors to connect Angula
 
 app.use('/', pokedex);  // Pokedex Route
 app.use('/', laboratory);  // Laboratory Route
-app.use('/', admin);  // Admin Route
+app.use('/', pokemon);  // Admin Route
 app.use('/', move);  // Pokemon Move Route
 app.use('/', pokeItem);  // Pokemon Move Route
 

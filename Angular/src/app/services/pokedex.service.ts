@@ -11,7 +11,7 @@ export class PokedexService {
 
   selectedPokemon: Pokemon;  // Save selected Pokemon
   pokedex: Pokemon[];  // Pokedex with Pokemon List
-  readonly URL_API = "http://localhost:3000/pokedex";  // Server API Pokedex
+  readonly POKEDEX_API = "http://localhost:3000/pokedex";  // Server API Pokedex
 
   // Heroku Server --> https://pocketown-server.herokuapp.com
 
@@ -20,15 +20,12 @@ export class PokedexService {
    }
 
   getPokedex(){
-    return this.http.get(this.URL_API);  // HTTP GET to Server API - POSTMAN belike
+    return this.http.get(this.POKEDEX_API);  // HTTP GET to Server API - POSTMAN belike
   }
 
-  getPokemonbyId(id: string){  // URL/PokemonID
-    return this.http.get(this.URL_API + `/${id}`);  // HTTP GET to Server API - POSTMAN belike
-  }
 
   getFamily(family: string){  // Get the Pokemon Family
-    return this.http.get(this.URL_API + `/family/${family}`);   // HTTP GET to Server API - POSTMAN belike
+    return this.http.get(this.POKEDEX_API + `/${family}`);   // HTTP GET to Server API - POSTMAN belike
   }
 
   evolutionToString(evolution: string) {  // Changing Evolution Number to String

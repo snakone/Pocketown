@@ -11,7 +11,7 @@ export class FilterService {
 
   filteredPokemon: Pokemon[];  // List of Filtered Pokemon
 
-  readonly URL_API = "http://localhost:3000/laboratory";  // Server API Laboratory
+  readonly FILTER_API = "http://localhost:3000/laboratory";  // Server API Laboratory
 
   // Heroku Server --> https://pocketown-server.herokuapp.com
 
@@ -28,7 +28,7 @@ export class FilterService {
 
     // Send the Type, Stat and Evolution in HTTP Params
     const params = {type: Type, stat: Stat, evolution: Evolution};
-    return this.http.get(this.URL_API, {params: params} );  // HTTP GET to Server API - POSTMAN belike
+    return this.http.get(this.FILTER_API, {params: params} );  // HTTP GET to Server API - POSTMAN belike
   }
 
 }
