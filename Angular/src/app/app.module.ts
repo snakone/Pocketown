@@ -37,7 +37,12 @@ import { FooterNavComponent } from './components/layout/footer-nav/footer-nav.co
 import { FooterMenuComponent } from './components/layout/footer-nav/footer-menu/footer-menu.component';
 
 // Dynamic Components //
+
+// Home
 import { WelcomeComponent } from './components/dynamic/welcome/welcome.component';
+import { EventsComponent } from './components/dynamic/welcome/events/events.component';
+import { BannerComponent } from './components/dynamic/welcome/banner/banner.component';
+import { DownloadComponent } from './components/dynamic/welcome/download/download.component';
 
 // Pokedex
 import { PokedexComponent } from './components/dynamic/pokedex/pokedex.component';
@@ -69,10 +74,6 @@ import { PokemonMovesComponent } from './components/dynamic/pokedex/pokemon/move
 // Pocketown guides
 import { VictoryRoadComponent } from './components/static/guides/victory-road/victory-road.component';
 
-// Image Carousel
-import { EventsComponent } from './components/dynamic/welcome/events/events.component';
-import { RecommenedComponent } from './components/dynamic/welcome/recommened/recommened.component';
-
 
 @NgModule({
   declarations: [
@@ -83,8 +84,8 @@ import { RecommenedComponent } from './components/dynamic/welcome/recommened/rec
     StatsComponent, FilteringComponent, EvolutionsComponent,
     StadisticsComponent, BioComponent, MatchComponent, NatureComponent,
     EffortComponent, ItemsComponent, PokemonMovesComponent, MovesComponent,
-    AdminMoveComponent, VictoryRoadComponent, EventsComponent, RecommenedComponent,
-    AdminpokeItemComponent, pokeItemsComponent
+    AdminMoveComponent, VictoryRoadComponent, EventsComponent, BannerComponent,
+    AdminpokeItemComponent, pokeItemsComponent, DownloadComponent
 
 ],
   imports: [

@@ -15,7 +15,7 @@ img {
 }
 
 .banner {
-  height: 50%;
+  max-height: 250px;
 }
 
 .type{
