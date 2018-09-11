@@ -10,6 +10,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatSelectModule } from '@angular/material/select';
 
 
 import { MatSidenavModule,
@@ -24,12 +27,14 @@ import { MatSidenavModule,
   imports: [MatButtonModule, MatCheckboxModule,MatToolbarModule,MatIconModule,
             MatMenuModule, MatSidenavModule, MatListModule, MatCardModule,
             MatTableModule,MatPaginatorModule, MatSortModule, MatTooltipModule,
-            MatExpansionModule, MatRadioModule, MatDividerModule, MatTabsModule],
+            MatExpansionModule, MatRadioModule, MatDividerModule, MatTabsModule,
+            MatStepperModule, MatFormFieldModule, MatInputModule, MatSelectModule],
 
   exports: [MatButtonModule, MatCheckboxModule,MatToolbarModule,MatIconModule,
             MatMenuModule, MatSidenavModule, MatListModule, MatCardModule,
             MatTableModule,MatPaginatorModule, MatSortModule, MatTooltipModule,
-            MatExpansionModule, MatRadioModule, MatDividerModule, MatTabsModule],
+            MatExpansionModule, MatRadioModule, MatDividerModule, MatTabsModule,
+            MatStepperModule, MatFormFieldModule, MatInputModule, MatSelectModule],
 })
 export class MaterialModule {
 

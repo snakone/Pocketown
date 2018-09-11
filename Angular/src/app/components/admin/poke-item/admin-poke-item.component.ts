@@ -13,7 +13,7 @@ import { NgForm } from '@angular/forms';  // Angular Forms
   styleUrls: ['./admin-poke-item.component.css']
 })
 
-export class AdminpokeItemComponent implements OnInit {
+export class AdminPokeItemComponent implements OnInit {
 
   constructor(private pokeItemService: pokeItemService,
               private toastr: ToastrService) { }

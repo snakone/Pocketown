@@ -1,6 +1,13 @@
-.download {
+span {
+  margin: 10px;
+}
+
+p {
+  margin-top: 30px;
+}
+
+img {
   width: 150px;
-  margin: 0 10px;
 }
 
 .download:hover {

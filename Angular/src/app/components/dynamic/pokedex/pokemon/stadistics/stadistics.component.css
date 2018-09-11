@@ -7,6 +7,11 @@ margin: 0 auto auto -10px;
   font-size: .8em;
 }
 
+.high {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
 .header {
   margin-bottom: 5px;
 }

@@ -5,6 +5,9 @@
       <span class="example-spacer">  <!-- Spacer -->
         <img class="logo" [routerLink]="['home']" [src]="logoURL">  <!-- Logo -->
       </span>
-        <mat-icon svgIcon="trainer" class="custom-icon"></mat-icon>  <!-- Trainer -->
+        <mat-icon *ngIf="!authService.isAuthenticated()" svgIcon="trainer"
+        (click)="login()" class="custom-icon"></mat-icon>  <!-- Trainer -->
+        <mat-icon *ngIf="authService.isAuthenticated()" svgIcon="trainer"
+        [routerLink]="['profile']" class="custom-icon"></mat-icon>  <!-- Trainer -->
   </mat-toolbar-row>
 </mat-toolbar>

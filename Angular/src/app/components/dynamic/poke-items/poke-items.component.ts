@@ -10,7 +10,7 @@ import { Router } from '@angular/router'; // Router
   templateUrl: './poke-items.component.html',
   styleUrls: ['./poke-items.component.css']
 })
-export class pokeItemsComponent implements OnInit {
+export class PokeItemsComponent implements OnInit {
 
   pokeItemList: pokeItem[];
   filteredpokeItemList: pokeItem[];

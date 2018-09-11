@@ -1,3 +1,23 @@
-<p *ngIf="move">  <!-- If because its asyncrhonous -->
-  {{move.name}}
-</p>
+<div class="row center moves animated slideInDown" *ngIf="move">   <!-- If because its asyncrhonous -->
+    <mat-card class="col s12 m12 l12 card center">
+      <mat-card-content>
+      <span class="type {{move.type}}"
+       [ngClass]="{'text-color': move.type == 'Ice' || move.type == 'Electric'}">{{move.name}}</span>
+         <p class="margin">
+          <span class="stat"><span class="bold">Power:</span> {{move.power}}</span>
+          <span class="stat"><span class="bold">Hit Rate:</span> {{move.hit}}</span>
+          <span class="stat"><span class="bold">Type:</span>
+            <span class="bold {{move.type}}_move"> {{move.type}}</span>
+         </span>
+        </p>
+        <p>
+          <span class="stat"><span class="bold">Attack:</span> {{move.attack}}</span>
+          <span class="stat"><span class="bold">PP:</span> {{move.pp}}</span>
+          <span class="stat"><span class="bold">Move:</span> {{move.z}}</span>
+        </p>
+        <p class="info">
+        {{move.info}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+</div>

@@ -14,9 +14,12 @@ import { ActivatedRoute } from '@angular/router'; // Routes
 export class PokeItemComponent implements OnInit {
 
   pokeItem: pokeItem;
+  urlImage: string;
 
   constructor(private pokeitemService: pokeItemService,
-              private activeRoute: ActivatedRoute) { }
+              private activeRoute: ActivatedRoute) {
+
+              this.urlImage = "../../../../../../assets/images/items/"; }
 
   ngOnInit() {
     let routeParams = this.activeRoute.snapshot.params.pokeitem; // Get the Move ID from URL

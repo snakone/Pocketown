@@ -9,8 +9,10 @@
   width:56px;
 }
 
-p {
-  margin-top: 20px;
+.margin {
+  margin-top: 0;
+  font-size: .8em;
+  font-weight: bold;
 }
 
 .info {
@@ -25,6 +27,7 @@ p {
 .item {
   width: 60px;
   padding: 4px;
+  margin-bottom: 5px;
 }
 
 .item:hover {
@@ -53,10 +56,6 @@ p {
   font-size: .8em;
 }
 
-.descrip {
-  margin-top: 10px;
-}
-
 .family {
   position: absolute;
   bottom:12px;
@@ -72,9 +71,7 @@ p {
   margin: 0 3px;
 }
 
-.top {
-  margin-top: 20px;
-}
+
 
 @media (min-width:599px) {
   .top {
@@ -86,9 +83,6 @@ mat-card-subtitle {
   text-align: left;
 }
 
-.row {
-  margin-top: 25px;
-}
 
 .header-image {
   background-image: url('../../../../../../assets/icons/items64.png');
@@ -99,7 +93,7 @@ mat-card-subtitle {
 
 .items {
   width: 100%;
-  margin: 20px auto auto auto;
+  margin: auto;
 }
 
 .Common {background-color: blue;}

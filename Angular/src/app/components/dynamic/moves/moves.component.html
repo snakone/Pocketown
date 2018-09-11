@@ -16,6 +16,7 @@
 
   <div class="row center move animated slideInUp">
         <span (click)="navigate(move)" *ngFor="let move of filteredMoveList"
+         [ngClass]="{'text-color': move.type == 'Ice' || move.type == 'Electric'}"
         class="type {{move.type}}">{{move.name}}</span>  <!-- Move Name -->
   </div>
 </div>

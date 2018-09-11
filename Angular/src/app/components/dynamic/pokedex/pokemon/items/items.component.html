@@ -5,15 +5,17 @@
     <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
     <mat-card-subtitle>Held Items</mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content class="top">
+  <mat-card-content>
 
       <div class="row center items">
           <div class="col s6 m6 l6">
-            <span>{{pokemon.item}}</span> <img (click)="openDescripItem1()"
+            <p class="margin">{{pokemon.item}}</p>
+            <img (click)="openDescripItem1()"
             class="item" src="{{urlImage}}{{pokemon.item_picture}}.png"/>  <!-- Pokémon Item 1 -->
           </div>
           <div class="col s6 m6 l6">
-            <span>{{pokemon.item2}}</span> <img (click)="openDescripItem2()"
+            <p class="margin">{{pokemon.item2}}</p>
+            <img (click)="openDescripItem2()"
             class="item" src="{{urlImage}}{{pokemon.item2_picture}}.png"/>  <!-- Pokémon Item 2 -->
           </div>
       </div>

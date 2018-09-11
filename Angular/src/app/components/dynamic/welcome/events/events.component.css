@@ -1,10 +1,10 @@
 section {
-  margin: 20px auto;
+  margin: 10px auto 20px auto;
 }
 
 .bordered-feature-image {
 		display: block;
-		background: #fff url("../../../../../assets/images/carousel/bg05.png");
+		background: #fff url("../../../../../assets/images/bg05.png");
 		padding: 5px 5px 0 5px;
 		border-radius:5px;
 		box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.15);

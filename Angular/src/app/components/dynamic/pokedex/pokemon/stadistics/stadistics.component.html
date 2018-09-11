@@ -3,7 +3,7 @@
   <mat-card-header class="header">
     <div mat-card-avatar class="header-image"></div>
     <mat-card-title class="bold">{{pokemon.name}}</mat-card-title>
-    <mat-card-subtitle>SS: {{pokemon.SS}}</mat-card-subtitle>
+    <mat-card-subtitle>SS: <span class="bold">{{pokemon.SS}}</span></mat-card-subtitle>
   </mat-card-header>
   <mat-card-content class="top">
 
@@ -12,27 +12,27 @@
           <tbody>
             <tr><td>HP</td>
               <td><progress class="HP" value="{{pokemon.HP}}" max="255"></progress></td>
-              <td>{{pokemon.HP}}</td>    <!-- Pokémon HP -->
+              <td [ngClass]="{'high': pokemon.HP >= 130}">{{pokemon.HP}}</td>    <!-- Pokémon HP -->
             </tr>
             <tr><td>ATK</td>
               <td><progress class="ATK" value="{{pokemon.ATK}}" max="255"></progress></td>
-              <td>{{pokemon.ATK}}</td>    <!-- Pokémon ATK -->
+              <td [ngClass]="{'high': pokemon.ATK >= 130}">{{pokemon.ATK}}</td>    <!-- Pokémon ATK -->
             </tr>
             <tr><td>DEF</td>
               <td><progress class="DEF" value="{{pokemon.DEF}}" max="255"></progress></td>
-              <td>{{pokemon.DEF}}</td>    <!-- Pokémon DEF -->
+              <td [ngClass]="{'high': pokemon.DEF >= 130}">{{pokemon.DEF}}</td>    <!-- Pokémon DEF -->
             </tr>
-            <tr><td>SATK</td>
+            <tr><td>S.ATK</td>
               <td><progress class="SATK" value="{{pokemon.SATK}}" max="255"></progress></td>
-              <td>{{pokemon.SATK}}</td>    <!-- Pokémon S.ATK -->
+              <td [ngClass]="{'high': pokemon.SATK >= 130}">{{pokemon.SATK}}</td>    <!-- Pokémon S.ATK -->
             </tr>
-            <tr><td>SDEF</td>
+            <tr><td>S.DEF</td>
               <td><progress class="SDEF" value="{{pokemon.SDEF}}" max="255"></progress></td>
-              <td>{{pokemon.SDEF}}</td>    <!-- Pokémon S.DEF -->
+              <td [ngClass]="{'high': pokemon.SDEF >= 130}">{{pokemon.SDEF}}</td>    <!-- Pokémon S.DEF -->
             </tr>
             <tr><td>SPD</td>
               <td><progress class="SPD" value="{{pokemon.SPD}}" max="255"></progress></td>
-              <td>{{pokemon.SPD}}</td>    <!-- Pokémon SPD -->
+              <td [ngClass]="{'high': pokemon.SPD >= 130}">{{pokemon.SPD}}</td>    <!-- Pokémon SPD -->
             </tr>
           </tbody>
         </table>

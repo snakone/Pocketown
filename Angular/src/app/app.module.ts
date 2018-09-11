@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Forms
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule  } from '@angular/forms';
 
 // Main
 import { AppComponent } from './app.component';
@@ -26,7 +27,7 @@ import { HttpClientModule } from "@angular/common/http";
 //Admin
 import { AdminPokemonComponent } from './components/admin/pokemon/admin-pokemon.component';
 import { AdminMoveComponent } from './components/admin/move/admin-move.component';
-import { AdminpokeItemComponent } from './components/admin/poke-item/admin-poke-item.component';
+import { AdminPokeItemComponent } from './components/admin/poke-item/admin-poke-item.component';
 
 // App Layout //
 import { TopNavComponent } from './components/layout/top-nav/top-nav.component';
@@ -54,8 +55,10 @@ import { ResultComponent } from './components/dynamic/laboratory/result/result.c
 import { FilteringComponent } from './components/dynamic/laboratory/filtering/filtering.component';
 // Moves
 import { MovesComponent } from './components/dynamic/moves/moves.component';
+import { MoveComponent } from './components/dynamic/moves/move/move.component';
 // Held Items
-import { pokeItemsComponent } from './components/dynamic/poke-items/poke-items.component';
+import { PokeItemsComponent } from './components/dynamic/poke-items/poke-items.component';
+import { PokeItemComponent } from './components/dynamic/poke-items/poke-item/poke-item.component';
 
 // Static Components //
 import { StatsComponent } from './components/static/stats/stats.component';
@@ -71,10 +74,9 @@ import { EffortComponent } from './components/dynamic/pokedex/pokemon/effort/eff
 import { ItemsComponent } from './components/dynamic/pokedex/pokemon/items/items.component';
 import { PokemonMovesComponent } from './components/dynamic/pokedex/pokemon/moves/pokemon-moves.component';
 
-// Pocketown guides
+// Pocketown Guides
 import { VictoryRoadComponent } from './components/static/guides/victory-road/victory-road.component';
-import { MoveComponent } from './components/dynamic/moves/move/move.component';
-import { PokeItemComponent } from './components/dynamic/poke-items/poke-item/poke-item.component';
+import { ProfileComponent } from './components/dynamic/profile/profile.component';
 
 
 @NgModule({
@@ -87,12 +89,14 @@ import { PokeItemComponent } from './components/dynamic/poke-items/poke-item/pok
     StadisticsComponent, BioComponent, MatchComponent, NatureComponent,
     EffortComponent, ItemsComponent, PokemonMovesComponent, MovesComponent,
     AdminMoveComponent, VictoryRoadComponent, EventsComponent, BannerComponent,
-    AdminpokeItemComponent, pokeItemsComponent, DownloadComponent, MoveComponent, PokeItemComponent
+    AdminPokeItemComponent, PokeItemsComponent, DownloadComponent, MoveComponent,
+    PokeItemComponent,
+    ProfileComponent
 
 ],
   imports: [
     BrowserModule, BrowserAnimationsModule, MaterialModule, RoutingModule,
-    FormsModule, HttpClientModule,
+    FormsModule, HttpClientModule, ReactiveFormsModule,
     ToastrModule.forRoot({  // Apply to all Toastr
       timeOut: 3000,
       progressBar: true

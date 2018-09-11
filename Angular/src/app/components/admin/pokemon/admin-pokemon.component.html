@@ -8,302 +8,309 @@
               <input type="hidden" name="_id"
               #_id="ngModel" [(ngModel)]="pokemon.selectedPokemon._id">
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold">Ready?</span>  <!-- Pokémon Name -->
+                <input type="text" name="ready"
+                #ready="ngModel" [(ngModel)]="pokemon.selectedPokemon.ready"
+                placeholder="It's Pokémon Ready?">
+              </div>
+
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Name</span>  <!-- Pokémon Name -->
                 <input type="text" name="name"
                 #name="ngModel" [(ngModel)]="pokemon.selectedPokemon.name"
                 placeholder="Enter Pokémon name">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Nº</span>  <!-- Pokémon Nº -->
                 <input type="number" name="pokedex"
                 #pokedex="ngModel" [(ngModel)]="pokemon.selectedPokemon.pokedex"
                 placeholder="Enter Pokedex Nº">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Grade</span>  <!-- Pokémon Grade -->
                 <input type="text" name="grade"
                 #grade="ngModel" [(ngModel)]="pokemon.selectedPokemon.grade"
                 placeholder="Enter the Pokémon Grade">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Picture</span>  <!-- Pokémon Picture -->
                 <input type="text" name="picture"
                 #picture="ngModel" [(ngModel)]="pokemon.selectedPokemon.picture"
                 placeholder="Enter the Pokémon Picture">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Evolution</span>  <!-- Evolution -->
                 <input type="text" name="evolution"
                 #evolution="ngModel" [(ngModel)]="pokemon.selectedPokemon.evolution"
                 placeholder="Enter the Pokémon Evolution">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Type</span>  <!-- Pokémon Type -->
                 <input type="text" name="type"
                 #type="ngModel" [(ngModel)]="pokemon.selectedPokemon.type"
                 placeholder="Enter the Pokémon Type">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Type 2</span>  <!-- Pokémon Type 2 -->
                 <input type="text" name="type2"
                 #type2="ngModel" [(ngModel)]="pokemon.selectedPokemon.type2"
                 placeholder="Enter the Pokémon Type 2">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Attack TYPE</span>  <!-- Attack Type -->
                 <input type="text" name="attack"
                 #attack="ngModel" [(ngModel)]="pokemon.selectedPokemon.attack"
                 placeholder="Enter the Pokémon Attack TYPE">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Legendary?</span>  <!-- Legendary? -->
                 <input type="text" name="legend"
                 #legend="ngModel" [(ngModel)]="pokemon.selectedPokemon.legend"
                 placeholder="Legendary?">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Description</span>  <!-- Description -->
                 <input type="text" name="description"
                 #description="ngModel" [(ngModel)]="pokemon.selectedPokemon.description"
                 placeholder="Pokémon Description">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Family</span>  <!-- Pokémon Family -->
                 <input type="text" name="family"
                 #family="ngModel" [(ngModel)]="pokemon.selectedPokemon.family"
                 placeholder="Pokémon Family">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Ability</span>  <!-- Pokémon Ability -->
                 <input type="text" name="ability"
                 #ability="ngModel" [(ngModel)]="pokemon.selectedPokemon.ability"
                 placeholder="Pokémon Ability">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Best Ability</span>  <!-- Best Ability -->
                 <input type="text" name="bability"
                 #bability="ngModel" [(ngModel)]="pokemon.selectedPokemon.bability"
                 placeholder="Pokémon Best Ability">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Item</span>  <!-- Pokémon Item -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold item">Pokémon Item</span>  <!-- Pokémon Item -->
                 <input type="text" name="item"
                 #item="ngModel" [(ngModel)]="pokemon.selectedPokemon.item"
                 placeholder="Pokémon Item">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Item Picture</span>  <!-- Item Picture -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold item">Pokémon Item Picture</span>  <!-- Item Picture -->
                 <input type="text" name="item_picture"
                 #item_picture="ngModel" [(ngModel)]="pokemon.selectedPokemon.item_picture"
                 placeholder="Pokémon Item Picture">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Item 2</span>  <!-- Item 2 -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold item">Pokémon Item 2</span>  <!-- Item 2 -->
                 <input type="text" name="item2"
                 #item2="ngModel" [(ngModel)]="pokemon.selectedPokemon.item2"
                 placeholder="Pokémon Item 2">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Item 2 Picture</span>  <!-- Item 2 Picture -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold item">Pokémon Item 2 Picture</span>  <!-- Item 2 Picture -->
                 <input type="text" name="item2_picture"
                 #item2_picture="ngModel" [(ngModel)]="pokemon.selectedPokemon.item2_picture"
                 placeholder="Pokémon Item 2 Picture">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Good 1</span> <!-- Pokémon Good 1 -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold good">Pokémon Good 1</span> <!-- Pokémon Good 1 -->
                 <input type="text" name="good1"
                 #good1="ngModel" [(ngModel)]="pokemon.selectedPokemon.good1"
                 placeholder="Pokémon Good 1">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Good 2</span> <!-- Pokémon Good 2 -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold good">Pokémon Good 2</span> <!-- Pokémon Good 2 -->
                 <input type="text" name="good2"
                 #good2="ngModel" [(ngModel)]="pokemon.selectedPokemon.good2"
                 placeholder="Pokémon Good 2">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Good 3</span> <!-- Pokémon Good 3 -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold good">Pokémon Good 3</span> <!-- Pokémon Good 3 -->
                 <input type="text" name="good3"
                 #good3="ngModel" [(ngModel)]="pokemon.selectedPokemon.good3"
                 placeholder="Pokémon Good 3">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Bad 1</span> <!-- Pokémon Bad 1 -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold bad">Pokémon Bad 1</span> <!-- Pokémon Bad 1 -->
                 <input type="text" name="bad1"
                 #bad1="ngModel" [(ngModel)]="pokemon.selectedPokemon.bad1"
                 placeholder="Pokémon Bad 1">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Bad 2</span> <!-- Pokémon Bad 2 -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold bad">Pokémon Bad 2</span> <!-- Pokémon Bad 2 -->
                 <input type="text" name="bad2"
                 #bad2="ngModel" [(ngModel)]="pokemon.selectedPokemon.bad2"
                 placeholder="Pokémon Bad 2">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Bad 3</span> <!-- Pokémon Bad 3 -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold bad">Pokémon Bad 3</span> <!-- Pokémon Bad 3 -->
                 <input type="text" name="bad3"
                 #bad3="ngModel" [(ngModel)]="pokemon.selectedPokemon.bad3"
                 placeholder="Pokémon Bad 3">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Move 1</span>  <!-- Move 1 -->
                 <input type="text" name="move1"
                 #move1="ngModel" [(ngModel)]="pokemon.selectedPokemon.move1"
                 placeholder="Pokémon Move 1">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Move 2</span>  <!-- Move 2 -->
                 <input type="text" name="move2"
                 #move2="ngModel" [(ngModel)]="pokemon.selectedPokemon.move2"
                 placeholder="Pokémon Move 2">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Move 3</span>  <!-- Move 3 -->
                 <input type="text" name="move3"
                 #move3="ngModel" [(ngModel)]="pokemon.selectedPokemon.move3"
                 placeholder="Pokémon Move 3">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Move 4</span>  <!-- Move 4 -->
                 <input type="text" name="move4"
                 #move4="ngModel" [(ngModel)]="pokemon.selectedPokemon.move4"
                 placeholder="Pokémon Move 4">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Z Move</span>  <!-- Z Move -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold zmove">Pokémon Z Move</span>  <!-- Z Move -->
                 <input type="text" name="zmove"
                 #zmove="ngModel" [(ngModel)]="pokemon.selectedPokemon.zmove"
                 placeholder="Pokémon Z Move">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Nature</span>  <!-- Pokémon Nature -->
                 <input type="text" name="nature"
                 #nature="ngModel" [(ngModel)]="pokemon.selectedPokemon.nature"
                 placeholder="Pokémon Nature">
               </div>
 
-              <div class="input-field col s12 m6 l6">
+              <div class="input-field col s12 m3 l3">
                 <span class="helper-text bold">Pokémon Nature 2</span>  <!-- Pokémon Nature 2 -->
                 <input type="text" name="nature2"
                 #nature2="ngModel" [(ngModel)]="pokemon.selectedPokemon.nature2"
                 placeholder="Pokémon Nature 2">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon HP</span>  <!-- HP -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold HP">Pokémon HP</span>  <!-- HP -->
                 <input type="number" name="HP" max="255"
                 #HP="ngModel" [(ngModel)]="pokemon.selectedPokemon.HP"
                 placeholder="Enter Pokémon HP">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon ATK</span>  <!-- ATK -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold ATK">Pokémon ATK</span>  <!-- ATK -->
                 <input type="number" name="ATK" max="255"
                 #ATK="ngModel" [(ngModel)]="pokemon.selectedPokemon.ATK"
                 placeholder="Enter Pokémon ATK">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon DEF</span>  <!-- DEF -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold DEF">Pokémon DEF</span>  <!-- DEF -->
                 <input type="number" name="DEF" max="255"
                 #DEF="ngModel" [(ngModel)]="pokemon.selectedPokemon.DEF"
                 placeholder="Enter Pokémon DEF">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon S.ATK</span>  <!-- S.ATK -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold S.ATK">Pokémon S.ATK</span>  <!-- S.ATK -->
                 <input type="number" name="SATK" max="255"
                 #SATK="ngModel" [(ngModel)]="pokemon.selectedPokemon.SATK"
                 placeholder="Enter Pokémon S.ATK">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon S.DEF</span>  <!-- S.DEF -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold S.DEF">Pokémon S.DEF</span>  <!-- S.DEF -->
                 <input type="number" name="SDEF" max="255"
                 #SDEF="ngModel" [(ngModel)]="pokemon.selectedPokemon.SDEF"
                 placeholder="Enter Pokémon S.DEF">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon SPD</span>  <!-- SPD -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold SPD">Pokémon SPD</span>  <!-- SPD -->
                 <input type="number" name="SPD" max="255"
                 #SPD="ngModel" [(ngModel)]="pokemon.selectedPokemon.SPD"
                 placeholder="Enter Pokémon SPD">
               </div>
 
-              <div class="input-field col s12  m6 l6">
+              <div class="input-field col s12  m3 l3">
                 <span class="helper-text bold">Pokémon SS</span>   <!-- SS -->
                 <input type="number" name="SS"
                 #SS="ngModel" [(ngModel)]="pokemon.selectedPokemon.SS"
                 placeholder="Enter Pokémon SS">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Effort HP</span>  <!-- Effort HP -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold HP">Pokémon Effort HP</span>  <!-- Effort HP -->
                 <input type="number" name="ef_HP" max="4"
                 #ef_HP="ngModel" [(ngModel)]="pokemon.selectedPokemon.ef_HP"
                 placeholder="Enter Pokémon Effort HP">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Effort ATK</span>  <!-- Effort ATK -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold ATK">Pokémon Effort ATK</span>  <!-- Effort ATK -->
                 <input type="number" name="ef_ATK" max="4"
                 #ef_ATK="ngModel" [(ngModel)]="pokemon.selectedPokemon.ef_ATK"
                 placeholder="Enter Pokémon Effort ATK">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Effort DEF</span>  <!-- Effort DEF -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold DEF">Pokémon Effort DEF</span>  <!-- Effort DEF -->
                 <input type="number" name="ef_DEF" max="4"
                 #ef_DEF="ngModel" [(ngModel)]="pokemon.selectedPokemon.ef_DEF"
                 placeholder="Enter Pokémon Effort DEF">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Effort S.ATK</span>  <!-- Effort S.ATK -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold S.ATK">Pokémon Effort S.ATK</span>  <!-- Effort S.ATK -->
                 <input type="number" name="ef_SATK" max="4"
                 #ef_SATK="ngModel" [(ngModel)]="pokemon.selectedPokemon.ef_SATK"
                 placeholder="Enter Pokémon Effort SATK">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Effort S.DEF</span>  <!-- Effort S.DEF -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold S.DEF">Pokémon Effort S.DEF</span>  <!-- Effort S.DEF -->
                 <input type="number" name="ef_SDEF" max="4"
                 #ef_SDEF="ngModel" [(ngModel)]="pokemon.selectedPokemon.ef_SDEF"
                 placeholder="Enter Pokémon Effort S.DEF">
               </div>
 
-              <div class="input-field col s12 m6 l6">
-                <span class="helper-text bold">Pokémon Effort SPD</span>  <!-- Effort SPD -->
+              <div class="input-field col s12 m3 l3">
+                <span class="helper-text bold SPD">Pokémon Effort SPD</span>  <!-- Effort SPD -->
                 <input type="number" name="ef_SPD" max="4"
                 #ef_SPD="ngModel" [(ngModel)]="pokemon.selectedPokemon.ef_SPD"
                 placeholder="Enter Pokémon Effort SPD">
@@ -340,14 +347,16 @@
       <th class="center">Admin</th>
     </thead>
     <tbody>
+
       <tr *ngFor="let pokemon of pokemon.pokedex">
-        <td>{{pokemon.name}}</td>
-          <td>{{pokemon.pokedex}}</td>
-        <td>
+        <td *ngIf="pokemon.ready == 'No'">{{pokemon.name}}</td>
+        <td *ngIf="pokemon.ready == 'No'">{{pokemon.pokedex}}</td>
+        <td *ngIf="pokemon.ready == 'No'">
           <a href="admin/pokemon#top"><mat-icon (click)="updatePokemon(pokemon)">edit</mat-icon></a>
           <mat-icon (click)="deletePokemon(pokemon._id)">delete</mat-icon>
         </td>
       </tr>
+
     </tbody>
   </table>
   </div>

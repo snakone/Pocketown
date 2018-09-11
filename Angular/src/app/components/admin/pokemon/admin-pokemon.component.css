@@ -23,3 +23,19 @@ mat-icon:hover {
 .bottom {
   margin-bottom: 60px;
 }
+
+.good {
+  color: green;
+}
+
+.bad {
+  color: red;
+}
+
+.item {
+  color: darkblue;
+}
+
+.zmove {
+  color:orange;
+}

@@ -4,11 +4,6 @@
   margin-bottom: 50px;
 }
 
-@media (max-width:600px){
-  h3 {
-    font-size: 1.4em;
-  }
-}
 
 h4 {
 	color: black;

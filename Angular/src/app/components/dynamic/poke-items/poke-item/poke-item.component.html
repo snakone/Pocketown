@@ -1,3 +1,13 @@
-<p *ngIf="pokeItem">
-  {{pokeItem.item}}
-</p>
+<div class="row center pokeItem animated slideInDown" *ngIf="pokeItem">  <!-- Held Item Card -->
+        <mat-card class="col s12 m12 l12 card center">
+          <mat-card-content>
+            <p><img class="picture" src="{{urlImage}}{{pokeItem.picture}}.png"/></p>
+             <p><span class="bold">{{pokeItem.item}}</span></p>  <!-- Held Item Name -->
+            <p>
+              <span class="stat type {{pokeItem.type}}">{{pokeItem.type}}</span>  <!-- Held Item Type -->
+              <span class="stat type {{pokeItem.grade}}">{{pokeItem.grade}}</span>  <!-- Held Item Grade -->
+            </p>
+             <p class="info">{{pokeItem.info}}</p>
+          </mat-card-content>
+        </mat-card>
+    </div> <!-- End of pokeItem Card -->

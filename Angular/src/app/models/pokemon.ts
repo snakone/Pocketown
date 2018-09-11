@@ -44,6 +44,7 @@ export class Pokemon {
   move3: string;
   move4: string;
   zmove: string;
+  ready: string;
 
   contructor(id: string, name: string, pokedex: number,
              grade: string, type: string, type2: string,

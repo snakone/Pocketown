@@ -46,20 +46,11 @@ mat-toolbar {
   color:black;
 }
 
+.custom-icon:focus {
+  outline: 0;
+}
+
 mat-icon:hover{
   cursor:pointer;
   filter: brightness(1.5);
-}
-
-
-a {
-color:white;
-margin-top: 8px;
-border:none;
-outline : none;
-}
-
-
-a:last-child{
-  margin-right: 2px;
 }

@@ -1,0 +1,82 @@
+
+  <h3>New Trainer</h3>
+  <div class="register animated slideInUp">
+    <mat-vertical-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup" #createProfile1="ngForm">
+        <ng-template matStepLabel>Trainer Info</ng-template>
+
+          <div><input matInput placeholder="Trainer Name" formControlName="Name" required></div>
+
+          <div><mat-form-field class="selectField">
+            <mat-select placeholder="Favorite Pokémon" formControlName="Pokemon">
+              <mat-option *ngFor="let pokemon of pokemonList" [value]="pokemon.picture">
+                {{pokemon.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field></div>
+
+        <div class="right">
+          <button class="next" mat-button matStepperNext>Next ></button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup" #createProfile2="ngForm">
+        <ng-template matStepLabel>Pick your Avatar</ng-template>
+
+          <mat-radio-group formControlName="Avatar">
+
+            <div *ngFor="let avatar of avatars" class="col s6 m6 l6 avatar center">
+                <div class="valign-wrapper">
+                  <img src="{{urlImage}}{{avatar}}.png"/>
+                  <mat-radio-button color="primary" value="{{avatar}}"></mat-radio-button>
+                </div>
+            </div>
+
+        </mat-radio-group>
+
+        <div class="right middle">
+          <button class="back" mat-button matStepperPrevious>< Back</button>
+          <button class="next" mat-button matStepperNext>Next ></button>
+        </div>
+
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="thridFormGroup">
+      <form [formGroup]="thridFormGroup" #createProfile3="ngForm">
+        <ng-template matStepLabel>Community</ng-template>
+
+        <div><mat-form-field class="selectField">
+          <mat-select placeholder="Server" formControlName="Server">
+            <mat-option *ngFor="let server of servers" [value]="server">
+              {{server}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field></div>
+
+          <div><input matInput placeholder="Guild Name" formControlName="Guild" required></div>
+
+        <div class="right middle">
+          <button class="back" mat-button matStepperPrevious>< Back</button>
+          <button class="next" mat-button matStepperNext>Next ></button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+
+      <div class="right last">
+        <button class="back" mat-button matStepperPrevious>< Back</button>
+        <!-- <button mat-button (click)="stepper.reset()">Reset</button> -->
+        <button class="register"
+        mat-button (click)="validateForm(createProfile1, createProfile2, createProfile3)">Register</button>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+
+  <div class="center">
+    <button class="btn button" (click)="logout()">Log Out</button>
+  </div>
+
+</div>

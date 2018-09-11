@@ -19,7 +19,7 @@ const PokemonSchema = new Schema ({  // Pokemon Model
   'item_picture': {type: String, required: true},
   'item2': {type: String, required: true},
   'item2_picture': {type: String, required: true},
-  'z_picture': {type: String, required: true},
+  'zmove': {type: String, required: true},
   'good1': {type: String, required: true},
   'good2': {type: String, required: true},
   'good3': {type: String, required: true},
@@ -45,7 +45,8 @@ const PokemonSchema = new Schema ({  // Pokemon Model
   'ef_SPD': {type: Number, required: true},
   'nature': {type: String, required: true},
   'nature2': {type: String, required: true},
-  'info': {type: String, required: true}
+  'info': {type: String, required: true},
+  'ready': {type: String, required: true}
 });
 // Set Pokemon Schema as mongoose Model
 module.exports = mongoose.model('Pokemon', PokemonSchema);
