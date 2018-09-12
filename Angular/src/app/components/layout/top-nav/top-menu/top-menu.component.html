@@ -20,7 +20,7 @@
     <span>Guides</span>
   </button>
 
-   <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Admin">
+   <button *ngIf="authService.admin" routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Admin">
     <mat-icon svgIcon="admin"></mat-icon>
     <span>Admin</span>
   </button>

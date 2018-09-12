@@ -15,7 +15,7 @@ export class TopNavComponent {
 
   logoURL: string;
 
-  constructor( private authService: AuthService) {
+  constructor(private authService: AuthService) {
     this.appTitle = "Pocketown";
     this.ngVersion = "Angular 6";
     this.logoURL = "../../../../../assets/images/logo.png";

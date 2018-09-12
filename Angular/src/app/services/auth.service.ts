@@ -12,6 +12,7 @@ import * as auth0 from 'auth0-js';
 export class AuthService {
 
   userProfile:any;
+  admin: boolean = false;
 
   auth0 = new auth0.WebAuth({
     clientID: 'nZlYvy5mdW4CuRlA47e52o6Kk7wsY1EL',
@@ -54,6 +55,7 @@ export class AuthService {
    localStorage.removeItem('access_token');
    localStorage.removeItem('id_token');
    localStorage.removeItem('expires_at');
+   this.admin = false;
    // Go back to the home route
    this.router.navigate(['/']);
  }
