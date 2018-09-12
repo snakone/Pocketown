@@ -26,6 +26,7 @@ export class ProfileComponent implements OnInit {
   secondFormGroup: FormGroup;
   thridFormGroup: FormGroup;
   urlImage: string;
+  urlPokemon: string;
   avatars: string[];
   servers: string[];
   isTrainer: boolean;
@@ -34,6 +35,9 @@ export class ProfileComponent implements OnInit {
   trainer: Trainer;
   profile: any;
   trainerID: string;
+
+  pokemonTeam: string[] = ["MegaDeoxysX", "MegaRayquazaYR2", "MegaGyaradosR2",
+                           "MegaArceusX", "MegaLucarioXR2", "MegaHoohX"];
 
   pokemonList: Pokemon[];
 
@@ -46,6 +50,7 @@ export class ProfileComponent implements OnInit {
               private router: Router) {
 
                 this.urlImage = "../../../../assets/images/avatar/";
+                this.urlPokemon = "../../../../assets/images/pokemon/";
                 this.avatars = ["1","2","3","4"];
               }
 
@@ -64,19 +69,7 @@ export class ProfileComponent implements OnInit {
       });
     }
 
-    this.firstFormGroup = this._formBuilder.group({
-      Name: ['', Validators.required],
-      Pokemon: ['', Validators.required]
-    });
-
-    this.secondFormGroup = this._formBuilder.group({
-      Avatar: ['', Validators.required]
-    });
-
-    this.thridFormGroup = this._formBuilder.group({
-      Server: ['', Validators.required],
-      Guild: ['', Validators.required]
-    });
+    this.createForm();
 
     this.pokedexService.getPokedex()  // HTTP POST to Server
      .subscribe(res => {  // Subscribe to the Server Response
@@ -89,9 +82,9 @@ export class ProfileComponent implements OnInit {
 
   validateForm(form1: NgForm, form2: NgForm, form3: NgForm){
 
-    const trainer = new Trainer(this.trainerID, form1.value.Name,
+    const trainer = new Trainer( this.trainerID, form1.value.Name,
                                 form1.value.Pokemon, form2.value.Avatar,
-                                form3.value.Server, form3.value.Guild,  );
+                                form3.value.Server, form3.value.Guild );
 
     this.trainerService.addTrainer(trainer)
      .subscribe(res => {
@@ -99,7 +92,6 @@ export class ProfileComponent implements OnInit {
          timeOut: 5000
        });
      });
-
      this.router.navigate(['/']);  // Navigate to Home
   }
 
@@ -123,11 +115,26 @@ export class ProfileComponent implements OnInit {
           this.isTrainer = true;
           this.notTrainer = false;
           }
+           if (this.trainer.name == 'Snakone' || this.trainer.name == 'Goph') {
+             this.authService.admin = true;
+           }
+       } // End of else
+    });
+  }
 
-         if (this.trainer.name == 'Snakone') {
-           this.authService.admin = true;
-         }
-       }
+  createForm(){
+    this.firstFormGroup = this._formBuilder.group({
+      Name: ['', Validators.required],
+      Pokemon: ['', Validators.required]
+    });
+
+    this.secondFormGroup = this._formBuilder.group({
+      Avatar: ['', Validators.required]
+    });
+
+    this.thridFormGroup = this._formBuilder.group({
+      Server: ['', Validators.required],
+      Guild: ['', Validators.required]
     });
   }
 

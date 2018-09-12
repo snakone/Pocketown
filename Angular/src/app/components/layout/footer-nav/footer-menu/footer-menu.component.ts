@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ToastrService } from 'ngx-toastr';  // Toastr
+
+import { AuthService } from '../../../../services/auth.service';
+
 @Component({
   selector: 'footer-menu',
   templateUrl: './footer-menu.component.html',
@@ -7,9 +11,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterMenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService: AuthService,
+              private toastr: ToastrService,) { }
 
   ngOnInit() {
+  }
+
+  logOut():void {
+    this.authService.logout();
+    this.toastr.info('','You are now logged out', {
+      timeOut: 5000
+    });
   }
 
 }

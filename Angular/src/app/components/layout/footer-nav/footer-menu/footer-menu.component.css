@@ -7,13 +7,21 @@
 .home {
   color:#FAD702;
   min-width: 50px;
-  margin-top: 8px;
-  margin-left: 10px;
+  margin: 6px 0 0 10px;
   border:none;
   outline : none;
 }
 
-.home:hover {
+.logout {
+  min-width: 60px;
+  margin-left: -15px;
+  margin-top: -12px;
+  border:none;
+  outline : none;
+  vertical-align: middle;
+}
+
+.home:hover, .logout:hover {
   filter: brightness(1.2);
   cursor: pointer;
 }

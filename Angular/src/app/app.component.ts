@@ -70,5 +70,9 @@ export class AppComponent {
    .bypassSecurityTrustResourceUrl("../assets/icons/poke-item.svg")
    );
 
+   this.matIconRegistry.addSvgIcon("exit", this.domSanitizer
+   .bypassSecurityTrustResourceUrl("../assets/icons/exit.svg")
+   );
+
   }
 }

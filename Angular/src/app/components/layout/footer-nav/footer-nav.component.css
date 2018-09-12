@@ -113,7 +113,7 @@ footer.page-footer {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 490px) {
 
   .nav-Title::after {
       content: "";

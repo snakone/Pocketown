@@ -1,12 +1,30 @@
-<div *ngIf="isTrainer">
-  <h5>{{trainer.name}}</h5>
-  <img src="{{urlImage}}{{trainer.avatar}}.png"/>
-  <p>Favourite Pokémon: <span class="bold">{{trainer.pokemon}}</span></p>
-  <p>Server: <span class="bold">{{trainer.server}}</span></p>
-  <p>Guild: <span class="bold">{{trainer.guild}}</span></p>
-  <div class="center">
-    <button class="btn button" (click)="logout()">Log Out</button>
-  </div>
+<div *ngIf="isTrainer" class="animated slideinUp">
+  <mat-card class="card">
+    <div class="row">
+      <div class="col s6 m6 l6">
+        <h5>{{trainer.name}}</h5>
+        <img src="{{urlImage}}{{trainer.avatar}}.png"/>
+      </div>
+      <div class="col s6 m6 l6">
+        <p class="bold">Favourite Pokémon:</p>
+        <p><img class="pokemon" src="{{urlPokemon}}{{trainer.pokemon}}.png"/></p>
+      </div>
+    </div>
+
+    <div class="center">
+      <p>Server: <span class="bold">{{trainer.server}}</span></p>
+      <p>Guild: <span class="bold">{{trainer.guild}}</span></p>
+    </div>
+    <br>
+    <div class="center">
+      <h5>Pokémon Team</h5>
+      <p>
+        <span *ngFor="let pokemon of pokemonTeam">
+            <img class="pokemonTeam" src="{{urlPokemon}}{{pokemon}}.png"/>
+        </span>
+      </p>
+    </div>
+  </mat-card>
 
 </div>
 

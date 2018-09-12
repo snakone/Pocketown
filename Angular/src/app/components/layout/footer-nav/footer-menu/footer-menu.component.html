@@ -1,1 +1,3 @@
 <mat-icon [routerLink]="['home']" class="home">home</mat-icon>
+<mat-icon *ngIf="authService.isAuthenticated()"
+(click)="logOut()" svgIcon="exit" class="logout"></mat-icon>
