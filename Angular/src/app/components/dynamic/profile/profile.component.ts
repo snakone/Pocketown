@@ -1,17 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { AuthService } from '../../../services/auth.service';
-import { PokedexService } from '../../../services/pokedex.service';  // Pokedex Service
-import { GameServerService } from '../../../services/game-server.service';  // Game Server Service
+import { AuthService } from '../../../services/auth.service';  // Auth0 Service
 import { TrainerService } from '../../../services/trainer.service';  // Trainer Service
+
+import { Trainer } from '../../../models/trainer';  // Trainer Model
+
 import { ToastrService } from 'ngx-toastr';  // Toastr
-import { Router } from '@angular/router'; // Router
-
-import { Pokemon } from '../../../models/pokemon';
-import { Trainer } from '../../../models/trainer';
-
-import { NgForm } from '@angular/forms';  // Angular Forms
 
 @Component({
   selector: 'user-profile',
@@ -21,81 +15,33 @@ import { NgForm } from '@angular/forms';  // Angular Forms
 
 export class ProfileComponent implements OnInit {
 
-  isLinear = false;
-  firstFormGroup: FormGroup;
-  secondFormGroup: FormGroup;
-  thridFormGroup: FormGroup;
-  urlImage: string;
-  urlPokemon: string;
-  avatars: string[];
-  servers: string[];
-  isTrainer: boolean;
+  isLinear = true;  // Linear Form
+
+  isTrainer: boolean;  // To know whatever is Trainer or Not
   notTrainer: boolean;
+  trainerID: string;  // Trainer ID
 
   trainer: Trainer;
-  profile: any;
-  trainerID: string;
-
-  pokemonTeam: string[] = ["MegaDeoxysX", "MegaRayquazaYR2", "MegaGyaradosR2",
-                           "MegaArceusX", "MegaLucarioXR2", "MegaHoohX"];
-
-  pokemonList: Pokemon[];
-
-  constructor(private pokedexService: PokedexService,
-              private trainerService: TrainerService,
-              private gameServerService: GameServerService,
-              private authService: AuthService,
-              private _formBuilder: FormBuilder,
+  profile: any;  // Auth0 Profile
+  
+  constructor(private authService: AuthService,
               private toastr: ToastrService,
-              private router: Router) {
-
-                this.urlImage = "../../../../assets/images/avatar/";
-                this.urlPokemon = "../../../../assets/images/pokemon/";
-                this.avatars = ["1","2","3","4"];
-              }
+              private trainerService: TrainerService) { }
 
   ngOnInit() {
-
-    if (this.authService.userProfile) {
+    if (this.authService.userProfile) { // If there's a Profile we Assign it
         this.profile = this.authService.userProfile;
-        this.trainerID = this.profile.sub.substring(6);
-        this.checkTrainer();
+        this.checkTrainer();  // After We get the Trainer We check it
 
-    } else {
-      this.authService.getProfile((err, profile) => {
+    } else {  // No Profile?
+      this.authService.getProfile((err, profile) => {  // Get the Profile
         this.profile = profile;
-        this.trainerID = this.profile.sub.substring(6);
-        this.checkTrainer();
+        this.checkTrainer();  // After We get the Trainer We check it
       });
     }
-
-    this.createForm();
-
-    this.pokedexService.getPokedex()  // HTTP POST to Server
-     .subscribe(res => {  // Subscribe to the Server Response
-       this.pokemonList = res as Pokemon[];  // Response as Pokemon = List
-     })
-
-    this.servers = this.gameServerService.gameServers;
-
   }
 
-  validateForm(form1: NgForm, form2: NgForm, form3: NgForm){
-
-    const trainer = new Trainer( this.trainerID, form1.value.Name,
-                                form1.value.Pokemon, form2.value.Avatar,
-                                form3.value.Server, form3.value.Guild );
-
-    this.trainerService.addTrainer(trainer)
-     .subscribe(res => {
-       this.toastr.success('Trainer','Congratulations!', {
-         timeOut: 5000
-       });
-     });
-     this.router.navigate(['/']);  // Navigate to Home
-  }
-
-  logout(){
+  logout(){  // Logging Out
     this.authService.logout();
     this.toastr.info('','You are now logged out', {
       timeOut: 5000
@@ -103,40 +49,24 @@ export class ProfileComponent implements OnInit {
   }
 
   checkTrainer(){
-    const id = this.trainerID;
-    this.trainerService.getTrainerbyId(id)
+    const id = this.profile.sub.substring(6);  // Remove "Auth0|" from the ID
+    this.trainerService.getTrainerbyId(id)  // Get Trainer by ID on MongoDb
      .subscribe(res => {
-       if (res == '') {
+       if (res == '') {  // No Result? No Trainer
          this.notTrainer = true;
        }
        else {
-         this.trainer = res[0] as Trainer;
-         if (this.trainer.trainerID == id) {
-          this.isTrainer = true;
+         this.trainer = res[0] as Trainer;  // Always get 1 result so its possition 0
+         if (this.trainer.trainerID == id) {  // If Auth0 ID = TrainerID
+          this.isTrainer = true;  // Result? Trainer = True
           this.notTrainer = false;
           }
+           // Admin Assignament
            if (this.trainer.name == 'Snakone' || this.trainer.name == 'Goph') {
              this.authService.admin = true;
            }
        } // End of else
     });
   }
-
-  createForm(){
-    this.firstFormGroup = this._formBuilder.group({
-      Name: ['', Validators.required],
-      Pokemon: ['', Validators.required]
-    });
-
-    this.secondFormGroup = this._formBuilder.group({
-      Avatar: ['', Validators.required]
-    });
-
-    this.thridFormGroup = this._formBuilder.group({
-      Server: ['', Validators.required],
-      Guild: ['', Validators.required]
-    });
-  }
-
 
 }

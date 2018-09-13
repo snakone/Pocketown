@@ -10,7 +10,8 @@ import { Trainer } from '../models/trainer';  // Pokemon Model
 export class TrainerService {
 
   trainer: Trainer;  // Save selected Trainer
-  readonly TRAINER_API = "http://localhost:3000/trainer";  // Server API Moves
+  trainerID: string;
+  readonly TRAINER_API = "http://localhost:3000/trainer";  // Server API Trainer
 
   // Heroku Server --> https://pocketown-server.herokuapp.com
 

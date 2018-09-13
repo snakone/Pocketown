@@ -23,7 +23,6 @@ export class PokedexService {
     return this.http.get(this.POKEDEX_API);  // HTTP GET to Server API - POSTMAN belike
   }
 
-
   getFamily(family: string){  // Get the Pokemon Family
     return this.http.get(this.POKEDEX_API + `/${family}`);   // HTTP GET to Server API - POSTMAN belike
   }

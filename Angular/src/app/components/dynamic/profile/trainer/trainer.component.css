@@ -1,0 +1,18 @@
+.card {
+  max-width: 350px;
+  margin: auto;
+  min-height: 410px;
+  padding: 25px;
+}
+
+.pokemon {
+  width: 65px;
+  margin: 0 auto;
+  display: block;
+}
+
+.pokemonTeam {
+  width: 45px;
+  margin: 0 auto;
+  padding: 2px;
+}

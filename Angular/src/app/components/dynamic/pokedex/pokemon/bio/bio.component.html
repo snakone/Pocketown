@@ -25,6 +25,11 @@
           </div>
         </div>
 
+        <div class="center actions">
+           Add this Pokémon to your Team!
+           <mat-icon (click)="addPokemonToTeam(pokemon)">add_circle</mat-icon>
+        </div>
+
         <div class="row center family">    <!-- Familiars -->
             <span *ngFor="let familiar of family" (click)="goPokemon(familiar)">
               <img class="familiar" matTooltip="{{familiar.name}}"

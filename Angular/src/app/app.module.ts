@@ -24,7 +24,7 @@ import { ToastrModule } from 'ngx-toastr';
 // HTTP
 import { HttpClientModule } from "@angular/common/http";
 
-//Admin
+// Admin
 import { AdminPokemonComponent } from './components/admin/pokemon/admin-pokemon.component';
 import { AdminMoveComponent } from './components/admin/move/admin-move.component';
 import { AdminPokeItemComponent } from './components/admin/poke-item/admin-poke-item.component';
@@ -44,6 +44,11 @@ import { WelcomeComponent } from './components/dynamic/welcome/welcome.component
 import { EventsComponent } from './components/dynamic/welcome/events/events.component';
 import { BannerComponent } from './components/dynamic/welcome/banner/banner.component';
 import { DownloadComponent } from './components/dynamic/welcome/download/download.component';
+
+//Trainer
+import { ProfileComponent } from './components/dynamic/profile/profile.component';
+import { TrainerComponent } from './components/dynamic/profile/trainer/trainer.component';
+import { RegisterComponent } from './components/dynamic/profile/register/register.component';
 
 // Pokedex
 import { PokedexComponent } from './components/dynamic/pokedex/pokedex.component';
@@ -74,9 +79,8 @@ import { EffortComponent } from './components/dynamic/pokedex/pokemon/effort/eff
 import { ItemsComponent } from './components/dynamic/pokedex/pokemon/items/items.component';
 import { PokemonMovesComponent } from './components/dynamic/pokedex/pokemon/moves/pokemon-moves.component';
 
-// Pocketown Guides
+// Pocketown Guides //
 import { VictoryRoadComponent } from './components/static/guides/victory-road/victory-road.component';
-import { ProfileComponent } from './components/dynamic/profile/profile.component';
 
 
 @NgModule({
@@ -90,10 +94,8 @@ import { ProfileComponent } from './components/dynamic/profile/profile.component
     EffortComponent, ItemsComponent, PokemonMovesComponent, MovesComponent,
     AdminMoveComponent, VictoryRoadComponent, EventsComponent, BannerComponent,
     AdminPokeItemComponent, PokeItemsComponent, DownloadComponent, MoveComponent,
-    PokeItemComponent,
-    ProfileComponent
-
-],
+    PokeItemComponent, ProfileComponent, TrainerComponent, RegisterComponent ],
+    
   imports: [
     BrowserModule, BrowserAnimationsModule, MaterialModule, RoutingModule,
     FormsModule, HttpClientModule, ReactiveFormsModule,

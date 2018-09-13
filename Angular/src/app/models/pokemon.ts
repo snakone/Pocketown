@@ -46,18 +46,16 @@ export class Pokemon {
   zmove: string;
   ready: string;
 
-  contructor(id: string, name: string, pokedex: number,
-             grade: string, type: string, type2: string,
-             picture: string, SS: number, evolution: string){
+  contructor(name: string, picture: string,){
 
-               this._id = id;
-               this.name = name;
-               this.pokedex = pokedex;
-               this.grade = grade;
-               this.type = type;
-               this.type2 = type2;
-               this.picture = picture;
-               this.SS = SS;
-               this.evolution = evolution;
+               // this._id = id;
+                this.name = name;
+               // this.pokedex = pokedex;
+               // this.grade = grade;
+               // this.type = type;
+               // this.type2 = type2;
+                this.picture = picture;
+               // this.SS = SS;
+               // this.evolution = evolution;
             }
 }
