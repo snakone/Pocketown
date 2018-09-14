@@ -5,6 +5,10 @@
   padding: 25px;
 }
 
+h5 {
+  font-size: 1.3em;
+}
+
 .pokemon {
   width: 65px;
   margin: 0 auto;

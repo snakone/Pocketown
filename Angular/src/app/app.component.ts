@@ -74,5 +74,17 @@ export class AppComponent {
    .bypassSecurityTrustResourceUrl("../assets/icons/exit.svg")
    );
 
+   this.matIconRegistry.addSvgIcon("pocketown", this.domSanitizer
+   .bypassSecurityTrustResourceUrl("../assets/icons/pocketown.svg")
+   );
+
+   this.matIconRegistry.addSvgIcon("trainers", this.domSanitizer
+   .bypassSecurityTrustResourceUrl("../assets/icons/trainers.svg")
+   );
+
+   this.matIconRegistry.addSvgIcon("game", this.domSanitizer
+   .bypassSecurityTrustResourceUrl("../assets/icons/game.svg")
+   );
+
   }
 }

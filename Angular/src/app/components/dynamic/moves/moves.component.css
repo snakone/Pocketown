@@ -65,34 +65,3 @@ input[type=text]:not(.browser-default) {
   text-align: center;
   margin: 0;
 }
-
-.loading {
-position: absolute;
-text-align: center;
-top:45%;
-left:56%;
-transform: translate(-50%, -50%);
-margin-top: 10px;
-}
-
-.responsive-img {
-  min-width: 90%;
-}
-
-@media (max-width: 1000px){
-  .responsive-img {
-    min-width: 130%;
-  }
-}
-
-@media (max-width: 600px){
-  .loading {
-  left:50%;
-  margin-left: 0;
-  }
-
-  .responsive-img {
-    margin-left: -35px;
-  }
-
-}

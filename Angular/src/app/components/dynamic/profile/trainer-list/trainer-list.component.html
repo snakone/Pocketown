@@ -1,0 +1,47 @@
+<div class="row center loading" *ngIf="!filteredTrainers">  <!-- Only when Loading... -->
+    <img class="responsive-img" src="https://i.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.webp">
+  <p class="center">
+    <span class="bold">LOADING... PLEASE WAIT</span>
+  </p>
+</div>
+
+<div class="trainerList" *ngIf="filteredTrainers">
+
+  <div class="sticky">  <!-- Sticky Search Bar -->
+        <div class="input-field center top">  <!-- Key Up Event -->
+            <input type="text" name="searchValue"
+            (keyup)="onKeyUp($event)" [(ngModel)]="searchValue"
+            placeHolder="Search a Trainer..">
+        </div>
+  </div>
+
+  <h3>Trainer List</h3>
+      <blockquote>Here is a list of all Trainers that have been registered
+        in "<span class="bold">Pocketown The Game</span>"
+      </blockquote>
+
+  <mat-card *ngFor="let trainer of filteredTrainers" class="card marginTop">
+
+      <div class="col s12 m12 l12">
+        <h5 class="truncate">{{trainer.name}}</h5>
+      </div>
+
+    <div class="row center">
+      <div class="col s6 m6 l3 center">
+          <p><img class="avatar" src="{{urlImage}}{{trainer.avatar}}.png"/></p>
+      </div>
+      <div class="col s6 m6 l3 center">
+          <p>Server: <span class="bold">{{trainer.server}}</span></p>
+          <p>Guild: <span class="bold">{{trainer.guild}}</span></p>
+      </div>
+      <div class="col s12 m12 l6 center team">
+          <span *ngFor="let pokemon of pokemonTeam">
+              <img class="pokemonTeam" src="{{urlPokemon}}{{pokemon}}.png"/>
+          </span>
+      </div>
+    </div>
+
+
+
+  </mat-card>
+</div>

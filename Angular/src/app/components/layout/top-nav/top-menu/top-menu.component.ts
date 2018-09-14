@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { AuthService } from '../../../../services/auth.service';
+import { AuthService } from '../../../../services/auth.service';  // Auth0 Service
 
 @Component({
   selector: 'top-menu',
@@ -9,9 +9,8 @@ import { AuthService } from '../../../../services/auth.service';
 })
 export class TopMenuComponent implements OnInit {
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

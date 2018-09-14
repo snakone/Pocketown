@@ -20,6 +20,11 @@
     <span>Guides</span>
   </button>
 
+  <button routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Game">
+    <mat-icon svgIcon="game"></mat-icon> <!-- Guides -->
+    <span>Game</span>
+  </button>
+
    <button *ngIf="authService.admin" routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Admin">
     <mat-icon svgIcon="admin"></mat-icon>
     <span>Admin</span>
@@ -48,6 +53,15 @@
 <mat-menu #Guides="matMenu"> <!-- Guides Menu -->
   <button [routerLink]="['guides/victory-road']" routerLinkActive="active"
           mat-menu-item><mat-icon svgIcon="victory-road"></mat-icon>Victory Road
+  </button>
+</mat-menu>
+
+<mat-menu #Game="matMenu" > <!-- Game Menu -->
+  <button [routerLink]="['home']" routerLinkActive="active"
+          mat-menu-item><mat-icon svgIcon="pocketown"></mat-icon>Pocketown
+  </button>
+  <button [routerLink]="['trainers']" routerLinkActive="active"
+          mat-menu-item><mat-icon svgIcon="trainers"></mat-icon>Trainers
   </button>
 </mat-menu>
 

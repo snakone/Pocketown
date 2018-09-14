@@ -17,6 +17,7 @@ import { PokeItemsComponent } from '../components/dynamic/poke-items/poke-items.
 import { VictoryRoadComponent } from '../components/static/guides/victory-road/victory-road.component';
 import { ProfileComponent } from '../components/dynamic/profile/profile.component';
 import { AuthGuardService } from '../services/auth-guard.service';
+import { TrainerListComponent } from '../components/dynamic/profile/trainer-list/trainer-list.component';
 
 
 const Routes: Routes = [
@@ -30,6 +31,7 @@ const Routes: Routes = [
   { path: 'pokedex/:pokemon', component: PokemonComponent },  // Single Pokémon
   { path: 'moves/:move', component: MoveComponent },  // Single Move
   { path: 'held-items/:pokeitem', component: PokeItemComponent },  // Single Held Item
+  { path: 'trainers', component: TrainerListComponent },  // Trainer List
   { path: 'guides/victory-road', component: VictoryRoadComponent },  // Victory Road Guide
   { path: 'admin/pokemon', component: AdminPokemonComponent },  // Admin Pokemon
   { path: 'admin/move', component: AdminMoveComponent },  // Admin Pokemon Moves
