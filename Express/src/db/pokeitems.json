@@ -5,23 +5,23 @@
 {"_id":{"$oid":"5b8c64c0069d921cc07a6ee2"},"item":"Smoke Ball","grade":"Very Common","picture":"SmokeBall","type":"Battle","info":"It enables the holder to flee from any wild Pokemon encounter without fail."}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6ee3"},"item":"Dragon Scale","grade":"Common","picture":"DragonScale","type":"Dragon","info":"This tough scale boosts the power of Dragon-type moves by 10%"}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6ee4"},"item":"Black Belt","grade":"Rare","picture":"BlackBelt","type":"Fighting","info":"This Belt Boosts the power of Fighting-type moves by 20%"}
-{"_id":{"$oid":"5b8c64c0069d921cc07a6ee5"},"item":"Kings Rock","grade":"Rare","picture":"KingsRock","type":"Battle","info":"When inflicts damage"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ee5"},"item":"King's Rock","grade":"Rare","picture":"KingsRock","type":"Battle","info":"When inflicts damage, there is a 10% chance that target also flinch."}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6ee6"},"item":"Bright Powder","grade":"Rare","picture":"BrightPowder","type":"Battle","info":"It casts a glare that lowers the opposing Pokemon accuracy by 10%"}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6ee7"},"item":"Silver Powder","grade":"Rare","picture":"SilverPowder","type":"Bug","info":"Its a silver powder that will boost the power of Bug-type moves by 20%"}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6ee8"},"item":"Metal Coat","grade":"Rare","picture":"MetalCoat","type":"Steel","info":"Its a metallic film that can boost the power of Steel-type moves by 20%"}
-{"_id":{"$oid":"5b8c64c0069d921cc07a6ee9"},"item":"Soft Sand","grade":"Rare","picture":"SoftSand","type":"Ground","info":"Its a loose"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ee9"},"item":"Soft Sand","grade":"Rare","picture":"SoftSand","type":"Ground","info":"Its a loose, silky sand that boost the power of Ground-type moves by 20%"}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6eea"},"item":"Hard Stone","grade":"Rare","picture":"HardStone","type":"Rock","info":"Its a durable stone that boosts the power of Rock-type moves by 20%"}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6eeb"},"item":"Black Glasses","grade":"Rare","picture":"BlackGlasses","type":"Dark","info":"A shady-looking glasses that boost the power of Dark-type moves by 20%"}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6eec"},"item":"Miracle Seed","grade":"Rare","picture":"MiracleSeed","type":"Grass","info":"Its a seed imbued that boosts the power of Grass-type moves by 20%"}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6eed"},"item":"Magnet","grade":"Rare","picture":"Magnet","type":"Electric","info":"Its a magnet that boosts the power of Electric-type moves by 20%"}
-{"_id":{"$oid":"5b8c64c0069d921cc07a6eee"},"item":"Sharp Beak","grade":"Rare","picture":"SharpBeak","type":"Flying","info":"Its a long"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6eee"},"item":"Sharp Beak","grade":"Rare","picture":"SharpBeak","type":"Flying","info":"Its a long, sharp beak that boosts the power of Flying-type moves by 20%"}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6eef"},"item":"Poison Barb","grade":"Rare","picture":"PoisonBarb","type":"Poison","info":"This poisonous barb boosts the power of Poison-type moves by 20%"}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6ef0"},"item":"Never-Melt Ice","grade":"Rare","picture":"NeverMeltIce","type":"Ice","info":"Its a piece of ice that boosts the power of Ice-type moves by 20%"}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6ef1"},"item":"Spell Tag","grade":"Rare","picture":"SpellTag","type":"Ghost","info":"Its a sinister tag that boosts the power of Ghost-type moves by 20%"}
-{"_id":{"$oid":"5b8c64c0069d921cc07a6ef2"},"item":"Twisted Spoon","grade":"Rare","picture":"TwistedSpoon","type":"Psychic","info":"Spoon imbued with telekinetic power"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ef2"},"item":"Twisted Spoon","grade":"Rare","picture":"TwistedSpoon","type":"Psychic","info":"Spoon imbued with telekinetic power, boosts Psychic-type moves by 20%"}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6ef3"},"item":"Dragon Fang","grade":"Rare","picture":"DragonFang","type":"Dragon","info":"This hard and sharp fang boosts the power of Dragon-type moves by 20%"}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6ef4"},"item":"Polkadot Bow","grade":"Rare","picture":"PolkadotBow","type":"Normal","info":"Boosts the power of Normal-type moves by 20% when held."}
-{"_id":{"$oid":"5b8c64c0069d921cc07a6ef5"},"item":"Quick Claw","grade":"Epic","picture":"QuickClaw","type":"Battle","info":"This light"}
+{"_id":{"$oid":"5b8c64c0069d921cc07a6ef5"},"item":"Quick Claw","grade":"Epic","picture":"QuickClaw","type":"Battle","info":"This light, sharp claw lets the bearer has 20% chance to move first."}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6ef6"},"item":"Leftovers","grade":"Epic","picture":"Leftovers","type":"Battle","info":"The holders HP is restored by 1/16 of is max HP every turn during battle."}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6ef7"},"item":"Berserk Gene","grade":"Very Rare","picture":"BerserkGene","type":"Battle","info":"Confuses the holder and raises Its Attack by 1 stages."}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6ef8"},"item":"Sharp Coin","grade":"Very Rare","picture":"SharpCoin","type":"Normal","info":"Boost 15% ATK for Normal type Pokemon in battle."}
@@ -111,4 +111,3 @@
 {"_id":{"$oid":"5b8c64c0069d921cc07a6f4c"},"item":"Pure Plumage","grade":"Legendary","picture":"PurePlumage","type":"Battle","info":"Exclusive Hold Item of Mega Shaymin X. Boost 10% DEF & S.DEF during battle."}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6f4d"},"item":"Scorching Claw","grade":"Legendary","picture":"ScorchingClaw","type":"Battle","info":"Exclusive Hold Item of Mega Heatran. Boost 10% ATK & DEF during battle."}
 {"_id":{"$oid":"5b8c64c0069d921cc07a6f4e"},"item":"Manaphy Crystal","grade":"Legendary","picture":"ManaphyCrystal","type":"Battle","info":"Exclusive Hold Item of Mega Manaphy. Boost 15% Chance to bound the enemy when hit."}
-{"_id":{"$oid":"5b8c64c0069d921cc07a6f4f"},"item":"","grade":null,"picture":null,"type":null,"info":null}

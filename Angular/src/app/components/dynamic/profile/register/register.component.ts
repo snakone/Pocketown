@@ -22,6 +22,8 @@ export class RegisterComponent implements OnInit {
   secondFormGroup: FormGroup;  // Trainer Avatar
   thridFormGroup: FormGroup;  // Community
 
+  isLinear = true;  // Linear Form
+
   pokemonList: Pokemon[];  // Pokemon List on Favourite
   servers: string[];  // Server List
   avatars: string[];  // Avatar List

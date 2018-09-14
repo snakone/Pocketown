@@ -22,6 +22,7 @@ export class TrainerService {
   }
 
   getTrainerbyId(id: string){  // URL/MoveID
+    this.trainerID = id;
     return this.http.get(this.TRAINER_API + `/${id}`);  // HTTP GET to Server API - POSTMAN belike
   }
 }

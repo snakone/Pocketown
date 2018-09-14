@@ -15,15 +15,12 @@ import { ToastrService } from 'ngx-toastr';  // Toastr
 
 export class ProfileComponent implements OnInit {
 
-  isLinear = true;  // Linear Form
-
   isTrainer: boolean;  // To know whatever is Trainer or Not
   notTrainer: boolean;
   trainerID: string;  // Trainer ID
-
   trainer: Trainer;
   profile: any;  // Auth0 Profile
-  
+
   constructor(private authService: AuthService,
               private toastr: ToastrService,
               private trainerService: TrainerService) { }
