@@ -18,6 +18,7 @@ import { VictoryRoadComponent } from '../components/static/guides/victory-road/v
 import { ProfileComponent } from '../components/dynamic/profile/profile.component';
 import { AuthGuardService } from '../services/auth-guard.service';
 import { TrainerListComponent } from '../components/dynamic/profile/trainer-list/trainer-list.component';
+import { PocketownComponent } from '../components/dynamic/pocketown/pocketown.component';
 
 
 const Routes: Routes = [
@@ -26,6 +27,7 @@ const Routes: Routes = [
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuardService] },  // Profile
   { path: 'laboratory', component: LaboratoryComponent },  // Laboratory
   { path: 'moves', component: MovesComponent },  // Moves
+  { path: 'pocketown', component: PocketownComponent },  // Pocketown
   { path: 'held-items', component: PokeItemsComponent },  // Pokémon Held Items
   { path: 'laboratory/result', component: ResultComponent },  // Laboratory Results
   { path: 'pokedex/:pokemon', component: PokemonComponent },  // Single Pokémon

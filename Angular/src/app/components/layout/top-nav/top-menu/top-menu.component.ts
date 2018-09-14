@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { AuthService } from '../../../../services/auth.service';  // Auth0 Service
+import { TrainerService } from '../../../../services/trainer.service';  // Trainer Service
 
 @Component({
   selector: 'top-menu',
@@ -9,8 +10,20 @@ import { AuthService } from '../../../../services/auth.service';  // Auth0 Servi
 })
 export class TopMenuComponent implements OnInit {
 
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService,
+              private trainerService: TrainerService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    if (this.authService.userProfile) { // If there's a Profile we Assign it
+        // After We get the Trainer We check it
+        this.trainerService.checkTrainer(this.authService.userProfile);
+
+    } else if (this.authService.isAuthenticated()) {  // No Profile?
+      this.authService.getProfile((err, profile) => {  // Get the Profile
+      // After We get the Trainer We check it
+      this.trainerService.checkTrainer(profile);
+      });
+    }
+  }
 
 }

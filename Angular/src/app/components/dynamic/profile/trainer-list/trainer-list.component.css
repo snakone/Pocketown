@@ -11,6 +11,11 @@
   background: white;
 }
 
+.online {
+  width: 20px;
+  display: inline;
+}
+
 .top {
   margin-top: -10px;
 }

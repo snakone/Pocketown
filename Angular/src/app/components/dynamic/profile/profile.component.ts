@@ -20,10 +20,10 @@ export class ProfileComponent implements OnInit {
         // After We get the Trainer We check it
         this.trainerService.checkTrainer(this.authService.userProfile);
 
-    } else {  // No Profile?
+    } else if (this.authService.isAuthenticated()) {  // No Profile?
       this.authService.getProfile((err, profile) => {  // Get the Profile
       // After We get the Trainer We check it
-      this.trainerService.checkTrainer(profile); 
+      this.trainerService.checkTrainer(profile);
       });
     }
   }

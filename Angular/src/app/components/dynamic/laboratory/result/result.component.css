@@ -65,7 +65,9 @@ position: absolute;
 text-align: center;
 top:45%;
 left:56%;
-transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
 margin-top: 10px;
 }
 
@@ -76,15 +78,16 @@ margin-top: 10px;
 @media (max-width: 1000px){
   .responsive-img {
     min-width: 130%;
-    margin-left: -35px;
   }
+}
 
+@media (max-width: 600px){
   .loading {
-    top:45%;
-    left:53%;
+  left:50%;
+  margin-left: 0;
   }
 
-  .lost {
-    top:50%;
+  .responsive-img {
+    margin-left: -35px;
   }
 }
