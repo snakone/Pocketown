@@ -14,13 +14,16 @@ export class TrainerService {
   notTrainer: boolean;
   trainerID: string;  // Trainer ID
   trainer: Trainer;
+  admin:boolean;
   profile: any;  // Auth0 Profile
   readonly TRAINER_API = "http://localhost:3000/trainer";  // Server API Trainer
 
   // Heroku Server --> https://pocketown-server.herokuapp.com
 
   constructor(private http: HttpClient,
-              private authService: AuthService) { }
+              private authService: AuthService) {
+                  this.admin = false;
+               }
 
   addTrainer(trainer: Trainer){  // We add a Trainer
     return this.http.post(this.TRAINER_API, trainer);  // HTTP POST to Server API - POSTMAN belike
@@ -33,6 +36,13 @@ export class TrainerService {
   getTrainerbyId(id: string){  // URL/TrainerID
 
     return this.http.get(this.TRAINER_API + `/${id}`);  // HTTP GET to Server API - POSTMAN belike
+  }
+
+  updateStatus(status){  // We update Status
+      let trainer = {
+        online: status.online
+    }
+      return this.http.put(this.TRAINER_API + `/${this.trainerID}`, trainer);  // HTTP PUT to Server API - POSTMAN belike
   }
 
   checkTrainer(profile){
@@ -51,8 +61,8 @@ export class TrainerService {
          }
           // Admin Assignament
           if (this.trainer.name == 'Snakone' || this.trainer.name == 'Goph') {
-            this.authService.admin = true;
-          }
+            return this.admin = true;
+          } else return false;
       } // End of else
    });
   }

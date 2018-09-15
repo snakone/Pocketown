@@ -24,7 +24,7 @@ import { PocketownComponent } from '../components/dynamic/pocketown/pocketown.co
 const Routes: Routes = [
   { path: 'home', component: WelcomeComponent },  // Home
   { path: 'pokedex', component: PokedexComponent },  // Pokedex
-  { path: 'profile', component: ProfileComponent, canActivate: [AuthGuardService] },  // Profile
+  { path: 'profile', component: ProfileComponent },  // Profile
   { path: 'laboratory', component: LaboratoryComponent },  // Laboratory
   { path: 'moves', component: MovesComponent },  // Moves
   { path: 'pocketown', component: PocketownComponent },  // Pocketown

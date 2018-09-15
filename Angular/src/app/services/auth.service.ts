@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import * as auth0 from 'auth0-js';
+import { TrainerService } from './trainer.service';
 
 (window as any).global = window;
 
@@ -12,7 +13,6 @@ import * as auth0 from 'auth0-js';
 export class AuthService {
 
   userProfile:any;  // Auth0 Profile
-  admin: boolean = false;
 
   auth0 = new auth0.WebAuth({
     clientID: 'nZlYvy5mdW4CuRlA47e52o6Kk7wsY1EL',
@@ -34,7 +34,7 @@ export class AuthService {
        if (authResult && authResult.accessToken && authResult.idToken) {
          window.location.hash = '';
          this.setSession(authResult);
-         this.router.navigate(['/profile']);
+         this.router.navigate(['/']);
        } else if (err) {
          this.router.navigate(['/home']);
          console.log(err);
@@ -55,7 +55,6 @@ export class AuthService {
      localStorage.removeItem('access_token');
      localStorage.removeItem('id_token');
      localStorage.removeItem('expires_at');
-     this.admin = false;
      // Go back to the home route
      this.router.navigate(['/']);
    }

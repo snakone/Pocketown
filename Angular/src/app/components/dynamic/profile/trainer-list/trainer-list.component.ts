@@ -32,8 +32,9 @@ export class TrainerListComponent implements OnInit {
      .subscribe(res => {
        this.trainers = res as Trainer[];
        this.filteredTrainers = this.trainers;  // Original List = Filter List
-       this.whosOnline();  // Once We get the Trainers, check who is Online
      });
+
+  
   }
 
   onKeyUp(event){  // On Key Up Javascript Event
@@ -48,23 +49,5 @@ export class TrainerListComponent implements OnInit {
     } );
   }
 
-  whosOnline(){
-    if (this.authService.isAuthenticated()){
-    const id = this.authService.userProfile.sub.substring(6);
-    this.profile = this.trainers.filter(x => {
-          return x.trainerID == id;
-      });
-
-      this.trainers.forEach(trainer => {
-        if (trainer.name == this.profile[0].name) {
-          trainer.online = true;
-        } else {
-          trainer.online = false;
-        }
-      });
-    } else {
-      this.profile = false;
-    }
-  }
 
 }

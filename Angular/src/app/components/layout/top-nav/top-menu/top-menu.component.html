@@ -25,7 +25,7 @@
     <span>Game</span>
   </button>
 
-   <button *ngIf="authService.admin" routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Admin">
+   <button *ngIf="trainerService.admin" routerLinkActive="active" mat-menu-item [matMenuTriggerFor]="Admin">
     <mat-icon svgIcon="admin"></mat-icon>
     <span>Admin</span>
   </button>

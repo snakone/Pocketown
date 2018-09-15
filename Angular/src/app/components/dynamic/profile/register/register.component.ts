@@ -71,9 +71,9 @@ export class RegisterComponent implements OnInit {
   validateForm(form1: NgForm, form2: NgForm, form3: NgForm){
 
     // New Trainer with all the DATA, Form + Trainer ID
-    const trainer = new Trainer( this.trainerService.trainerID, form1.value.Name,
+    const trainer = new Trainer(this.trainerService.trainerID, form1.value.Name,
                                 form1.value.Pokemon, form2.value.Avatar,
-                                form3.value.Server, form3.value.Guild, this.team );
+                                form3.value.Server, form3.value.Guild, false);
 
     this.trainerService.addTrainer(trainer)  // Add Trainer to MongoDB
      .subscribe(res => {

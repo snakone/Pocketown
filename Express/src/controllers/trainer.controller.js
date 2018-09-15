@@ -24,5 +24,17 @@ trainerCtrl.getTrainerbyID = async (req, res) => {  // Get Trainer by ID
       res.json(trainer);  // Send Trainer to server as JSON
 }
 
+trainerCtrl.updateStatus = async (req, res) => {  // Update Status Online
+
+   const { id } = req.params;  // From req.params only need Move ID
+   const status = req.body; // Move with updated INFO
+
+   await trainers.update({trainerID: id}, {$set: status},  // Find by ID and Update in MongoDB
+                                     {new: true});  // New Move if ID not Match
+     res.json({
+       status: "Status Updated"
+     });
+}
+
 
 module.exports = trainerCtrl;  // Exports the Object with all the Methods

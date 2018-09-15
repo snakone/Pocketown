@@ -8,6 +8,7 @@ import { TrainerService } from '../../../../services/trainer.service';  // Train
   templateUrl: './top-menu.component.html',
   styleUrls: ['./top-menu.component.css']
 })
+
 export class TopMenuComponent implements OnInit {
 
   constructor(private authService: AuthService,
@@ -22,6 +23,12 @@ export class TopMenuComponent implements OnInit {
       this.authService.getProfile((err, profile) => {  // Get the Profile
       // After We get the Trainer We check it
       this.trainerService.checkTrainer(profile);
+      let status = {
+        online: true,
+        trainerID: this.trainerService.trainerID
+      };
+      this.trainerService.updateStatus(status).subscribe(res => {});
+
       });
     }
   }
