@@ -7,7 +7,7 @@
    </ng-template>
      <div class="row"> <!-- First Row -->
       <div class="col s12 m12 l12">  <!-- Left Column -->
-          <pokemon-bio [pokemon]="pokemon"></pokemon-bio>  <!-- Pokemon Bio -->
+          <pokemon-bio [pokemon]="pokemon" [family]="family"></pokemon-bio>  <!-- Pokemon Bio -->
       </div>
   </div></mat-tab>
 
@@ -17,7 +17,7 @@
    </ng-template>
     <div class="row center">  <!-- Second Row -->
         <div class="col s12 m12 l12">  <!-- Column -->
-            <pokemon-stadistics [pokemon]="pokemon"></pokemon-stadistics>  <!-- Pokemon Stadistics -->
+            <pokemon-stadistics [pokemon]="pokemon" [family]="family"></pokemon-stadistics>  <!-- Pokemon Stadistics -->
         </div>
 
     </div> </mat-tab>
@@ -29,7 +29,7 @@
 
     <div class="row center">  <!-- Third Row -->
       <div class="col s12 m12 l12">  <!-- Column -->
-          <pokemon-nature [pokemon]="pokemon"></pokemon-nature>  <!-- Pokemon Nature -->
+          <pokemon-nature [pokemon]="pokemon" [family]="family"></pokemon-nature>  <!-- Pokemon Nature -->
       </div>
 
   </div> </mat-tab>
@@ -41,7 +41,7 @@
 
        <div class="row center">  <!-- Fourth Row -->
          <div class="col s12 m12 l12">  <!-- Column -->
-            <pokemon-items [pokemon]="pokemon"></pokemon-items>  <!-- Pokemon Items -->
+            <pokemon-items [pokemon]="pokemon" [family]="family"></pokemon-items>  <!-- Pokemon Items -->
          </div>
 
   </div> </mat-tab>
@@ -52,7 +52,7 @@
      </ng-template>
      <div class="row center">  <!-- Fifth Row -->
        <div class="col s12 m12 l12">  <!-- Column -->
-           <pokemon-match [pokemon]="pokemon"></pokemon-match>  <!-- Pokemon Match -->
+           <pokemon-match [pokemon]="pokemon" [family]="family"></pokemon-match>  <!-- Pokemon Match -->
        </div>
 
    </div> </mat-tab>
@@ -63,7 +63,7 @@
    </ng-template>
    <div class="row center">  <!-- Sixth Row -->
      <div class="col s12 m12 l12">  <!-- Column -->
-         <pokemon-moves [pokemon]="pokemon"></pokemon-moves>  <!-- Pokemon Moves -->
+         <pokemon-moves [pokemon]="pokemon" [family]="family"></pokemon-moves>  <!-- Pokemon Moves -->
      </div>
 
  </div> </mat-tab>
@@ -74,7 +74,7 @@
     </ng-template>
     <div class="row center">  <!-- Seventh Row -->
       <div class="col s12 m12 l12">  <!-- Column -->
-          <pokemon-effort [pokemon]="pokemon"></pokemon-effort>  <!-- Pokemon Effort Points -->
+          <pokemon-effort [pokemon]="pokemon" [family]="family"></pokemon-effort>  <!-- Pokemon Effort Points -->
       </div>
 
   </div> </mat-tab>

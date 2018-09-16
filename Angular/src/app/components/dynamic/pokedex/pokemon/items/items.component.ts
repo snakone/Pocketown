@@ -16,13 +16,12 @@ export class ItemsComponent implements OnInit {
 
   urlImage: string;
   urlPokemon: string;
-  family: string[];  // Pokemon Familiars
+  @Input() family: string[];  // Pokemon Familiars
+  @Input() pokemon: Pokemon;
   showDescripItem1: boolean = false;  // Show ot NOT
   showDescripItem2: boolean = false;  // Show ot NOT
   item1: pokeItem; // Poke Item 1
   item2: pokeItem; // Poke Item 2
-
-  @Input() pokemon: Pokemon;
 
   constructor(private pokedexService: PokedexService,
               private pokeitemService: pokeItemService) {
@@ -31,11 +30,6 @@ export class ItemsComponent implements OnInit {
    }
 
    ngOnInit() {
-     this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
-      .subscribe(res => {
-        this.family = res as any;  // Respond Server as Family
-      });
-
       // Changing Evolution Number to String
       this.pokemon.evolution = this.pokedexService
        .evolutionToString(this.pokemon.evolution);

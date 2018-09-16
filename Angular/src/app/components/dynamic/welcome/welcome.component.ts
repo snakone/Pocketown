@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Trainer } from '../../../models/trainer';  // Auth0 Service
+
 import { AuthService } from '../../../services/auth.service';  // Auth0 Service
 import { TrainerService } from '../../../services/trainer.service';  // Trainer Service
 
@@ -10,24 +12,19 @@ import { TrainerService } from '../../../services/trainer.service';  // Trainer 
 })
 export class WelcomeComponent implements OnInit {
 
+  firstTime: boolean = true;
+
   constructor(private authService: AuthService,
               private trainerService: TrainerService) {}
 
   ngOnInit() {
-  if (this.authService.isAuthenticated()) {  // The User is Authenticated?
+    this.firstTime = this.trainerService.firstTime;
+    if (this.firstTime && this.authService.isAuthenticated()) {
       this.authService.getProfile((err, profile) => {  // Get the Profile
       // After We get the Trainer We check it
       this.trainerService.checkTrainer(profile);
-
-      let status = {  // Status Online - Offline We send to Server
-        online: true,
-        trainerID: this.trainerService.trainerID
-      };
-
-        this.trainerService.updateStatus(status).subscribe(res => {});  // Update Status Online
       });
     }
-
   }
 
 

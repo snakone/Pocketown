@@ -21,11 +21,15 @@ export class FooterMenuComponent implements OnInit {
 
   logOut():void {  // Log out from Auth0
     this.trainerService.admin = false;  // Admin False
+    this.trainerService.isTrainer = false;
+    this.trainerService.firstTime = true;
     this.authService.logout();
-
-    let status = {  // Update Status to Offline
-      online: false
-    }
+    this.toastr.info('','Now You are logged out', {
+      timeOut: 10000,
+      extendedTimeOut: 5000
+    });
+     // Update Status to Offline
+    let status = {online: false};
     this.trainerService.updateStatus(status).subscribe(res => {});
   }
 

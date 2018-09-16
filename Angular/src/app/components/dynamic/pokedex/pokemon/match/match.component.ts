@@ -15,10 +15,10 @@ import { PokemonService } from '../../../../../services/pokemon.service';  // Po
 export class MatchComponent implements OnInit {
 
   @Input() pokemon: Pokemon;
+  @Input() family: string[];  // Pokemon Familiars
   urlImage: string;
   good1: string; good2: string; good3: string;  // Good Pokemons
   bad1: string; bad2: string; bad3: string;  // Bad Pokemons
-  family: string[];  // Pokemon Familiars
 
   constructor(private pokedexService: PokedexService,
               private pokemonService: PokemonService) {
@@ -26,11 +26,6 @@ export class MatchComponent implements OnInit {
    }
 
   ngOnInit() {
-     this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
-      .subscribe(res => {
-        this.family = res as any;  // Respond Server
-      });
-
       // Changing Evolution Number to String
       this.pokemon.evolution = this.pokedexService
        .evolutionToString(this.pokemon.evolution);

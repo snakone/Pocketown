@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { AuthService } from '../../../services/auth.service';
+import { TrainerService } from '../../../services/trainer.service';
 
 @Component({
   selector: 'top-nav',
@@ -15,7 +16,8 @@ export class TopNavComponent {
 
   logoURL: string;
 
-  constructor(private authService: AuthService) {
+  constructor(private authService: AuthService,
+              private trainerService: TrainerService) {
     this.appTitle = "Pocketown";
     this.ngVersion = "Angular 6";
     this.logoURL = "../../../../../assets/images/logo.png";

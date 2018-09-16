@@ -17,9 +17,9 @@ import { PokedexService } from '../../../../../services/pokedex.service';  // Po
 export class PokemonMovesComponent implements OnInit {
 
   @Input() pokemon: Pokemon;
+  @Input() family: string[];  // Pokemon Familiars
   urlImage: string;
   moves: string[];
-  family: string[];  // Pokemon Familiars
 
   constructor(private moveService: MoveService,
               private pokedexService: PokedexService,
@@ -28,13 +28,7 @@ export class PokemonMovesComponent implements OnInit {
    }
 
   ngOnInit() {
-
      this.getMovesbyName();
-
-     this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
-      .subscribe(res => {
-        this.family = res as any;  // Respond Server
-      });
 
       // Changing Evolution Number to String
       this.pokemon.evolution = this.pokedexService
@@ -61,7 +55,7 @@ export class PokemonMovesComponent implements OnInit {
   }
 
   navigate(move: Move) {
-    this.router.navigate(['/moves', move._id]);  // Navigate to Single Pokemon using Pokemon ID
+    this.router.navigate(['/moves', move._id]);  // Navigate to Single Move using Move ID
   }
 
 }

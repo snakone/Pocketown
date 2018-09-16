@@ -14,6 +14,7 @@ import { ToastrService } from 'ngx-toastr';  // Toastr
 export class AuthService {
 
   userProfile:any;  // Auth0 Profile
+  isTrainer: boolean;
 
   auth0 = new auth0.WebAuth({
     clientID: 'nZlYvy5mdW4CuRlA47e52o6Kk7wsY1EL',
@@ -65,10 +66,9 @@ export class AuthService {
      localStorage.removeItem('expires_at');
      // Go back to the home route
      this.router.navigate(['/']);
-     this.toastr.info('','Now You are logged out', {
-       timeOut: 10000,
-       extendedTimeOut: 5000
-     });
+     if (this.userProfile){
+       this.isTrainer = false;
+     }
    }
 
    public isAuthenticated(): boolean {

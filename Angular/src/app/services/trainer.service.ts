@@ -13,10 +13,11 @@ export class TrainerService {
 
   isTrainer: boolean;  // To know whatever is Trainer or Not
   notTrainer: boolean;
+  firstTime: boolean = true;
   trainerTeam: Pokemon[]=[];
   trainerID: string;  // Trainer ID
   trainer: Trainer;  // Trainer Profile
-  admin:boolean = false;
+  admin: boolean;
   profile: any;  // Auth0 Profile
   readonly TRAINER_API = "http://localhost:3000/trainer";  // Server API Trainer
 
@@ -36,7 +37,6 @@ export class TrainerService {
   }
 
   getTrainerbyId(id: string){  // URL/TrainerID
-
     return this.http.get(this.TRAINER_API + `/${id}`);  // HTTP GET to Server API - POSTMAN belike
   }
 
@@ -50,11 +50,11 @@ export class TrainerService {
   checkTrainer(profile){
     const id = profile.sub.substring(6);  // Remove "Auth0|" from the ID
     this.trainerID = id;
-    this.getTrainerbyId(id)  // Get Trainer by ID on MongoDb
+    this.getTrainerbyId(id)  // Get Trainer by ID on MongoD
     .subscribe(res => {
       if (res == '') {  // No Result? No Trainer
         this.notTrainer = true;
-        this.admin = false;
+        this.isTrainer = false;
       }
       else {
         this.trainer = res[0] as Trainer;  // Always get 1 result so its possition 0
@@ -62,17 +62,22 @@ export class TrainerService {
          this.isTrainer = true;  // Result? Trainer = True
          this.notTrainer = false;
          }
-          // Admin Assignament
-          if (this.trainer.name == 'Snakone' || this.trainer.name == 'Goph') {
-                this.admin = true;
-          } else this.admin = false;
+         // Status Online We send to Server
+         let status = {online: true};
+
+         if (this.trainer.online == false) {
+              this.updateStatus(status).subscribe(res => {});  // Update Status Online
+         }
+        // Admin Assignament
+         this.trainer.name == 'Snakone' || this.trainer.name == 'Goph' ? this.admin = true : this.admin = false;
+         this.firstTime = false;
       } // End of else
    });
+
   }
 
   addPokemontoTeam(pokemon:Pokemon){
     this.trainerTeam.push(pokemon);
-    console.log(this.trainerTeam);
   }
 
   trainerAuthenticated(){

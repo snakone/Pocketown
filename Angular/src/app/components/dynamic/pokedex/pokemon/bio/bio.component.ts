@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { PokedexService } from '../../../../../services/pokedex.service';  // Pokedex Service
 import { TrainerService } from '../../../../../services/trainer.service';  // Trainer Service
+import { AuthService } from '../../../../../services/auth.service';  // Trainer Service
 
 import { MatDialog } from '@angular/material';
 import { MatSnackBar } from '@angular/material';
@@ -23,24 +24,19 @@ import { Router } from '@angular/router'; // Router
 export class BioComponent implements OnInit {
 
   urlImage: string;
-  family: string[];  // Pokemon Familiars
-  pokemonTeam: Pokemon[];
-
+  @Input() family: string[];  // Pokemon Familiars
   @Input() pokemon: Pokemon;
+  pokemonTeam: Pokemon[];
 
   constructor(private pokedexService: PokedexService,
               private trainerService: TrainerService,
+              private authService: AuthService,
               private router: Router, private toastr: ToastrService,
               public dialog: MatDialog, public snackBar: MatSnackBar) {
       this.urlImage = "../../../../../../assets/images/pokemon/";
     }
 
   ngOnInit() {
-    this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
-     .subscribe(res => {
-       this.family = res as any;  // Respond Server as Family
-     });
-
      // Changing Evolution Number to String
      this.pokemon.evolution = this.pokedexService
       .evolutionToString(this.pokemon.evolution);
@@ -69,8 +65,7 @@ export class BioComponent implements OnInit {
              duration: 3000,
              panelClass: ['snackbar'],
            });
-        }
-
+        } // End of Else Team > 6
       }  // End of If Result
     });
   }

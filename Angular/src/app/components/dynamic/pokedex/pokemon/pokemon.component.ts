@@ -1,6 +1,7 @@
 import { Component, OnInit, Output } from '@angular/core';
 
-import { PokemonService } from '../../../../services/pokemon.service';  // Pokedex Service
+import { PokemonService } from '../../../../services/pokemon.service';  // Pokemon Service
+import { PokedexService } from '../../../../services/pokedex.service';  // Pokedex Service
 import { Pokemon } from '../../../../models/pokemon';  // Pokemon Model
 
 import { ActivatedRoute } from '@angular/router'; // Routes
@@ -14,12 +15,12 @@ import { ActivatedRoute } from '@angular/router'; // Routes
 export class PokemonComponent implements OnInit {
 
   @Output() pokemon: Pokemon;  // Save selected Pokemon
+  @Output() family: string[];  // Pokemon Family
   urlImage: string;
-  family: string[];  // Pokemon Family
 
   constructor(private pokemonService: PokemonService,
+              private pokedexService: PokedexService,
               private activeRoute: ActivatedRoute) {
-
               this.urlImage = "../../../../../assets/icons/";
              }
 
@@ -28,7 +29,13 @@ export class PokemonComponent implements OnInit {
     this.pokemonService.getPokemonbyId(routeParams)  // HTTP POST to Server with Pokemon ID
      .subscribe(res => {  // Subscribe to the Server Response
        this.pokemon = res as Pokemon;  // Response as Pokemon
-     })
+       this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
+        .subscribe(res => {
+          this.family = res as any;  // Respond Server
+        });
+     });
+
+
 
   }
 

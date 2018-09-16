@@ -13,12 +13,12 @@ import { PokedexService } from '../../../../../services/pokedex.service';  // Po
 export class NatureComponent implements OnInit {
 
   @Input() pokemon: Pokemon;
+  @Input() family: string[];  // Pokemon Familiars
   good: string;
   bad: string;
   nature: Nature;
   nature2: Nature;
   urlImage: string;
-  family: string[];  // Pokemon Familiars
 
   constructor(private natureService: NatureService,
               private pokedexService: PokedexService) {
@@ -28,11 +28,6 @@ export class NatureComponent implements OnInit {
   ngOnInit() {
     this.nature = this.natureService.getNature(this.pokemon.nature);  // Get Nature 1 from the Service
     this.nature2 = this.natureService.getNature(this.pokemon.nature2);  // Get Nature 2 from the Service
-
-    this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
-     .subscribe(res => {
-       this.family = res as any;  // Respond Server as Family
-     });
 
      // Changing Evolution Number to String
      this.pokemon.evolution = this.pokedexService

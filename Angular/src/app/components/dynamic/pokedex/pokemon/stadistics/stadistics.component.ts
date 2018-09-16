@@ -12,23 +12,17 @@ import { PokedexService } from '../../../../../services/pokedex.service';  // Po
 export class StadisticsComponent implements OnInit {
 
   @Input() pokemon: Pokemon;
+  @Input() family: string[];  // Pokemon Familiars
   urlImage: string;
-  family: string[];  // Pokemon Familiars
 
   constructor(private pokedexService: PokedexService) {
     this.urlImage = "../../../../../../assets/images/pokemon/";
   }
 
   ngOnInit() {
-    this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
-     .subscribe(res => {
-       this.family = res as any;  // Respond Server
-     });
-
      // Changing Evolution Number to String
      this.pokemon.evolution = this.pokedexService
       .evolutionToString(this.pokemon.evolution);
-
   }
 
   goPokemon(familiar){
