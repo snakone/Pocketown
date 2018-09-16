@@ -25,9 +25,9 @@
           </div>
         </div>
 
-        <div class="center actions">
+        <div *ngIf="trainerService.trainerAuthenticated()" class="center actions">
            Add this Pokémon to your Team!
-           <mat-icon (click)="addPokemonToTeam(pokemon)">add_circle</mat-icon>
+           <mat-icon class="addButton" (click)="addPokemonToTeam(pokemon)">add_circle</mat-icon>
         </div>
 
         <div class="row center family">    <!-- Familiars -->

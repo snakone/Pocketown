@@ -47,3 +47,8 @@
 .SPD {color: #673AF8}
 .SS {color: black}
 .N\º {color:grey}
+
+.snackbar {
+  background: transparent;
+	margin-top: -117px!important;
+}

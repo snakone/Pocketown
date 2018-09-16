@@ -20,13 +20,13 @@ export class TopNavComponent {
     this.ngVersion = "Angular 6";
     this.logoURL = "../../../../../assets/images/logo.png";
 
-    authService.handleAuthentication();
+    authService.handleAuthentication();  // Method Need to Log in with Auth0
   }
 
   ngOnInit() {}
 
   login(){
-    this.authService.login();
+    this.authService.login();  // Log In with Auth0
   }
 
 }

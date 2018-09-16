@@ -1,0 +1,15 @@
+.pokemon {
+  width: 45px;
+  margin: 0 auto;
+  padding: 2px;
+}
+
+.noPokemon {
+  margin-top: 30px;
+  font-size: .8em;
+}
+
+.darkblue {
+  color:darkblue;
+  font-weight: bold;
+}

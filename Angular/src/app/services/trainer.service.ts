@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http'; //  Make HTTP Request to API
 import { Trainer } from '../models/trainer';  // Trainer Model
-import { AuthService } from './auth.service';
+import { Pokemon } from '../models/pokemon';
+import { AuthService } from './auth.service';  // Auth Service
 
 @Injectable({
   providedIn: 'root'
@@ -12,9 +13,10 @@ export class TrainerService {
 
   isTrainer: boolean;  // To know whatever is Trainer or Not
   notTrainer: boolean;
+  trainerTeam: Pokemon[]=[];
   trainerID: string;  // Trainer ID
-  trainer: Trainer;
-  admin:boolean;
+  trainer: Trainer;  // Trainer Profile
+  admin:boolean = false;
   profile: any;  // Auth0 Profile
   readonly TRAINER_API = "http://localhost:3000/trainer";  // Server API Trainer
 
@@ -22,7 +24,7 @@ export class TrainerService {
 
   constructor(private http: HttpClient,
               private authService: AuthService) {
-                  this.admin = false;
+                this.admin = false;  // Start Admin at False
                }
 
   addTrainer(trainer: Trainer){  // We add a Trainer
@@ -52,6 +54,7 @@ export class TrainerService {
     .subscribe(res => {
       if (res == '') {  // No Result? No Trainer
         this.notTrainer = true;
+        this.admin = false;
       }
       else {
         this.trainer = res[0] as Trainer;  // Always get 1 result so its possition 0
@@ -61,10 +64,19 @@ export class TrainerService {
          }
           // Admin Assignament
           if (this.trainer.name == 'Snakone' || this.trainer.name == 'Goph') {
-            return this.admin = true;
-          } else return false;
+                this.admin = true;
+          } else this.admin = false;
       } // End of else
    });
+  }
+
+  addPokemontoTeam(pokemon:Pokemon){
+    this.trainerTeam.push(pokemon);
+    console.log(this.trainerTeam);
+  }
+
+  trainerAuthenticated(){
+    return this.isTrainer;
   }
 
 

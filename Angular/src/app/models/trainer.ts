@@ -9,7 +9,7 @@ export class Trainer {
       avatar: string;
       server: string;
       guild: string;
-      online: boolean;
+      online: boolean; // is the Trainer online?
 
       constructor(trainer_id: string, name: string, pokemon: string,
                    avatar: string, server: string, guild: string, online:boolean = false, team?: Pokemon[],){

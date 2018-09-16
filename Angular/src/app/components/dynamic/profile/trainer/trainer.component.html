@@ -17,10 +17,15 @@
   <br>
   <div class="center">
     <h5>Pokémon Team</h5>
-
-      <span *ngFor="let pokemon of pokemonTeam">
-          <img class="pokemonTeam" src="{{urlPokemon}}{{pokemon}}.png"/>
-      </span>
-
+  <div class="row center">
+    <div class="col s2 m2 l2" *ngFor="let pokemon of trainerService.trainerTeam; let i = index">
+      <img class="pokemonTeam" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
+      <mat-icon (click)="removePokemon(i)" class="close">close</mat-icon>
+    </div>
   </div>
+    <div *ngIf="trainerService.trainerTeam.length == 0">
+      <p class="noPokemon">Seems like You don't have any <span class="darkblue">Pokémon</span> on your Team.</p>
+    </div>
+  </div>
+
 </mat-card>

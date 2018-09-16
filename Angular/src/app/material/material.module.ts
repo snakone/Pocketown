@@ -13,6 +13,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatFormFieldModule, MatInputModule } from '@angular/material';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 import { MatSidenavModule,
@@ -28,13 +30,15 @@ import { MatSidenavModule,
             MatMenuModule, MatSidenavModule, MatListModule, MatCardModule,
             MatTableModule,MatPaginatorModule, MatSortModule, MatTooltipModule,
             MatExpansionModule, MatRadioModule, MatDividerModule, MatTabsModule,
-            MatStepperModule, MatFormFieldModule, MatInputModule, MatSelectModule],
+            MatStepperModule, MatFormFieldModule, MatInputModule, MatSelectModule,
+            MatDialogModule, MatSnackBarModule],
 
   exports: [MatButtonModule, MatCheckboxModule,MatToolbarModule,MatIconModule,
             MatMenuModule, MatSidenavModule, MatListModule, MatCardModule,
             MatTableModule,MatPaginatorModule, MatSortModule, MatTooltipModule,
             MatExpansionModule, MatRadioModule, MatDividerModule, MatTabsModule,
-            MatStepperModule, MatFormFieldModule, MatInputModule, MatSelectModule],
+            MatStepperModule, MatFormFieldModule, MatInputModule, MatSelectModule,
+            MatDialogModule, MatSnackBarModule],
 })
 export class MaterialModule {
 

@@ -9,24 +9,38 @@ h5 {
   font-size: 1.3em;
 }
 
+.close {
+  color:red;
+}
+
+.close:hover {
+  cursor: pointer;
+  transform: rotate(-90deg);
+  transition: transform 2s;
+  overflow: hidden;
+}
+
 .pokemon {
   width: 65px;
   margin: 0 auto;
   display: block;
 }
 
-.pokemonTeam {
-  width: 45px;
-  margin: 0 auto;
-  padding: 2px;
+.row .col {
+  padding: 0!important;
 }
 
-.bordered-feature-image {
-		display: block;
-		background: #fff url("../../../../../assets/images/bg05.png");
-		padding: 3px;
-		border-radius:5px;
-		box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
-		margin: 0 auto 1.5em auto;
-		outline: 0;
-	}
+.pokemonTeam {
+  width: 40px;
+  margin: 0 auto;
+}
+
+.noPokemon {
+  margin-top: 30px;
+  font-size: .8em;
+}
+
+.darkblue {
+  color:darkblue;
+  font-weight: bold;
+}

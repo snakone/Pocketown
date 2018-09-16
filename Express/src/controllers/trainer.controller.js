@@ -27,10 +27,10 @@ trainerCtrl.getTrainerbyID = async (req, res) => {  // Get Trainer by ID
 trainerCtrl.updateStatus = async (req, res) => {  // Update Status Online
 
    const { id } = req.params;  // From req.params only need Move ID
-   const status = req.body; // Move with updated INFO
+   const status = req.body; // Status? Online or Offline
 
-   await trainers.update({trainerID: id}, {$set: status},  // Find by ID and Update in MongoDB
-                                     {new: true});  // New Move if ID not Match
+   await trainers.update({trainerID: id}, {$set: status},  // Find trainerID and Update in MongoDB
+                                     {new: true});  // New Status if ID not Match
      res.json({
        status: "Status Updated"
      });

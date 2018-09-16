@@ -20,7 +20,7 @@
         in "<span class="bold">Pocketown The Game</span>"
       </blockquote>
 
-  <mat-card *ngFor="let trainer of filteredTrainers" class="card marginTop">
+  <mat-card *ngFor="let trainer of filteredTrainers" class="card marginTop">  <!-- TRAINER CARDS -->
 
       <div class="col s10 m10 l10">
         <h5 class="truncate">{{trainer.name}}</h5>
@@ -38,7 +38,6 @@
       <div class="col s6 m6 l3 center">
           <p>Server: <span class="bold">{{trainer.server}}</span></p>
           <p>Guild: <span class="bold">{{trainer.guild}}</span></p>
-          status: {{trainer.online}}
       </div>
       <div class="col s12 m12 l6 center team">
           <span *ngFor="let pokemon of pokemonTeam">
@@ -46,8 +45,6 @@
           </span>
       </div>
     </div>
-
-
 
   </mat-card>
 </div>

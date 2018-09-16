@@ -19,9 +19,7 @@ export class AuthGuardService implements CanActivate {
     if ( this.authService.isAuthenticated() ){
       return true;
     } else {
-      console.log("Bloqueado por el Guard");
       return false;
-
     }
 
   }

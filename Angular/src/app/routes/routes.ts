@@ -24,7 +24,7 @@ import { PocketownComponent } from '../components/dynamic/pocketown/pocketown.co
 const Routes: Routes = [
   { path: 'home', component: WelcomeComponent },  // Home
   { path: 'pokedex', component: PokedexComponent },  // Pokedex
-  { path: 'profile', component: ProfileComponent },  // Profile
+  { path: 'profile', component: ProfileComponent, canActivate: [AuthGuardService] },  // Profile - Auth Guard Service
   { path: 'laboratory', component: LaboratoryComponent },  // Laboratory
   { path: 'moves', component: MovesComponent },  // Moves
   { path: 'pocketown', component: PocketownComponent },  // Pocketown
@@ -42,7 +42,7 @@ const Routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(Routes)],
+  imports: [RouterModule.forRoot(Routes)],  // Routes for Root = Whole Aplication
   exports: [RouterModule]
 })
 export class RoutingModule {}

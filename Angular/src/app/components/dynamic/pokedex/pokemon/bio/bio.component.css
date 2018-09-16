@@ -16,6 +16,14 @@
   }
 }
 
+.addButton:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+  transform: rotate(-90deg);
+  transition: transform 2s;
+  overflow: hidden;
+}
+
 .pkm-img {
   position: absolute;
   right:20px;

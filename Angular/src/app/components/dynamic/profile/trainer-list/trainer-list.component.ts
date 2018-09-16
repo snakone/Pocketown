@@ -13,10 +13,9 @@ import { Trainer } from '../../../../models/trainer';  // Trainer Model
 
 export class TrainerListComponent implements OnInit {
 
-  trainers: Trainer[];
-  filteredTrainers: Trainer[];
+  trainers: Trainer[];  // Trainer List
+  filteredTrainers: Trainer[];  // Filtered Trainer List
   urlImage: string;
-  profile: any;
   searchValue: string = "";  // Input Value to Search For - ngModel on HTML
 
   pokemonTeam: string[] = ["MegaDeoxysX", "MegaRayquazaYR2", "MegaGyaradosR2",
@@ -33,8 +32,6 @@ export class TrainerListComponent implements OnInit {
        this.trainers = res as Trainer[];
        this.filteredTrainers = this.trainers;  // Original List = Filter List
      });
-
-  
   }
 
   onKeyUp(event){  // On Key Up Javascript Event

@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import * as auth0 from 'auth0-js';
-import { TrainerService } from './trainer.service';
+
+import { ToastrService } from 'ngx-toastr';  // Toastr
 
 (window as any).global = window;
 
@@ -22,7 +23,7 @@ export class AuthService {
     scope: 'openid'  // Get the ID
   });
 
-  constructor(public router: Router) {}
+  constructor(public router: Router, private toastr: ToastrService) {}
 
     public login(): void {  // Login
       this.auth0.authorize();
@@ -35,9 +36,16 @@ export class AuthService {
          window.location.hash = '';
          this.setSession(authResult);
          this.router.navigate(['/']);
+         this.toastr.info('','Now You are logged in', {
+           timeOut: 10000,
+           extendedTimeOut: 5000
+         });
        } else if (err) {
          this.router.navigate(['/home']);
-         console.log(err);
+           this.toastr.error('','Please Confirm your Email!', {
+             timeOut: 15000,
+             extendedTimeOut: 5000
+           });
        }
      });
    }
@@ -57,6 +65,10 @@ export class AuthService {
      localStorage.removeItem('expires_at');
      // Go back to the home route
      this.router.navigate(['/']);
+     this.toastr.info('','Now You are logged out', {
+       timeOut: 10000,
+       extendedTimeOut: 5000
+     });
    }
 
    public isAuthenticated(): boolean {

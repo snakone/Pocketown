@@ -16,24 +16,25 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     if (this.authService.userProfile) { // If there's a Profile we Assign it
-        // After We get the Trainer We check it
+        // After We get the Profile We check it
         this.trainerService.checkTrainer(this.authService.userProfile);
-        let status = {
+
+        let status = {  // Status Online - Offline We send to Server
           online: true,
           trainerID: this.trainerService.trainerID
         };
-        this.trainerService.updateStatus(status).subscribe(res => {});
+          this.trainerService.updateStatus(status).subscribe(res => {});  // Update Status Online
 
-    } else if (this.authService.isAuthenticated()) {  // No Profile?
+    } else if (this.authService.isAuthenticated()) {  // The User is Authenticated?
       this.authService.getProfile((err, profile) => {  // Get the Profile
-      // After We get the Trainer We check it
+      // After We get the Profile We check it
       this.trainerService.checkTrainer(profile);
-      let status = {
+
+      let status = { // Status Online - Offline We send to Server
         online: true,
         trainerID: this.trainerService.trainerID
       };
-      this.trainerService.updateStatus(status).subscribe(res => {});
-
+          this.trainerService.updateStatus(status).subscribe(res => {});  // Update Status Online
       });
     }
   }

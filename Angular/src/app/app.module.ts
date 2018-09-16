@@ -69,6 +69,7 @@ import { PokeItemComponent } from './components/dynamic/poke-items/poke-item/pok
 import { StatsComponent } from './components/static/stats/stats.component';
 import { TypesComponent } from './components/static/types/types.component';
 import { EvolutionsComponent } from './components/static/evolutions/evolutions.component';
+import { ConfirmComponent } from './components/static/confirm/confirm.component';
 
 // Single Pokemon Components //
 import { BioComponent } from './components/dynamic/pokedex/pokemon/bio/bio.component';
@@ -83,6 +84,7 @@ import { PokemonMovesComponent } from './components/dynamic/pokedex/pokemon/move
 import { VictoryRoadComponent } from './components/static/guides/victory-road/victory-road.component';
 import { TrainerListComponent } from './components/dynamic/profile/trainer-list/trainer-list.component';
 import { PocketownComponent } from './components/dynamic/pocketown/pocketown.component';
+import { PokemonTeamComponent } from './components/static/pokemon-team/pokemon-team.component';
 
 
 @NgModule({
@@ -96,8 +98,9 @@ import { PocketownComponent } from './components/dynamic/pocketown/pocketown.com
     EffortComponent, ItemsComponent, PokemonMovesComponent, MovesComponent,
     AdminMoveComponent, VictoryRoadComponent, EventsComponent, BannerComponent,
     AdminPokeItemComponent, PokeItemsComponent, DownloadComponent, MoveComponent,
-    PokeItemComponent, ProfileComponent, TrainerComponent, RegisterComponent, TrainerListComponent, PocketownComponent ],
-    
+    PokeItemComponent, ProfileComponent, TrainerComponent, RegisterComponent,
+    TrainerListComponent, PocketownComponent, ConfirmComponent, PokemonTeamComponent ],
+
   imports: [
     BrowserModule, BrowserAnimationsModule, MaterialModule, RoutingModule,
     FormsModule, HttpClientModule, ReactiveFormsModule,
@@ -106,6 +109,7 @@ import { PocketownComponent } from './components/dynamic/pocketown/pocketown.com
       progressBar: true
     })
   ],
+  entryComponents:[ConfirmComponent, PokemonTeamComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
