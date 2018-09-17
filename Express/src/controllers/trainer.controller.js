@@ -14,7 +14,7 @@ trainerCtrl.addTrainer = async (req, res) => {  // Add Trainer to MongoDB
 trainerCtrl.getTrainers = async (req, res) => {  // Get Trainer List
 
     const trainer = await trainers.find();  // Find Trainers in MongoDB
-    res.json(trainer);  // Send Trainer to server as JSON
+    res.json(trainer);  // Send Trainers to server as JSON
 }
 
 trainerCtrl.getTrainerbyID = async (req, res) => {  // Get Trainer by ID
@@ -36,9 +36,9 @@ trainerCtrl.updateTrainer = async (req, res) => {  // Update Trainer
      });
 }
 
-trainerCtrl.deleteTrainer = async (req, res) => {  // Retrainer Trainer from MongoDB
+trainerCtrl.deleteTrainer = async (req, res) => {  // Remove Trainer from MongoDB
 
-  await trainers.findByIdAndRemove(req.params.id);  // Retrainer by ID
+  await trainers.findByIdAndRemove(req.params.id);  // Remove by ID
   res.json({
     status: "Trainer Deleted"
   });

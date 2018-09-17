@@ -9,7 +9,7 @@ const trainer = require('../controllers/trainer.controller');  // Controller
 trainerRouter.post('/trainer', trainer.addTrainer);  // Add New Trainer
 trainerRouter.put('/trainer/status/:id', trainer.updateStatus);  // Online Status
 trainerRouter.get('/trainer', trainer.getTrainers);  // Get Trainers
-trainerRouter.get('/trainer/:id', trainer.getTrainerbyID);  // Get Trainer
+trainerRouter.get('/trainer/:id', trainer.getTrainerbyID);  // Get Trainer by ID
 trainerRouter.put('/trainer/:id', trainer.updateTrainer);  // Update Trainer by ID
 trainerRouter.delete('/trainer/:id', trainer.deleteTrainer);  // Delete Trainer from MongoDB
 

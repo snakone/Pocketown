@@ -2,17 +2,16 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { PokedexService } from '../../../../../services/pokedex.service';  // Pokedex Service
 import { TrainerService } from '../../../../../services/trainer.service';  // Trainer Service
-import { AuthService } from '../../../../../services/auth.service';  // Trainer Service
-
-import { MatDialog } from '@angular/material';
-import { MatSnackBar } from '@angular/material';
-import { ToastrService } from 'ngx-toastr';  // Toastr
-
-import { ConfirmComponent } from '../../../../static/confirm/confirm.component';
-import { PokemonTeamComponent } from '../../../../static/pokemon-team/pokemon-team.component';
 
 import { Pokemon } from '../../../../../models/pokemon';  // Pokemon Model
-import { Trainer } from '../../../../../models/trainer';  // Trainer Model
+
+import { MatDialog } from '@angular/material';  // Material Dialog
+import { MatSnackBar } from '@angular/material';  // Material Snack Bar
+import { ToastrService } from 'ngx-toastr';  // Toastr
+
+import { ConfirmComponent } from '../../../../static/confirm/confirm.component'; // Dialog
+import { PokemonTeamComponent } from '../../../../static/pokemon-team/pokemon-team.component'; // Snack Bar
+
 import { Router } from '@angular/router'; // Router
 
 @Component({
@@ -25,12 +24,11 @@ export class BioComponent implements OnInit {
 
   urlImage: string;
   @Input() family: string[];  // Pokemon Familiars
-  @Input() pokemon: Pokemon;
+  @Input() pokemon: Pokemon;  // Pokémon from Parent
   pokemonTeam: Pokemon[];
 
   constructor(private pokedexService: PokedexService,
               private trainerService: TrainerService,
-              private authService: AuthService,
               private router: Router, private toastr: ToastrService,
               public dialog: MatDialog, public snackBar: MatSnackBar) {
       this.urlImage = "../../../../../../assets/images/pokemon/";
@@ -50,16 +48,16 @@ export class BioComponent implements OnInit {
   }
 
   addPokemonToTeam(pokemon:Pokemon) {
-    const dialogRef = this.dialog.open(ConfirmComponent,{});
+    const dialogRef = this.dialog.open(ConfirmComponent,{});  // New Dialog -> Confirm Dialog
 
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
+    dialogRef.afterClosed().subscribe(result => { // After Dialog Closed
+      if (result) {  // If Dialog Result = YES
         if (this.trainerService.trainerTeam.length >= 6) {  // Trainer Team >= 6 Pokémon
           this.toastr.error('',"Team can't exceed 6 Pokémon", {
             timeOut: 5000,
             extendedTimeOut: 1000
           });
-        } else {
+        } else {  // Add Pokémon to Team & Show Snack Bar with actual Trainer Team
           this.trainerService.addPokemontoTeam(pokemon);
           this.snackBar.openFromComponent(PokemonTeamComponent, {
              duration: 3000,

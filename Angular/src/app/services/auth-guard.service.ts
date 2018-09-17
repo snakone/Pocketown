@@ -13,10 +13,10 @@ export class AuthGuardService implements CanActivate {
 
   constructor(private authService: AuthService) { }
 
-  canActivate(next:ActivatedRouteSnapshot,
+  canActivate(next:ActivatedRouteSnapshot,  // Method to Activate Component on Routes
               state: RouterStateSnapshot){
 
-    if ( this.authService.isAuthenticated() ){
+    if ( this.authService.isAuthenticated() ){ // Only Activated if User is Authenticated
       return true;
     } else {
       return false;

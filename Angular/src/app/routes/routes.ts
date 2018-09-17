@@ -25,7 +25,7 @@ import { AdminTrainerComponent } from '../components/admin/trainer/admin-trainer
 const Routes: Routes = [
   { path: 'home', component: WelcomeComponent },  // Home
   { path: 'pokedex', component: PokedexComponent },  // Pokedex
-  { path: 'profile', component: ProfileComponent, canActivate: [AuthGuardService] },  // Profile - Auth Guard Service
+  { path: 'profile', component: ProfileComponent, canActivate: [AuthGuardService] },  // Auth Guard Service
   { path: 'laboratory', component: LaboratoryComponent },  // Laboratory
   { path: 'moves', component: MovesComponent },  // Moves
   { path: 'pocketown', component: PocketownComponent },  // Pocketown

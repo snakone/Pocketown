@@ -18,8 +18,7 @@ export class TrainerService {
   trainer: Trainer;  // Trainer Profile
   selectedTrainer: Trainer;  // Save Selected Trainer
   trainerList: Trainer[];
-  admin: boolean;
-  profile: any;  // Auth0 Profile
+  admin: boolean;  // To know whatever is Admin or Not
   readonly TRAINER_API = "http://localhost:3000/trainer";  // Server API Trainer
   readonly STATUS_API = "http://localhost:3000/trainer/status";  // Server API Trainer
 
@@ -59,13 +58,13 @@ export class TrainerService {
   }
 
   checkTrainer(profile){
-    const id = profile.sub.substring(6);  // Retrainer "Auth0|" from the ID
+    const id = profile.sub.substring(6);  // Remove "Auth0|" from the ID
     this.trainerID = id;
     this.getTrainerbyId(id)  // Get Trainer by ID on MongoD
     .subscribe(res => {
       if (res == '') {  // No Result? No Trainer
         this.notTrainer = true;
-        this.isTrainer = false;
+        this.isTrainer = false;  // Trainer = False
       }
       else {
         this.trainer = res[0] as Trainer;  // Always get 1 result so its possition 0
@@ -76,7 +75,7 @@ export class TrainerService {
          // Status Online We send to Server
          let status = {online: true};
 
-         if (this.trainer.online == false) {
+         if (this.trainer.online == false) { // Only Update to Online if Trainer is Offline
               this.updateStatus(status).subscribe(res => {});  // Update Status Online
          }
         // Admin Assignament

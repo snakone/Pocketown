@@ -38,12 +38,12 @@ export class AuthService {
        if (authResult && authResult.accessToken && authResult.idToken) {
          window.location.hash = '';
          this.setSession(authResult);
-         this.router.navigate(['/profile']);
+         this.router.navigate(['/profile']);  // Login Succes
          this.toastr.info('','Now You are logged in', {
            timeOut: 10000,
            extendedTimeOut: 5000
          });
-       } else if (err) {
+       } else if (err) {  // Confirm Email Error
          this.router.navigate(['/home']);
            this.toastr.error('','Please Confirm your Email!', {
              timeOut: 15000,
@@ -68,7 +68,7 @@ export class AuthService {
      localStorage.removeItem('expires_at');
      // Go back to the home route
      this.router.navigate(['/']);
-     if (this.userProfile){
+     if (this.userProfile){  // Log Out? No Trainer
        this.isTrainer = false;
      }
    }
@@ -86,7 +86,7 @@ export class AuthService {
       throw new Error('Access Token must exist to fetch profile');
     }
 
-    const self = this;
+    const self = this;  // Asign Profile to User INFO
     this.auth0.client.userInfo(accessToken, (err, profile) => {
       if (profile) {
         self.userProfile = profile;

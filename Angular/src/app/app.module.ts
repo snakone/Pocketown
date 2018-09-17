@@ -2,29 +2,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
-// Animations
+// Animations //
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-//Forms
+// Forms //
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule  } from '@angular/forms';
 
-// Main
+// Main //
 import { AppComponent } from './app.component';
 
-// Material
+// Material //
 import { MaterialModule } from './material/material.module';
 
-// Routes
+// Routes //
 import { RoutingModule } from './routes/routes';
 
-// Toastr
+// Toastr //
 import { ToastrModule } from 'ngx-toastr';
 
-// HTTP
+// HTTP //
 import { HttpClientModule } from "@angular/common/http";
 
-// Admin
+// Admin //
 import { AdminPokemonComponent } from './components/admin/pokemon/admin-pokemon.component';
 import { AdminMoveComponent } from './components/admin/move/admin-move.component';
 import { AdminPokeItemComponent } from './components/admin/poke-item/admin-poke-item.component';
@@ -39,18 +39,16 @@ import { FooterNavComponent } from './components/layout/footer-nav/footer-nav.co
 import { FooterMenuComponent } from './components/layout/footer-nav/footer-menu/footer-menu.component';
 
 // Dynamic Components //
-
 // Home
 import { WelcomeComponent } from './components/dynamic/welcome/welcome.component';
 import { EventsComponent } from './components/dynamic/welcome/events/events.component';
 import { BannerComponent } from './components/dynamic/welcome/banner/banner.component';
 import { DownloadComponent } from './components/dynamic/welcome/download/download.component';
-
 //Trainer
 import { ProfileComponent } from './components/dynamic/profile/profile.component';
 import { TrainerComponent } from './components/dynamic/profile/trainer/trainer.component';
 import { RegisterComponent } from './components/dynamic/profile/register/register.component';
-
+import { TrainerListComponent } from './components/dynamic/profile/trainer-list/trainer-list.component';
 // Pokedex
 import { PokedexComponent } from './components/dynamic/pokedex/pokedex.component';
 import { PokemonComponent } from './components/dynamic/pokedex/pokemon/pokemon.component';
@@ -65,12 +63,15 @@ import { MoveComponent } from './components/dynamic/moves/move/move.component';
 // Held Items
 import { PokeItemsComponent } from './components/dynamic/poke-items/poke-items.component';
 import { PokeItemComponent } from './components/dynamic/poke-items/poke-item/poke-item.component';
+//PocketownComponent
+import { PocketownComponent } from './components/dynamic/pocketown/pocketown.component';
 
 // Static Components //
 import { StatsComponent } from './components/static/stats/stats.component';
 import { TypesComponent } from './components/static/types/types.component';
 import { EvolutionsComponent } from './components/static/evolutions/evolutions.component';
 import { ConfirmComponent } from './components/static/confirm/confirm.component';
+import { PokemonTeamComponent } from './components/static/pokemon-team/pokemon-team.component';
 
 // Single Pokemon Components //
 import { BioComponent } from './components/dynamic/pokedex/pokemon/bio/bio.component';
@@ -83,9 +84,6 @@ import { PokemonMovesComponent } from './components/dynamic/pokedex/pokemon/move
 
 // Pocketown Guides //
 import { VictoryRoadComponent } from './components/static/guides/victory-road/victory-road.component';
-import { TrainerListComponent } from './components/dynamic/profile/trainer-list/trainer-list.component';
-import { PocketownComponent } from './components/dynamic/pocketown/pocketown.component';
-import { PokemonTeamComponent } from './components/static/pokemon-team/pokemon-team.component';
 
 
 @NgModule({
@@ -111,7 +109,7 @@ import { PokemonTeamComponent } from './components/static/pokemon-team/pokemon-t
       progressBar: true
     })
   ],
-  entryComponents:[ConfirmComponent, PokemonTeamComponent],
+  entryComponents:[ConfirmComponent, PokemonTeamComponent], // Dialog and Snack Bar
   providers: [],
   bootstrap: [AppComponent]
 })
