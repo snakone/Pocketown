@@ -13,7 +13,6 @@ export class TrainerService {
 
   isTrainer: boolean;  // To know whatever is Trainer or Not
   notTrainer: boolean;
-  firstTime: boolean = true;
   trainerTeam: Pokemon[]=[];
   trainerID: string;  // Trainer ID
   trainer: Trainer;  // Trainer Profile
@@ -70,7 +69,6 @@ export class TrainerService {
          }
         // Admin Assignament
          this.trainer.name == 'Snakone' || this.trainer.name == 'Goph' ? this.admin = true : this.admin = false;
-         this.firstTime = false;
       } // End of else
    });
 
@@ -78,10 +76,6 @@ export class TrainerService {
 
   addPokemontoTeam(pokemon:Pokemon){
     this.trainerTeam.push(pokemon);
-  }
-
-  trainerAuthenticated(){
-    return this.isTrainer;
   }
 
 

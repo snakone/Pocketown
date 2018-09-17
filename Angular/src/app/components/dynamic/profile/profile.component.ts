@@ -14,6 +14,13 @@ export class ProfileComponent implements OnInit {
   constructor(private authService: AuthService,
               private trainerService: TrainerService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    if (this.authService.isAuthenticated()) {
+      this.authService.getProfile((err, profile) => {  // Get the Profile
+      // After We get the Trainer We check it
+      this.trainerService.checkTrainer(profile);
+      });
+    }
+  }
 
 }

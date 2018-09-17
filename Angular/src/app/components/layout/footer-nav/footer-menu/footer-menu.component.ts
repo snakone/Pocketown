@@ -16,13 +16,11 @@ export class FooterMenuComponent implements OnInit {
               private trainerService: TrainerService,
               private toastr: ToastrService,) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   logOut():void {  // Log out from Auth0
     this.trainerService.admin = false;  // Admin False
     this.trainerService.isTrainer = false;
-    this.trainerService.firstTime = true;
     this.authService.logout();
     this.toastr.info('','Now You are logged out', {
       timeOut: 10000,

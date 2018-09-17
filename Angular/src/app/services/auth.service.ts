@@ -20,9 +20,11 @@ export class AuthService {
     clientID: 'nZlYvy5mdW4CuRlA47e52o6Kk7wsY1EL',
     domain: 'pocketown.eu.auth0.com',
     responseType: 'token id_token',
-    redirectUri: 'http://localhost:4200/profile',
+    redirectUri: 'http://localhost:4200',
     scope: 'openid'  // Get the ID
   });
+
+  // Angular Client -> http://pocketown-angular.epizy.com
 
   constructor(public router: Router, private toastr: ToastrService) {}
 
@@ -36,7 +38,7 @@ export class AuthService {
        if (authResult && authResult.accessToken && authResult.idToken) {
          window.location.hash = '';
          this.setSession(authResult);
-         this.router.navigate(['/']);
+         this.router.navigate(['/profile']);
          this.toastr.info('','Now You are logged in', {
            timeOut: 10000,
            extendedTimeOut: 5000

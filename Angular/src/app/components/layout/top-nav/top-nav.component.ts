@@ -21,8 +21,6 @@ export class TopNavComponent {
     this.appTitle = "Pocketown";
     this.ngVersion = "Angular 6";
     this.logoURL = "../../../../../assets/images/logo.png";
-
-    authService.handleAuthentication();  // Method Need to Log in with Auth0
   }
 
   ngOnInit() {}
