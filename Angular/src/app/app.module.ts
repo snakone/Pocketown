@@ -46,9 +46,8 @@ import { BannerComponent } from './components/dynamic/welcome/banner/banner.comp
 import { DownloadComponent } from './components/dynamic/welcome/download/download.component';
 //Trainer
 import { ProfileComponent } from './components/dynamic/profile/profile.component';
-import { TrainerComponent } from './components/dynamic/profile/trainer/trainer.component';
+import { ProfileTrainerComponent } from './components/dynamic/profile/trainer/profile-trainer.component';
 import { RegisterComponent } from './components/dynamic/profile/register/register.component';
-import { TrainerListComponent } from './components/dynamic/profile/trainer-list/trainer-list.component';
 // Pokedex
 import { PokedexComponent } from './components/dynamic/pokedex/pokedex.component';
 import { PokemonComponent } from './components/dynamic/pokedex/pokemon/pokemon.component';
@@ -60,6 +59,8 @@ import { FilteringComponent } from './components/dynamic/laboratory/filtering/fi
 // Moves
 import { MovesComponent } from './components/dynamic/moves/moves.component';
 import { MoveComponent } from './components/dynamic/moves/move/move.component';
+// Trainer List
+import { TrainerListComponent } from './components/dynamic/trainer-list/trainer-list.component';
 // Held Items
 import { PokeItemsComponent } from './components/dynamic/poke-items/poke-items.component';
 import { PokeItemComponent } from './components/dynamic/poke-items/poke-item/poke-item.component';
@@ -84,6 +85,7 @@ import { PokemonMovesComponent } from './components/dynamic/pokedex/pokemon/move
 
 // Pocketown Guides //
 import { VictoryRoadComponent } from './components/static/guides/victory-road/victory-road.component';
+import { TrainerComponent } from './components/dynamic/trainer/trainer.component';
 
 
 @NgModule({
@@ -97,9 +99,10 @@ import { VictoryRoadComponent } from './components/static/guides/victory-road/vi
     EffortComponent, ItemsComponent, PokemonMovesComponent, MovesComponent,
     AdminMoveComponent, VictoryRoadComponent, EventsComponent, BannerComponent,
     AdminPokeItemComponent, PokeItemsComponent, DownloadComponent, MoveComponent,
-    PokeItemComponent, ProfileComponent, TrainerComponent, RegisterComponent,
+    PokeItemComponent, ProfileComponent, ProfileTrainerComponent, RegisterComponent,
     TrainerListComponent, PocketownComponent, ConfirmComponent, PokemonTeamComponent,
-    AdminTrainerComponent ],
+    AdminTrainerComponent,
+    TrainerComponent ],
 
   imports: [
     BrowserModule, BrowserAnimationsModule, MaterialModule, RoutingModule,

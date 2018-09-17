@@ -24,6 +24,13 @@ trainerCtrl.getTrainerbyID = async (req, res) => {  // Get Trainer by ID
       res.json(trainer);  // Send Trainer to server as JSON
 }
 
+trainerCtrl.getTrainerbyName = async (req, res) => {  // Get Trainer by ID
+
+      const filterTrainer = new RegExp(`^${req.params.name}`);  //  Template String ES6 Pattern
+      const trainer = await trainers.find({ name: filterTrainer});  // "/^MegaCharizardX/" Pattern
+      res.json(trainer);  // Send Trainer to server as JSON
+}
+
 trainerCtrl.updateTrainer = async (req, res) => {  // Update Trainer
 
    const { id } = req.params;  // From req.params only need Trainer ID

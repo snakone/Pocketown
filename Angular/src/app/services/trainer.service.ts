@@ -12,15 +12,17 @@ import { AuthService } from './auth.service';  // Auth Service
 export class TrainerService {
 
   isTrainer: boolean;  // To know whatever is Trainer or Not
-  notTrainer: boolean;
+  notTrainer: boolean;  //  We use a second so it doesnt' depend from the first one
+  admin: boolean;  // To know whatever is Admin or Not
   trainerTeam: Pokemon[]=[];
   trainerID: string;  // Trainer ID
   trainer: Trainer;  // Trainer Profile
   selectedTrainer: Trainer;  // Save Selected Trainer
-  trainerList: Trainer[];
-  admin: boolean;  // To know whatever is Admin or Not
+  trainerList: Trainer[];  // Trainer List
+
   readonly TRAINER_API = "http://localhost:3000/trainer";  // Server API Trainer
-  readonly STATUS_API = "http://localhost:3000/trainer/status";  // Server API Trainer
+  readonly TRAINER_NAME_API = "http://localhost:3000/trainer/name";  // Server API Get Trainer by Name
+  readonly STATUS_API = "http://localhost:3000/trainer/status";  // Server API Online Status
 
   // Heroku Server --> https://pocketown-server.herokuapp.com
 
@@ -42,6 +44,10 @@ export class TrainerService {
     return this.http.get(this.TRAINER_API + `/${id}`);  // HTTP GET to Server API - POSTMAN belike
   }
 
+  getTrainerbyName(name: string){  // URL/trainer/name/TrainerName
+    return this.http.get(this.TRAINER_NAME_API + `/${name}`);  // HTTP GET to Server API - POSTMAN belike
+  }
+
   updateTrainer(trainer:Trainer){  // We update a Trainer
     return this.http.put(this.TRAINER_API + `/${trainer._id}`, trainer);  // HTTP PUT to Server API - POSTMAN belike
   }
@@ -51,16 +57,16 @@ export class TrainerService {
   }
 
   updateStatus(status){  // We update Status
-      let trainer = {
+      let trainerStatus = {
         online: status.online
-    }
-      return this.http.put(this.STATUS_API + `/${this.trainerID}`, trainer);  // HTTP PUT to Server API - POSTMAN belike
+    } // HTTP PUT to Server API - POSTMAN belike
+      return this.http.put(this.STATUS_API + `/${this.trainerID}`, trainerStatus);
   }
 
-  checkTrainer(profile){
+  checkTrainer(profile){  // Profile from Auth0 containing unique ID
     const id = profile.sub.substring(6);  // Remove "Auth0|" from the ID
     this.trainerID = id;
-    this.getTrainerbyId(id)  // Get Trainer by ID on MongoD
+    this.getTrainerbyId(id)  // Get Trainer by ID on MongoDB
     .subscribe(res => {
       if (res == '') {  // No Result? No Trainer
         this.notTrainer = true;
@@ -68,7 +74,7 @@ export class TrainerService {
       }
       else {
         this.trainer = res[0] as Trainer;  // Always get 1 result so its possition 0
-        if (this.trainer.trainerID == id) {  // If Auth0 ID = TrainerID
+        if (this.trainer.trainerID == id) {  // If Auth0 ID = TrainerID on MongoDB
          this.isTrainer = true;  // Result? Trainer = True
          this.notTrainer = false;
          }

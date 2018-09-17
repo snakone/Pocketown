@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
-import { TrainerService } from '../../../../services/trainer.service';  // Trainer Service
-import { AuthService } from '../../../../services/auth.service';  // Trainer Service
+import { TrainerService } from '../../../services/trainer.service';  // Trainer Service
 
-import { Trainer } from '../../../../models/trainer';  // Trainer Model
+import { Trainer } from '../../../models/trainer';  // Trainer Model
+
+import { Router } from '@angular/router'; // Router
 
 @Component({
   selector: 'app-trainer-list',
@@ -22,8 +23,8 @@ export class TrainerListComponent implements OnInit {
                            "MegaArceusX", "MegaLucarioXR2", "MegaHoohX"];
 
   constructor(private trainerService: TrainerService,
-              private authService: AuthService) {
-      this.urlImage = "../../../../../assets/images/";
+              private router : Router) {
+      this.urlImage = "../../../../assets/images/";
   }
 
   ngOnInit() {
@@ -44,6 +45,10 @@ export class TrainerListComponent implements OnInit {
       // ngModel on Input Text - Search Value
       return trainer.name.includes(this.searchValue);  // Filter Original List into Filtered List
     } );
+  }
+
+  navigateTrainer(name: string){
+      this.router.navigate(['/trainer', name]);  // Navigate to Single Pokemon using Pokemon ID
   }
 
 

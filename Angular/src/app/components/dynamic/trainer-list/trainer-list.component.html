@@ -33,7 +33,8 @@
 
     <div class="row center">
       <div class="col s6 m6 l3 center">
-          <p><img class="avatar" src="{{urlImage}}avatar/{{trainer.avatar}}.png"/></p>
+          <p><img class="avatar" (click)="navigateTrainer(trainer.name)"
+            src="{{urlImage}}avatar/{{trainer.avatar}}.png"/></p>
       </div>
       <div class="col s6 m6 l3 center">
           <p>Server: <span class="bold">{{trainer.server}}</span></p>

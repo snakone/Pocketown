@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { TrainerService } from '../../../../services/trainer.service';  // Trainer Service
 
@@ -10,10 +10,10 @@ import { Pokemon } from '../../../../models/pokemon';
 
 @Component({
   selector: 'trainer-profile',
-  templateUrl: './trainer.component.html',
-  styleUrls: ['./trainer.component.css']
+  templateUrl: './profile-trainer.component.html',
+  styleUrls: ['./profile-trainer.component.css']
 })
-export class TrainerComponent implements OnInit {
+export class ProfileTrainerComponent implements OnInit {
 
   trainer: Trainer;
   urlPokemon: string;

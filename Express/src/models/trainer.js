@@ -11,5 +11,5 @@ const trainerSchema = new Schema ({  // Move Model
   'online': {type: Boolean, required: true}
 });
 // Set Move Schema as mongoose Model
-module.exports = mongoose.model('user', trainerSchema);
-// MongoDB will create a Collection 'User' -> 'users'
+module.exports = mongoose.model('trainer', trainerSchema);
+// MongoDB will create a Collection 'Trainer' -> 'trainers'

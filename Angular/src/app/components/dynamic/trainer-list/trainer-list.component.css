@@ -28,6 +28,16 @@
   width: 70px;
 }
 
+.avatar:hover{
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+.avatar:focus{
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
 .card {
   max-width: 98%;
   margin: 10px auto;

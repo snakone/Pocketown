@@ -1,0 +1,35 @@
+<div *ngIf="trainer">
+
+    <mat-card class="card">
+      <div class="row">
+        <div class="col s6 m6 l6 center">
+          <h5 class="bold truncate">{{trainer.name}}</h5>
+          <img src="{{urlImage}}{{trainer.avatar}}.png"/>
+        </div>
+        <div class="col s6 m6 l6 center margin">
+          <p class="bold">Pokémon</p>
+          <p><img class="pokemon" src="{{urlPokemon}}{{trainer.pokemon}}.png"/></p>
+        </div>
+      </div>
+      <div class="center">
+        <p>Server: <span class="bold">{{trainer.server}}</span></p>
+        <p>Guild: <span class="bold">{{trainer.guild}}</span></p>
+      </div>
+      <br>
+      <div class="center">
+        <h5>Pokémon Team</h5>
+      <div class="row center">
+        <div class="col s2 m2 l2" *ngFor="let pokemon of trainerService.trainerTeam; let i = index">
+          <img class="pokemonTeam" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
+          <mat-icon (click)="removePokemon(i)" class="close">close</mat-icon>
+        </div>
+      </div>
+        <div *ngIf="trainerService.trainerTeam.length == 0">
+          <p class="noPokemon">Seems like <span class="bold">{{trainer.name}}</span>
+             doesn't have any <span class="darkblue">Pokémon</span> yet.
+          </p>
+        </div>
+      </div>
+    </mat-card>
+
+</div>

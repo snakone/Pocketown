@@ -1,0 +1,46 @@
+.card {
+  max-width: 350px;
+  margin: auto;
+  min-height: 410px;
+  padding: 25px;
+}
+
+h5 {
+  font-size: 1.3em;
+}
+
+.close {
+  color:red;
+}
+
+.close:hover {
+  cursor: pointer;
+  transform: rotate(-90deg);
+  transition: transform 2s;
+  overflow: hidden;
+}
+
+.pokemon {
+  width: 65px;
+  margin: 0 auto;
+  display: block;
+}
+
+.row .col {
+  padding: 0!important;
+}
+
+.pokemonTeam {
+  width: 40px;
+  margin: 0 auto;
+}
+
+.noPokemon {
+  margin-top: 30px;
+  font-size: .8em;
+}
+
+.darkblue {
+  color:darkblue;
+  font-weight: bold;
+}
