@@ -19,6 +19,7 @@ import { ProfileComponent } from '../components/dynamic/profile/profile.componen
 import { AuthGuardService } from '../services/auth-guard.service';
 import { TrainerListComponent } from '../components/dynamic/profile/trainer-list/trainer-list.component';
 import { PocketownComponent } from '../components/dynamic/pocketown/pocketown.component';
+import { AdminTrainerComponent } from '../components/admin/trainer/admin-trainer.component';
 
 
 const Routes: Routes = [
@@ -37,6 +38,7 @@ const Routes: Routes = [
   { path: 'guides/victory-road', component: VictoryRoadComponent },  // Victory Road Guide
   { path: 'admin/pokemon', component: AdminPokemonComponent },  // Admin Pokemon
   { path: 'admin/move', component: AdminMoveComponent },  // Admin Pokemon Moves
+  { path: 'admin/trainer', component: AdminTrainerComponent },  // Admin Trainers
   { path: 'admin/pokeItem', component: AdminPokeItemComponent },  // Admin Pokémon Held Items
   { path: '**', pathMatch: 'full', redirectTo: 'home' } // Default Route
 ];

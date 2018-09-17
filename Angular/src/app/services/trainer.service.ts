@@ -16,15 +16,19 @@ export class TrainerService {
   trainerTeam: Pokemon[]=[];
   trainerID: string;  // Trainer ID
   trainer: Trainer;  // Trainer Profile
+  selectedTrainer: Trainer;  // Save Selected Trainer
+  trainerList: Trainer[];
   admin: boolean;
   profile: any;  // Auth0 Profile
   readonly TRAINER_API = "http://localhost:3000/trainer";  // Server API Trainer
+  readonly STATUS_API = "http://localhost:3000/trainer/status";  // Server API Trainer
 
   // Heroku Server --> https://pocketown-server.herokuapp.com
 
   constructor(private http: HttpClient,
               private authService: AuthService) {
                 this.admin = false;  // Start Admin at False
+                this.selectedTrainer = <Trainer>{};
                }
 
   addTrainer(trainer: Trainer){  // We add a Trainer
@@ -39,15 +43,23 @@ export class TrainerService {
     return this.http.get(this.TRAINER_API + `/${id}`);  // HTTP GET to Server API - POSTMAN belike
   }
 
+  updateTrainer(trainer:Trainer){  // We update a Trainer
+    return this.http.put(this.TRAINER_API + `/${trainer._id}`, trainer);  // HTTP PUT to Server API - POSTMAN belike
+  }
+
+  deleteTrainer(_id: string){  // To delete only need ID
+    return this.http.delete(this.TRAINER_API + `/${_id}` );  // HTTP DELETE to Server API - POSTMAN belike
+  }
+
   updateStatus(status){  // We update Status
       let trainer = {
         online: status.online
     }
-      return this.http.put(this.TRAINER_API + `/${this.trainerID}`, trainer);  // HTTP PUT to Server API - POSTMAN belike
+      return this.http.put(this.STATUS_API + `/${this.trainerID}`, trainer);  // HTTP PUT to Server API - POSTMAN belike
   }
 
   checkTrainer(profile){
-    const id = profile.sub.substring(6);  // Remove "Auth0|" from the ID
+    const id = profile.sub.substring(6);  // Retrainer "Auth0|" from the ID
     this.trainerID = id;
     this.getTrainerbyId(id)  // Get Trainer by ID on MongoD
     .subscribe(res => {

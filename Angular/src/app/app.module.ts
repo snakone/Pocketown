@@ -28,6 +28,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { AdminPokemonComponent } from './components/admin/pokemon/admin-pokemon.component';
 import { AdminMoveComponent } from './components/admin/move/admin-move.component';
 import { AdminPokeItemComponent } from './components/admin/poke-item/admin-poke-item.component';
+import { AdminTrainerComponent } from './components/admin/trainer/admin-trainer.component';
 
 // App Layout //
 import { TopNavComponent } from './components/layout/top-nav/top-nav.component';
@@ -99,7 +100,8 @@ import { PokemonTeamComponent } from './components/static/pokemon-team/pokemon-t
     AdminMoveComponent, VictoryRoadComponent, EventsComponent, BannerComponent,
     AdminPokeItemComponent, PokeItemsComponent, DownloadComponent, MoveComponent,
     PokeItemComponent, ProfileComponent, TrainerComponent, RegisterComponent,
-    TrainerListComponent, PocketownComponent, ConfirmComponent, PokemonTeamComponent ],
+    TrainerListComponent, PocketownComponent, ConfirmComponent, PokemonTeamComponent,
+    AdminTrainerComponent ],
 
   imports: [
     BrowserModule, BrowserAnimationsModule, MaterialModule, RoutingModule,

@@ -8,7 +8,7 @@ import { ToastrService } from 'ngx-toastr';  // Toastr
 import { NgForm } from '@angular/forms';  // Angular Forms
 
 @Component({
-  selector: 'app-poke-item',
+  selector: 'app-admin-poke-item',
   templateUrl: './admin-poke-item.component.html',
   styleUrls: ['./admin-poke-item.component.css']
 })

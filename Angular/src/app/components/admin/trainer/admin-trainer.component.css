@@ -1,0 +1,25 @@
+button {
+  margin: 0 10px;
+}
+
+mat-icon {
+  margin:0 10px;
+  color: blue;
+}
+
+mat-icon:hover {
+  color:red;
+  cursor: pointer;
+}
+
+.card .card-action {
+  border-top: 0;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.bottom {
+  margin-bottom: 60px;
+}

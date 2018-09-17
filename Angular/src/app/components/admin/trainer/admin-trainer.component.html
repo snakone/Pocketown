@@ -1,0 +1,80 @@
+<div class="row" id="top">
+  <div class="col s12 m12 l12">
+    <div class="card">     <!-- DATA FORM -->
+      <div class="card-content">
+        <form #addTrainerForm="ngForm" (ngSubmit)="addTrainer(addTrainerForm)">
+            <div class="row">
+
+              <input type="hidden" name="_id"
+              #_id="ngModel" [(ngModel)]="trainerService.selectedTrainer._id">
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Trainer Name</span>  <!-- Trainer Name -->
+                <input type="text" name="name"
+                #name="ngModel" [(ngModel)]="trainerService.selectedTrainer.name"
+                placeholder="Enter Trainer name">
+              </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Pokémon</span>  <!-- Favourite Pokemon? -->
+                <input type="text" name="pokemon"
+                #pokemon="ngModel" [(ngModel)]="trainerService.selectedTrainer.pokemon"
+                placeholder="Favourite Pokémon">
+              </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Trainer Avatar</span>  <!-- Trainer Avatar -->
+                <input type="number" name="avatar"
+                #avatar="ngModel" [(ngModel)]="trainerService.selectedTrainer.avatar"
+                placeholder="Enter Trainer Avatar">
+              </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Trainer Guild</span>   <!-- Trainer Guild -->
+                <input type="text" name="guild"
+                #guild="ngModel" [(ngModel)]="trainerService.selectedTrainer.guild"
+                placeholder="Enter Trainer Guild">
+              </div>
+
+              <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Online Status</span>  <!-- Online Status -->
+                <input type="text" name="online"
+                #online="ngModel" [(ngModel)]="trainerService.selectedTrainer.online"
+                placeholder="Trainer Online Status">
+              </div>
+
+              <br>
+              <div class="card-action">
+                <div class="input-field col s12 m12 l12 center">
+                  <button type="submit" class="btn blue">Save</button>
+                  <button (click)="resetForm(addTrainerForm)"class="btn green">Clean</button>
+                </div>
+              </div>
+
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row bottom">
+  <div class="col s12 m12">
+  <table class="centered striped">
+    <thead>
+      <th class="center">Name</th>
+      <th class="center">Admin</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let trainer of trainerService.trainerList">
+        <td>{{trainer.name}}</td>
+        <td>
+          <a href="admin/trainer#top"><mat-icon (click)="updateTrainer(trainer)">edit</mat-icon></a>
+          <mat-icon (click)="deleteTrainer(trainer._id)">delete</mat-icon>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
