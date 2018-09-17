@@ -13,3 +13,14 @@
   color:darkblue;
   font-weight: bold;
 }
+
+.bordered-feature-image {
+		display: inline-block;
+		background: #fff url("../../../../assets/images/bg05.png");
+		padding: 0 5px;
+    width: inherit;
+		border-radius:5px;
+		box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
+		margin: 0 auto 1em auto;
+		outline: 0;
+	}

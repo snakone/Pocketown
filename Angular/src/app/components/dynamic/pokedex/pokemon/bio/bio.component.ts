@@ -48,7 +48,7 @@ export class BioComponent implements OnInit {
   }
 
   addPokemonToTeam(pokemon:Pokemon) {
-    const dialogRef = this.dialog.open(ConfirmComponent,{});  // New Dialog -> Confirm Dialog
+    const dialogRef = this.dialog.open(ConfirmComponent,{});  // New Dialog -> Confirm Dialog Component
 
     dialogRef.afterClosed().subscribe(result => { // After Dialog Closed
       if (result) {  // If Dialog Result = YES
@@ -59,9 +59,10 @@ export class BioComponent implements OnInit {
           });
         } else {  // Add Pokémon to Team & Show Snack Bar with actual Trainer Team
           this.trainerService.addPokemontoTeam(pokemon);
-          this.snackBar.openFromComponent(PokemonTeamComponent, {
-             duration: 3000,
+          this.snackBar.openFromComponent(PokemonTeamComponent, { // Snack Bar - Pokemon Team Component
+             duration: 2500,
              panelClass: ['snackbar'],
+             verticalPosition: 'top'
            });
         } // End of Else Team > 6
       }  // End of If Result
