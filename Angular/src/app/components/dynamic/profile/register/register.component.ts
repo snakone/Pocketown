@@ -81,7 +81,7 @@ export class RegisterComponent implements OnInit {
          timeOut: 5000
        });
      });
-     this.router.navigate(['/']);  // Navigate to Home
+     this.router.navigate(['/profile']);  // Navigate to Home
   }
 
 }
