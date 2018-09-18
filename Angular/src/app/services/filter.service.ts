@@ -24,7 +24,7 @@ export class FilterService {
     if (Stat == "Nº") Stat = "pokedex";  // Match MongoDB property
     if (Type == "Any") Type = ".*?";  // No Type? RegExp to match ALL *
     // No Evolution or ANY? RegExp to match ALL *
-    if (Evolution == "" || Evolution == "6") Evolution = ".*?";
+    if (Evolution == "Any") Evolution = ".*?";
 
     // Send the Type, Stat and Evolution in HTTP Params
     const params = {type: Type, stat: Stat, evolution: Evolution};

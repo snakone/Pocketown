@@ -1,21 +1,19 @@
 <div class="animated slideInRight center top"
-*ngIf="staticData.selectedType || staticData.selectedStat || staticData.selectedEvolution">
+*ngIf="staticData.selectedType || staticData.selectedStat != 'Nº' || staticData.selectedEvolution != 'Any'">
 <!-- Filtering only if We have either one Type or Stat or Evolution -->
 
 Filter
-  <span class="type {{staticData.selectedType}}">
+  <span *ngIf="staticData.selectedType" class="type {{staticData.selectedType}}">
     {{staticData.selectedType}}
-  </span> Pokémon
+   </span>
 
-  <span *ngIf="staticData.selectedStat"> by  <!-- Only if we have Stat -->
-      <span class="bold {{staticData.selectedStat}}">{{staticData.selectedStat}} </span>
-  </span>
+  <span *ngIf="staticData.selectedEvolution != 'Any'"> <!-- Only if we have Evolution -->
+      <span class="bold {{staticData.evolutionName}}"> {{staticData.evolutionName}} </span>
+    </span> Pokémon
 
-  <span *ngIf="staticData.selectedEvolution"> <!-- Only if we have Evolution -->
-    with
-    <span class="bold {{staticData.evolutionName}}">{{staticData.evolutionName}}</span> Evolution
+   <span *ngIf="staticData.selectedStat != 'Nº'"> by  <!-- Only if we have Stat -->
+      <span class="bold {{staticData.selectedStat}}"> {{staticData.selectedStat}} </span>
   </span>?
-
   <div class="actions">
   <button class="btn blue" (click)="filter()">Filter!</button>
   <button class="btn orange" (click)="clear()">Clear</button></div>

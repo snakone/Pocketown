@@ -85,10 +85,10 @@ export class TrainerService {
               this.updateStatus(status).subscribe(res => {});  // Update Status Online
          }
         // Admin Assignament
-         this.trainer.name == 'Snakone' || this.trainer.name == 'Goph' ? this.admin = true : this.admin = false;
-      } // End of else
-   });
-
+         this.trainer.name == 'Snakone' || this.trainer.name == 'Goph'
+         ? this.admin = true : this.admin = false;
+      } // End of Else
+   }); // End of Subscribe
   }
 
   addPokemontoTeam(pokemon:Pokemon){

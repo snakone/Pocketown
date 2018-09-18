@@ -13,10 +13,6 @@ import { Router } from '@angular/router'; // Router
 export class ResultComponent implements OnInit, OnDestroy {
 
   pokemonResult: Pokemon[];  // Pokemon List Result
-  filterType: string;  // Type to filter
-  filterStat: string;  // Stat to filter
-  filterEvo: string;  // Evolution to filter
-  evolutionName: string;  // Evolution Name
   urlImage: string;
 
   constructor(private staticData: StaticService,
@@ -26,27 +22,18 @@ export class ResultComponent implements OnInit, OnDestroy {
               this.urlImage = "../../../../assets/images/pokemon/";  }
 
   ngOnInit() {
-  this.filterType = this.staticData.selectedType;  // Get the Type from the Service
-  this.filterStat = this.staticData.selectedStat;  // Get the Stat from the Service
-  this.filterEvo = this.staticData.selectedEvolution;  // Get the Evolution from the Service
-  this.evolutionName = this.staticData.evolutionName;  // Get the Evolution NAME from the Service
-
   // Checking - Need to know on the Result if None were clicked
-  if (this.filterStat == "") this.filterStat = "Nº";
-  if (this.staticData.evolutionName == "") {  // No Evolution selected? -> Any
-  this.evolutionName = "Any";
-  this.staticData.evolutionName = "Any"; }
-
-  this.filter.filterPokemon(this.filterType,
-                            this.filterStat,
-                            this.filterEvo)  // Filter Pokemon with the Type, Stat and Evolution
+  if (this.staticData.selectedType == "") this.staticData.selectedType = "Any";
+  this.filter.filterPokemon(this.staticData.selectedType,
+                            this.staticData.selectedStat,
+                            this.staticData.selectedEvolution)  // Filter Pokemon with the Type, Stat and Evolution
    .subscribe(res =>{
-     this.pokemonResult = res as any;  // Response as Pokemon = List
+     this.pokemonResult = res as Pokemon[];  // Response as Pokemon = List
    })
   }
 
-  navigate(pokemon: Pokemon) {
-    this.router.navigate(['/pokedex', pokemon._id]);  // Navigate to Single Pokemon using Pokemon ID
+  navigate(pokemon: Pokemon) {  // Navigate to Single Pokemon using Pokemon ID
+    this.router.navigate(['/pokedex', pokemon._id]);
   }
 
   goBack(){
@@ -55,8 +42,8 @@ export class ResultComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {  // Type, Stat and Evolution 0 on exit
     this.staticData.selectedType = "";
-    this.staticData.selectedStat = "";
-    this.staticData.selectedEvolution = "";
+    this.staticData.selectedStat = "Nº";
+    this.staticData.selectedEvolution = "Any";
     this.staticData.evolutionName = "Any";
     this.pokemonResult = [];
   }

@@ -1,5 +1,6 @@
 .radio-button {
-  width: 90px;
+  width: 110px;
+  margin:5px auto;
 }
 
 .center {
@@ -15,6 +16,6 @@
 @media (max-width: 1000px){
   .radio-button {
     width: 22%;
-    margin:5px auto;
+
   }
 }

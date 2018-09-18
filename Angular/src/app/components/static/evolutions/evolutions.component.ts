@@ -21,9 +21,5 @@ export class EvolutionsComponent implements OnInit {
   showEvolution(id: string, evolution: string){
     this.staticData.selectedEvolution = id;  // Evolution ID
     this.staticData.evolutionName = evolution;  // Evolution Name
-
-    if (this.staticData.selectedType == "") // No Type selected? -> Any
-    this.staticData.selectedType = "Any";
-
     }
 }

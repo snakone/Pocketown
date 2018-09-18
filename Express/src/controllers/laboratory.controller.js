@@ -16,9 +16,9 @@ laboratoryCtrl.filterPokemon = async (req, res) => {
 
     const pokemon = await pokemons.find({ evolution: filterEvolution,  // Evolution Pattern /^2/
                                           $or: [{type: filterType},  // RegExp Pattern /^Fire/
-                                                {type2: filterType}]
-
-    }).sort(filterStat);  // Sort Pokemon by Stat DESC
+                                                {type2: filterType}]}
+                                        ,{picture: 1, name: 1})  // Only need Picture and Name
+    .sort(filterStat);  // Sort Pokemon by Stat DESC
     res.json(pokemon);  // Send Pokemon to server as JSON
 }
 

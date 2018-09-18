@@ -1,5 +1,6 @@
 .radio-button {
-  width: 120px;
+  width: 125px;
+  margin:5px auto;
 }
 
 .center {
@@ -12,17 +13,6 @@
 
 @media (max-width: 1000px){
   .radio-button {
-    width: 32%;
-    margin:5px auto;
+    width: 30%;
   }
 }
-
-.Any {
-  background: none;
-}
-
-.Tiny {color:#bbdefb}
-.Little {color:#64b5f6}
-.Adult {color:#2196f3}
-.Mega {color:#1976d2}
-.R2 {color:#0d47a1}

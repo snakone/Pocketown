@@ -19,14 +19,6 @@ span {
   color:grey;
 }
 
-.potion {
-  margin: 25px;
-}
-
-.potion:hover {
-  cursor: pointer;
-  filter:brightness(1.5);
-}
 
 .pokemon {
   width: 56px;
@@ -36,23 +28,6 @@ span {
 .pokemon:hover {
   cursor:pointer;
   filter: brightness(1.2);
-}
-
-.lost {
-position: absolute;
-text-align: center;
-top:45%;
-left:55%;
-transform: translate(-50%, -50%);
-margin-top: 10px;
-width: 65%;
-}
-
-@media (max-width: 600px){
-  .lost {
-  left:50%;
-  margin-left: 0;
-  }
 }
 
 .top {

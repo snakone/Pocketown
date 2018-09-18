@@ -20,8 +20,8 @@ export class FilteringComponent implements OnInit {
 
   clear(){  // Type, Stat and Evolution 0
     this.staticData.selectedType = "";
-    this.staticData.selectedStat = "";
-    this.staticData.selectedEvolution = "";
+    this.staticData.selectedStat = "Nº";
+    this.staticData.selectedEvolution = "Any";
     this.staticData.evolutionName = "Any";
   }
 

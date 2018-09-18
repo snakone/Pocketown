@@ -19,12 +19,7 @@ export class StatsComponent implements OnInit {
   }
 
   showStat(stat: string){
-
     this.staticData.selectedStat = stat;  // Assing the selected Stat to the Service
-
-    if (this.staticData.selectedType == "") // No Type selected? -> Any
-    this.staticData.selectedType = "Any";
-
   }
 
 }
