@@ -21,7 +21,7 @@
         <h5 class="truncate">{{trainer.name}}</h5>
       </div>
 
-      <div class="col s2 m2 l2">
+      <div class="col s2 m2 l2">  <!-- Online Offline? -->
           <img *ngIf="trainer.online" class="right online" src="{{urlImage}}online.png"/>
           <img *ngIf="!trainer.online" class="right online" src="{{urlImage}}offline.png"/>
       </div>
@@ -35,9 +35,10 @@
           <p>Server: <span class="bold">{{trainer.server}}</span></p>
           <p>Guild: <span class="bold">{{trainer.guild}}</span></p>
       </div>
-      <div class="col s12 m12 l6 center team">
+      <div class="col s12 m12 l6 center team">  <!-- Trainer Team -->
           <span *ngFor="let pokemon of trainer.team">
-              <img class="pokemonTeam" src="{{urlImage}}pokemon/{{pokemon.picture}}.png"/>
+              <img class="pokemonTeam" (click)="navigatePokemon(pokemon)"
+              src="{{urlImage}}pokemon/{{pokemon.picture}}.png"/>
           </span>
       </div>
     </div>

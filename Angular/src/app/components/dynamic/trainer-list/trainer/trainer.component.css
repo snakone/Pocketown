@@ -25,6 +25,11 @@ h5 {
   margin: 0 auto;
 }
 
+.pokemonTeam:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
 .noPokemon {
   margin-top: 30px;
   font-size: .8em;

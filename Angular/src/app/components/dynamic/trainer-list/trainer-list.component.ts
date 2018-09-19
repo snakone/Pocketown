@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { TrainerService } from '../../../services/trainer.service';  // Trainer Service
 
+import { Pokemon } from '../../../models/pokemon';  // Pokemon Model
 import { Trainer } from '../../../models/trainer';  // Trainer Model
 
 import { Router } from '@angular/router'; // Router
@@ -48,7 +49,11 @@ export class TrainerListComponent implements OnInit {
   }
 
   navigateTrainer(name: string){
-      this.router.navigate(['/trainer', name]);  // Navigate to Single Trainer using Pokemon ID
+      this.router.navigate(['/trainer', name]);  // Navigate to Single Trainer using Trainer ID
+  }
+
+  navigatePokemon(pokemon: Pokemon){
+      this.router.navigate(['/pokedex', pokemon._id]);  // Navigate to Single Pokemon using Pokemon ID
   }
 
 

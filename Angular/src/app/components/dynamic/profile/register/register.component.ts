@@ -27,8 +27,6 @@ export class RegisterComponent implements OnInit {
   pokemonList: Pokemon[];  // Pokemon List on Favourite
   servers: string[];  // Server List
   avatars: string[];  // Avatar List
-  trainerID: string;  // Trainer ID upon Register
-  team: Pokemon[];
 
   urlImage: string;
 

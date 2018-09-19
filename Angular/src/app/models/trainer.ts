@@ -2,10 +2,10 @@ import { Pokemon } from './pokemon';
 
 export class Trainer {
       _id: string  // MongoDB ID
-      trainerID: string;
+      trainerID: string;  // Auth0 ID
       name: string;
-      pokemon: string;
-      team: Pokemon[];
+      pokemon: string;  // Favourite Pokemon
+      team: Pokemon[];  // Pokemon Team
       avatar: string;
       server: string;
       guild: string;

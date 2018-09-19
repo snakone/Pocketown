@@ -14,9 +14,7 @@ export class FilteringComponent implements OnInit {
   constructor(private staticData: StaticService,
               private router : Router) { }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
   clear(){  // Type, Stat and Evolution 0
     this.staticData.selectedType = "";

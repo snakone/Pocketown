@@ -15,27 +15,28 @@
     <p>Guild: <span class="bold">{{trainer.guild}}</span></p>
   </div>
 
-  <div class="center top" *ngIf="trainerService.trainerTeam.length">
+  <div class="center top" *ngIf="trainerService.trainerTeam.length">  <!-- Only IF Edit Team -->
   <div class="row center">
-    <h5>Register a Team</h5>
+    <h5>Register a Team</h5>  <!-- Register -->
     <div class="col s2 m2 l2" *ngFor="let pokemon of trainerService.trainerTeam; let i = index">
       <img class="pokemonTeam" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
       <mat-icon (click)="removePokemon(i)" class="close">close</mat-icon>
     </div>
   </div>
-    <div class="center top buttons">
-      <div class="col s6 m6 l6">
+    <div class="center buttons">
+      <div class="col s6 m6 l6"> <!-- Register Button -->
         <button (click)="registerTeam()" class="btn blue">Register</button>
       </div>
-      <div class="col s6 m6 l6">
+      <div class="col s6 m6 l6"> <!-- Cancel Button-->
         <button (click)="cancel()" class="btn red">Cancel</button>
     </div>
+    <br>
     </div>
   </div>
   <br>
-  <div *ngIf="trainer.team && trainerService.trainerTeam.length == 0">
+  <div *ngIf="trainer.team && trainerService.trainerTeam.length == 0">  <!-- Only IF Trainer Team -->
       <div class="row center">
-        <h5>Pokémon Team</h5>
+        <h5>Pokémon Team</h5> <!-- Pokemon Team -->
         <div class="col s2 m2 l2" *ngFor="let pokemon of trainer.team">
           <img class="pokemonTeam" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
         </div>
@@ -45,7 +46,7 @@
         </div>
 
   </div>
-
+    <!-- Only IF NOT Trainer Team or Edit Team -->
     <div *ngIf="!trainerService.trainerTeam.length && !trainer.team" class="center">
       <p class="noPokemon">Seems like You don't have any <span class="darkblue">Pokémon</span> on your Team.</p>
     </div>

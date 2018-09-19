@@ -19,7 +19,7 @@ import { ToastrService } from 'ngx-toastr';  // Toastr
 })
 export class ProfileTrainerComponent implements OnInit {
 
-  trainer: Trainer;
+  trainer: Trainer;  // Trainer from MongoDB
   urlPokemon: string;
   urlImage: string;
   pokemonTeam: Pokemon[];
@@ -34,12 +34,6 @@ export class ProfileTrainerComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (this.authService.isAuthenticated()) {  // Only If Logged In with Auth0
-      this.authService.getProfile((err, profile) => {  // Get the Profile
-      // After We get the Trainer We check it
-      this.trainerService.checkTrainer(profile);
-      });
-    }
     this.trainer = this.trainerService.trainer;  // Get the Trainer from the Service
   }
 
@@ -49,10 +43,10 @@ export class ProfileTrainerComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => { // After Dialog Closed
       if (result){  // If Dialog Result = YES
           this.trainerService.registerPokemonTeam(this.trainerService.trainerTeam,
-                                                  this.trainer._id)
+                                                  this.trainer._id)  // Register Team
            .subscribe(res => {
-             this.trainerService.trainerTeam = [];
-             this.trainerService.getTrainerbyId(this.trainer.trainerID)
+             this.trainerService.trainerTeam = [];  // After Register Clean the Team
+             this.trainerService.getTrainerbyId(this.trainer.trainerID)  // Get the Updated Team
               .subscribe(res => {
                 this.trainerService.trainer = res[0] as Trainer;
                 this.router.navigate(['/home']);  // Navigate to Home
@@ -67,14 +61,14 @@ export class ProfileTrainerComponent implements OnInit {
   }
 
   editTeam(){
-    this.trainerService.trainerTeam = this.trainer.team;
+    this.trainerService.trainerTeam = this.trainer.team;  // MongoDB Team = Edit Team
   }
 
   cancel(){
-    this.trainerService.trainerTeam = [];
-    this.trainerService.getTrainerbyId(this.trainer.trainerID)
+    this.trainerService.trainerTeam = [];  // Clean the Team
+    this.trainerService.getTrainerbyId(this.trainer.trainerID)  // Get the Original Team
      .subscribe(res => {
-       this.trainer = res[0] as Trainer;
+       this.trainer = res[0] as Trainer;  // Server Response as Trainer
      })
   }
 
@@ -83,7 +77,7 @@ export class ProfileTrainerComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => { // After Dialog Closed
       if (result) {  // If Dialog Result = YES
-      this.trainerService.trainerTeam.splice(i,1); // Remove Trainer by Index
+      this.trainerService.trainerTeam.splice(i,1); // Remove Trainer by Index from Edit Team
         }
     });
   }

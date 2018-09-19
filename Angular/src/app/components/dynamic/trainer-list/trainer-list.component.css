@@ -59,6 +59,11 @@ blockquote {
   padding: 2px;
 }
 
+.pokemonTeam:hover{
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
 input[type=text]:not(.browser-default) {
   text-align: center;
   margin: 0;

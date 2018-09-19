@@ -18,12 +18,12 @@
       <div class="center">
         <h5>Pokémon Team</h5>
       <div class="row center">
-        <div class="col s2 m2 l2" *ngFor="let pokemon of trainerService.trainerTeam">
-          <img class="pokemonTeam" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
+        <div class="col s2 m2 l2" *ngFor="let pokemon of trainer.team">
+          <img class="pokemonTeam" (click)="navigate(pokemon)" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
 
         </div>
       </div>
-        <div *ngIf="trainerService.trainerTeam.length == 0">
+        <div *ngIf="!trainer.team">  <!-- Only If No Trainer Team -->
           <p class="noPokemon">Seems like <span class="bold">{{trainer.name}}</span>
              doesn't have any <span class="darkblue">Pokémon</span> yet.
           </p>

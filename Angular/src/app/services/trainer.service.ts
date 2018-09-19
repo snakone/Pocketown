@@ -23,7 +23,7 @@ export class TrainerService {
   readonly TRAINER_API = "http://localhost:3000/trainer";  // Server API Trainer
   readonly TRAINER_NAME_API = "http://localhost:3000/trainer/name";  // Server API Get Trainer by Name
   readonly STATUS_API = "http://localhost:3000/trainer/status";  // Server API Online Status
-  readonly REGISTER_TEAM_API = "http://localhost:3000/profile";  // Server API Trainer
+  readonly REGISTER_TEAM_API = "http://localhost:3000/profile";  // Server API Register Team
 
   // Heroku Server --> https://pocketown-server.herokuapp.com
 
@@ -64,8 +64,8 @@ export class TrainerService {
       return this.http.put(this.STATUS_API + `/${this.trainerID}`, trainerStatus);
   }
 
-  registerPokemonTeam(team: Pokemon[], id: string){
-    const params = {team: team, trainerID: id };
+  registerPokemonTeam(team: Pokemon[], id: string){  // Update Trainer Team
+    const params = {team: team, trainerID: id };  // Need Trainer ID and Team
     return this.http.put(this.REGISTER_TEAM_API, params);
   }
 
@@ -96,7 +96,7 @@ export class TrainerService {
   }
 
   addPokemontoTeam(pokemon:Pokemon){
-    this.trainerTeam.push(pokemon);
+    this.trainerTeam.push(pokemon);  // Push the Selected Pokemon into Edit Team
   }
 
 
