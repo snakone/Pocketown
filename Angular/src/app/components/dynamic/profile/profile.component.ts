@@ -15,7 +15,7 @@ export class ProfileComponent implements OnInit {
               private trainerService: TrainerService) { }
 
   ngOnInit() {
-    if (this.authService.isAuthenticated()) {
+    if (this.authService.isAuthenticated()) {  // Only If Logged In with Auth0
       this.authService.getProfile((err, profile) => {  // Get the Profile
       // After We get the Trainer We check it
       this.trainerService.checkTrainer(profile);

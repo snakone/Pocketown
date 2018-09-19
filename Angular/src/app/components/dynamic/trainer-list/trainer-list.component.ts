@@ -48,7 +48,7 @@ export class TrainerListComponent implements OnInit {
   }
 
   navigateTrainer(name: string){
-      this.router.navigate(['/trainer', name]);  // Navigate to Single Pokemon using Pokemon ID
+      this.router.navigate(['/trainer', name]);  // Navigate to Single Trainer using Pokemon ID
   }
 
 

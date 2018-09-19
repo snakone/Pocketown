@@ -59,6 +59,8 @@ import { FilteringComponent } from './components/dynamic/laboratory/filtering/fi
 // Moves
 import { MovesComponent } from './components/dynamic/moves/moves.component';
 import { MoveComponent } from './components/dynamic/moves/move/move.component';
+// Single Trainer
+import { TrainerComponent } from './components/dynamic/trainer-list/trainer/trainer.component';
 // Trainer List
 import { TrainerListComponent } from './components/dynamic/trainer-list/trainer-list.component';
 // Held Items
@@ -73,6 +75,7 @@ import { TypesComponent } from './components/static/types/types.component';
 import { EvolutionsComponent } from './components/static/evolutions/evolutions.component';
 import { ConfirmComponent } from './components/static/confirm/confirm.component';
 import { PokemonTeamComponent } from './components/static/pokemon-team/pokemon-team.component';
+import { LoadingComponent } from './components/static/loading/loading.component';
 
 // Single Pokemon Components //
 import { BioComponent } from './components/dynamic/pokedex/pokemon/bio/bio.component';
@@ -85,7 +88,6 @@ import { PokemonMovesComponent } from './components/dynamic/pokedex/pokemon/move
 
 // Pocketown Guides //
 import { VictoryRoadComponent } from './components/static/guides/victory-road/victory-road.component';
-import { TrainerComponent } from './components/dynamic/trainer/trainer.component';
 
 
 @NgModule({
@@ -101,8 +103,7 @@ import { TrainerComponent } from './components/dynamic/trainer/trainer.component
     AdminPokeItemComponent, PokeItemsComponent, DownloadComponent, MoveComponent,
     PokeItemComponent, ProfileComponent, ProfileTrainerComponent, RegisterComponent,
     TrainerListComponent, PocketownComponent, ConfirmComponent, PokemonTeamComponent,
-    AdminTrainerComponent,
-    TrainerComponent ],
+    AdminTrainerComponent, TrainerComponent, LoadingComponent ],
 
   imports: [
     BrowserModule, BrowserAnimationsModule, MaterialModule, RoutingModule,

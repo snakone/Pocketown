@@ -1,9 +1,4 @@
-<div class="row center loading" *ngIf="loading">  <!-- Only when Loading... -->
-    <img class="responsive-img" src="https://i.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.webp">
-  <p class="center">
-    <span class="bold">LOADING... PLEASE WAIT</span>
-  </p>
-</div>
+<app-loading *ngIf="!pokedex"></app-loading>
 
 <div class="row center pokedex bottom" *ngIf="pokedex">  <!-- Only if We have a Pokedex -->
 

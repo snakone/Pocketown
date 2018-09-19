@@ -1,9 +1,4 @@
-<div class="row center loading" *ngIf="!filteredTrainers">  <!-- Only when Loading... -->
-    <img class="responsive-img" src="https://i.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.webp">
-  <p class="center">
-    <span class="bold">LOADING... PLEASE WAIT</span>
-  </p>
-</div>
+<app-loading *ngIf="!filteredTrainers"></app-loading>
 
 <div class="trainerList" *ngIf="filteredTrainers">
 
@@ -41,8 +36,8 @@
           <p>Guild: <span class="bold">{{trainer.guild}}</span></p>
       </div>
       <div class="col s12 m12 l6 center team">
-          <span *ngFor="let pokemon of pokemonTeam">
-              <img class="pokemonTeam" src="{{urlImage}}pokemon/{{pokemon}}.png"/>
+          <span *ngFor="let pokemon of trainer.team">
+              <img class="pokemonTeam" src="{{urlImage}}pokemon/{{pokemon.picture}}.png"/>
           </span>
       </div>
     </div>

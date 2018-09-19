@@ -18,6 +18,11 @@
   width:56px;
 }
 
+.pkm-img:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
 .item {
   width: 60px;
 }

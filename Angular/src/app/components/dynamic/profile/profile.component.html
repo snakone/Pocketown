@@ -1,12 +1,7 @@
+<app-loading *ngIf="!trainerService.isTrainer && !trainerService.notTrainer"></app-loading>
+
 <div *ngIf="trainerService.isTrainer" class="animated slideinUp"> <!-- Only when Trainer is Registered -->
   <trainer-profile></trainer-profile>
-</div>
-
-<div class="row center loading" *ngIf="!trainerService.isTrainer && !trainerService.notTrainer">  <!-- Only when Loading... -->
-    <img class="responsive-img" src="https://i.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.webp">
-  <p class="center">
-    <span class="bold">LOADING... PLEASE WAIT</span>
-  </p>
 </div>
 
 <div *ngIf="trainerService.notTrainer">  <!-- Show if not a Trainer -->

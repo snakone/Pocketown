@@ -1,5 +1,4 @@
 <div *ngIf="trainer">
-
     <mat-card class="card">
       <div class="row">
         <div class="col s6 m6 l6 center">
@@ -19,9 +18,9 @@
       <div class="center">
         <h5>Pokémon Team</h5>
       <div class="row center">
-        <div class="col s2 m2 l2" *ngFor="let pokemon of trainerService.trainerTeam; let i = index">
+        <div class="col s2 m2 l2" *ngFor="let pokemon of trainerService.trainerTeam">
           <img class="pokemonTeam" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
-          <mat-icon (click)="removePokemon(i)" class="close">close</mat-icon>
+
         </div>
       </div>
         <div *ngIf="trainerService.trainerTeam.length == 0">

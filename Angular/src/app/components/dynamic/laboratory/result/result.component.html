@@ -1,9 +1,4 @@
-<div class="row center loading" *ngIf="!pokemonResult">  <!-- Only when Loading... -->
-    <img class="responsive-img" src="https://i.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.webp">
-  <p class="center">
-    <span class="bold">LOADING... PLEASE WAIT</span>
-  </p>
-</div>
+<app-loading *ngIf="!pokemonResult"></app-loading>
 
  <div *ngIf="pokemonResult" class="center"> <!-- Filter Match! -->
    <h4>You are watching

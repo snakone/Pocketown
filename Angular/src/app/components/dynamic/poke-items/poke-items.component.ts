@@ -14,13 +14,11 @@ export class PokeItemsComponent implements OnInit {
 
   pokeItemList: pokeItem[];
   filteredpokeItemList: pokeItem[];
-  loading: boolean;  // Whenever the data is loaded or NOT
   searchValue: string = "";  // Input Value to Search For - ngModel on HTML
   urlImage: string;
 
   constructor(private pokeItemService: pokeItemService,
               private router: Router) {
-        this.loading = true;  // Start at true, always need to load at first time
         this.urlImage = "../../../../assets/images/items/"
    }
 
@@ -28,13 +26,12 @@ export class PokeItemsComponent implements OnInit {
     this.pokeItemService.getpokeItem()  // Get pokeItem List
      .subscribe(res => {
        this.pokeItemList = res as pokeItem[];
-       this.filteredpokeItemList = this.pokeItemList;
-       this.loading = false;  // After We got the data No more Loading
+       this.filteredpokeItemList = this.pokeItemList;  // Make a copy to Filter
      })
   }
 
   navigate(pokeitem: string) {
-    this.router.navigate(['/held-items', pokeitem]);  // Navigate to Single Pokemon using Pokemon ID
+    this.router.navigate(['/held-items', pokeitem]);  // Navigate to Single Pokemon Item
   }
 
   onKeyUp(event){  // On Key Up Javascript Event

@@ -14,22 +14,19 @@ export class PokedexComponent implements OnInit {
   pokedex: Pokemon[];  // Original Pokedex
   filteredPokedex: Pokemon[];  // Filtered Pokedex
   selectedPokemon: Pokemon;  // Save selected Pokemon
-  loading: boolean;  // Whenever the data is loaded or NOT
   searchValue: string = "";  // Input Value to Search For - ngModel on HTML
   urlImage: string;
 
   constructor(private pokedexService: PokedexService,
               private router: Router) {
     this.urlImage = "../../../../assets/images/pokemon/";
-    this.loading = true;  // Start at true, always need to load at first time
    }
 
   ngOnInit() {
      this.pokedexService.getPokedex()  // HTTP POST to Server
       .subscribe(res => {  // Subscribe to the Server Response
-        this.pokedex = res as any;  // Response as Pokemon = List
+        this.pokedex = res as Pokemon[];  // Response as Pokemon = List
         this.filteredPokedex = this.pokedex;  // Filtered List
-        this.loading = false;  // After We got the data No more Loading
       })
   }
 

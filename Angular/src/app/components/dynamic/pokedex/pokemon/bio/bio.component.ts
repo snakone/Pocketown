@@ -56,7 +56,7 @@ export class BioComponent implements OnInit {
           this.toastr.error('',"Team can't exceed 6 Pokémon", {
             timeOut: 5000,
             extendedTimeOut: 1000
-          });
+          });  // Else Trainer Team >= 6
         } else {  // Add Pokémon to Team & Show Snack Bar with actual Trainer Team
           this.trainerService.addPokemontoTeam(pokemon);
           this.snackBar.openFromComponent(PokemonTeamComponent, { // Snack Bar - Pokemon Team Component

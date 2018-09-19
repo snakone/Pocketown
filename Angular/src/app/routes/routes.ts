@@ -5,7 +5,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { WelcomeComponent } from '../components/dynamic/welcome/welcome.component';
 import { PokedexComponent } from '../components/dynamic/pokedex/pokedex.component';
 import { PokemonComponent } from '../components/dynamic/pokedex/pokemon/pokemon.component';
-import { TrainerComponent } from '../components/dynamic/trainer/trainer.component';
+import { TrainerComponent } from '../components/dynamic/trainer-list/trainer/trainer.component';
 import { MoveComponent } from '../components/dynamic/moves/move/move.component';
 import { PokeItemComponent } from '../components/dynamic/poke-items/poke-item/poke-item.component';
 import { AdminPokemonComponent } from '../components/admin/pokemon/admin-pokemon.component';

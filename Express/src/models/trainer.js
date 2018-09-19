@@ -5,6 +5,7 @@ const trainerSchema = new Schema ({  // Move Model
   'trainerID': {type: String, required: true},
   'name': {type: String, required: true, index: { unique: true }},
   'pokemon': {type: String, required: true},
+  'team': {type: Array, required: false},
   'avatar': {type: String, required: true},
   'server': {type: String, required: true},
   'guild': {type: String, required: true},

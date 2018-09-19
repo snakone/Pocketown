@@ -13,6 +13,21 @@ h5 {
   color:red;
 }
 
+.buttons button {
+  margin:auto 10px;
+  margin-bottom: 25px;
+}
+
+.pokemonTeam {
+  width: 40px;
+  margin: 0 auto;
+}
+
+.top {
+  margin-top: 30px;
+  padding-bottom: 0;
+}
+
 .close:hover {
   cursor: pointer;
   transform: rotate(-90deg);
@@ -38,6 +53,8 @@ h5 {
 .noPokemon {
   margin-top: 30px;
   font-size: .8em;
+  position: absolute;
+  bottom: 10px;
 }
 
 .darkblue {

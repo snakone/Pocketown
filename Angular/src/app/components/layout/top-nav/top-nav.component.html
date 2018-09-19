@@ -6,8 +6,8 @@
         <img class="logo" [routerLink]="['home']" [src]="logoURL">  <!-- Logo -->
       </span>
         <mat-icon *ngIf="!authService.isAuthenticated()" svgIcon="trainer"
-        (click)="login()" class="custom-icon"></mat-icon>  <!-- Trainer -->
+        (click)="login()" class="custom-icon"></mat-icon>  <!-- Logged Out? login -->
         <mat-icon *ngIf="authService.isAuthenticated()" svgIcon="trainer"
-        [routerLink]="['profile']" class="custom-icon"></mat-icon>  <!-- Trainer -->
+        [routerLink]="['profile']" class="custom-icon"></mat-icon>  <!-- Logged In? Profile -->
   </mat-toolbar-row>
 </mat-toolbar>

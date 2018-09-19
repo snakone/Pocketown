@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { TrainerService } from '../../../services/trainer.service';  // Trainer Service
+import { TrainerService } from '../../../../services/trainer.service';  // Trainer Service
 
-import { Trainer } from '../../../models/trainer';  // Trainer Model
+import { Trainer } from '../../../../models/trainer';  // Trainer Model
 
 import { ActivatedRoute } from '@angular/router'; // Routes
 
@@ -19,8 +19,8 @@ export class TrainerComponent implements OnInit {
 
   constructor(private trainerService: TrainerService,
               private activeRoute: ActivatedRoute) {
-                this.urlPokemon = "../../../../assets/images/pokemon/";
-                this.urlImage = "../../../../assets/images/avatar/";
+                this.urlPokemon = "../../../../../assets/images/pokemon/";
+                this.urlImage = "../../../../../assets/images/avatar/";
               }
 
   ngOnInit() {

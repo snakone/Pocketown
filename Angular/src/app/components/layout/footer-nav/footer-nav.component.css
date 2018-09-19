@@ -91,12 +91,11 @@ footer.page-footer {
   color:white;
 }
 
-
 @media only screen and (max-width:600px) {
 
   .nav-Title {
       transition: padding 2s;
-      padding-left: 20px;
+      padding-left: 15px;
     }
 }
 
@@ -113,7 +112,7 @@ footer.page-footer {
     }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 498px) {
 
   .nav-Title::after {
       content: "";

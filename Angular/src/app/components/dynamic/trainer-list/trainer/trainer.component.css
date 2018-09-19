@@ -9,16 +9,6 @@ h5 {
   font-size: 1.3em;
 }
 
-.close {
-  color:red;
-}
-
-.close:hover {
-  cursor: pointer;
-  transform: rotate(-90deg);
-  transition: transform 2s;
-  overflow: hidden;
-}
 
 .pokemon {
   width: 65px;

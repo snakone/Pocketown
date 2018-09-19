@@ -27,7 +27,9 @@ export class FilteringComponent implements OnInit {
 
   filter(){
     this.router.navigate(["laboratory/result"]);  // Then go to Result
+    // All Data; Type, Stat and Evolution are assigned now on the Service. Result will Load this Data.
   }
+
 
 
 

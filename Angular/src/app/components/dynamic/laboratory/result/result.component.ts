@@ -24,9 +24,10 @@ export class ResultComponent implements OnInit, OnDestroy {
   ngOnInit() {
   // Checking - Need to know on the Result if None were clicked
   if (this.staticData.selectedType == "") this.staticData.selectedType = "Any";
+   // Filter Pokemon with the Type, Stat and Evolution
   this.filter.filterPokemon(this.staticData.selectedType,
                             this.staticData.selectedStat,
-                            this.staticData.selectedEvolution)  // Filter Pokemon with the Type, Stat and Evolution
+                            this.staticData.selectedEvolution)
    .subscribe(res =>{
      this.pokemonResult = res as Pokemon[];  // Response as Pokemon = List
    })

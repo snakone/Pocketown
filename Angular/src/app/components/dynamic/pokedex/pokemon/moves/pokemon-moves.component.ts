@@ -35,9 +35,10 @@ export class PokemonMovesComponent implements OnInit {
        .evolutionToString(this.pokemon.evolution);
   }
 
-  getMovesbyName(){
+  getMovesbyName(){  // Need the Move Object from MongoDB to know the Type and ID
     this.moves = [this.pokemon.move1, this.pokemon.move2,
-                  this.pokemon.move3, this.pokemon.move4];  // Assign Pokemon Moves
+                  this.pokemon.move3, this.pokemon.move4,
+                  this.pokemon.zmove];  // Assign Pokemon Moves
 
     this.moveService.getMoveTypebyName(this.moves) // Send Pokemon Moves to Server to know the Type
      .subscribe(res => {
@@ -51,7 +52,7 @@ export class PokemonMovesComponent implements OnInit {
       this.pokemon.evolution = this.pokedexService
        .evolutionToString(this.pokemon.evolution);
 
-      this.getMovesbyName();
+      this.getMovesbyName();  // Get the Move's Name everytime We Switch a Pokemon
   }
 
   navigate(move: Move) {

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { pokeItem } from '../../../../models/poke-item';  // Pokemon Model
+import { pokeItem } from '../../../../models/poke-item';  // Poke Item Model
 
-import { pokeItemService } from '../../../../services/poke-item.service';  // Move Service
+import { pokeItemService } from '../../../../services/poke-item.service';  // Poke Item Service
 
 import { ActivatedRoute } from '@angular/router'; // Routes
 
@@ -22,10 +22,10 @@ export class PokeItemComponent implements OnInit {
               this.urlImage = "../../../../../../assets/images/items/"; }
 
   ngOnInit() {
-    let routeParams = this.activeRoute.snapshot.params.pokeitem; // Get the Move ID from URL
+    let routeParams = this.activeRoute.snapshot.params.pokeitem; // Get the Poke Item ID from URL
     this.pokeitemService.getpokeItembyId(routeParams)  // HTTP POST to Server with Move ID
      .subscribe(res => {  // Subscribe to the Server Response
-       this.pokeItem = res as pokeItem;  // Response as Move
+       this.pokeItem = res as pokeItem;  // Response as Poke Item
 
      })
   }

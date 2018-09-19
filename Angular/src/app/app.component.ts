@@ -4,7 +4,6 @@ import { MatIconRegistry } from "@angular/material/icon"; // Custom Icon
 import { DomSanitizer } from "@angular/platform-browser";
 
 import { AuthService } from './services/auth.service';  // Auth0 Service
-import { TrainerService } from './services/trainer.service';  // Trainer Service
 
 @Component({
   selector: 'app-pocketown',
@@ -16,18 +15,10 @@ export class AppComponent {
 
   constructor(private matIconRegistry: MatIconRegistry, // Add a custom Icon.svg)
               private domSanitizer: DomSanitizer,
-              private trainerService: TrainerService,
               public authService: AuthService){
   this.title ="Pocketown";
 
   authService.handleAuthentication();  // Method Need to Log in with Auth0
-
-  if (authService.isAuthenticated()) {  // No Profile?
-      authService.getProfile((err, profile) => {  // Get the Profile
-      // After We get the Trainer We check it
-      trainerService.checkTrainer(profile);
-       });
-    }
 
   // Icon Register
 

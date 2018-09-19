@@ -43,6 +43,18 @@ trainerCtrl.updateTrainer = async (req, res) => {  // Update Trainer
      });
 }
 
+trainerCtrl.registerPokemonTeam = async (req, res) => {  // Register Pokemon Team
+
+   const team = req.body.team;  // Pokemon Team
+   const id = req.body.trainerID;  // Trainer ID
+
+   await trainers.findByIdAndUpdate(id, {team: team},  // Find by ID and Update in MongoDB
+                                     {new: true});  // New Team if ID not Match
+     res.json({
+       status: "Pokémon Team Added"
+     });
+}
+
 trainerCtrl.deleteTrainer = async (req, res) => {  // Remove Trainer from MongoDB
 
   await trainers.findByIdAndRemove(req.params.id);  // Remove by ID

@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { Pokemon } from '../../../../../models/pokemon';  // Pokemon Model
 import { PokedexService } from '../../../../../services/pokedex.service';  // Pokedex Service
+import { Router } from '@angular/router'; // Router
 
 @Component({
   selector: 'pokemon-effort',
@@ -15,7 +16,8 @@ export class EffortComponent implements OnInit {
   @Input() family: string[];  // Pokemon Familiars
   urlImage: string;
 
-  constructor(private pokedexService: PokedexService) {
+  constructor(private pokedexService: PokedexService,
+              private router: Router) {
       this.urlImage = "../../../../../../assets/images/pokemon/";
   }
 

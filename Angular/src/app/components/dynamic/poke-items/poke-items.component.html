@@ -1,9 +1,4 @@
-<div class="center loading" *ngIf="loading">  <!-- Only when Loading... -->
-    <img class="responsive-img" src="https://i.giphy.com/media/l0HlLMeBgzK2UuHVS/giphy.webp">
-  <p class="center">
-    <span class="bold">LOADING... PLEASE WAIT</span>
-  </p>
-</div>
+<app-loading *ngIf="!filteredpokeItemList"></app-loading>
 
 <div class="pokeItems" *ngIf="filteredpokeItemList">
     <div class="sticky">  <!-- Sticky Search Bar -->
