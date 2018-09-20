@@ -34,7 +34,6 @@ export class ProfileTrainerComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.trainer = this.trainerService.trainer;  // Get the Trainer from the Service
   }
 
   registerTeam(){
@@ -42,20 +41,7 @@ export class ProfileTrainerComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => { // After Dialog Closed
       if (result){  // If Dialog Result = YES
-          this.trainerService.registerPokemonTeam(this.trainerService.trainerTeam,
-                                                  this.trainer._id)  // Register Team
-           .subscribe(res => {
-             this.trainerService.trainerTeam = [];  // After Register Clean the Team
-             this.trainerService.getTrainerbyId(this.trainer.trainerID)  // Get the Updated Team
-              .subscribe(res => {
-                this.trainerService.trainer = res[0] as Trainer;
-                this.router.navigate(['/home']);  // Navigate to Home
-                this.toastr.info('','Pokémon Team Registered!', {
-                  timeOut: 10000,
-                  extendedTimeOut: 5000
-                });
-              })
-           });
+
          }
     });
   }
@@ -66,10 +52,6 @@ export class ProfileTrainerComponent implements OnInit {
 
   cancel(){
     this.trainerService.trainerTeam = [];  // Clean the Team
-    this.trainerService.getTrainerbyId(this.trainer.trainerID)  // Get the Original Team
-     .subscribe(res => {
-       this.trainer = res[0] as Trainer;  // Server Response as Trainer
-     })
   }
 
   removePokemon(i){ // Index

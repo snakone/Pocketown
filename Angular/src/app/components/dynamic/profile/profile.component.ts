@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { AuthService } from '../../../services/auth.service';  // Auth0 Service
 import { TrainerService } from '../../../services/trainer.service';  // Trainer Service
+import { Trainer } from '../../../models/trainer';  // Trainer Service
 
 @Component({
   selector: 'user-profile',
@@ -18,7 +19,9 @@ export class ProfileComponent implements OnInit {
     if (this.authService.isAuthenticated()) {  // Only If Logged In with Auth0
       this.authService.getProfile((err, profile) => {  // Get the Profile
       // After We get the Trainer We check it
-      this.trainerService.checkTrainer(profile);
+      this.trainerService.checkTrainer(profile).then(res =>{
+      this.trainerService.fireTrainer = res as Trainer;
+    });
       });
     }
   }

@@ -1,6 +1,6 @@
-<app-loading *ngIf="!filteredTrainers"></app-loading>
+<app-loading *ngIf="filteredTrainers == ''"></app-loading>
 
-<div class="trainerList" *ngIf="filteredTrainers">
+<div class="trainerList" *ngIf="filteredTrainers !=''">
 
   <div class="sticky">  <!-- Sticky Search Bar -->
         <div class="input-field center top">  <!-- Key Up Event -->
@@ -35,12 +35,16 @@
           <p>Server: <span class="bold">{{trainer.server}}</span></p>
           <p>Guild: <span class="bold">{{trainer.guild}}</span></p>
       </div>
-      <div class="col s12 m12 l6 center team">  <!-- Trainer Team -->
+      <div *ngIf="trainer.team !=''" class="col s12 m12 l6 center team">  <!-- Trainer Team -->
           <span *ngFor="let pokemon of trainer.team">
               <img class="pokemonTeam" (click)="navigatePokemon(pokemon)"
-              src="{{urlImage}}pokemon/{{pokemon.picture}}.png"/>
+              src="{{urlImage}}pokemon/{{pokemon}}.png"/>
           </span>
       </div>
+      <div class="col s12 m12 l6 center team" *ngIf="trainer.team == ''">
+        No Pokémon team
+      </div>
+
     </div>
 
   </mat-card>

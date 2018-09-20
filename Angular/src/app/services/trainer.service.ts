@@ -5,6 +5,13 @@ import { Trainer } from '../models/trainer';  // Trainer Model
 import { Pokemon } from '../models/pokemon';
 import { AuthService } from './auth.service';  // Auth Service
 
+import { AngularFirestore,
+         AngularFirestoreCollection,
+         AngularFirestoreDocument} from '@angular/fire/firestore';
+
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -13,86 +20,67 @@ export class TrainerService {
 
   isTrainer: boolean = false;  // To know whatever is Trainer or Not
   notTrainer: boolean = false;  //  We use a second so it doesnt' depend from the first one
-  admin: boolean = false;  // To know whatever is Admin or Not
+  admin: boolean;  // To know whatever is Admin or Not
+
   trainerTeam: Pokemon[]=[];
-  trainerID: string;  // Trainer ID
-  trainer: Trainer;  // Trainer Profile
+  Auth: string;  // Trainer ID
+  trainer: any;
+  fireTrainer: Trainer;  // Trainer Profile
   selectedTrainer: Trainer;  // Save Selected Trainer
   trainerList: Trainer[];  // Trainer List
-
-  readonly TRAINER_API = "http://localhost:3000/trainer";  // Server API Trainer
-  readonly TRAINER_NAME_API = "http://localhost:3000/trainer/name";  // Server API Get Trainer by Name
-  readonly STATUS_API = "http://localhost:3000/trainer/status";  // Server API Online Status
-  readonly REGISTER_TEAM_API = "http://localhost:3000/profile";  // Server API Register Team
+  fireTrainers: Observable<Trainer[]>;
+  trainerDocument: AngularFirestoreDocument;
+  trainerCollection: AngularFirestoreCollection;
 
   // Heroku Server --> https://pocketown-server.herokuapp.com
 
   constructor(private http: HttpClient,
-              private authService: AuthService) {
-                this.admin = false;  // Start Admin at False
+              private authService: AuthService,
+              public db: AngularFirestore) {
+                this.admin = true;  // Start Admin at False
                 this.selectedTrainer = <Trainer>{};
+                this.trainerCollection = this.db.collection('trainers');
                }
 
-  addTrainer(trainer: Trainer){  // We add a Trainer
-    return this.http.post(this.TRAINER_API, trainer);  // HTTP POST to Server API - POSTMAN belike
+  getFireTrainers(){
+    this.fireTrainers = this.trainerCollection.snapshotChanges().pipe(map(actions =>{
+       return actions.map(a => {
+         const data = a.payload.doc.data() as Trainer;
+         data.id = a.payload.doc.id;
+         return data;
+       });
+    })); return this.fireTrainers;
   }
 
-  getTrainers() {
-    return this.http.get(this.TRAINER_API);  // HTTP GET to Server API - POSTMAN belike
+  getFireTrainerbyID(id:string){
+    this.trainer = this.trainerCollection.doc(id).ref.get().then(doc =>{
+      return doc.data();
+    }); return this.trainer;
   }
 
-  getTrainerbyId(id: string){  // URL/TrainerID
-    return this.http.get(this.TRAINER_API + `/${id}`);  // HTTP GET to Server API - POSTMAN belike
+  addFireTrainer(trainer: Trainer){
+    this.trainerCollection.doc(trainer.id).set(trainer);
   }
 
-  getTrainerbyName(name: string){  // URL/trainer/name/TrainerName
-    return this.http.get(this.TRAINER_NAME_API + `/${name}`);  // HTTP GET to Server API - POSTMAN belike
+  updateFireTrainer(trainer: Trainer){
+    this.trainerDocument = this.db.doc(`trainers/${trainer.id}`);
+    this.trainerDocument.update(trainer);
   }
 
-  updateTrainer(trainer:Trainer){  // We update a Trainer
-    // HTTP PUT to Server API - POSTMAN belike
-    return this.http.put(this.TRAINER_API + `/${trainer._id}`, trainer);
-  }
-
-  deleteTrainer(_id: string){  // To delete only need ID
-    return this.http.delete(this.TRAINER_API + `/${_id}` );  // HTTP DELETE to Server API - POSTMAN belike
-  }
-
-  updateStatus(status){  // We update Status
-      let trainerStatus = {online: status.online}
-      // HTTP PUT to Server API - POSTMAN belike
-      return this.http.put(this.STATUS_API + `/${this.trainerID}`, trainerStatus);
-  }
-
-  registerPokemonTeam(team: Pokemon[], id: string){  // Update Trainer Team
-    const params = {team: team, trainerID: id };  // Need Trainer ID and Team
-    return this.http.put(this.REGISTER_TEAM_API, params);
+  deleteFireTrainer(trainer: Trainer){
+    this.trainerDocument = this.db.doc(`trainers/${trainer.id}`);
+    this.trainerDocument.delete();
   }
 
   checkTrainer(profile){  // Profile from Auth0 containing unique ID
-    const id = profile.sub.substring(6);  // Remove "Auth0|" from the ID
-    this.trainerID = id;
-    this.getTrainerbyId(id)  // Get Trainer by ID on MongoDB
-    .subscribe(res => {
-      if (res == '') {  // No Result? No Trainer
-        this.notTrainer = true;
-      }
-      else {
-        this.trainer = res[0] as Trainer;  // Always get 1 result so its possition 0
-        if (this.trainer.trainerID == id) {  // If Auth0 ID = TrainerID on MongoDB
-         this.isTrainer = true;  // Result? Trainer = True
-         }
-        // Admin Assignament
-        if (this.trainer.name == 'Snakone' || this.trainer.name == 'Goph')
-         this.admin = true;
+    this.Auth = profile.sub.substring(6);  // Remove "Auth0|" from the ID
 
-         // Status Online We send to Server
-         let status = {online: true};
-         if (this.trainer.online == false) { // Only Update to Online if Trainer is Offline
-              this.updateStatus(status).subscribe();  // Update Status Online
-         }
-      } // End of Else
-   }); // End of Subscribe
+    this.trainer = this.getFireTrainerbyID(this.Auth);
+    if(this.trainer){
+      this.isTrainer = true;
+      this.notTrainer = false;
+    }
+    return this.trainer; // Get Trainer by ID on MongoDB
   }
 
   addPokemontoTeam(pokemon:Pokemon){

@@ -19,47 +19,33 @@ export class AdminTrainerComponent implements OnInit {
               private toastr: ToastrService) { }
 
   ngOnInit() {
-    this.getTrainer();  // Get Trainer at the start
+    this.trainerService.getFireTrainers()  // HTTP POST to Server
+    .subscribe(res => {  // Subscribe to the Server Response
+     this.trainerService.trainerList = res as any;  // Response as Service Trainer = List
+   });
   }
 
-  getTrainer(){
-     this.trainerService.getTrainers()  // HTTP POST to Server
-     .subscribe(res => {  // Subscribe to the Server Response
-      this.trainerService.trainerList = res as any;  // Response as Service Trainer = List
-    });
-  }
-
-  addTrainer(form: NgForm){
-    if (form.value._id) {  // Already Trainer ID? -> Update
-      this.trainerService.updateTrainer(form.value)  // Update Trainer with Form Values
-       .subscribe (res => {  // Subscribe to the Server Response
-         this.toastr.info('Good!', 'Trainer Updated!');
-         this.resetForm(form);  // Reset Form
-         this.getTrainer();
-       })
-    }
-    else {  // Not Trainer ID? Oh, New Trainer?
-      this.trainerService.addTrainer(form.value)  // Add Trainer with Form Values
-      .subscribe(res => {  // Subscribe to the Server Response
+  addFireTrainer(form: NgForm){
+    // if (form.value.id) {  // Already Trainer ID? -> Update
+    //   this.trainerService.updateFireTrainer(form.value);  // Update Trainer with Form Values
+    //   this.toastr.info('Good!', 'Trainer Updated!');
+    //   this.resetForm(form);  // Reset Form
+    // }
+    // else {  // Not Trainer ID? Oh, New Trainer?
+      this.trainerService.addFireTrainer(form.value)  // Add Trainer with Form Values
         this.toastr.success('Great!', 'Trainer Added');
         this.resetForm(form);  // Reset Form
-        this.getTrainer();
-      });
-    }
+    // }
   }
 
-  updateTrainer(trainer: Trainer){  // NEW Trainer Object with the Trainer -> selected Trainer
+  updateFireTrainer(trainer: Trainer){  // NEW Trainer Object with the Trainer -> selected Trainer
     this.trainerService.selectedTrainer = Object.assign({}, trainer);;
   }
 
-  deleteTrainer(_id: string){  // Need the Trainer ID
-
+  deleteFireTrainer(trainer: Trainer){  // Need the Trainer ID
     if(confirm("Are You sure?")){
-    this.trainerService.deleteTrainer(_id)  // Delete Trainer by ID
-     .subscribe( res => {  // Subscribe to the Server Response
-        this.getTrainer();  // Once Deleted, Update the Pokedex List
-        this.toastr.warning('Oh Well!', 'Trainer Deleted');
-     });
+    this.trainerService.deleteFireTrainer(trainer);  // Delete Trainer by ID
+    this.toastr.warning('Oh Well!', 'Trainer Deleted');
     }
   }
 

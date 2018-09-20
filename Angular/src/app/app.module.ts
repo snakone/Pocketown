@@ -21,6 +21,11 @@ import { RoutingModule } from './routes/routes';
 // Toastr //
 import { ToastrModule } from 'ngx-toastr';
 
+// FireBase //
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+
 // HTTP //
 import { HttpClientModule } from "@angular/common/http";
 
@@ -111,7 +116,8 @@ import { VictoryRoadComponent } from './components/static/guides/victory-road/vi
     ToastrModule.forRoot({  // Apply to all Toastr
       timeOut: 3000,
       progressBar: true
-    })
+    }), AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   entryComponents:[ConfirmComponent, PokemonTeamComponent], // Dialog and Snack Bar
   providers: [],

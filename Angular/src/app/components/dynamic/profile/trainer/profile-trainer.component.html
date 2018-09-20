@@ -1,18 +1,18 @@
-<mat-card class="card">
+<mat-card *ngIf="trainerService.fireTrainer" class="card">
   <div class="row">
     <div class="col s6 m6 l6 center">
-      <h5 class="bold truncate">{{trainer.name}}</h5>
-      <img src="{{urlImage}}{{trainer.avatar}}.png"/>
+      <h5 class="bold truncate">{{trainerService.fireTrainer.name}}</h5>
+      <img src="{{urlImage}}{{trainerService.fireTrainer.avatar}}.png"/>
     </div>
     <div class="col s6 m6 l6 center margin">
       <p class="bold">Pokémon</p>
-      <p><img class="pokemon" src="{{urlPokemon}}{{trainer.pokemon}}.png"/></p>
+      <p><img class="pokemon" src="{{urlPokemon}}{{trainerService.fireTrainer.pokemon}}.png"/></p>
     </div>
   </div>
 
   <div class="center">
-    <p>Server: <span class="bold">{{trainer.server}}</span></p>
-    <p>Guild: <span class="bold">{{trainer.guild}}</span></p>
+    <p>Server: <span class="bold">{{trainerService.fireTrainer.server}}</span></p>
+    <p>Guild: <span class="bold">{{trainerService.fireTrainer.guild}}</span></p>
   </div>
 
   <div class="center top" *ngIf="trainerService.trainerTeam.length">  <!-- Only IF Edit Team -->
@@ -34,10 +34,10 @@
     </div>
   </div>
   <br>
-  <div *ngIf="trainer.team && trainerService.trainerTeam.length == 0">  <!-- Only IF Trainer Team -->
+  <div *ngIf="trainerService.fireTrainer.team && trainerService.trainerTeam.length == 0">  <!-- Only IF Trainer Team -->
       <div class="row center">
         <h5>Pokémon Team</h5> <!-- Pokemon Team -->
-        <div class="col s2 m2 l2" *ngFor="let pokemon of trainer.team">
+        <div class="col s2 m2 l2" *ngFor="let pokemon of trainerService.fireTrainer.team">
           <img class="pokemonTeam" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
         </div>
       </div>
@@ -47,7 +47,7 @@
 
   </div>
     <!-- Only IF NOT Trainer Team or Edit Team -->
-    <div *ngIf="!trainerService.trainerTeam.length && !trainer.team" class="center">
+    <div *ngIf="!trainerService.trainerTeam.length && !trainerService.fireTrainer.team" class="center">
       <p class="noPokemon">Seems like You don't have any <span class="darkblue">Pokémon</span> on your Team.</p>
     </div>
 </mat-card>

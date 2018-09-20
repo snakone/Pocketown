@@ -20,20 +20,17 @@ export class TrainerListComponent implements OnInit {
   urlImage: string;
   searchValue: string = "";  // Input Value to Search For - ngModel on HTML
 
-  pokemonTeam: string[] = ["MegaDeoxysX", "MegaRayquazaYR2", "MegaGyaradosR2",
-                           "MegaArceusX", "MegaLucarioXR2", "MegaHoohX"];
-
   constructor(private trainerService: TrainerService,
               private router : Router) {
       this.urlImage = "../../../../assets/images/";
   }
 
   ngOnInit() {
-    this.trainerService.getTrainers()  // Get Trainer List
-     .subscribe(res => {
-       this.trainers = res as Trainer[];
-       this.filteredTrainers = this.trainers;  // Original List = Filter List
-     });
+
+    this.trainerService.getFireTrainers().subscribe(res => {
+      this.trainers = res as Trainer[];
+      this.filteredTrainers = this.trainers;
+    })
   }
 
   onKeyUp(event){  // On Key Up Javascript Event
@@ -53,7 +50,7 @@ export class TrainerListComponent implements OnInit {
   }
 
   navigatePokemon(pokemon: Pokemon){
-      this.router.navigate(['/pokedex', pokemon._id]);  // Navigate to Single Pokemon using Pokemon ID
+      this.router.navigate(['/pokedex', pokemon]);  // Navigate to Single Pokemon using Pokemon ID
   }
 
 

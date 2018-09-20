@@ -2,11 +2,11 @@
   <div class="col s12 m12 l12">
     <div class="card">     <!-- DATA FORM -->
       <div class="card-content">
-        <form #addTrainerForm="ngForm" (ngSubmit)="addTrainer(addTrainerForm)">
+        <form #addTrainerForm="ngForm" (ngSubmit)="addFireTrainer(addTrainerForm)">
             <div class="row">
 
-              <input type="hidden" name="_id"
-              #_id="ngModel" [(ngModel)]="trainerService.selectedTrainer._id">
+              <input type="hidden" name="id"
+              #id="ngModel" [(ngModel)]="trainerService.trainerID">
 
               <div class="input-field col s12 m6 l6">
                 <span class="helper-text bold">Trainer Name</span>  <!-- Trainer Name -->
@@ -70,8 +70,8 @@
       <tr *ngFor="let trainer of trainerService.trainerList">
         <td>{{trainer.name}}</td>
         <td>
-          <a href="admin/trainer#top"><mat-icon (click)="updateTrainer(trainer)">edit</mat-icon></a>
-          <mat-icon (click)="deleteTrainer(trainer._id)">delete</mat-icon>
+          <a href="admin/trainer#top"><mat-icon (click)="updateFireTrainer(trainer)">edit</mat-icon></a>
+          <mat-icon (click)="deleteFireTrainer(trainer)">delete</mat-icon>
         </td>
       </tr>
     </tbody>

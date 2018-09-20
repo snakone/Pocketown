@@ -28,10 +28,6 @@ export class TrainerComponent implements OnInit {
 
   ngOnInit() {
     let routeParams = this.activeRoute.snapshot.params.name; // Get the Trainer Name from URL
-    this.trainerService.getTrainerbyName(routeParams)  // HTTP POST to Server with Trainer name
-     .subscribe(res => {  // Subscribe to the Server Response
-       this.trainer = res[0] as Trainer;  // Response as Trainer
-     })
   }
 
   navigate(pokemon: Pokemon){

@@ -69,17 +69,21 @@ export class RegisterComponent implements OnInit {
   validateForm(form1: NgForm, form2: NgForm, form3: NgForm){
 
     // New Trainer with all the DATA, Form + Trainer ID
-    const trainer = new Trainer(this.trainerService.trainerID, form1.value.Name,
-                                form1.value.Pokemon, form2.value.Avatar,
-                                form3.value.Server, form3.value.Guild, false);
+    const fireTrainer = {
+      id: this.trainerService.Auth,
+      name: form1.value.Name,
+      pokemon: form1.value.Pokemon,
+      avatar: form2.value.Avatar,
+      server: form3.value.Server,
+      guild: form3.value.Guild,
+      online: false,
+      team: []
+    }
 
-    this.trainerService.addTrainer(trainer)  // Add Trainer to MongoDB
-     .subscribe(res => {
+    this.trainerService.addFireTrainer(fireTrainer);  // Add Trainer to MongoDB
        this.toastr.success('Trainer','Congratulations!', {
          timeOut: 5000
        });
-     });
-     this.router.navigate(['/profile']);  // Navigate to Home
   }
 
 }

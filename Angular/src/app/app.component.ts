@@ -25,7 +25,7 @@ export class AppComponent {
   if (authService.isAuthenticated()) {  // Only If Logged In with Auth0
     authService.getProfile((err, profile) => {  // Get the Profile
     // After We get the Trainer We check it
-    trainerService.checkTrainer(profile);
+
     });
   }
 
