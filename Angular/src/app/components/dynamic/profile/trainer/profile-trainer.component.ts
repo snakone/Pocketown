@@ -34,6 +34,9 @@ export class ProfileTrainerComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.trainerService.getFireTrainerbyID(this.trainerService.Auth).then(res =>{
+      this.trainer = res as Trainer;
+    })
   }
 
   registerTeam(){

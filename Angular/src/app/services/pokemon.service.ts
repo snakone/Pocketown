@@ -25,7 +25,7 @@ export class PokemonService {
   }
 
   getPokemonbyName(name: string){
-    const params = {name: name};  // Pokemon Name
+    const params = {picture: name};  // Pokemon Name
     return this.http.get(this.POKEMON_NAME_API, {params: params});  // HTTP GET to Server API - POSTMAN belike
   }
 

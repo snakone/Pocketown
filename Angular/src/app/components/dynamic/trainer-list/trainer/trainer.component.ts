@@ -27,11 +27,15 @@ export class TrainerComponent implements OnInit {
               }
 
   ngOnInit() {
-    let routeParams = this.activeRoute.snapshot.params.name; // Get the Trainer Name from URL
+    let routeParams = this.activeRoute.snapshot.params.name;  // Get the Trainer Name from URL
+    this.trainerService.getFireTrainerbyID(routeParams).then(res =>{
+    this.trainer = res as Trainer;
+  });
   }
 
   navigate(pokemon: Pokemon){
-      this.router.navigate(['/pokedex', pokemon._id]);  // Navigate to Single Pokemon using Pokemon ID
+    console.log(pokemon);
+      this.router.navigate(['/pokedex', pokemon.picture]);  // Navigate to Single Pokemon using Pokemon ID
   }
 
 }

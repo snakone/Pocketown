@@ -12,6 +12,8 @@ import { Trainer } from '../../../models/trainer';  // Trainer Service
 
 export class ProfileComponent implements OnInit {
 
+  trainer: Trainer;
+
   constructor(private authService: AuthService,
               private trainerService: TrainerService) { }
 
@@ -19,9 +21,7 @@ export class ProfileComponent implements OnInit {
     if (this.authService.isAuthenticated()) {  // Only If Logged In with Auth0
       this.authService.getProfile((err, profile) => {  // Get the Profile
       // After We get the Trainer We check it
-      this.trainerService.checkTrainer(profile).then(res =>{
-      this.trainerService.fireTrainer = res as Trainer;
-    });
+      this.trainerService.fireTrainer = this.trainerService.checkTrainer(profile);
       });
     }
   }

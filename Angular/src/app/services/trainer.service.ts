@@ -75,12 +75,17 @@ export class TrainerService {
   checkTrainer(profile){  // Profile from Auth0 containing unique ID
     this.Auth = profile.sub.substring(6);  // Remove "Auth0|" from the ID
 
-    this.trainer = this.getFireTrainerbyID(this.Auth);
-    if(this.trainer){
-      this.isTrainer = true;
-      this.notTrainer = false;
-    }
-    return this.trainer; // Get Trainer by ID on MongoDB
+    this.trainer = this.getFireTrainerbyID(this.Auth).then(res=> {
+      if(res){
+        this.fireTrainer = res as Trainer;
+        this.isTrainer = true;
+        this.notTrainer = false
+      } else {
+        this.isTrainer = false;
+        this.notTrainer = true;
+      }
+    });
+    return this.fireTrainer; // Get Trainer by ID on MongoDB
   }
 
   addPokemontoTeam(pokemon:Pokemon){

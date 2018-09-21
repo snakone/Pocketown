@@ -26,9 +26,11 @@ export class PokemonComponent implements OnInit {
 
   ngOnInit() {
     let routeParams = this.activeRoute.snapshot.params.pokemon; // Get the Pokemon ID from URL
-    this.pokemonService.getPokemonbyId(routeParams)  // HTTP POST to Server with Pokemon ID
+
+    this.pokemonService.getPokemonbyName(routeParams)  // HTTP POST to Server with Pokemon ID
      .subscribe(res => {  // Subscribe to the Server Response
-       this.pokemon = res as Pokemon;  // Response as Pokemon
+       this.pokemon = res[0] as Pokemon;  // Response as Pokemon
+       console.log(this.pokemon);
        this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
         .subscribe(res => {
           this.family = res as any;  // Respond Server

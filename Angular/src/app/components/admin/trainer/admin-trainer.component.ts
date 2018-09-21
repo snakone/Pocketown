@@ -49,7 +49,8 @@ export class AdminTrainerComponent implements OnInit {
     }
   }
 
-  resetForm(form?: NgForm){
+  resetForm(event,form?: NgForm){
+    event.preventDefault();
     if (form) form.reset();  // Form?
     this.trainerService.selectedTrainer = <Trainer>{};  // On Reset, New Trainer
   }

@@ -22,13 +22,6 @@ export class AppComponent {
 
   authService.handleAuthentication();  // Method Need to Log in with Auth0
 
-  if (authService.isAuthenticated()) {  // Only If Logged In with Auth0
-    authService.getProfile((err, profile) => {  // Get the Profile
-    // After We get the Trainer We check it
-
-    });
-  }
-
   // Icon Register
 
    this.matIconRegistry.addSvgIcon("bulbasaur", this.domSanitizer

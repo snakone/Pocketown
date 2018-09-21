@@ -44,7 +44,7 @@ export class PokedexComponent implements OnInit {
 
   navigate(pokemon: Pokemon) {
     this.selectedPokemon = pokemon;
-    this.router.navigate(['/pokedex', pokemon._id]);  // Navigate to Single Pokemon using Pokemon ID
+    this.router.navigate(['/pokedex', pokemon.picture]);  // Navigate to Single Pokemon using Pokemon ID
   }
 
 
