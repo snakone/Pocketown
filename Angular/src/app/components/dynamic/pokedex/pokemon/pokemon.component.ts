@@ -33,7 +33,7 @@ export class PokemonComponent implements OnInit {
        console.log(this.pokemon);
        this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
         .subscribe(res => {
-          this.family = res as any;  // Respond Server
+          this.family = res as any;  // Respond Server - Pokemon Family
         });
      });
 

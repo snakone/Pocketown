@@ -12,8 +12,6 @@ import { Trainer } from '../../../models/trainer';  // Trainer Service
 
 export class ProfileComponent implements OnInit {
 
-  trainer: Trainer;
-
   constructor(private authService: AuthService,
               private trainerService: TrainerService) { }
 

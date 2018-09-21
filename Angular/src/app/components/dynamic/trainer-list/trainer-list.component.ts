@@ -26,7 +26,6 @@ export class TrainerListComponent implements OnInit {
   }
 
   ngOnInit() {
-
     this.trainerService.getFireTrainers().subscribe(res => {
       this.trainers = res as Trainer[];
       this.filteredTrainers = this.trainers;

@@ -28,7 +28,7 @@ export class TrainerComponent implements OnInit {
 
   ngOnInit() {
     let routeParams = this.activeRoute.snapshot.params.name;  // Get the Trainer Name from URL
-    this.trainerService.getFireTrainerbyID(routeParams).then(res =>{
+    this.trainerService.getFireTrainerbyID(routeParams).subscribe(res =>{
     this.trainer = res as Trainer;
   });
   }

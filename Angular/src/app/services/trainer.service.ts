@@ -32,8 +32,6 @@ export class TrainerService {
   trainerDocument: AngularFirestoreDocument;
   trainerCollection: AngularFirestoreCollection;
 
-  // Heroku Server --> https://pocketown-server.herokuapp.com
-
   constructor(private http: HttpClient,
               private authService: AuthService,
               public db: AngularFirestore) {
@@ -43,7 +41,8 @@ export class TrainerService {
                }
 
   getFireTrainers(){
-    this.fireTrainers = this.trainerCollection.snapshotChanges().pipe(map(actions =>{
+    this.fireTrainers = this.trainerCollection
+     .snapshotChanges().pipe(map(actions =>{
        return actions.map(a => {
          const data = a.payload.doc.data() as Trainer;
          data.id = a.payload.doc.id;
@@ -53,9 +52,10 @@ export class TrainerService {
   }
 
   getFireTrainerbyID(id:string){
-    this.trainer = this.trainerCollection.doc(id).ref.get().then(doc =>{
-      return doc.data();
-    }); return this.trainer;
+    this.trainer = this.trainerCollection.doc(id)
+     .snapshotChanges().pipe(map(actions =>{
+      return actions.payload.data();
+    })); return this.trainer;
   }
 
   addFireTrainer(trainer: Trainer){
@@ -75,7 +75,7 @@ export class TrainerService {
   checkTrainer(profile){  // Profile from Auth0 containing unique ID
     this.Auth = profile.sub.substring(6);  // Remove "Auth0|" from the ID
 
-    this.trainer = this.getFireTrainerbyID(this.Auth).then(res=> {
+    this.trainer = this.getFireTrainerbyID(this.Auth).subscribe(res=> {
       if(res){
         this.fireTrainer = res as Trainer;
         this.isTrainer = true;
