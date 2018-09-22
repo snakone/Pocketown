@@ -26,3 +26,5 @@ export class MoveComponent implements OnInit {
   }
 
 }
+
+// Component to Display a Single Pokemon Move given his ID via URL

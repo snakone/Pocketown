@@ -68,9 +68,6 @@ export class AuthService {
      localStorage.removeItem('expires_at');
      // Go back to the home route
      this.router.navigate(['/']);
-     if (this.userProfile){  // Log Out? No Trainer
-       this.isTrainer = false;
-     }
    }
 
    public isAuthenticated(): boolean {
@@ -96,3 +93,5 @@ export class AuthService {
   }
 
 }
+
+// Auth0 Service to manage Log In State - https://auth0.com/

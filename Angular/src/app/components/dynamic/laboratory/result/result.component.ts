@@ -50,3 +50,5 @@ export class ResultComponent implements OnInit, OnDestroy {
   }
 
 }
+
+// Result Component of the Search of the Laboratory. It Loads the Data from the Static Service, assigned before on SEARCH

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { MoveService } from '../../../services/move.service';  // Pokedex Service
+import { MoveService } from '../../../services/move.service';  // Move Service
 import { Move } from '../../../models/move';  // Move Model
 
 import { ToastrService } from 'ngx-toastr';  // Toastr
@@ -25,7 +25,7 @@ export class AdminMoveComponent implements OnInit {
   getMove(){
      this.moveService.getMove()  // HTTP POST to Server
      .subscribe(res => {  // Subscribe to the Server Response
-      this.moveService.moveList = res as any;  // Response as Service Move = List
+      this.moveService.moveList = res as Move[];  // Response as Service Move = List
     });
   }
 
@@ -69,3 +69,5 @@ export class AdminMoveComponent implements OnInit {
   }
 
 }
+
+// Main Component to Admin Pokemon Moves. ADD/EDIT/DELETE Pokemon Moves

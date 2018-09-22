@@ -25,3 +25,5 @@ export class TypesComponent implements OnInit {
   }
 
 }
+
+// PlaceHolder Component to Display Pokemon Types. On Click the selected Type is assigned to the Service.

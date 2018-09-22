@@ -28,7 +28,6 @@ export class FilteringComponent implements OnInit {
     // All Data; Type, Stat and Evolution are assigned now on the Service. Result will Load this Data.
   }
 
-
-
-
 }
+
+// This Component only shows when there's a selected TYPE, STAT or EVOLUTION. Contains the FILTER Button

@@ -25,3 +25,5 @@ export class VictoryRoadComponent implements OnInit {
   }
 
 }
+
+// Victory Road Component - Guide

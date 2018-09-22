@@ -13,3 +13,5 @@ export class FooterNavComponent implements OnInit {
   }
 
 }
+
+// Main Bottom Navigation of the App - Contains HOME icon, LOG OUT icon and SOCIAL MEDIA

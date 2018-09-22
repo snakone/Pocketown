@@ -1,6 +1,6 @@
 {
   "name": "Pocketown",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "description": "Angular Front End Pocketown The Game",
   "scripts": {
     "ng": "ng",

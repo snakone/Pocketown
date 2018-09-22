@@ -45,3 +45,5 @@ export class PokemonService {
     return this.http.delete(this.POKEMON_API + `/${_id}` );  // HTTP DELETE to Server API - POSTMAN belike
   }
 }
+
+// Pokemon Service to work with Pokemons - API - CRUD - CREATE/READ/UPDATE/DELETE

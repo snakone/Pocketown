@@ -45,4 +45,7 @@ export class pokeItemService {
   deletepokeItem(_id: string){  // To delete only need ID
     return this.http.delete(this.POKEITEM_API + `/${_id}` );  // HTTP DELETE to Server API - POSTMAN belike
   }
+
 }
+
+// Pokemon Item Service to work with Pokemon Held Items - API - CRUD - CREATE/READ/UPDATE/DELETE

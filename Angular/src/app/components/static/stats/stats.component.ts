@@ -23,3 +23,5 @@ export class StatsComponent implements OnInit {
   }
 
 }
+
+// PlaceHolder Component to Display Pokemon Stats. On Click the selected Stats is assigned to the Service.

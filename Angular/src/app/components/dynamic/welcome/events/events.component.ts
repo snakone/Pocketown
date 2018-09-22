@@ -13,3 +13,5 @@ export class EventsComponent implements OnInit {
   }
 
 }
+
+// Event Component. Display some Events about Pocketown

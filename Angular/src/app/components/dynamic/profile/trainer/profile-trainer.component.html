@@ -39,7 +39,7 @@
       <div class="row center">
         <h5>Pokémon Team</h5> <!-- Pokemon Team -->
         <div class="col s2 m2 l2" *ngFor="let pokemon of trainer.team">
-          <img class="pokemonTeam" src="{{urlPokemon}}{{pokemon}}.png"/>
+          <img class="pokemonTeam" (click)="navigate(pokemon)" src="{{urlPokemon}}{{pokemon}}.png"/>
         </div>
       </div>
         <!-- <div class="center top">

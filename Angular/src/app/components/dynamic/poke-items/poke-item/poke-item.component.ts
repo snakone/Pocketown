@@ -31,3 +31,5 @@ export class PokeItemComponent implements OnInit {
   }
 
 }
+
+// Component to Display a Single Pokemon Item (Held Item) given his ID via URL

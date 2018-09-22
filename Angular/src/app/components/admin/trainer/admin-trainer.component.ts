@@ -15,27 +15,24 @@ import { NgForm } from '@angular/forms';  // Angular Forms
 
 export class AdminTrainerComponent implements OnInit {
 
+  trainers: Trainer[];
+
   constructor(private trainerService: TrainerService,
               private toastr: ToastrService) { }
 
   ngOnInit() {
     this.trainerService.getFireTrainers()  // HTTP POST to Server
     .subscribe(res => {  // Subscribe to the Server Response
-     this.trainerService.trainerList = res as any;  // Response as Service Trainer = List
+     this.trainers = res as Trainer[];  // Response as Service Trainer = List
    });
   }
 
   addFireTrainer(form: NgForm){
-    // if (form.value.id) {  // Already Trainer ID? -> Update
-    //   this.trainerService.updateFireTrainer(form.value);  // Update Trainer with Form Values
-    //   this.toastr.info('Good!', 'Trainer Updated!');
-    //   this.resetForm(form);  // Reset Form
-    // }
-    // else {  // Not Trainer ID? Oh, New Trainer?
-      this.trainerService.addFireTrainer(form.value)  // Add Trainer with Form Values
-        this.toastr.success('Great!', 'Trainer Added');
-        this.resetForm(form);  // Reset Form
-    // }
+    if (form.value.id) {  // Already Trainer ID? -> Update
+      this.trainerService.updateFireTrainer(form.value);  // Update Trainer with Form Values
+      this.toastr.info('Good!', 'Trainer Updated!');
+      this.resetForm(form);  // Reset Form
+    }
   }
 
   updateFireTrainer(trainer: Trainer){  // NEW Trainer Object with the Trainer -> selected Trainer
@@ -46,13 +43,16 @@ export class AdminTrainerComponent implements OnInit {
     if(confirm("Are You sure?")){
     this.trainerService.deleteFireTrainer(trainer);  // Delete Trainer by ID
     this.toastr.warning('Oh Well!', 'Trainer Deleted');
+    this.trainerService.selectedTrainer = <Trainer>{};  // On Delete, New Trainer
     }
   }
 
-  resetForm(event,form?: NgForm){
+  resetForm($event,form?: NgForm){
     event.preventDefault();
     if (form) form.reset();  // Form?
     this.trainerService.selectedTrainer = <Trainer>{};  // On Reset, New Trainer
   }
 
 }
+
+// Main Component to Admin Trainers. By default, Admin CAN'T add Trainers. Trainers should register itselfs

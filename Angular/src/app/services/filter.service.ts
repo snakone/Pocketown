@@ -32,3 +32,5 @@ export class FilterService {
   }
 
 }
+
+// Filter Service used on Laboratory - Filter Pokemon by different criteria

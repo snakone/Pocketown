@@ -15,12 +15,10 @@ export class AuthGuardService implements CanActivate {
 
   canActivate(next:ActivatedRouteSnapshot,  // Method to Activate Component on Routes
               state: RouterStateSnapshot){
+                if (this.authService.isAuthenticated()) return true;
+                else return false;
+              }
 
-    if ( this.authService.isAuthenticated() ){ // Only Activated if User is Authenticated
-      return true;
-    } else {
-      return false;
-    }
-
-  }
 }
+
+// Auth Guard Service Block Routes, You need a Method that Return TRUE or FALSE

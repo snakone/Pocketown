@@ -2,12 +2,11 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http'; //  Make HTTP Request to API
 import { Trainer } from '../models/trainer';  // Trainer Model
-import { Pokemon } from '../models/pokemon';
-import { AuthService } from './auth.service';  // Auth Service
+import { Pokemon } from '../models/pokemon';  // Pokemon Model
 
 import { AngularFirestore,
          AngularFirestoreCollection,
-         AngularFirestoreDocument} from '@angular/fire/firestore';
+         AngularFirestoreDocument} from '@angular/fire/firestore';  // Firestore Imports
 
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -21,76 +20,84 @@ export class TrainerService {
   isTrainer: boolean = false;  // To know whatever is Trainer or Not
   notTrainer: boolean = false;  //  We use a second so it doesnt' depend from the first one
   admin: boolean;  // To know whatever is Admin or Not
+  firstLogin: boolean = true;  // WE only check the Trainer Profile once on the First Login
 
   trainerTeam: Pokemon[]=[];
   Auth: string;  // Trainer ID
-  trainer: any;
   fireTrainer: Trainer;  // Trainer Profile
   selectedTrainer: Trainer;  // Save Selected Trainer
-  trainerList: Trainer[];  // Trainer List
-  fireTrainers: Observable<Trainer[]>;
-  trainerDocument: AngularFirestoreDocument;
-  trainerCollection: AngularFirestoreCollection;
+
+  fireTrainers: Observable<Trainer[]>;  // All Trainers from Firestore
+  trainerCollection: AngularFirestoreCollection;  // The Trainer Collection We take the Trainers off
+  trainerDocument: AngularFirestoreDocument;  // Single Trainer Document
+
 
   constructor(private http: HttpClient,
-              private authService: AuthService,
               public db: AngularFirestore) {
                 this.admin = true;  // Start Admin at False
                 this.selectedTrainer = <Trainer>{};
-                this.trainerCollection = this.db.collection('trainers');
+                this.trainerCollection = this.db.collection('trainers');  // Select Firestore Collection
                }
 
-  getFireTrainers(){
+  getFireTrainers(){  // Get All Trainer from Firestore
     this.fireTrainers = this.trainerCollection
-     .snapshotChanges().pipe(map(actions =>{
-       return actions.map(a => {
-         const data = a.payload.doc.data() as Trainer;
-         data.id = a.payload.doc.id;
+    // SnapShotChanges make the data "LIVE"
+     .snapshotChanges().pipe(map(actions =>{  // Pipe Collection and MAP the result on "ACTIONS"
+       return actions.map(props => {  // MAP the Result into Trainers - Props = JSON DB Properties
+         const data = props.payload.doc.data() as Trainer;  // Payload = Content - DOC = Firestore Document
+         data.id = props.payload.doc.id;
          return data;
        });
-    })); return this.fireTrainers;
+    })); return this.fireTrainers; // Finally return Trainer List
   }
 
   getFireTrainerbyID(id:string){
-    this.trainer = this.trainerCollection.doc(id)
-     .snapshotChanges().pipe(map(actions =>{
-      return actions.payload.data();
-    })); return this.trainer;
+    let trainer = this.trainerCollection.doc(id)  // Firestore DOC = Trainer DB Object
+    // SnapShotChanges make the data "LIVE"
+     .snapshotChanges().pipe(map(actions =>{  // Pipe Collection and MAP the result on "ACTIONS"
+      return actions.payload.data(); // Payload = Content
+    })); return trainer;  // Return the Trainer with the given ID
   }
 
-  addFireTrainer(trainer: Trainer){
-    this.trainerCollection.doc(trainer.id).set(trainer);
+  addFireTrainer(trainer: Trainer){ // Add to Collection
+    this.trainerCollection.doc(trainer.id).set(trainer); // Add to DOC/ID -> Trainer
   }
 
-  updateFireTrainer(trainer: Trainer){
-    this.trainerDocument = this.db.doc(`trainers/${trainer.id}`);
+  updateFireTrainer(trainer: Trainer){  // Update Document
+    this.trainerDocument = this.db.doc(`trainers/${trainer.id}`);  // Get Firestore Document with ID
     this.trainerDocument.update(trainer);
   }
 
-  deleteFireTrainer(trainer: Trainer){
-    this.trainerDocument = this.db.doc(`trainers/${trainer.id}`);
+  deleteFireTrainer(trainer: Trainer){ // Delete Document
+    this.trainerDocument = this.db.doc(`trainers/${trainer.id}`);  // Get Firestore Document with ID
     this.trainerDocument.delete();
   }
 
+  // Get the Trainer with Auth0 ID and Configure Trainer Settings
   checkTrainer(profile){  // Profile from Auth0 containing unique ID
     this.Auth = profile.sub.substring(6);  // Remove "Auth0|" from the ID
 
-    this.trainer = this.getFireTrainerbyID(this.Auth).subscribe(res=> {
-      if(res){
-        this.fireTrainer = res as Trainer;
-        this.isTrainer = true;
-        this.notTrainer = false
-      } else {
-        this.isTrainer = false;
-        this.notTrainer = true;
-      }
+    this.getFireTrainerbyID(this.Auth) // With the ID get the Profile
+     .subscribe(res=> {  // Response as Trainer
+      if(res){ this.fireTrainer = res as Trainer;
+        this.isTrainer = true;  this.notTrainer = false;  // Trainer Settings
+      } else { this.isTrainer = false;  this.notTrainer = true; }
     });
-    return this.fireTrainer; // Get Trainer by ID on MongoDB
+    return this.fireTrainer; // Return the Trainer
   }
 
-  addPokemontoTeam(pokemon:Pokemon){
-    this.trainerTeam.push(pokemon);  // Push the Selected Pokemon into Edit Team
+  updateTrainerOnlineStatus(status:boolean){  // Update Online Status
+    this.trainerCollection.doc(this.Auth).update({
+      online: status  // Update Trainer with the given Status, either True or False
+    });
   }
 
+  addPokemontoTeam(pokemon:Pokemon){  // Add Pokemon to Trainer Team
+    this.trainerCollection.doc(this.Auth).update({  // Get the Trainer DOC with the ID then update Team
+      team: [pokemon.picture]
+    });
+  }
 
 }
+
+// Service to work with Trainers - FIRESTORE Service - Trainer Setting - Online Status - Add Pokemon to Trainer Team

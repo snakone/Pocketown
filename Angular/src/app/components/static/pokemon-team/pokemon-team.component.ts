@@ -19,7 +19,8 @@ export class PokemonTeamComponent implements OnInit {
     }
 
   ngOnInit() {
-    this.pokemonTeam = this.trainerService.trainerTeam;
   }
 
 }
+
+// PlaceHolder Component to Display Trainer Team.

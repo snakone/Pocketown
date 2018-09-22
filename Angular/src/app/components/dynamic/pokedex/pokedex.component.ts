@@ -47,5 +47,6 @@ export class PokedexComponent implements OnInit {
     this.router.navigate(['/pokedex', pokemon.picture]);  // Navigate to Single Pokemon using Pokemon ID
   }
 
-
 }
+
+// Main Component to Display all the Pokedex

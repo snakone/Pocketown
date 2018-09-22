@@ -13,3 +13,5 @@ export class LoadingComponent implements OnInit {
   }
 
 }
+
+// Component that shows LOADING when the data from the Server isn't ready yet. Pikachu rolling on the ball <3

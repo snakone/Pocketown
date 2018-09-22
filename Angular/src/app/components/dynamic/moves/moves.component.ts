@@ -45,3 +45,5 @@ export class MovesComponent implements OnInit {
   }
 
 }
+
+// Main Component to Display all Pokemon Moves

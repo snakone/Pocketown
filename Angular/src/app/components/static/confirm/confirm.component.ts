@@ -13,3 +13,5 @@ export class ConfirmComponent implements OnInit {
   }
 
 }
+
+// Dialog Component that shows a confirmation message - NO / YES

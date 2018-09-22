@@ -13,3 +13,5 @@ export class DownloadComponent implements OnInit {
   }
 
 }
+
+// Download Component. Displays Download BUTTONS

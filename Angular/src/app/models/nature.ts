@@ -1,5 +1,7 @@
 export class Nature {
-  name: string;
-  good: string;
-  bad: string;
+      name: string;  // Nature Name
+      good: string;  // Nature Increase Stat
+      bad: string;  // Nature Decrease Stat
 }
+
+// Pokemon Nature Model

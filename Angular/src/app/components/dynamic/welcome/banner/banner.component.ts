@@ -13,3 +13,5 @@ export class BannerComponent implements OnInit {
   }
 
 }
+
+// Banner Component. Display a Big Picture of Pocketown

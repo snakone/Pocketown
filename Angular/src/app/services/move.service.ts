@@ -45,4 +45,7 @@ export class MoveService {
   deleteMove(_id: string){  // To delete only need ID
     return this.http.delete(this.MOVE_API + `/${_id}` );  // HTTP DELETE to Server API - POSTMAN belike
   }
+
 }
+
+// Move Service to work with Pokemon Moves - API - CRUD - CREATE/READ/UPDATE/DELETE

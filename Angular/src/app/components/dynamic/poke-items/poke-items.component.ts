@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { pokeItem } from '../../../models/poke-item';  // Pokemon Model
+import { pokeItem } from '../../../models/poke-item';  // Poke Item Model
 
-import { pokeItemService } from '../../../services/poke-item.service';  // Nature Service
+import { pokeItemService } from '../../../services/poke-item.service';  // Pokemon Item Service
 import { Router } from '@angular/router'; // Router
 
 @Component({
@@ -12,8 +12,8 @@ import { Router } from '@angular/router'; // Router
 })
 export class PokeItemsComponent implements OnInit {
 
-  pokeItemList: pokeItem[];
-  filteredpokeItemList: pokeItem[];
+  pokeItemList: pokeItem[]; // Original List
+  filteredpokeItemList: pokeItem[]; // Filtered List
   searchValue: string = "";  // Input Value to Search For - ngModel on HTML
   urlImage: string;
 
@@ -47,3 +47,5 @@ export class PokeItemsComponent implements OnInit {
   }
 
 }
+
+// Main Component to Display all Pokemon Items (Heñd Items)

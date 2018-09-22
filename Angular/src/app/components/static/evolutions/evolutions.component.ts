@@ -23,3 +23,5 @@ export class EvolutionsComponent implements OnInit {
     this.staticData.evolutionName = evolution;  // Evolution Name
     }
 }
+
+// PlaceHolder Component to Display Pokemon Evolutions. On Click the selected Evolution is assigned to the Service.

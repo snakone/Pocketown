@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebase: {
+  firebase: {  // Firebase Config
     apiKey: "AIzaSyBfpq9lK_d7RdJ2c5P_aUNsxDm0EA7BACc",
     authDomain: "pocketown-e4a9d.firebaseapp.com",
     databaseURL: "https://pocketown-e4a9d.firebaseio.com",

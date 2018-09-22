@@ -34,9 +34,7 @@ export class ProfileTrainerComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.trainerService.getFireTrainerbyID(this.trainerService.Auth).subscribe(res =>{
-      this.trainer = res as Trainer;
-    })
+    this.trainer = this.trainerService.fireTrainer;
   }
 
   registerTeam(){
@@ -44,7 +42,6 @@ export class ProfileTrainerComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => { // After Dialog Closed
       if (result){  // If Dialog Result = YES
-
          }
     });
   }
@@ -67,4 +64,10 @@ export class ProfileTrainerComponent implements OnInit {
     });
   }
 
+  navigate(pokemon: string){ // On Pokemon Team, We don't save Pokemon Object, only the Name
+      this.router.navigate(['/pokedex', pokemon]);  // Navigate to Single Pokemon using Pokemon Name
+  }
+
 }
+
+// Single Profile Component. Display Data from the Trainer

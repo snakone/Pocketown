@@ -30,15 +30,13 @@ export class PokemonComponent implements OnInit {
     this.pokemonService.getPokemonbyName(routeParams)  // HTTP POST to Server with Pokemon ID
      .subscribe(res => {  // Subscribe to the Server Response
        this.pokemon = res[0] as Pokemon;  // Response as Pokemon
-       console.log(this.pokemon);
        this.pokedexService.getFamily(this.pokemon.family)  // Get the Family of the Pokemon
         .subscribe(res => {
           this.family = res as any;  // Respond Server - Pokemon Family
         });
      });
-
-
-
   }
 
 }
+
+// Father Component of Single Pokemon. This Component serve the Pokemon into Childs.

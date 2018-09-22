@@ -14,3 +14,5 @@ export class LaboratoryComponent implements OnInit {
   }
 
 }
+
+// Main Component of Pokemon Laboratory. Contains SEARCH - FILTERING and RESULT

@@ -52,15 +52,19 @@ export class BioComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => { // After Dialog Closed
       if (result) {  // If Dialog Result = YES
-        if (this.trainerService.trainerTeam.length >= 6) {  // Trainer Team >= 6 Pokémon
+        if (this.trainerService.fireTrainer.team.length >= 6) {  // Trainer Team >= 6 Pokémon
           this.toastr.error('',"Team can't exceed 6 Pokémon", {
             timeOut: 5000,
             extendedTimeOut: 1000
           });  // Else Trainer Team >= 6
         } else {  // Add Pokémon to Team & Show Snack Bar with actual Trainer Team
           this.trainerService.addPokemontoTeam(pokemon);
+          this.toastr.success('Good!',"Pokémon Added", {
+            timeOut: 3000,
+            extendedTimeOut: 2000
+          });
           this.snackBar.openFromComponent(PokemonTeamComponent, { // Snack Bar - Pokemon Team Component
-             duration: 2500,
+             duration: 4000,
              panelClass: ['snackbar'],
              verticalPosition: 'top'
            });
@@ -70,3 +74,5 @@ export class BioComponent implements OnInit {
   }
 
 }
+
+// Child Component of Pokemon. Display Pokemon Main Info - Stat bars

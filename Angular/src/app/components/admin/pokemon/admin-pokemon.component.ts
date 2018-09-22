@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PokemonService } from '../../../services/pokemon.service';  // Pokedex Service
+import { PokemonService } from '../../../services/pokemon.service';  // Pokemon Service
 import { Pokemon } from '../../../models/pokemon';  // Pokemon Model
 
 import { ToastrService } from 'ngx-toastr';  // Toastr
@@ -25,7 +25,7 @@ export class AdminPokemonComponent implements OnInit {
   getPokemon(){
      this.pokemon.getPokemon()  // HTTP POST to Server
      .subscribe(res => {  // Subscribe to the Server Response
-      this.pokemon.pokedex = res as any;  // Response as Service Pokedex = List
+      this.pokemon.pokedex = res as Pokemon[];  // Response as Service Pokedex = List
     });
   }
 
@@ -69,3 +69,5 @@ export class AdminPokemonComponent implements OnInit {
   }
 
 }
+
+// Main Component to Admin Pokemon. ADD/EDIT/DELETE Pokemon

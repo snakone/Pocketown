@@ -42,3 +42,5 @@ export class NatureComponent implements OnInit {
   }
 
 }
+
+// Child Component of Pokemon. Display Pokemon Nature

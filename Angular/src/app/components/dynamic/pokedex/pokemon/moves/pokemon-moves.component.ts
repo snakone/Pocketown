@@ -60,3 +60,5 @@ export class PokemonMovesComponent implements OnInit {
   }
 
 }
+
+// Child Component of Pokemon. Display Pokemon Moves - 4 Moves and Z Move

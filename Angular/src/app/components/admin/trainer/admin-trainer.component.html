@@ -6,7 +6,7 @@
             <div class="row">
 
               <input type="hidden" name="id"
-              #id="ngModel" [(ngModel)]="trainerService.trainerID">
+              #id="ngModel" [(ngModel)]="trainerService.selectedTrainer.id">
 
               <div class="input-field col s12 m6 l6">
                 <span class="helper-text bold">Trainer Name</span>  <!-- Trainer Name -->
@@ -46,7 +46,7 @@
               <br>
               <div class="card-action">
                 <div class="input-field col s12 m12 l12 center">
-                  <button type="submit" class="btn blue">Save</button>
+                  <button type="submit" class="btn blue">Update</button>
                   <button (click)="resetForm($event, addTrainerForm)"class="btn green">Clean</button>
                 </div>
               </div>
@@ -67,7 +67,7 @@
       <th class="center">Admin</th>
     </thead>
     <tbody>
-      <tr *ngFor="let trainer of trainerService.trainerList">
+      <tr *ngFor="let trainer of trainers">
         <td>{{trainer.name}}</td>
         <td>
           <a href="admin/trainer#top"><mat-icon (click)="updateFireTrainer(trainer)">edit</mat-icon></a>

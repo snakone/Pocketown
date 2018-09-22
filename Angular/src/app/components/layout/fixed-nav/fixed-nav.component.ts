@@ -17,3 +17,5 @@ export class FixedNavComponent implements OnInit {
   }
 
 }
+
+// Fixed MENU on the lEFT. Help people to nativate faster on wider screens

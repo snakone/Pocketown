@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { pokeItemService } from '../../../services/poke-item.service';  // Pokedex Service
-import { pokeItem } from '../../../models/poke-item';  // pokeItem Model
+import { pokeItemService } from '../../../services/poke-item.service';  // Poke Item Service
+import { pokeItem } from '../../../models/poke-item';  // Poke Item Model
 
 import { ToastrService } from 'ngx-toastr';  // Toastr
 
@@ -25,7 +25,7 @@ export class AdminPokeItemComponent implements OnInit {
   getpokeItem(){
      this.pokeItemService.getpokeItem()  // HTTP POST to Server
      .subscribe(res => {  // Subscribe to the Server Response
-      this.pokeItemService.pokeItemList = res as any;  // Response as Service pokeItem = List
+      this.pokeItemService.pokeItemList = res as pokeItem[];  // Response as Service pokeItem = List
     });
   }
 
@@ -69,3 +69,5 @@ export class AdminPokeItemComponent implements OnInit {
   }
 
 }
+
+// Main Component to Admin Pokemon Items (Helds Items). ADD/EDIT/DELETE Pokemon Items

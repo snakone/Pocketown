@@ -6,9 +6,9 @@ import { Injectable } from '@angular/core';
 
 export class StaticService {
 
-  types: string[];
-  stats: string[];
-  evolutions: string[];
+  types: string[];  // Pokemon Types = Grass-Fire-Water....
+  stats: string[];  // Pokemon Stats = ATK-DEF-SPD...
+  evolutions: string[];  // Pokemon Evolutions = Tiny-Mega-R2..
   selectedType: string ="";  // Save selected Type to play with it
   selectedStat: string ="Nº";  // Save selected Stat to play with it
   selectedEvolution: string = "Any";  // Save selected Evolution to play with it
@@ -25,4 +25,7 @@ export class StaticService {
 
     this.evolutions = ["Tiny", "Little", "Adult", "Mega", "Mega R2"];  // Evolutions
    }
+
 }
+
+// Service to work with Static Data like such

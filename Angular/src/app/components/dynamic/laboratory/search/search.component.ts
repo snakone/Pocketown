@@ -13,3 +13,5 @@ export class SearchComponent implements OnInit {
   }
 
 }
+
+// Search Component of the Laboratory. Here You select the criteria. TYPE - STAT- EVOLUTION

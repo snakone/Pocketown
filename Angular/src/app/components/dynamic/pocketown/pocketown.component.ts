@@ -13,3 +13,5 @@ export class PocketownComponent implements OnInit {
   }
 
 }
+
+// Main Component to Display info about Pocketown and the App

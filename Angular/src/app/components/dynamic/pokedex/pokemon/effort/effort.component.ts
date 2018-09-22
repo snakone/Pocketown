@@ -35,3 +35,5 @@ export class EffortComponent implements OnInit {
   }
 
 }
+
+// Child Component of Pokemon. Display Pokemon Effort Points - Recommened Effort Points

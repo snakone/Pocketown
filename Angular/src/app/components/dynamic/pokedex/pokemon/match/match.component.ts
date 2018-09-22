@@ -59,3 +59,5 @@ export class MatchComponent implements OnInit {
   }
 
 }
+
+// Child Component of Pokemon. Display Pokemon Good and Bad - 3 Good Pokemon - 3 Bad Pokemon

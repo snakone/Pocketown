@@ -28,13 +28,15 @@ export class PokedexService {
   }
 
   evolutionToString(evolution: string) {  // Changing Evolution Number to String
-    if (evolution == "1") evolution = "Tiny";
-    if (evolution == "2") evolution = "Little";
-    if (evolution == "3") evolution = "Adult";
-    if (evolution == "4") evolution = "Mega";
-    if (evolution == "5") evolution = "R2";
-
-    return evolution;
-  }
+    switch (evolution){
+        case "1": { evolution = "Tiny"; break }
+        case "2": { evolution = "Little"; break }
+        case "3": { evolution = "Adult"; break }
+        case "4": { evolution = "Mega"; break }
+        case "5": { evolution = "R2"; break } }  // End of Switch
+        return evolution;
+    }
 
 }
+
+// Pokedex Service to work with Pokedex List - API - Only GET the Pokemon List and Family

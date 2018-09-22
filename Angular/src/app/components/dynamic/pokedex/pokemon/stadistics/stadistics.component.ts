@@ -33,3 +33,5 @@ export class StadisticsComponent implements OnInit {
   }
 
 }
+
+// Child Component of Pokemon. Display Pokemon Stadistics - Stat bars

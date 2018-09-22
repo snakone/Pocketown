@@ -8,6 +8,7 @@ import { TrainerService } from '../../../services/trainer.service';
   templateUrl: './top-nav.component.html',
   styleUrls: ['./top-nav.component.css']
 })
+
 export class TopNavComponent {
 
   appTitle: string;
@@ -30,3 +31,5 @@ export class TopNavComponent {
   }
 
 }
+
+// Main Top Navigation of the App - Contains the MENU and the Profile icon

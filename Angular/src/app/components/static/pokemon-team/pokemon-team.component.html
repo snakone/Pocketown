@@ -1,7 +1,7 @@
-<div class="center">
+<div *ngIf="trainerService.fireTrainer.team" class="center">
   <a class="bordered-feature-image">
-    <span *ngFor="let pokemon of pokemonTeam">
-      <img class="pokemon" src="{{urlImage}}{{pokemon.picture}}.png"/>
+    <span *ngFor="let pokemon of trainerService.fireTrainer.team">
+      <img class="pokemon" src="{{urlImage}}{{pokemon}}.png"/>
     </span>
   </a>
 </div>

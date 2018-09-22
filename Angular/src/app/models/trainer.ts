@@ -2,12 +2,12 @@ import { Pokemon } from './pokemon';
 
 export class Trainer {
       id: string  // MongoDB ID
-      name: string;
+      name: string;  // trainer Name
       pokemon: string;  // Favourite Pokemon
       team: Pokemon[];  // Pokemon Team
-      avatar: string;
-      server: string;
-      guild: string;
+      avatar: string;  // Trainer Avatar
+      server: string;  // Trainer Server
+      guild: string;  // Trainer Guild
       online: boolean; // is the Trainer online?
 
       constructor(id: string, name: string, pokemon: string,
@@ -24,3 +24,5 @@ export class Trainer {
       }
 
 }
+
+// Pocketown Trainer Model

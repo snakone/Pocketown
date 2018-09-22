@@ -28,14 +28,16 @@ export class TrainerComponent implements OnInit {
 
   ngOnInit() {
     let routeParams = this.activeRoute.snapshot.params.name;  // Get the Trainer Name from URL
-    this.trainerService.getFireTrainerbyID(routeParams).subscribe(res =>{
-    this.trainer = res as Trainer;
+    this.trainerService.getFireTrainerbyID(routeParams)
+     .subscribe(res =>{
+       this.trainer = res as Trainer;  // Response = Trainer
   });
   }
 
-  navigate(pokemon: Pokemon){
-    console.log(pokemon);
-      this.router.navigate(['/pokedex', pokemon.picture]);  // Navigate to Single Pokemon using Pokemon ID
+  navigate(pokemon: string){ // On Pokemon Team, We don't save Pokemon Object, only the Name
+      this.router.navigate(['/pokedex', pokemon]);  // Navigate to Single Pokemon using Pokemon Name
   }
 
 }
+
+// Page to show info About a Single Trainer - Its different from the Profile Page

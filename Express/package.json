@@ -1,6 +1,6 @@
 {
   "name": "Express",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "description": "API REST Pocketown The Game",
   "main": "src/server.js",
   "scripts": {

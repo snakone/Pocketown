@@ -87,3 +87,5 @@ export class RegisterComponent implements OnInit {
   }
 
 }
+
+// Form Register Component when the User doesn't have a Trainer registered YET
