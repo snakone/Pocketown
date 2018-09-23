@@ -17,8 +17,8 @@ import { map } from 'rxjs/operators';
 
 export class TrainerService {
 
-  isTrainer: boolean = false;  // To know whatever is Trainer or Not
-  notTrainer: boolean = false;  //  We use a second so it doesnt' depend from the first one
+  isTrainer: boolean;  // To know whatever is Trainer or Not
+  notTrainer: boolean;  //  We use a second so it doesnt' depend from the first one
   admin: boolean;  // To know whatever is Admin or Not
   firstLogin: boolean = true;  // WE only check the Trainer Profile once on the First Login
 
@@ -34,7 +34,7 @@ export class TrainerService {
 
   constructor(private http: HttpClient,
               public db: AngularFirestore) {
-                this.admin = true;  // Start Admin at False
+                this.admin = false;  // Start Admin at False
                 this.selectedTrainer = <Trainer>{};
                 this.trainerCollection = this.db.collection('trainers');  // Select Firestore Collection
                }
@@ -81,23 +81,31 @@ export class TrainerService {
      .subscribe(res=> {  // Response as Trainer
       if(res){ this.fireTrainer = res as Trainer;
         this.isTrainer = true;  this.notTrainer = false;  // Trainer Settings
+          if (this.fireTrainer.name == 'Snakone') this.admin = true;
       } else { this.isTrainer = false;  this.notTrainer = true; }
     });
     return this.fireTrainer; // Return the Trainer
   }
 
   updateTrainerOnlineStatus(status:boolean){  // Update Online Status
-    this.trainerCollection.doc(this.Auth).update({
-      online: status  // Update Trainer with the given Status, either True or False
-    });
+        this.trainerCollection.doc(this.Auth).update({ 
+          online: status  // Update Trainer with the given Status, either True or False
+        });
   }
 
   addPokemontoTeam(pokemon:Pokemon){  // Add Pokemon to Trainer Team
+    this.fireTrainer.team.push(pokemon.picture);
     this.trainerCollection.doc(this.Auth).update({  // Get the Trainer DOC with the ID then update Team
-      team: [pokemon.picture]
+      team: this.fireTrainer.team
     });
+  }
+
+  addTeamToTrainer(pokemon:string[]){
+    this.trainerCollection.doc(this.Auth).update({
+      team: pokemon
+    })
   }
 
 }
 
-// Service to work with Trainers - FIRESTORE Service - Trainer Setting - Online Status - Add Pokemon to Trainer Team
+// Service to work with Trainers - FIRESTORE Service - Trainer Settings - Online Status - Add Pokemon to Trainer Team

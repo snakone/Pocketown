@@ -7,13 +7,12 @@
 }
 
 .actions {
-  margin-top: 55px;
-}
-
-@media (min-width:600px) {
-  .actions {
-    margin-top: 35px;
-  }
+  position: absolute;
+  bottom: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 .addButton:hover {
@@ -64,7 +63,7 @@ mat-icon {
 margin: 0 10px;
 vertical-align: middle;
 margin-top: -3px;
-color:green;
+color:orange;
 }
 
 

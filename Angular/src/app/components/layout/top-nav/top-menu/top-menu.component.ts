@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { TrainerService } from '../../../../services/trainer.service';  // Trainer Service
+import { AuthService } from '../../../../services/auth.service';  // Trainer Service
 
 @Component({
   selector: 'top-menu',
@@ -10,7 +11,8 @@ import { TrainerService } from '../../../../services/trainer.service';  // Train
 
 export class TopMenuComponent implements OnInit {
 
-  constructor(private trainerService: TrainerService) {}
+  constructor(private trainerService: TrainerService,
+              private authService: AuthService) {}
 
   ngOnInit() {}
 

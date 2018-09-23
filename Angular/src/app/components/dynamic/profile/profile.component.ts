@@ -15,14 +15,11 @@ export class ProfileComponent implements OnInit {
               private trainerService: TrainerService) { }
 
   ngOnInit() {
-    if (this.authService.isAuthenticated()) {  // Only If Logged In with Auth0
+    // Only If Logged In with Auth0
+    if (this.trainerService.firstLogin && this.authService.isAuthenticated()) {
       this.authService.getProfile((err, profile) => {  // Get the Profile
-      // After We get the Trainer We check it
-      this.trainerService.fireTrainer = this.trainerService.checkTrainer(profile);
-      if (this.trainerService.firstLogin) { // Update to Online Status only the First Time
-        this.trainerService.updateTrainerOnlineStatus(true);
-        this.trainerService.firstLogin = false;  // First Login = False
-      }
+        // After We get the Trainer We check it
+        this.trainerService.checkTrainer(profile);
       });
     }
   }

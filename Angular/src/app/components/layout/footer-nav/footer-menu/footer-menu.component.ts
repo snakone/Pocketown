@@ -19,7 +19,6 @@ export class FooterMenuComponent implements OnInit {
   ngOnInit() {}
 
   logOut():void {  // Log out from Auth0
-
     this.authService.logout();
     this.toastr.info('','Now You are logged out', {
       timeOut: 10000,

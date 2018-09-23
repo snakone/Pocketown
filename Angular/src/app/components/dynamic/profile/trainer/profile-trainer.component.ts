@@ -22,6 +22,7 @@ export class ProfileTrainerComponent implements OnInit {
   trainer: Trainer;  // Trainer from MongoDB
   urlPokemon: string;
   urlImage: string;
+  editing: boolean;
   pokemonTeam: Pokemon[];
 
   constructor(private authService: AuthService,
@@ -31,27 +32,14 @@ export class ProfileTrainerComponent implements OnInit {
               public dialog: MatDialog) {
         this.urlPokemon = "../../../../../assets/images/pokemon/";
         this.urlImage = "../../../../../assets/images/avatar/";
+        this.editing = false;
   }
 
   ngOnInit() {
+    // Update to Online Status only the First Time and If is a Trainer
+    this.trainerService.updateTrainerOnlineStatus(true);
+    this.trainerService.firstLogin = false;  // First Login = False
     this.trainer = this.trainerService.fireTrainer;
-  }
-
-  registerTeam(){
-    const dialogRef = this.dialog.open(ConfirmComponent,{});  // New Dialog -> Confirm Dialog Component
-
-    dialogRef.afterClosed().subscribe(result => { // After Dialog Closed
-      if (result){  // If Dialog Result = YES
-         }
-    });
-  }
-
-  editTeam(){
-    this.trainerService.trainerTeam = this.trainer.team;  // MongoDB Team = Edit Team
-  }
-
-  cancel(){
-    this.trainerService.trainerTeam = [];  // Clean the Team
   }
 
   removePokemon(i){ // Index
@@ -59,13 +47,22 @@ export class ProfileTrainerComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => { // After Dialog Closed
       if (result) {  // If Dialog Result = YES
-      this.trainerService.trainerTeam.splice(i,1); // Remove Trainer by Index from Edit Team
-        }
+      this.trainerService.fireTrainer.team.splice(i,1); // Remove Trainer by Index from Edit Team
+      this.trainerService.addTeamToTrainer(this.trainerService.fireTrainer.team);
+      this.toastr.warning('',"Pokémon Removed", {
+        timeOut: 3000,
+        extendedTimeOut: 2000
+        });
+      } // End of IF
     });
   }
 
   navigate(pokemon: string){ // On Pokemon Team, We don't save Pokemon Object, only the Name
       this.router.navigate(['/pokedex', pokemon]);  // Navigate to Single Pokemon using Pokemon Name
+  }
+
+  editTeam(){
+    this.editing = !this.editing;
   }
 
 }

@@ -53,20 +53,20 @@ export class BioComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => { // After Dialog Closed
       if (result) {  // If Dialog Result = YES
         if (this.trainerService.fireTrainer.team.length >= 6) {  // Trainer Team >= 6 Pokémon
-          this.toastr.error('',"Team can't exceed 6 Pokémon", {
+          this.toastr.error('',"Only 6 Pokémon allowed", {
             timeOut: 5000,
             extendedTimeOut: 1000
           });  // Else Trainer Team >= 6
         } else {  // Add Pokémon to Team & Show Snack Bar with actual Trainer Team
           this.trainerService.addPokemontoTeam(pokemon);
-          this.toastr.success('Good!',"Pokémon Added", {
+          this.toastr.success('',"Pokémon Added", {
             timeOut: 3000,
             extendedTimeOut: 2000
           });
           this.snackBar.openFromComponent(PokemonTeamComponent, { // Snack Bar - Pokemon Team Component
              duration: 4000,
              panelClass: ['snackbar'],
-             verticalPosition: 'top'
+             verticalPosition: 'bottom'
            });
         } // End of Else Team > 6
       }  // End of If Result

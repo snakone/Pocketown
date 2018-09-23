@@ -63,17 +63,9 @@
 
 .snackbar {
   background: transparent;
-	position: absolute;
-	bottom:4%;
-	left:auto;
-	-webkit-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+	bottom: 50px;
 }
 
-@media (min-width:600px) {
-	.snackbar {
-		right:30%;
-		left:30%;
-	}
+.mat-snack-bar-container {
+	padding: 40px 24px!important;
 }

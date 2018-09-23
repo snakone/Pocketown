@@ -1,7 +1,7 @@
 .card {
   max-width: 350px;
   margin: auto;
-  min-height: 410px;
+  min-height: 450px;
   padding: 25px;
 }
 
@@ -9,11 +9,15 @@ h5 {
   font-size: 1.3em;
 }
 
-
 .pokemon {
   width: 65px;
   margin: 0 auto;
   display: block;
+}
+
+.team {
+  margin-bottom: 15px;
+  margin-top:25px;
 }
 
 .row .col {
@@ -31,7 +35,7 @@ h5 {
 }
 
 .noPokemon {
-  margin-top: 50%;
+  margin-top: 40%;
   font-size: .8em;
 }
 

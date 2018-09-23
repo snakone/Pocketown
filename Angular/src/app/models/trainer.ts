@@ -1,17 +1,15 @@
-import { Pokemon } from './pokemon';
-
 export class Trainer {
       id: string  // MongoDB ID
       name: string;  // trainer Name
       pokemon: string;  // Favourite Pokemon
-      team: Pokemon[];  // Pokemon Team
+      team: string[];  // Pokemon Team
       avatar: string;  // Trainer Avatar
       server: string;  // Trainer Server
       guild: string;  // Trainer Guild
       online: boolean; // is the Trainer online?
 
       constructor(id: string, name: string, pokemon: string,
-                   avatar: string, server: string, guild: string, online:boolean = false, team?: Pokemon[],){
+                   avatar: string, server: string, guild: string, online:boolean = true, team?: string[],){
 
                   this.id = id;
                   this.name = name;

@@ -37,6 +37,13 @@
               </div>
 
               <div class="input-field col s12 m6 l6">
+                <span class="helper-text bold">Trainer Server</span>   <!-- Trainer Server -->
+                <input type="text" name="server"
+                #server="ngModel" [(ngModel)]="trainerService.selectedTrainer.server"
+                placeholder="Enter Trainer Server">
+              </div>
+
+              <div class="input-field col s12 m6 l6">
                 <span class="helper-text bold">Online Status</span>  <!-- Online Status -->
                 <input type="text" name="online"
                 #online="ngModel" [(ngModel)]="trainerService.selectedTrainer.online"

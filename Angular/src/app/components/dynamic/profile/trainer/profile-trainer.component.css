@@ -1,7 +1,7 @@
 .card {
   max-width: 350px;
   margin: auto;
-  min-height: 410px;
+  min-height: 450px;
   padding: 25px;
 }
 
@@ -9,8 +9,34 @@ h5 {
   font-size: 1.3em;
 }
 
+.edit {
+  color:orange;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -3px;
+}
+
+.edit:hover{
+  cursor: pointer;
+  filter: brightness(.8);
+  transform: rotate(10deg);
+  transition: transform .5s;
+}
+
 .close {
   color:red;
+}
+
+.close:hover {
+  cursor: pointer;
+  transform: rotate(-90deg);
+  transition: transform 2s;
+  overflow: hidden;
+}
+
+.team {
+  margin-bottom: 15px;
+  margin-top:25px;
 }
 
 .buttons button {
@@ -25,13 +51,6 @@ h5 {
 .top {
   margin-top: 30px;
   padding-bottom: 0;
-}
-
-.close:hover {
-  cursor: pointer;
-  transform: rotate(-90deg);
-  transition: transform 2s;
-  overflow: hidden;
 }
 
 .pokemon {
@@ -55,7 +74,7 @@ h5 {
 }
 
 .noPokemon {
-  margin-top: 50%;
+  margin-top: 40%;
   font-size: .8em;
 }
 

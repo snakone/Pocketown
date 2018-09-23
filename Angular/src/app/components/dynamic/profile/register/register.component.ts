@@ -67,7 +67,6 @@ export class RegisterComponent implements OnInit {
   }
 
   validateForm(form1: NgForm, form2: NgForm, form3: NgForm){
-
     // New Trainer with all the DATA, Form + Trainer ID
     const fireTrainer = {
       id: this.trainerService.Auth,
@@ -76,12 +75,12 @@ export class RegisterComponent implements OnInit {
       avatar: form2.value.Avatar,
       server: form3.value.Server,
       guild: form3.value.Guild,
-      online: false,
+      online: true,
       team: []
     }
 
     this.trainerService.addFireTrainer(fireTrainer);  // Add Trainer to MongoDB
-       this.toastr.success('Trainer','Congratulations!', {
+       this.toastr.success(':)','Congratulations!', {
          timeOut: 5000
        });
   }

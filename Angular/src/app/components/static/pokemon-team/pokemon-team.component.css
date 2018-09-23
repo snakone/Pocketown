@@ -4,11 +4,6 @@
   padding: 2px;
 }
 
-.noPokemon {
-  margin-top: 30px;
-  font-size: .8em;
-}
-
 .darkblue {
   color:darkblue;
   font-weight: bold;
@@ -24,3 +19,7 @@
 		margin: 0 auto 1em auto;
 		outline: 0;
 	}
+
+.team {
+  max-width: 100%;
+}

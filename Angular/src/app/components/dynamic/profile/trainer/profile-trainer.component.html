@@ -14,41 +14,23 @@
     <p>Server: <span class="bold">{{trainer.server}}</span></p>
     <p>Guild: <span class="bold">{{trainer.guild}}</span></p>
   </div>
-
-  <!-- <div class="center top" *ngIf="trainer.team.length">  Only IF Edit Team
-    <div class="row center">
-      <h5>Register a Team</h5>   Register
-      <div class="col s2 m2 l2" *ngFor="let pokemon of trainer.team; let i = index">
-        <img class="pokemonTeam" src="{{urlPokemon}}{{pokemon}}.png"/>
-        <mat-icon (click)="removePokemon(i)" class="close">close</mat-icon>
-      </div>
-    </div>
-      <div class="center buttons">
-        <div class="col s6 m6 l6">  Register Button
-          <button (click)="registerTeam()" class="btn blue">Register</button>
-        </div>
-        <div class="col s6 m6 l6">  Cancel Button
-          <button (click)="cancel()" class="btn red">Cancel</button>
-      </div>
-      <br>
-      </div>
-   </div> -->
-
   <br>
-  <div *ngIf="trainer.team !=''">  <!-- Only IF Trainer Team -->
-      <div class="row center">
-        <h5>Pokémon Team</h5> <!-- Pokemon Team -->
-        <div class="col s2 m2 l2" *ngFor="let pokemon of trainer.team">
+  <div *ngIf="trainerService.fireTrainer.team !=''" class="row center">  <!-- Only IF Trainer Team -->
+    <h5 class="team">Pokémon Team
+      <mat-icon (click)="editTeam()" class="edit">edit</mat-icon>
+    </h5> <!-- Pokemon Team -->
+      <div>
+        <div class="col s2 m2 l2" *ngFor="let pokemon of trainerService.fireTrainer.team; let i = index">
           <img class="pokemonTeam" (click)="navigate(pokemon)" src="{{urlPokemon}}{{pokemon}}.png"/>
+          <mat-icon *ngIf="editing" (click)="removePokemon(i)" class="close">close</mat-icon>
         </div>
       </div>
-        <!-- <div class="center top">
-          <p><button (click)="editTeam()" class="btn blue">Edit</button></p>
-        </div> -->
-
   </div>
-    <!-- Only IF NOT Trainer Team or Edit Team -->
-    <div *ngIf="trainer.team == ''" class="center">
-      <p class="noPokemon">Seems like You don't have any <span class="darkblue">Pokémon</span> on your Team.</p>
+
+    <!-- Only IF NOT Trainer Team-->
+    <div *ngIf="trainerService.fireTrainer.team == ''" class="center">
+      <p class="noPokemon">Seems like You don't have any
+      <span class="darkblue">Pokémon</span> on your Team.</p>
     </div>
+
 </mat-card>
