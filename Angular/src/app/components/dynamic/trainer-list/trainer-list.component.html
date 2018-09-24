@@ -37,8 +37,8 @@
       </div>
       <div *ngIf="trainer.team !=''" class="col s12 m12 l6 center team">  <!-- Trainer Team -->
           <span *ngFor="let pokemon of trainer.team">
-              <img class="pokemonTeam" (click)="navigatePokemon(pokemon)"
-              src="{{urlImage}}pokemon/{{pokemon}}.png"/>
+              <img class="pokemonTeam" (click)="navigatePokemon(pokemon.picture)"
+              src="{{urlImage}}pokemon/{{pokemon.picture}}.png"/>
           </span>
       </div>
       <div class="col s12 m12 l6 center team" *ngIf="trainer.team == ''">

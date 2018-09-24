@@ -1,10 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import { Pokemon } from '../../../../../models/pokemon';  // Pokemon Model
-import { pokeItem } from '../../../../../models/poke-item';  // Pokemon Model
+import { PokeItem } from '../../../../../models/poke-item';  // Pokemon Model
 
 import { PokedexService } from '../../../../../services/pokedex.service';  // Pokedex Service
-import { pokeItemService } from '../../../../../services/poke-item.service';  // Pokedex Service
+import { PokeItemService } from '../../../../../services/poke-item.service';  // Pokedex Service
 
 @Component({
   selector: 'pokemon-items',
@@ -20,11 +20,11 @@ export class ItemsComponent implements OnInit {
   @Input() pokemon: Pokemon;
   showDescripItem1: boolean = false;  // Show ot NOT
   showDescripItem2: boolean = false;  // Show ot NOT
-  item1: pokeItem; // Poke Item 1
-  item2: pokeItem; // Poke Item 2
+  item1: PokeItem; // Poke Item 1
+  item2: PokeItem; // Poke Item 2
 
   constructor(private pokedexService: PokedexService,
-              private pokeitemService: pokeItemService) {
+              private pokeitemService: PokeItemService) {
         this.urlImage = "../../../../../../assets/images/items/";
         this.urlPokemon = "../../../../../../assets/images/pokemon/";
    }
@@ -44,13 +44,13 @@ export class ItemsComponent implements OnInit {
       // Getting Poke Item 1 Object from Server given his Name
       this.pokeitemService.getpokeItembyName(this.pokemon.item_picture)
        .subscribe(res =>{
-         this.item1 = res[0] as pokeItem;
+         this.item1 = res[0] as PokeItem;
        })
 
       // Getting Poke Item 2 Object from Server given his Name
        this.pokeitemService.getpokeItembyName(this.pokemon.item2_picture)
        .subscribe(res =>{
-         this.item2 = res[0] as pokeItem;
+         this.item2 = res[0] as PokeItem;
        })
    }
 
@@ -60,7 +60,7 @@ export class ItemsComponent implements OnInit {
      // Getting Poke Item 1 Object from Server given his Name
      this.pokeitemService.getpokeItembyName(this.pokemon.item_picture)
       .subscribe(res =>{
-        this.item1 = res[0] as pokeItem;
+        this.item1 = res[0] as PokeItem;
       })
 
    }
@@ -71,7 +71,7 @@ export class ItemsComponent implements OnInit {
      // Getting Poke Item 2 Object from Server given his Name
      this.pokeitemService.getpokeItembyName(this.pokemon.item2_picture)
       .subscribe(res =>{
-        this.item2 = res[0] as pokeItem;
+        this.item2 = res[0] as PokeItem;
      })
    }
 

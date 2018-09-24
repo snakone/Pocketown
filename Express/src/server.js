@@ -7,7 +7,6 @@ const laboratory = require('./routes/laboratory-routes');  // Require API Labora
 const pokemon = require('./routes/pokemon-routes');  // Require API Admin Pokemon
 const move = require('./routes/move-routes');  // Require API Admin Move
 const pokeItem = require('./routes/poke-items-routes');  // Require API Poke Items
-const trainer = require('./routes/trainer-routes');  // Require API Poke Items
 
 const app = express();  // Init Express on APP
 
@@ -46,7 +45,6 @@ app.use('/', laboratory);  // Laboratory Route
 app.use('/', pokemon);  // Admin Route
 app.use('/', move);  // Pokemon Move Route
 app.use('/', pokeItem);  // Pokemon Move Route
-app.use('/', trainer);  // Trainer Route
 
 // Listening
 

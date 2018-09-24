@@ -9,6 +9,17 @@ h5 {
   font-size: 1.3em;
 }
 
+.bar {
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10px;
+}
+
 .pokemon {
   width: 65px;
   margin: 0 auto;

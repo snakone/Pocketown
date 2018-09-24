@@ -12,8 +12,7 @@ export class GridComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 @HostListener('window:scroll') do(){  // Host Listener Window Scroll
 

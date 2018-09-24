@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { pokeItem } from '../../../models/poke-item';  // Poke Item Model
+import { PokeItem } from '../../../models/poke-item';  // Poke Item Model
 
-import { pokeItemService } from '../../../services/poke-item.service';  // Pokemon Item Service
+import { PokeItemService } from '../../../services/poke-item.service';  // Pokemon Item Service
 import { Router } from '@angular/router'; // Router
 
 @Component({
@@ -12,12 +12,12 @@ import { Router } from '@angular/router'; // Router
 })
 export class PokeItemsComponent implements OnInit {
 
-  pokeItemList: pokeItem[]; // Original List
-  filteredpokeItemList: pokeItem[]; // Filtered List
+  pokeItemList: PokeItem[]; // Original List
+  filteredpokeItemList: PokeItem[]; // Filtered List
   searchValue: string = "";  // Input Value to Search For - ngModel on HTML
   urlImage: string;
 
-  constructor(private pokeItemService: pokeItemService,
+  constructor(private pokeItemService: PokeItemService,
               private router: Router) {
         this.urlImage = "../../../../assets/images/items/"
    }
@@ -25,7 +25,7 @@ export class PokeItemsComponent implements OnInit {
   ngOnInit() {
     this.pokeItemService.getpokeItem()  // Get pokeItem List
      .subscribe(res => {
-       this.pokeItemList = res as pokeItem[];
+       this.pokeItemList = res as PokeItem[];
        this.filteredpokeItemList = this.pokeItemList;  // Make a copy to Filter
      })
   }

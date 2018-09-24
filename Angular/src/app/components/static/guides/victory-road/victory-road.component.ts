@@ -21,7 +21,6 @@ export class VictoryRoadComponent implements OnInit {
 
   scrollToElement($element): void {  // Smooth Scrolling on Anchor Links
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-
   }
 
 }

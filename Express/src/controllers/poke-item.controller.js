@@ -29,7 +29,6 @@ pokeItemCtrl.getpokeItembyName = async (req, res) => {  // Get pokeItem by Name
   const filterPokeItem = new RegExp(`^${req.query.pokeItem}`);  //  Template String ES6 Pattern
   const pokeItem = await pokeItems.find({ picture: filterPokeItem});  // "/^Charcoal/" Pattern
   res.json(pokeItem);  // Send pokeItem to server as JSON
-
 }
 
 pokeItemCtrl.updatepokeItem = async (req, res) => {  // Update pokeItem
@@ -46,7 +45,7 @@ pokeItemCtrl.updatepokeItem = async (req, res) => {  // Update pokeItem
 
 pokeItemCtrl.deletepokeItem = async (req, res) => {  // Remove pokeItem pokeItem from MongoDB
 
-  await pokeItems.findByIdAndRepokeItem(req.params.id);  // Remove pokeItem by ID
+  await pokeItems.findByIdAndRemove(req.params.id);  // Remove pokeItem by ID
   res.json({
     status: "Held Item Deleted"
   });

@@ -2,23 +2,23 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http'; //  Make HTTP Request to API
 
-import { pokeItem } from '../models/poke-item';  // pokeItem Model
+import { PokeItem } from '../models/poke-item';  // pokeItem Model
 
 @Injectable({
   providedIn: 'root'
 })
 
-export class pokeItemService {
+export class PokeItemService {
 
-  selectedpokeItem: pokeItem;  // Save selected pokeItem
-  pokeItemList: pokeItem[];  // pokeItem List
+  selectedpokeItem: PokeItem;  // Save selected pokeItem
+  pokeItemList: PokeItem[];  // pokeItem List
   readonly POKEITEM_API = "http://localhost:3000/held-items";  // Server API
   readonly POKEITEM_NAME_API = "http://localhost:3000/held-item_name";  // Server API for pokeItem Names
 
   // Heroku Server --> https://pocketown-server.herokuapp.com
 
   constructor(private http: HttpClient) {
-    this.selectedpokeItem = <pokeItem>{};  // At start We have empty pokeItem
+    this.selectedpokeItem = <PokeItem>{};  // At start We have empty pokeItem
    }
 
   getpokeItem(){
@@ -34,11 +34,11 @@ export class pokeItemService {
     return this.http.get(this.POKEITEM_API + `/${id}`);  // HTTP GET to Server API - POSTMAN belike
   }
 
-  addpokeItem(pokeItem: pokeItem){  // We add a pokeItem
+  addpokeItem(pokeItem: PokeItem){  // We add a pokeItem
     return this.http.post(this.POKEITEM_API, pokeItem);  // HTTP POST to Server API - POSTMAN belike
   }
 
-  updatepokeItem(pokeItem:pokeItem){  // We update a pokeItem
+  updatepokeItem(pokeItem:PokeItem){  // We update a pokeItem
     return this.http.put(this.POKEITEM_API + `/${pokeItem._id}`, pokeItem);  // HTTP PUT to Server API - POSTMAN belike
   }
 

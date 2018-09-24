@@ -19,13 +19,14 @@ export class FooterMenuComponent implements OnInit {
   ngOnInit() {}
 
   logOut():void {  // Log out from Auth0
+    this.trainerService.updateTrainerOnlineStatus(false);  // Update Status to Offline
+    this.trainerService.firstLogin = true;  // First Login back to True
     this.authService.logout();
-    this.toastr.info('','Now You are logged out', {
+    this.toastr.error('','Now You are logged out', {
       timeOut: 10000,
       extendedTimeOut: 5000
     });
-    this.trainerService.updateTrainerOnlineStatus(false);  // Update Status to Offline
-    this.trainerService.firstLogin = true;  // First Login back to True
+
   }
 
 }

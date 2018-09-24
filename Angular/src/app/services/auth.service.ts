@@ -39,7 +39,7 @@ export class AuthService {
          window.location.hash = '';
          this.setSession(authResult);
          this.router.navigate(['/profile']);  // Login Succes
-         this.toastr.info('','Now You are logged in', {
+         this.toastr.success('','Now You are logged in', {
            timeOut: 10000,
            extendedTimeOut: 5000
          });

@@ -88,19 +88,19 @@ export class TrainerService {
   }
 
   updateTrainerOnlineStatus(status:boolean){  // Update Online Status
-        this.trainerCollection.doc(this.Auth).update({ 
+        this.trainerCollection.doc(this.Auth).update({
           online: status  // Update Trainer with the given Status, either True or False
         });
   }
 
   addPokemontoTeam(pokemon:Pokemon){  // Add Pokemon to Trainer Team
-    this.fireTrainer.team.push(pokemon.picture);
+    this.fireTrainer.team.push(pokemon);
     this.trainerCollection.doc(this.Auth).update({  // Get the Trainer DOC with the ID then update Team
       team: this.fireTrainer.team
     });
   }
 
-  addTeamToTrainer(pokemon:string[]){
+  addTeamToTrainer(pokemon:Pokemon[]){
     this.trainerCollection.doc(this.Auth).update({
       team: pokemon
     })

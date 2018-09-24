@@ -1,4 +1,4 @@
-<mat-card *ngIf="trainer" class="card">
+<mat-card *ngIf="trainer" class="card">  <!-- Only If Trainer -->
   <div class="row">
     <div class="col s6 m6 l6 center">
       <h5 class="bold truncate">{{trainer.name}}</h5>
@@ -19,12 +19,12 @@
     <h5 class="team">Pokémon Team
       <mat-icon (click)="editTeam()" class="edit">edit</mat-icon>
     </h5> <!-- Pokemon Team -->
-      <div>
         <div class="col s2 m2 l2" *ngFor="let pokemon of trainerService.fireTrainer.team; let i = index">
-          <img class="pokemonTeam" (click)="navigate(pokemon)" src="{{urlPokemon}}{{pokemon}}.png"/>
+          <img class="pokemonTeam" (click)="navigate(pokemon.picture)" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
           <mat-icon *ngIf="editing" (click)="removePokemon(i)" class="close">close</mat-icon>
         </div>
-      </div>
+        <mat-progress-bar *ngIf="totalSS" class="bar" color="warn"
+        mode="determinate" bufferValue="100" [value]="totalSS"></mat-progress-bar>  <!-- Progress Bar -->
   </div>
 
     <!-- Only IF NOT Trainer Team-->

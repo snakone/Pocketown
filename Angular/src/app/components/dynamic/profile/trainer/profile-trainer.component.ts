@@ -22,8 +22,10 @@ export class ProfileTrainerComponent implements OnInit {
   trainer: Trainer;  // Trainer from MongoDB
   urlPokemon: string;
   urlImage: string;
-  editing: boolean;
-  pokemonTeam: Pokemon[];
+  editing: boolean;  // To know if the Trainer is Editing or NOT
+  pokemonTeam: Pokemon[];  // Trainer Pokemon Team
+  totalSS: number = 0;  // Total SS of Trainer Team
+  rate: number = 0.0200080032;  // 4998/100 Where 4998 is Max Pokemon SS * 6 (Progress bar MAX value is 100)
 
   constructor(private authService: AuthService,
               private trainerService: TrainerService,
@@ -40,6 +42,7 @@ export class ProfileTrainerComponent implements OnInit {
     this.trainerService.updateTrainerOnlineStatus(true);
     this.trainerService.firstLogin = false;  // First Login = False
     this.trainer = this.trainerService.fireTrainer;
+    this.calculateTotalSS(this.trainer.team);  // Calculate Total SS of Trainer Pokemon Team
   }
 
   removePokemon(i){ // Index
@@ -47,12 +50,13 @@ export class ProfileTrainerComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => { // After Dialog Closed
       if (result) {  // If Dialog Result = YES
-      this.trainerService.fireTrainer.team.splice(i,1); // Remove Trainer by Index from Edit Team
-      this.trainerService.addTeamToTrainer(this.trainerService.fireTrainer.team);
+      this.trainerService.fireTrainer.team.splice(i,1); // Remove Pokemon on Team by Index
+      this.trainerService.addTeamToTrainer(this.trainerService.fireTrainer.team); // After, We add the NEW Team
       this.toastr.warning('',"Pokémon Removed", {
         timeOut: 3000,
         extendedTimeOut: 2000
         });
+      this.calculateTotalSS(this.trainerService.fireTrainer.team); // Finally Calculate Total SS of the NEW Team
       } // End of IF
     });
   }
@@ -61,8 +65,15 @@ export class ProfileTrainerComponent implements OnInit {
       this.router.navigate(['/pokedex', pokemon]);  // Navigate to Single Pokemon using Pokemon Name
   }
 
-  editTeam(){
+  editTeam(){  // Toogle Edit Section
     this.editing = !this.editing;
+  }
+
+  calculateTotalSS(team:Pokemon[]){  // Calculate Total SS of Trainer Pokemon Team
+      for (let i in team){
+        this.totalSS = this.totalSS + team[i].SS;
+      }
+    this.totalSS = this.totalSS * this.rate;  // Total SS * Rate
   }
 
 }

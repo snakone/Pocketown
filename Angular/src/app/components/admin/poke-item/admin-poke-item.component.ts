@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { pokeItemService } from '../../../services/poke-item.service';  // Poke Item Service
-import { pokeItem } from '../../../models/poke-item';  // Poke Item Model
+import { PokeItemService } from '../../../services/poke-item.service';  // Poke Item Service
+import { PokeItem } from '../../../models/poke-item';  // Poke Item Model
 
 import { ToastrService } from 'ngx-toastr';  // Toastr
 
@@ -15,7 +15,7 @@ import { NgForm } from '@angular/forms';  // Angular Forms
 
 export class AdminPokeItemComponent implements OnInit {
 
-  constructor(private pokeItemService: pokeItemService,
+  constructor(private pokeItemService: PokeItemService,
               private toastr: ToastrService) { }
 
   ngOnInit() {
@@ -25,7 +25,7 @@ export class AdminPokeItemComponent implements OnInit {
   getpokeItem(){
      this.pokeItemService.getpokeItem()  // HTTP POST to Server
      .subscribe(res => {  // Subscribe to the Server Response
-      this.pokeItemService.pokeItemList = res as pokeItem[];  // Response as Service pokeItem = List
+      this.pokeItemService.pokeItemList = res as PokeItem[];  // Response as Service pokeItem = List
     });
   }
 
@@ -48,7 +48,7 @@ export class AdminPokeItemComponent implements OnInit {
     }
   }
 
-  updatepokeItem(pokeItem: pokeItem){  // NEW pokeItem Object with the pokeItem -> selected pokeItem
+  updatepokeItem(pokeItem: PokeItem){  // NEW pokeItem Object with the pokeItem -> selected pokeItem
     this.pokeItemService.selectedpokeItem = Object.assign({}, pokeItem);;
   }
 
@@ -65,7 +65,7 @@ export class AdminPokeItemComponent implements OnInit {
 
   resetForm(form?: NgForm){
     if (form) form.reset();  // Form?
-    this.pokeItemService.selectedpokeItem = <pokeItem>{};  // On Reset, New pokeItem
+    this.pokeItemService.selectedpokeItem = <PokeItem>{};  // On Reset, New pokeItem
   }
 
 }

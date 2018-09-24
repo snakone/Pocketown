@@ -34,7 +34,7 @@ export class ResultComponent implements OnInit, OnDestroy {
   }
 
   navigate(pokemon: Pokemon) {  // Navigate to Single Pokemon using Pokemon ID
-    this.router.navigate(['/pokedex', pokemon._id]);
+    this.router.navigate(['/pokedex', pokemon.picture]);
   }
 
   goBack(){

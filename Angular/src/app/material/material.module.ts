@@ -15,6 +15,7 @@ import { MatFormFieldModule, MatInputModule } from '@angular/material';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 
 import { MatSidenavModule,
@@ -31,14 +32,14 @@ import { MatSidenavModule,
             MatTableModule,MatPaginatorModule, MatSortModule, MatTooltipModule,
             MatExpansionModule, MatRadioModule, MatDividerModule, MatTabsModule,
             MatStepperModule, MatFormFieldModule, MatInputModule, MatSelectModule,
-            MatDialogModule, MatSnackBarModule],
+            MatDialogModule, MatSnackBarModule, MatProgressBarModule],
 
   exports: [MatButtonModule, MatCheckboxModule,MatToolbarModule,MatIconModule,
             MatMenuModule, MatSidenavModule, MatListModule, MatCardModule,
             MatTableModule,MatPaginatorModule, MatSortModule, MatTooltipModule,
             MatExpansionModule, MatRadioModule, MatDividerModule, MatTabsModule,
             MatStepperModule, MatFormFieldModule, MatInputModule, MatSelectModule,
-            MatDialogModule, MatSnackBarModule],
+            MatDialogModule, MatSnackBarModule, MatProgressBarModule],
 })
 export class MaterialModule {
 

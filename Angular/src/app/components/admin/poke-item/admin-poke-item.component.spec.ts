@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdminpokeItemComponent } from './admin-poke-item.component';
+import { AdminPokeItemComponent } from './admin-poke-item.component';
 
-describe('AdminpokeItemComponent', () => {
-  let component: AdminpokeItemComponent;
-  let fixture: ComponentFixture<AdminpokeItemComponent>;
+describe('AdminPokeItemComponent', () => {
+  let component: AdminPokeItemComponent;
+  let fixture: ComponentFixture<AdminPokeItemComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdminpokeItemComponent ]
+      declarations: [ AdminPokeItemComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AdminpokeItemComponent);
+    fixture = TestBed.createComponent(AdminPokeItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

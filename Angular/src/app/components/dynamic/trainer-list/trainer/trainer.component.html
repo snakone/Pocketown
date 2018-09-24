@@ -17,12 +17,13 @@
       <br>
       <div class="center" *ngIf="trainer.team !=''">
         <h5 class="team">Pokémon Team</h5>
-      <div class="row center">
-        <div class="col s2 m2 l2" *ngFor="let pokemon of trainer.team">
-          <img class="pokemonTeam" (click)="navigate(pokemon)" src="{{urlPokemon}}{{pokemon}}.png"/>
-
-        </div>
-      </div>
+          <div class="row center">
+            <div class="col s2 m2 l2" *ngFor="let pokemon of trainer.team">
+              <img class="pokemonTeam" (click)="navigate(pokemon.picture)" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
+            </div>
+            <mat-progress-bar *ngIf="totalSS" class="bar" color="warn"
+            mode="determinate" bufferValue="100" [value]="totalSS"></mat-progress-bar>  <!-- Progress Bar -->
+          </div>
       </div>
         <div *ngIf="trainer.team ==''" class="center">  <!-- Only If No Trainer Team -->
           <p class="noPokemon">Seems like <span class="bold">{{trainer.name}}</span>

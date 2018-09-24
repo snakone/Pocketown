@@ -1,4 +1,4 @@
-export class pokeItem {
+export class PokeItem {
       _id: string  // MongoDB ID
       item: string;  // Poke Item Name
       type: string;  // Type Grass/Fire/Water..
