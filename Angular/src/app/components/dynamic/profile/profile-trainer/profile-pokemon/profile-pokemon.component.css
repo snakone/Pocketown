@@ -1,0 +1,50 @@
+.card {
+  max-width: 350px;
+  margin: auto;
+  min-height: 430px;
+  padding: 25px;
+  padding-top: 25px;
+}
+
+h5 {
+  font-size: 1.3em;
+}
+
+.effort {
+  width: 30px;
+  margin-bottom: 2px;
+}
+
+img {
+  width: 35px;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+img:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+.bestStats {
+  margin-bottom: 25px;
+}
+
+.name {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.pokemon {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.best {
+  margin-top: 30px;
+}
+
+.bestPokemon {
+  width: 65px;
+}

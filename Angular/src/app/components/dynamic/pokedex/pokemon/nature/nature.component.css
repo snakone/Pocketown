@@ -18,9 +18,10 @@
 }
 
 .card {
-  max-width: 300px;
-  margin: 20px auto auto auto;
-  min-height: 410px;
+  max-width: 350px;
+  margin: auto;
+  min-height: 430px;
+  padding: 25px;
 }
 
 .family {

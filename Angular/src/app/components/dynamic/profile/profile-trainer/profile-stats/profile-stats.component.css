@@ -1,0 +1,44 @@
+.card {
+  max-width: 350px;
+  margin: auto;
+  min-height: 430px;
+  padding: 25px;
+  padding-top: 25px;
+}
+
+h5 {
+  font-size: 1.3em;
+}
+
+.bar {
+  width: 80%;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.total {
+  font-weight: bold;
+  color:orange;
+}
+
+.row {
+  margin: 30px auto;
+}
+
+.stat {
+  width: 35px;
+}
+
+.title {
+  margin-bottom:25px;
+  margin-top: 50px;
+}
+
+.stats {
+  margin-right: 10px;
+}
+
+p {
+ margin-left: 6px;
+font-weight: bold;
+}

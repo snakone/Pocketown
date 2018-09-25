@@ -14,15 +14,15 @@
         <p>Server: <span class="bold">{{trainer.server}}</span></p>
         <p>Guild: <span class="bold">{{trainer.guild}}</span></p>
       </div>
-      <br>
+
       <div class="center" *ngIf="trainer.team !=''">
         <h5 class="team">Pokémon Team</h5>
           <div class="row center">
             <div class="col s2 m2 l2" *ngFor="let pokemon of trainer.team">
               <img class="pokemonTeam" (click)="navigate(pokemon.picture)" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
             </div>
-            <mat-progress-bar *ngIf="totalSS" class="bar" color="warn"
-            mode="determinate" bufferValue="100" [value]="totalSS"></mat-progress-bar>  <!-- Progress Bar -->
+            <!-- <mat-progress-bar *ngIf="totalSS" class="bar" color="warn"
+            mode="determinate" bufferValue="100" [value]="totalSS"></mat-progress-bar>  -->
           </div>
       </div>
         <div *ngIf="trainer.team ==''" class="center">  <!-- Only If No Trainer Team -->

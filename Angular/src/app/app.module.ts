@@ -51,7 +51,7 @@ import { BannerComponent } from './components/dynamic/welcome/banner/banner.comp
 import { DownloadComponent } from './components/dynamic/welcome/download/download.component';
 //Trainer
 import { ProfileComponent } from './components/dynamic/profile/profile.component';
-import { ProfileTrainerComponent } from './components/dynamic/profile/trainer/profile-trainer.component';
+import { ProfileTrainerComponent } from './components/dynamic/profile/profile-trainer/profile-trainer.component';
 import { RegisterComponent } from './components/dynamic/profile/register/register.component';
 // Pokedex
 import { PokedexComponent } from './components/dynamic/pokedex/pokedex.component';
@@ -93,7 +93,9 @@ import { PokemonMovesComponent } from './components/dynamic/pokedex/pokemon/move
 
 // Pocketown Guides //
 import { VictoryRoadComponent } from './components/static/guides/victory-road/victory-road.component';
-
+import { ProfileStatsComponent } from './components/dynamic/profile/profile-trainer/profile-stats/profile-stats.component';
+import { ProfileInfoComponent } from './components/dynamic/profile/profile-trainer/profile-info/profile-info.component';
+import { ProfilePokemonComponent } from './components/dynamic/profile/profile-trainer/profile-pokemon/profile-pokemon.component';
 
 @NgModule({
   declarations: [
@@ -108,7 +110,7 @@ import { VictoryRoadComponent } from './components/static/guides/victory-road/vi
     AdminPokeItemComponent, PokeItemsComponent, DownloadComponent, MoveComponent,
     PokeItemComponent, ProfileComponent, ProfileTrainerComponent, RegisterComponent,
     TrainerListComponent, PocketownComponent, ConfirmComponent, PokemonTeamComponent,
-    AdminTrainerComponent, TrainerComponent, LoadingComponent ],
+    AdminTrainerComponent, TrainerComponent, LoadingComponent, ProfileStatsComponent, ProfileInfoComponent, ProfilePokemonComponent ],
 
   imports: [
     BrowserModule, BrowserAnimationsModule, MaterialModule, RoutingModule,

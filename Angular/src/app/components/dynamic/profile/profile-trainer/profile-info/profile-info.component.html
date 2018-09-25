@@ -14,7 +14,7 @@
     <p>Server: <span class="bold">{{trainer.server}}</span></p>
     <p>Guild: <span class="bold">{{trainer.guild}}</span></p>
   </div>
-  <br>
+
   <div *ngIf="trainerService.fireTrainer.team !=''" class="row center">  <!-- Only IF Trainer Team -->
     <h5 class="team">Pokémon Team
       <mat-icon (click)="editTeam()" class="edit">edit</mat-icon>
@@ -23,8 +23,6 @@
           <img class="pokemonTeam" (click)="navigate(pokemon.picture)" src="{{urlPokemon}}{{pokemon.picture}}.png"/>
           <mat-icon *ngIf="editing" (click)="removePokemon(i)" class="close">close</mat-icon>
         </div>
-        <mat-progress-bar *ngIf="totalSS" class="bar" color="warn"
-        mode="determinate" bufferValue="100" [value]="totalSS"></mat-progress-bar>  <!-- Progress Bar -->
   </div>
 
     <!-- Only IF NOT Trainer Team-->

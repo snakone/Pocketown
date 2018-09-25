@@ -1,0 +1,47 @@
+<mat-card *ngIf="trainer" class="card">  <!-- Only If Trainer -->
+
+  <div class="row center">  <!-- Only IF Trainer Team -->
+    <h5>Team Power: <span class="total">{{totalSSRate | number:'2.2-2'}}%</span></h5>
+      <mat-progress-bar *ngIf="totalSSRate" class="bar" color="warn"
+      mode="determinate" bufferValue="100" [value]="totalSSRate"></mat-progress-bar>  <!-- Progress Bar -->
+  </div>
+
+  <div class="row center">
+    <h5>Total Team SS: <span class="total">{{totalSS | number:'0.0-0'}}</span></h5>
+  </div>
+
+  <div class="row center">
+    <h5>Recommened Power: <span class="total">{{recommenedPower | number:'0.0-0'}}</span></h5>
+  </div>
+
+  <div class="row center">
+    <h5 class="title">Team Stats</h5>
+      <div class="stats">
+          <div class="col s2 m2 l2 center">
+            <img class="stat" src="{{urlImage}}hpeffort.png"/>
+            <p [ngClass]="{'total': totalHP == max}">{{totalHP}}</p>
+          </div>
+          <div class="col s2 m2 l2 center">
+            <img class="stat" src="{{urlImage}}atkeffort.png"/>
+            <p [ngClass]="{'total': totalATK == max}">{{totalATK}}</p>
+          </div>
+          <div class="col s2 m2 l2 center">
+            <img class="stat" src="{{urlImage}}defeffort.png"/>
+            <p [ngClass]="{'total': totalDEF == max}">{{totalDEF}}</p>
+          </div>
+          <div class="col s2 m2 l2 center">
+            <img class="stat" src="{{urlImage}}satkeffort.png"/>
+            <p [ngClass]="{'total': totalSATK == max}">{{totalSATK}}</p>
+          </div>
+          <div class="col s2 m2 l2 center">
+            <img class="stat" src="{{urlImage}}sdefeffort.png"/>
+            <p [ngClass]="{'total': totalSDEF == max}">{{totalSDEF}}</p>
+          </div>
+          <div class="col s2 m2 l2 center">
+            <img class="stat" src="{{urlImage}}spdeffort.png"/>
+            <p [ngClass]="{'total': totalSPD == max}">{{totalSPD}}</p>
+          </div>
+      </div>
+  </div>
+
+</mat-card>

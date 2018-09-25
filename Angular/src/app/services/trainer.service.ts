@@ -8,7 +8,7 @@ import { AngularFirestore,
          AngularFirestoreCollection,
          AngularFirestoreDocument} from '@angular/fire/firestore';  // Firestore Imports
 
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Injectable({
@@ -22,7 +22,9 @@ export class TrainerService {
   admin: boolean;  // To know whatever is Admin or Not
   firstLogin: boolean = true;  // WE only check the Trainer Profile once on the First Login
 
-  trainerTeam: Pokemon[]=[];
+  totalSS: number;
+  totalSSTeam: number;
+
   Auth: string;  // Trainer ID
   fireTrainer: Trainer;  // Trainer Profile
   selectedTrainer: Trainer;  // Save Selected Trainer
@@ -81,7 +83,8 @@ export class TrainerService {
      .subscribe(res=> {  // Response as Trainer
       if(res){ this.fireTrainer = res as Trainer;
         this.isTrainer = true;  this.notTrainer = false;  // Trainer Settings
-          if (this.fireTrainer.name == 'Snakone') this.admin = true;
+          if (this.fireTrainer.id == '5b97460795bd68706b76b021' ||
+              this.fireTrainer.id == '5b99328b95bd68706b772c7d') this.admin = true;
       } else { this.isTrainer = false;  this.notTrainer = true; }
     });
     return this.fireTrainer; // Return the Trainer

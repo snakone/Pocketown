@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 import { AuthService } from '../../../services/auth.service';  // Auth0 Service
 import { TrainerService } from '../../../services/trainer.service';  // Trainer Service
+
+import { Trainer } from '../../../models/trainer'; // Trainer Model
 
 @Component({
   selector: 'user-profile',
@@ -12,7 +14,7 @@ import { TrainerService } from '../../../services/trainer.service';  // Trainer 
 export class ProfileComponent implements OnInit {
 
   constructor(private authService: AuthService,
-              private trainerService: TrainerService) { }
+              private trainerService: TrainerService) {}
 
   ngOnInit() {
     // Only If Logged In with Auth0

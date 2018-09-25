@@ -64,7 +64,7 @@ export class BioComponent implements OnInit {
             extendedTimeOut: 2000
           });
           this.snackBar.openFromComponent(PokemonTeamComponent, { // Snack Bar - Pokemon Team Component
-             duration: 4000,
+             duration: 3000,
              panelClass: ['snackbar'],
              verticalPosition: 'bottom'
            });

@@ -1,23 +1,12 @@
 .card {
   max-width: 350px;
   margin: auto;
-  min-height: 450px;
+  min-height: 430px;
   padding: 25px;
 }
 
 h5 {
   font-size: 1.3em;
-}
-
-.bar {
-  position: absolute;
-  bottom: 20px;
-  width: 90%;
-  left:0;
-  right:0;
-  margin-left: auto;
-  margin-right: auto;
-  height: 10px;
 }
 
 .edit {
@@ -47,7 +36,7 @@ h5 {
 
 .team {
   margin-bottom: 15px;
-  margin-top:25px;
+  margin-top: 45px;
 }
 
 .buttons button {
@@ -72,11 +61,6 @@ h5 {
 
 .row .col {
   padding: 0!important;
-}
-
-.pokemonTeam {
-  width: 40px;
-  margin: 0 auto;
 }
 
 .pokemonTeam:hover {

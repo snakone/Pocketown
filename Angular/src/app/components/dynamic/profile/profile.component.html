@@ -1,7 +1,7 @@
 <app-loading *ngIf="!trainerService.isTrainer && !trainerService.notTrainer"></app-loading>
 
-<div *ngIf="trainerService.isTrainer" class="animated slideinUp"> <!-- Only when Trainer is Registered -->
-  <trainer-profile></trainer-profile>
+<div *ngIf="trainerService.isTrainer" class="animated slideinUp overflow"> <!-- Only when Trainer is Registered -->
+<trainer-profile></trainer-profile>
 </div>
 
 <div *ngIf="trainerService.notTrainer">  <!-- Show if not a Trainer -->

@@ -1,0 +1,45 @@
+<mat-card *ngIf="trainer" class="card center">  <!-- Only If Trainer -->
+
+  <h5 class="bestStats">Best Pokémon on Stats</h5>
+
+    <div class="row center pokemon">
+        <div class="col s6 m6 l6">
+          <img (click)="navigate(pokemonHP)" src="{{urlPokemon}}{{pokemonHP.picture}}.png"/>
+          <img class="effort" src="{{urlLogo}}hpeffort.png"/>
+        </div>
+        <div class="col s6 m6 l6">
+          <img class="effort" src="{{urlLogo}}atkeffort.png"/>
+          <img (click)="navigate(pokemonATK)"  src="{{urlPokemon}}{{pokemonATK.picture}}.png"/>
+        </div>
+    </div>
+
+    <div class="row center pokemon">
+        <div class="col s6 m6 l6">
+          <img  (click)="navigate(pokemonDEF)" src="{{urlPokemon}}{{pokemonDEF.picture}}.png"/>
+          <img class="effort" src="{{urlLogo}}defeffort.png"/>
+        </div>
+        <div class="col s6 m6 l6">
+          <img class="effort" src="{{urlLogo}}satkeffort.png"/>
+          <img (click)="navigate(pokemonSATK)" src="{{urlPokemon}}{{pokemonSATK.picture}}.png"/>
+        </div>
+    </div>
+
+    <div class="row center pokemon">
+        <div class="col s6 m6 l6">
+          <img (click)="navigate(pokemonSDEF)"  src="{{urlPokemon}}{{pokemonSDEF.picture}}.png"/>
+          <img class="effort" src="{{urlLogo}}sdefeffort.png"/>
+        </div>
+        <div class="col s6 m6 l6">
+          <img class="effort" src="{{urlLogo}}spdeffort.png"/>
+          <img (click)="navigate(pokemonSPD)"  src="{{urlPokemon}}{{pokemonSPD.picture}}.png"/>
+        </div>
+    </div>
+
+    <div class="row center best">
+      <h5>Best Overall Pokémon</h5>
+      <img  (click)="navigate(pokemonSS)" class="bestPokemon"
+      src="{{urlPokemon}}{{pokemonSS.picture}}.png"/>
+      <p class="name bold">{{pokemonSS.name | uppercase}}</p>
+    </div>
+
+</mat-card>
