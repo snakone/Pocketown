@@ -14,7 +14,7 @@ export class PokemonTeamComponent implements OnInit {
   pokemonTeam: Pokemon[];
   urlImage: string;
 
-  constructor(private trainerService: TrainerService) {
+  constructor(public trainerService: TrainerService) {
           this.urlImage = "../../../../assets/images/pokemon/";
     }
 

@@ -12,7 +12,7 @@ export class EvolutionsComponent implements OnInit {
   evolutions: string[];
 
 
-  constructor(private staticData: StaticService) {}
+  constructor(public staticData: StaticService) {}
 
   ngOnInit() {
       this.evolutions = this.staticData.evolutions;  // Get the Evolution List

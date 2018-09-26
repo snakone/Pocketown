@@ -23,7 +23,7 @@ import { PocketownComponent } from '../components/dynamic/pocketown/pocketown.co
 import { AdminTrainerComponent } from '../components/admin/trainer/admin-trainer.component';
 
 
-const Routes: Routes = [
+const APPRoutes: Routes = [
   { path: 'home', component: WelcomeComponent },  // Home
   { path: 'pokedex', component: PokedexComponent },  // Pokedex
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuardService] },  // Auth Guard Service
@@ -46,7 +46,7 @@ const Routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(Routes)],  // Routes for Root = Whole Aplication
+  imports: [RouterModule.forRoot(APPRoutes)],  // Routes for Root = Whole Aplication
   exports: [RouterModule]
 })
 export class RoutingModule {}

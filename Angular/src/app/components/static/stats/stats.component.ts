@@ -12,7 +12,7 @@ export class StatsComponent implements OnInit {
   stats: string[];
   selectedStat: string;
 
-  constructor(private staticData: StaticService) {}
+  constructor(public staticData: StaticService) {}
 
   ngOnInit() {
     this.stats = this.staticData.stats;  // Get the Stats List

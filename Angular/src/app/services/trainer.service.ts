@@ -78,7 +78,6 @@ export class TrainerService {
   // Get the Trainer with Auth0 ID and Configure Trainer Settings
   checkTrainer(profile){  // Profile from Auth0 containing unique ID
     this.Auth = profile.sub.substring(6);  // Remove "Auth0|" from the ID
-
     this.getFireTrainerbyID(this.Auth) // With the ID get the Profile
      .subscribe(res=> {  // Response as Trainer
       if(res){ this.fireTrainer = res as Trainer;

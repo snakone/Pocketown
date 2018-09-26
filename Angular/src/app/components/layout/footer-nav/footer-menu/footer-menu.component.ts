@@ -12,7 +12,7 @@ import { TrainerService } from '../../../../services/trainer.service';
 })
 export class FooterMenuComponent implements OnInit {
 
-  constructor(private authService: AuthService,
+  constructor(public authService: AuthService,
               private trainerService: TrainerService,
               private toastr: ToastrService,) { }
 

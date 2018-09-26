@@ -8,22 +8,10 @@
   <mat-card-content class="top">
 
         <div class="row center">
-            <div class="col s6 m6 l6">
-                <p><span (click)="navigate(moves[0])"
-                  class="type {{moves[0].type}}">{{pokemon.move1}}</span></p>  <!-- Move 1 -->
-                <p><span (click)="navigate(moves[1])"
-                  class="type {{moves[1].type}}">{{pokemon.move2}}</span></p>  <!-- Move 2 -->
+            <div class="col s12 m12 l12">
+                <p *ngFor="let move of moves"><span (click)="navigate(move)" [ngClass]="{'zName': move.z =='Z'}"
+                  class="type {{move.type}}">{{move.name}}</span></p>  <!-- Move 1 -->
             </div>
-            <div class="col s6 m6 l6">
-                <p><span (click)="navigate(moves[2])"
-                  class="type {{moves[2].type}}">{{pokemon.move3}}</span></p>  <!-- Move 3 -->
-                <p><span (click)="navigate(moves[3])"
-                  class="type {{moves[3].type}}">{{pokemon.move4}}</span></p>  <!-- Move 4 -->
-            </div>
-        </div>
-        <div *ngIf="pokemon.evolution == 'Mega' || pokemon.evolution == 'R2'" class="center">
-          <h5>Z Move</h5>
-          <p><span (click)="navigate(moves[4])" class="type zName">{{pokemon.zmove}}</span></p>  <!-- Z Move -->
         </div>
 
         <div class="row center family">    <!-- Familiars -->

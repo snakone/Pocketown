@@ -84,6 +84,7 @@ mat-card-subtitle {
 }
 
 .zName{
+  color:black;
 	background: #cdeb8e;
 	background: -moz-linear-gradient(right, red 0%, yellow 100%);
 	background: -webkit-linear-gradient(right, red 0%,yellow 100%);

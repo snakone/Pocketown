@@ -17,7 +17,7 @@ export class AdminTrainerComponent implements OnInit {
 
   trainers: Trainer[];
 
-  constructor(private trainerService: TrainerService,
+  constructor(public trainerService: TrainerService,
               private toastr: ToastrService) { }
 
   ngOnInit() {

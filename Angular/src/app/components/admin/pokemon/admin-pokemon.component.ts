@@ -15,7 +15,7 @@ import { NgForm } from '@angular/forms';  // Angular Forms
 
 export class AdminPokemonComponent implements OnInit {
 
-  constructor(private pokemon: PokemonService,
+  constructor(public pokemon: PokemonService,
               private toastr: ToastrService) { }
 
   ngOnInit() {

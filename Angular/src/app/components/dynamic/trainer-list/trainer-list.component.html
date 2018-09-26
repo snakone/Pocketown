@@ -1,6 +1,6 @@
-<app-loading *ngIf="filteredTrainers == ''"></app-loading>
+<app-loading *ngIf="!filteredTrainers"></app-loading>
 
-<div class="trainerList" *ngIf="filteredTrainers !=''">
+<div class="trainerList" *ngIf="filteredTrainers">
 
   <div class="sticky">  <!-- Sticky Search Bar -->
         <div class="input-field center top">  <!-- Key Up Event -->

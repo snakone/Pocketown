@@ -14,7 +14,7 @@ import { Trainer } from '../../../models/trainer'; // Trainer Model
 export class ProfileComponent implements OnInit {
 
   constructor(private authService: AuthService,
-              private trainerService: TrainerService) {}
+              public trainerService: TrainerService) {}
 
   ngOnInit() {
     // Only If Logged In with Auth0

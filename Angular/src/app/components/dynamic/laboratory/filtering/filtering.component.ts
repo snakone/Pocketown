@@ -11,7 +11,7 @@ import { Router } from '@angular/router'; // Router
 })
 export class FilteringComponent implements OnInit {
 
-  constructor(private staticData: StaticService,
+  constructor(public staticData: StaticService,
               private router : Router) { }
 
   ngOnInit() {}

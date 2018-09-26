@@ -22,7 +22,7 @@ app.use(cors({origin: "http://localhost:4200"}));  // Use Cors to connect Angula
 
 
 // var allowedOrigins = ['http://pocketown-angular.epizy.com',
-//                       'http://pocketown-admin.epizy.com'];  // Allowed URLs
+//                       'http://pocketown-testing.epizy.com'];  // Allowed URLs
 //
 // app.use(cors({
 //   origin: function(origin, callback){

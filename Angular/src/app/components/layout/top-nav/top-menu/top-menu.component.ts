@@ -11,8 +11,8 @@ import { AuthService } from '../../../../services/auth.service';  // Trainer Ser
 
 export class TopMenuComponent implements OnInit {
 
-  constructor(private trainerService: TrainerService,
-              private authService: AuthService) {}
+  constructor(public trainerService: TrainerService,
+              public authService: AuthService) {}
 
   ngOnInit() {}
 

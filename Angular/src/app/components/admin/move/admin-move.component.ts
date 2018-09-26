@@ -15,7 +15,7 @@ import { NgForm } from '@angular/forms';  // Angular Forms
 
 export class AdminMoveComponent implements OnInit {
 
-  constructor(private moveService: MoveService,
+  constructor(public moveService: MoveService,
               private toastr: ToastrService) { }
 
   ngOnInit() {

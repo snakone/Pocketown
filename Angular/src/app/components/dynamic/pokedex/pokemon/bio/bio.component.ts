@@ -28,7 +28,7 @@ export class BioComponent implements OnInit {
   pokemonTeam: Pokemon[];
 
   constructor(private pokedexService: PokedexService,
-              private trainerService: TrainerService,
+              public trainerService: TrainerService,
               private router: Router, private toastr: ToastrService,
               public dialog: MatDialog, public snackBar: MatSnackBar) {
       this.urlImage = "../../../../../../assets/images/pokemon/";
